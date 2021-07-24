@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.86.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>GNU/Linux Toolkit</title>
+  <meta name="description" content="Consise command line refreshers" />
+
+  
+  <link type="text/css" rel="stylesheet" href="http://150.136.68.59/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://150.136.68.59/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://150.136.68.59/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://150.136.68.59/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="http://150.136.68.59/index.xml" rel="alternate" type="application/rss+xml" title="GNU/Linux Toolkit" />
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://150.136.68.59/"><h1>GNU/Linux Toolkit</h1></a>
+      <p class="lead">
+       Consise command line refreshers 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://150.136.68.59/">Home</a> </li>
+        <li><a href="/commands/"> Commands </a></li><li><a href="/tools/"> Tools </a></li>
+      </ul>
+    </nav>
+
+    <p>&copy; 2021. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="posts">
+<article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/commands/ln/">ln</a>
+  </h1>
+  <time datetime="2021-07-22T07:50:03-0400" class="post-date">Thu, Jul 22, 2021</time>
+  ln is a tool for creating links between files. It can create the two different types of links: soft/symbolic links and hard links. A soft link is like the equivalent of a Windows shortcut icon. When a program reads a soft link, it is redirected to where the file is. A hard link is basically like giving a file another name. When a program reads a hard link, it reads the exact data block as the original file.
+  
+  <div class="read-more-link">
+    <a href="/commands/ln/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/tools/cmake/templating/">templating</a>
+  </h1>
+  <time datetime="2021-07-21T11:06:34-0400" class="post-date">Wed, Jul 21, 2021</time>
+  File Templating CMake can format input files with variables specified in CMakeLists.txt, and produce an output in the build folder.
+. ├── CMakeLists.txt └── format-in.txt CMakeLists.txt
+configure_file(format-in.txt format-out.txt)format-in.txt
+The project version is: @Main_VERSION_MAJOR@ 
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/tools/ffmpeg/">ffmpeg</a>
+  </h1>
+  <time datetime="2021-07-20T18:30:37-0400" class="post-date">Tue, Jul 20, 2021</time>
+  ffmpeg is a video and image manipulator tool that can do just about anything.
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/tools/cmake/">cmake</a>
+  </h1>
+  <time datetime="2021-07-20T14:32:04-0400" class="post-date">Tue, Jul 20, 2021</time>
+  CMake is a tool that creates build setups for source code, allowing that code to be cross platform.
+The root of a CMake entity is always defined by a CMakeLists.txt file.
+ Bare Minimum Example File Templating  
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/tools/cmake/bare-minimum/">cmake</a>
+  </h1>
+  <time datetime="2021-07-20T14:32:04-0400" class="post-date">Tue, Jul 20, 2021</time>
+  Bare Minimum Example . ├── CMakeLists.txt └── main.cpp CMakeLists.txt
+cmake_minimum_required(VERSION 3.10)project(Main)add_executable(Main main.cpp)mkdir build cd build &amp;&amp; cmake .. 
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/commands/chown/">chown</a>
+  </h1>
+  <time datetime="2021-07-20T08:28:02-0400" class="post-date">Tue, Jul 20, 2021</time>
+  chown is a tool for changing the owner of a file or directory. To see the owner of file.txt, use the command ls -l file.txt. The output is:
+ -rw-rw-r-- 1 john staff 23 Jul 2 08:45 file.txt  where &ldquo;john&rdquo; is the file&rsquo;s owner. chown is also capable of changing the file group, (in this case &ldquo;staff&rdquo;), doing the exact same thing as chgrp.
+Most Common Usages Change the owner of a file.
+  
+  <div class="read-more-link">
+    <a href="/commands/chown/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/commands/uname/">uname</a>
+  </h1>
+  <time datetime="2021-07-19T08:51:11-0400" class="post-date">Mon, Jul 19, 2021</time>
+  uname, short for unix name, is a simple tool for getting information about the current system.
+Most Common Usages Print system information about the kernel, processor, and operating system.
+uname -a Configuration N/A
+Notes uname offers many flags such as -m and -s (machine and kernel-name) which provide a way for scripts to get specific values.
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/commands/chmod/">chmod</a>
+  </h1>
+  <time datetime="2021-07-18T07:25:34-0400" class="post-date">Sun, Jul 18, 2021</time>
+  chmod is a utility for changing the mode (permissions) of a file or directory. To check the file mode for file.txt, use the command ls -l file.txt. The output is:
+ -rw-rw-r-- 1 user group 23 Jul 2 08:45 file.txt  where -rw-rw-r-- is the file&rsquo;s mode.
+The first dash is the type of file and is not important. The next 9 dashes are mode bits. A letter (r,w,x) means on and a dash means off.
+  
+  <div class="read-more-link">
+    <a href="/commands/chmod/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/commands/du/">du</a>
+  </h1>
+  <time datetime="2021-07-16T08:55:20-0400" class="post-date">Fri, Jul 16, 2021</time>
+  du is a tool for getting information about the disk usage of a file or directory.
+Most Common Usages Get the disk usage of a single file or directory
+du -sh ./directory &hellip; where -sh stands for summarize and human-readable
+Get the size of a single file or directory
+du -bsh ./directory &hellip;where -b is equal to --apparent-size --block-size=1
+Configuration The block size defaults to 1024 bytes but can be modified with the environment variables DU_BLOCK_SIZE, BLOCK_SIZE, or BLOCKSIZE
+  
+  <div class="read-more-link">
+    <a href="/commands/du/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/commands/tput/">tput</a>
+  </h1>
+  <time datetime="2021-07-15T12:09:27-0400" class="post-date">Thu, Jul 15, 2021</time>
+  tput will output a special value from the terminfo database, given a &ldquo;capname&rdquo; as a key. The terminfo database is a set of key value pairs storing information about hundreds of terminals (+ terminal emulators, given that actual terminals hardly exist today). Terminfo database files are held in /etc/terminfo/ but are compressed and require special tools for reading.
+Most Common Usages Write the value of a capname to standard output
+  
+  <div class="read-more-link">
+    <a href="/commands/tput/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/commands/touch/">touch</a>
+  </h1>
+  <time datetime="2021-07-15T11:51:11-0400" class="post-date">Thu, Jul 15, 2021</time>
+  touch is command used to update the access and modification times of a file. It is most commonly used as a quick way of creating a new, empty file.
+Most Common Usages Create an empty file.
+touch file.txt Update the timestamp of a file without creating a new one if it doesn&rsquo;t exist.
+touch -c existingfile.txt Configuration N/A
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/commands/man/">man</a>
+  </h1>
+  <time datetime="2021-07-14T08:06:58-0400" class="post-date">Wed, Jul 14, 2021</time>
+  man is used to display the user manual of a command. Manuals are divided into these sections:
+ User commands and tools Linux system calls Library functions (system call wrappers) which implement system calls Special files (devices) File formats and corresponding C structures (if any) &ldquo;Games and funny little programs&rdquo; Miscellaneous Administration and privileged commands Kernel routines [Non standard]  Use man &lt;number&gt; intro to read more about each section (except 9).
+  
+  <div class="read-more-link">
+    <a href="/commands/man/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/commands/rsync/">rsync</a>
+  </h1>
+  <time datetime="2021-07-13T08:21:30-0400" class="post-date">Tue, Jul 13, 2021</time>
+  rsync is a copying tool that implements a delta-transfer algorithm for extremely fast and efficient transfers. It finds files that have changed in size or last-modified time to determine the necessary updates to the destination.
+If rsync is used over ssh, it requires that both the client and server have the software installed.
+    rsync      run directly yes   configuration ~/.ssh/config (if applicable)   service rsyncd.
+  
+  <div class="read-more-link">
+    <a href="/commands/rsync/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/commands/ssh/">ssh</a>
+  </h1>
+  <time datetime="2021-07-12T07:33:57-0400" class="post-date">Mon, Jul 12, 2021</time>
+  ssh is a program for logging into a remote computer and executing commands on that computer. ssh connects and logs into the specified destination, which may be specified as either [user@]hostname or ssh://[user@]hostname[:port]
+The user trying to access the remote computer must prove their identity.
+Most Common Usages Access a remote machine by providing a private key as input
+ssh -i &lt;private key file&gt; &lt;username&gt;@&lt;hostname&gt; For example
+ssh -i ~/.ssh/some-private-key.key john@100.
+  
+  <div class="read-more-link">
+    <a href="/commands/ssh/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/commands/systemctl/">systemctl</a>
+  </h1>
+  <time datetime="2021-07-10T11:53:31-0400" class="post-date">Sat, Jul 10, 2021</time>
+  systemctl is a tool for tapping into systemd, a program which will always be running in the background. systemd calls everything &ldquo;units&rdquo;, which are just files which each maintain a more specialized part of the whole system. There are 11 different types of units. Here are the first two:
+ Service units - start and control daemons (programs that run in the background) Socket units - represent &ldquo;sockets&rdquo; which have to do with network connections  Most Common Usages List all the servies systemctl list-units or just systemctl
+  
+  <div class="read-more-link">
+    <a href="/commands/systemctl/">Read More…</a>
+  </div>
+  
+</article>
+</div>
+    </main>
+
+
+    
+      
+    
+  </body>
+</html>

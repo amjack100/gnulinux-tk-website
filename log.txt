@@ -1,0 +1,16 @@
+ran makefile
+Start building sites … 
+hugo v0.86.0+extended linux/amd64 BuildDate=2021-07-21T14:03:40Z
+
+                   | EN  
+-------------------+-----
+  Pages            | 26  
+  Paginator pages  |  0  
+  Non-page files   |  0  
+  Static files     |  6  
+  Processed images |  0  
+  Aliases          |  0  
+  Sitemaps         |  1  
+  Cleaned          |  0  
+
+Total in 36 ms

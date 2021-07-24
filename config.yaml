@@ -1,0 +1,22 @@
+
+baseURL: "http://150.136.68.59/"
+languageCode: "en-us"
+title: "GNU/Linux Toolkit"
+theme: "hyde"
+sectionPagesMenu: "main"
+
+Params:
+  description: "Consise command line refreshers"
+
+markup:
+  goldmark:
+    extensions:
+      table: true
+      definitionList: true
+    renderer:
+      unsafe: true
+
+
+
+#Menus:
+  #main:

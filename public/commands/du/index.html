@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.86.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>du &middot; GNU/Linux Toolkit</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="http://150.136.68.59/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://150.136.68.59/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://150.136.68.59/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://150.136.68.59/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://150.136.68.59/"><h1>GNU/Linux Toolkit</h1></a>
+      <p class="lead">
+       Consise command line refreshers 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://150.136.68.59/">Home</a> </li>
+        <li><a href="/commands/"> Commands </a></li><li><a href="/tools/"> Tools </a></li>
+      </ul>
+    </nav>
+
+    <p>&copy; 2021. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>du</h1>
+  <time datetime=2021-07-16T08:55:20-0400 class="post-date">Fri, Jul 16, 2021</time>
+
+  
+
+  
+<center>
+  <table>
+  
+  <h1></h2>
+       
+      <tbody>
+        <tr>
+      <td style="text-align:left">configuration</td>
+      <td style="text-align:right">Environment variables</td>
+        </tr>
+      </tbody>
+      
+
+  <h1></h2>
+       
+      <thead>
+        <tr>
+      <th style="text-align:left">du</th>
+      <th style="text-align:right"></th>
+        </tr>
+      </thead>
+      
+
+  <h1></h2>
+       
+      <tbody>
+        <tr>
+      <td style="text-align:left">package</td>
+      <td style="text-align:right">GNU Coreutils</td>
+        </tr>
+      </tbody>
+      
+
+  <h1></h2>
+       
+      <tbody>
+        <tr>
+      <td style="text-align:left">run directly</td>
+      <td style="text-align:right">true</td>
+        </tr>
+      </tbody>
+      
+
+  <h1></h2>
+       
+      <tbody>
+        <tr>
+      <td style="text-align:left">service</td>
+      <td style="text-align:right">N/A</td>
+        </tr>
+      </tbody>
+      
+
+  </table>
+</center>
+
+
+
+  <p><code>du</code> is a tool for getting information about the <strong>d</strong>isk <strong>u</strong>sage
+of a file or directory.</p>
+<h2 id="most-common-usages">Most Common Usages</h2>
+<p>Get the disk usage of a single file or directory</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">du -sh ./directory
+</code></pre></div><p>&hellip; where <code>-sh</code> stands for summarize and human-readable</p>
+<p>Get the size of a single file or directory</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">du -bsh ./directory
+</code></pre></div><p>&hellip;where -b is equal to <code>--apparent-size --block-size=1</code></p>
+<h2 id="configuration">Configuration</h2>
+<p>The block size defaults to 1024 bytes but can be modified with the
+environment variables <code>DU_BLOCK_SIZE</code>, <code>BLOCK_SIZE</code>, or <code>BLOCKSIZE</code></p>
+<h2 id="notes">Notes</h2>
+<p>&ldquo;Why so complicated? Just show me the file size&rdquo;. Use <code>-bs</code> or <code>-bsh</code>. This
+is the number that matters for uploads and the one shown in a typical file explorer.</p>
+<p>See <a href="https://stackoverflow.com/questions/5694741/why-is-the-output-of-du-often-so-different-from-du-b/5694854#5694854">&ldquo;why is the output of `du` often so different from `du -b`&quot;</a></p>
+
+</div>
+
+
+    </main>
+
+
+    
+      
+    
+  </body>
+</html>

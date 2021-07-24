@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.85.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>tput &middot; GNU/Linux Toolkit</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="http://150.136.68.59/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://150.136.68.59/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://150.136.68.59/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://150.136.68.59/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://150.136.68.59/"><h1>GNU/Linux Toolkit</h1></a>
+      <p class="lead">
+       Consise command line refreshers 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://150.136.68.59/">Home</a> </li>
+        <li><a href="/posts/"> Posts </a></li>
+      </ul>
+    </nav>
+
+    <p>&copy; 2021. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>tput</h1>
+  <time datetime=2021-07-15T12:09:27-0400 class="post-date">Thu, Jul 15, 2021</time>
+  <p>tput will output a special value from the terminfo database, given a
+&ldquo;capname&rdquo; as a key. The terminfo database is a set of key value pairs storing
+information about hundreds of terminals (+ terminal emulators, given that
+actual terminals hardly exist today). Terminfo database files are held in /etc/terminfo/
+but are compressed and require special tools for reading.</p>
+<center>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">tput</th>
+<th style="text-align:right"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">run directly</td>
+<td style="text-align:right">rarely (mostly used in scripts)</td>
+</tr>
+<tr>
+<td style="text-align:left">configuration</td>
+<td style="text-align:right">N/A</td>
+</tr>
+<tr>
+<td style="text-align:left">service</td>
+<td style="text-align:right">N/A</td>
+</tr>
+</tbody>
+</table>
+</center>
+<h2 id="most-common-usages">Most Common Usages</h2>
+<p>Write the value of a capname to standard output</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">tput bold
+</code></pre></div><p>Given the argument &ldquo;bold&rdquo;, <code>tput</code> will fetch the value from the terminfo database.</p>
+<p>If the name of the user&rsquo;s current terminal is &ldquo;alacritty&rdquo;, for example,
+<code>tput</code> will request &ldquo;bold&rdquo; from the file /etc/terminfo/a/alacritty, the value
+of which is the ansi escape sequence &ldquo;\E[1m&rdquo;. The text on the user&rsquo;s terminal
+will now be bolded.</p>
+<p>Embed in a script</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">echo <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>tput bold<span style="color:#66d9ef">)</span><span style="color:#e6db74">Hello</span><span style="color:#66d9ef">$(</span>tput sgr0<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+</code></pre></div><p>&hellip;which will print a bolded &ldquo;Hello&rdquo; to the user&rsquo;s terminal.</p>
+<h2 id="configuration">Configuration</h2>
+<p>N/A</p>
+<h2 id="notes">Notes</h2>
+<p>The tool <code>infocmp</code> can be used to show contents of the terminfo
+database of the active terminal in a human readable format.</p>
+
+</div>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>

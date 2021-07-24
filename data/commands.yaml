@@ -1,0 +1,66 @@
+- 
+  name : chown
+  run directly : yes
+  configuration : N/A
+  service : N/A
+  package : GNU Coreutils
+- 
+  name : ln
+  run directly : yes
+  configuration : N/A
+  service : N/A
+  package : GNU Coreutils
+- 
+  name : uname
+  run directly : yes
+  configuration : N/A
+  service : N/A
+  package : GNU Coreutils
+- 
+  name : chmod
+  run directly : yes
+  configuration : N/A
+  service : N/A
+  package : GNU Coreutils
+- 
+  name : du
+  run directly : yes
+  configuration : Environment variables 
+  service : N/A
+  package : GNU Coreutils
+- 
+  name : tput
+  run directly : rarely (mostly used in scripts)
+  configuration : N/A
+  service : N/A
+  package : "[NCURSES](https://invisible-island.net/ncurses/)"
+- 
+  name : touch
+  run directly : yes 
+  configuration : N/A
+  service : N/A
+  package : GNU Coreutils
+- 
+  name : man
+  run directly : yes 
+  configuration : /etc/manpath.config, ~/.manpath
+  service : N/A
+  package : "?"
+- 
+  name : rsync
+  run directly : yes 
+  configuration : ~/.ssh/config (if applicable) 
+  service : rsyncd.service
+  package : None (standalone)
+- 
+  name : ssh
+  run directly : yes 
+  configuration : ~/.ssh/config
+  service : sshd.service
+  package : None (standalone)
+- 
+  name : systemctl
+  run directly : yes 
+  configuration : TODO 
+  service : systemd
+  package : None (standalone)
