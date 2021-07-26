@@ -4,6 +4,12 @@
   configuration : N/A
   service : N/A
   package : Standalone (GNU sed)
+-
+  name : find
+  usage : scripts and command line
+  configuration : Environment variables
+  service : N/A
+  package : "[GNU Findutils](https://www.gnu.org/software/findutils/)"
 - 
   name : chown
   usage : direct
