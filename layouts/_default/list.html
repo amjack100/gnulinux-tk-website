@@ -1,9 +1,22 @@
-<h1>test</h1>
+<h1>Tools</h1>
 <body>
 
   {{ .Content }}
 
   {{ range .Pages }}
+
+
+  {{ $array := where .Site.Data.complexities "name" "==" .Title }}
+
+  {{ range $key, $value := $array }}
+
+  {{ range $key2, $value2 := $value }}
+  <h1>{{ .complexity }}<h2>
+
+  {{ end }}
+  {{ end }}
+
+
 
   <a href="{{.URL}}">{{.Title}}</a> <br>
 

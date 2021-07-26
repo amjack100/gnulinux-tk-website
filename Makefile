@@ -1,14 +1,12 @@
 
-.PHONY : main
+.PHONY : main push
+
 main:
-	echo "ran makefile" > ./log.txt
-	echo $$USER >> ./log.txt
+	echo "$$(date)" > ./log.txt
 	/snap/bin//hugo -D >> ./log.txt 2>&1
-	rsync -r ./public/ website:/home/opc/www >> ./log.txt 2>&1
-	#/usr/bin/notify-send "website updated"
-	/usr/bin/zenity --notification --text "asdf"
+	ls .public >> ./log.txt
+	rsync -vr .public/ website:/home/opc/www
 	
-.PHONY : push
 push: 
 	git add .
 	git commit -m "$$(date +%F-%T)"

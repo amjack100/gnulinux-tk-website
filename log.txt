@@ -1,9 +1,5 @@
-ran makefile
-andy
+Mon Jul 26 09:59:54 EDT 2021
 Start building sites … 
 hugo v0.86.0+extended linux/amd64 BuildDate=2021-07-21T14:03:40Z
-WARN 2021/07/26 08:59:55 Page.URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url
-ERROR 2021/07/26 08:59:55 [en] REF_NOT_FOUND: Ref "tools/CMake/bare-minimum.md": "/home/andy/Experiments/html/quickstart/content/tools/CMake.md:12:26": page not found
-ERROR 2021/07/26 08:59:55 [en] REF_NOT_FOUND: Ref "tools/CMake/templating.md": "/home/andy/Experiments/html/quickstart/content/tools/CMake.md:13:21": page not found
-Error: Error building site: logged 2 error(s)
-Total in 33 ms
+Error: Error building site: failed to render pages: render of "section" failed: "/home/andy/Experiments/html/quickstart/layouts/_default/list.html:14:9": execute of template failed: template: _default/list.html:14:9: executing "_default/list.html" at <.complexity>: can't evaluate field complexity in type interface {}
+Total in 21 ms

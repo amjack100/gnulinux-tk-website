@@ -4,6 +4,9 @@ languageCode: "en-us"
 title: "GNU/Linux Toolkit"
 theme: "hyde"
 sectionPagesMenu: "main"
+publishDir: ".public"
+resourceDir: ".resources"
+
 
 Params:
   description: "Consise command line refreshers"

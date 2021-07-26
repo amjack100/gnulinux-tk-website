@@ -1,0 +1,12 @@
+- 
+  name : sed
+  complexity : mid
+-
+  name : ffmpeg
+  complexity : high
+-
+  name : cmake
+  complexity : high
+-
+  name : make
+  complexity : high

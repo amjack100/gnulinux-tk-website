@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.86.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ssh &middot; GNU/Linux Toolkit</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="http://150.136.68.59/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://150.136.68.59/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://150.136.68.59/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://150.136.68.59/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://150.136.68.59/"><h1>GNU/Linux Toolkit</h1></a>
+      <p class="lead">
+       Consise command line refreshers 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://150.136.68.59/">Home</a> </li>
+        <li><a href="/tools/"> Tools </a></li>
+      </ul>
+    </nav>
+
+    <p>&copy; 2021. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>ssh</h1>
+  <time datetime=2021-07-12T07:33:57-0400 class="post-date">Mon, Jul 12, 2021</time>
+
+  
+
+  
+<center>
+  <table>
+  
+  <h1></h2>
+       
+      <tbody>
+        <tr>
+      <td style="text-align:left">configuration</td>
+      <td style="text-align:right">~/.ssh/config</td>
+        </tr>
+      </tbody>
+      
+
+  <h1></h2>
+       
+      <thead>
+        <tr>
+      <th style="text-align:left">ssh</th>
+      <th style="text-align:right"></th>
+        </tr>
+      </thead>
+      
+
+  <h1></h2>
+       
+      <tbody>
+        <tr>
+      <td style="text-align:left">package</td>
+      <td style="text-align:right">None (standalone)</td>
+        </tr>
+      </tbody>
+      
+
+  <h1></h2>
+       
+      <tbody>
+        <tr>
+      <td style="text-align:left">service</td>
+      <td style="text-align:right">sshd.service</td>
+        </tr>
+      </tbody>
+      
+
+  <h1></h2>
+       
+      <tbody>
+        <tr>
+      <td style="text-align:left">usage</td>
+      <td style="text-align:right">direct</td>
+        </tr>
+      </tbody>
+      
+
+  </table>
+</center>
+
+
+
+  <p>ssh is a program for logging into a remote computer and executing commands
+on that computer. ssh connects and logs into the specified destination,
+which may be specified as either [user@]hostname or ssh://[user@]hostname[:port]</p>
+<p>The user trying to access the remote computer must prove their identity.</p>
+<h2 id="most-common-usages">Most Common Usages</h2>
+<p>Access a remote machine by providing a private key as input</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ssh -i &lt;private key file&gt; &lt;username&gt;@&lt;hostname&gt; 
+</code></pre></div><p>For example</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ssh -i ~/.ssh/some-private-key.key john@100.100.10.10 
+</code></pre></div><h2 id="configuration">Configuration</h2>
+<p>Save a host for easy access</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">~/.ssh/config
+
+Host &lt;myserver&gt;
+    Hostname &lt;server-address&gt;
+    IdentityFile &lt;private-key-file&gt;
+    User &lt;user&gt;
+
+Host website
+    Hostname 000.000.00.00
+    IdentityFile ~/.ssh/some-private-key.key
+    User john
+</code></pre></div><p>Then, from the command line</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ssh website
+</code></pre></div><h2 id="notes">Notes</h2>
+<p>In order for graphical terminal programs to function properly, it can be
+necessary to add the &ldquo;-t&rdquo; flag which &ldquo;forces pseudo-terminal allocation&rdquo;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ssh -t ...
+</code></pre></div>
+</div>
+
+
+    </main>
+
+
+    
+      
+    
+  </body>
+</html>

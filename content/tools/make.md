@@ -15,3 +15,4 @@ At its simplest, `make` stores a list of these commands under a single name a "M
 With a Makefile, all of these commands can then be run at once, hiding the
 complexities of the build process and preventing the builder from running
 potentially hundreds of commands manually over and over again.
+

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on GNU/Linux Toolkit</title>
+    <link>http://150.136.68.59/tools/</link>
+    <description>Recent content in Tools on GNU/Linux Toolkit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 Jul 2021 18:16:03 -0400</lastBuildDate><atom:link href="http://150.136.68.59/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>make</title>
+      <link>http://150.136.68.59/tools/make/</link>
+      <pubDate>Sun, 25 Jul 2021 18:16:03 -0400</pubDate>
+      
+      <guid>http://150.136.68.59/tools/make/</guid>
+      <description>make is a tool for organizing a build process for any programming language. Most programming projects involve some of sequential process of compiling source code files using various commands. A hierarchy develops where certain files might depend on the existence of others in order to assure a successful compilation, and therefore a successful program. At its simplest, make stores a list of these commands under a single name a &amp;ldquo;Makefile&amp;rdquo;. With a Makefile, all of these commands can then be run at once, hiding the complexities of the build process and preventing the builder from running potentially hundreds of commands manually over and over again.</description>
+    </item>
+    
+    <item>
+      <title>sed</title>
+      <link>http://150.136.68.59/tools/sed/</link>
+      <pubDate>Sun, 25 Jul 2021 08:27:22 -0400</pubDate>
+      
+      <guid>http://150.136.68.59/tools/sed/</guid>
+      <description>sed is a tool for editing text. It is a stream editor, meaning it can accomplish the same tasks as a traditional text editor by iterating through streams of text with commands.
+Most Common Usages The &amp;rsquo;s&#39; (substitute) command is the most important sed command. Preview replacement of all matching patterns in a file.
+sed &amp;#39;s/old/new&amp;#39; file.txt Write replacement of all matching patterns in a file.
+sed -i &amp;#39;s/old/new&amp;#39; file.txt Configuration N/A</description>
+    </item>
+    
+    <item>
+      <title>ln</title>
+      <link>http://150.136.68.59/tools/ln/</link>
+      <pubDate>Thu, 22 Jul 2021 07:50:03 -0400</pubDate>
+      
+      <guid>http://150.136.68.59/tools/ln/</guid>
+      <description>ln is a tool for creating links between files. It can create the two different types of links: soft/symbolic links and hard links. A soft link is like the equivalent of a Windows shortcut icon. When a program reads a soft link, it is redirected to where the file is. A hard link is basically like giving a file another name. When a program reads a hard link, it reads the exact data block as the original file.</description>
+    </item>
+    
+    <item>
+      <title>ffmpeg</title>
+      <link>http://150.136.68.59/tools/ffmpeg/</link>
+      <pubDate>Tue, 20 Jul 2021 18:30:37 -0400</pubDate>
+      
+      <guid>http://150.136.68.59/tools/ffmpeg/</guid>
+      <description>ffmpeg is a video and image manipulator tool that can do just about anything.</description>
+    </item>
+    
+    <item>
+      <title>cmake</title>
+      <link>http://150.136.68.59/tools/cmake/</link>
+      <pubDate>Tue, 20 Jul 2021 14:32:04 -0400</pubDate>
+      
+      <guid>http://150.136.68.59/tools/cmake/</guid>
+      <description>CMake is a tool that creates build setups for source code, allowing that code to be cross platform.
+The root of a CMake entity is always defined by a CMakeLists.txt file.
+Bare Minimum Example . ├── CMakeLists.txt └── main.cpp CMakeLists.txt
+cmake_minimum_required(VERSION 3.10)project(Main)add_executable(Main main.cpp)mkdir build cd build &amp;amp;&amp;amp; cmake .. File Templating CMake can format input files with variables specified in CMakeLists.txt, and produce an output in the build folder.
+. ├── CMakeLists.</description>
+    </item>
+    
+    <item>
+      <title>chown</title>
+      <link>http://150.136.68.59/tools/chown/</link>
+      <pubDate>Tue, 20 Jul 2021 08:28:02 -0400</pubDate>
+      
+      <guid>http://150.136.68.59/tools/chown/</guid>
+      <description>chown is a tool for changing the owner of a file or directory. To see the owner of file.txt, use the command ls -l file.txt. The output is:
+ -rw-rw-r-- 1 john staff 23 Jul 2 08:45 file.txt  where &amp;ldquo;john&amp;rdquo; is the file&amp;rsquo;s owner. chown is also capable of changing the file group, (in this case &amp;ldquo;staff&amp;rdquo;), doing the exact same thing as chgrp.
+Most Common Usages Change the owner of a file.</description>
+    </item>
+    
+    <item>
+      <title>uname</title>
+      <link>http://150.136.68.59/tools/uname/</link>
+      <pubDate>Mon, 19 Jul 2021 08:51:11 -0400</pubDate>
+      
+      <guid>http://150.136.68.59/tools/uname/</guid>
+      <description>uname, short for unix name, is a simple tool for getting information about the current system.
+Most Common Usages Print system information about the kernel, processor, and operating system.
+uname -a Configuration N/A
+Notes uname offers many flags such as -m and -s (machine and kernel-name) which provide a way for scripts to get specific values.</description>
+    </item>
+    
+    <item>
+      <title>chmod</title>
+      <link>http://150.136.68.59/tools/chmod/</link>
+      <pubDate>Sun, 18 Jul 2021 07:25:34 -0400</pubDate>
+      
+      <guid>http://150.136.68.59/tools/chmod/</guid>
+      <description>chmod is a utility for changing the mode (permissions) of a file or directory. To check the file mode for file.txt, use the command ls -l file.txt. The output is:
+ -rw-rw-r-- 1 user group 23 Jul 2 08:45 file.txt  where -rw-rw-r-- is the file&amp;rsquo;s mode.
+The first dash is the type of file and is not important. The next 9 dashes are mode bits. A letter (r,w,x) means on and a dash means off.</description>
+    </item>
+    
+    <item>
+      <title>du</title>
+      <link>http://150.136.68.59/tools/du/</link>
+      <pubDate>Fri, 16 Jul 2021 08:55:20 -0400</pubDate>
+      
+      <guid>http://150.136.68.59/tools/du/</guid>
+      <description>du is a tool for getting information about the disk usage of a file or directory.
+Most Common Usages Get the disk usage of a single file or directory
+du -sh ./directory &amp;hellip; where -sh stands for summarize and human-readable
+Get the size of a single file or directory
+du -bsh ./directory &amp;hellip;where -b is equal to --apparent-size --block-size=1
+Configuration The block size defaults to 1024 bytes but can be modified with the environment variables DU_BLOCK_SIZE, BLOCK_SIZE, or BLOCKSIZE</description>
+    </item>
+    
+    <item>
+      <title>tput</title>
+      <link>http://150.136.68.59/tools/tput/</link>
+      <pubDate>Thu, 15 Jul 2021 12:09:27 -0400</pubDate>
+      
+      <guid>http://150.136.68.59/tools/tput/</guid>
+      <description>tput will output a special value from the terminfo database, given a &amp;ldquo;capname&amp;rdquo; as a key. The terminfo database is a set of key value pairs storing information about hundreds of terminals (+ terminal emulators, given that actual terminals hardly exist today). Terminfo database files are held in /etc/terminfo/ but are compressed and require special tools for reading.
+Most Common Usages Write the value of a capname to standard output</description>
+    </item>
+    
+    <item>
+      <title>touch</title>
+      <link>http://150.136.68.59/tools/touch/</link>
+      <pubDate>Thu, 15 Jul 2021 11:51:11 -0400</pubDate>
+      
+      <guid>http://150.136.68.59/tools/touch/</guid>
+      <description>touch is command used to update the access and modification times of a file. It is most commonly used as a quick way of creating a new, empty file.
+Most Common Usages Create an empty file.
+touch file.txt Update the timestamp of a file without creating a new one if it doesn&amp;rsquo;t exist.
+touch -c existingfile.txt Configuration N/A</description>
+    </item>
+    
+    <item>
+      <title>man</title>
+      <link>http://150.136.68.59/tools/man/</link>
+      <pubDate>Wed, 14 Jul 2021 08:06:58 -0400</pubDate>
+      
+      <guid>http://150.136.68.59/tools/man/</guid>
+      <description>man is used to display the user manual of a command. Manuals are divided into these sections:
+ User commands and tools Linux system calls Library functions (system call wrappers) which implement system calls Special files (devices) File formats and corresponding C structures (if any) &amp;ldquo;Games and funny little programs&amp;rdquo; Miscellaneous Administration and privileged commands Kernel routines [Non standard]  Use man &amp;lt;number&amp;gt; intro to read more about each section (except 9).</description>
+    </item>
+    
+    <item>
+      <title>rsync</title>
+      <link>http://150.136.68.59/tools/rsync/</link>
+      <pubDate>Tue, 13 Jul 2021 08:21:30 -0400</pubDate>
+      
+      <guid>http://150.136.68.59/tools/rsync/</guid>
+      <description>rsync is a copying tool that implements a delta-transfer algorithm for extremely fast and efficient transfers. It finds files that have changed in size or last-modified time to determine the necessary updates to the destination.
+If rsync is used over ssh, it requires that both the client and server have the software installed.
+Most Common Usages Copy a directory (recursive) to a remote machine
+rsync -vr ./source-dir server:/destination Copy a directory (recursive) to the host machine</description>
+    </item>
+    
+    <item>
+      <title>ssh</title>
+      <link>http://150.136.68.59/tools/ssh/</link>
+      <pubDate>Mon, 12 Jul 2021 07:33:57 -0400</pubDate>
+      
+      <guid>http://150.136.68.59/tools/ssh/</guid>
+      <description>ssh is a program for logging into a remote computer and executing commands on that computer. ssh connects and logs into the specified destination, which may be specified as either [user@]hostname or ssh://[user@]hostname[:port]
+The user trying to access the remote computer must prove their identity.
+Most Common Usages Access a remote machine by providing a private key as input
+ssh -i &amp;lt;private key file&amp;gt; &amp;lt;username&amp;gt;@&amp;lt;hostname&amp;gt; For example
+ssh -i ~/.ssh/some-private-key.key john@100.</description>
+    </item>
+    
+    <item>
+      <title>systemctl</title>
+      <link>http://150.136.68.59/tools/systemctl/</link>
+      <pubDate>Sat, 10 Jul 2021 11:53:31 -0400</pubDate>
+      
+      <guid>http://150.136.68.59/tools/systemctl/</guid>
+      <description>systemctl is a tool for tapping into systemd, a program which will always be running in the background. systemd calls everything &amp;ldquo;units&amp;rdquo;, which are just files which each maintain a more specialized part of the whole system. There are 11 different types of units. Here are the first two:
+ Service units - start and control daemons (programs that run in the background) Socket units - represent &amp;ldquo;sockets&amp;rdquo; which have to do with network connections  Most Common Usages List all the servies systemctl list-units or just systemctl</description>
+    </item>
+    
+  </channel>
+</rss>

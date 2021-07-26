@@ -9,9 +9,6 @@ be cross platform.
 
 The root of a CMake entity is always defined by a `CMakeLists.txt` file.
 
-- [Bare Minimum Example]({{< ref "tools/CMake/bare-minimum.md" >}})
-- [File Templating]({{< ref "tools/CMake/templating.md" >}})
-
 ### Bare Minimum Example
 
 ```sh
