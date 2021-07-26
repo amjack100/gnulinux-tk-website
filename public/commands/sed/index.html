@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>touch &middot; GNU/Linux Toolkit</title>
+  <title>sed &middot; GNU/Linux Toolkit</title>
   <meta name="description" content="" />
 
   
@@ -50,8 +50,8 @@
 
     <main class="content container">
     <div class="post">
-  <h1>touch</h1>
-  <time datetime=2021-07-15T11:51:11-0400 class="post-date">Thu, Jul 15, 2021</time>
+  <h1>sed</h1>
+  <time datetime=2021-07-25T08:27:22-0400 class="post-date">Sun, Jul 25, 2021</time>
 
   
 
@@ -73,7 +73,7 @@
        
       <thead>
         <tr>
-      <th style="text-align:left">touch</th>
+      <th style="text-align:left">sed</th>
       <th style="text-align:right"></th>
         </tr>
       </thead>
@@ -84,7 +84,7 @@
       <tbody>
         <tr>
       <td style="text-align:left">package</td>
-      <td style="text-align:right">GNU Coreutils</td>
+      <td style="text-align:right">Standalone (GNU sed)</td>
         </tr>
       </tbody>
       
@@ -104,7 +104,7 @@
       <tbody>
         <tr>
       <td style="text-align:left">usage</td>
-      <td style="text-align:right">direct</td>
+      <td style="text-align:right">scripts and command line</td>
         </tr>
       </tbody>
       
@@ -114,13 +114,16 @@
 
 
 
-  <p><code>touch</code> is command used to update the access and modification times of a file.
-It is most commonly used as a quick way of creating a new, empty file.</p>
+  <p><code>sed</code> is a tool for editing text. It is a <strong>s</strong>tream <strong>ed</strong>itor, meaning it can
+accomplish the same tasks as a traditional text editor by iterating through streams
+of text with commands.</p>
 <h2 id="most-common-usages">Most Common Usages</h2>
-<p>Create an empty file.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">touch file.txt
-</code></pre></div><p>Update the timestamp of a file without creating a new one if it doesn&rsquo;t exist.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">touch -c existingfile.txt
+<p>The &rsquo;s' (substitute) command is the most important <code>sed</code> command.
+<br>
+Preview replacement of all matching patterns in a file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sed <span style="color:#e6db74">&#39;s/old/new&#39;</span> file.txt
+</code></pre></div><p>Write replacement of all matching patterns in a file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sed -i <span style="color:#e6db74">&#39;s/old/new&#39;</span> file.txt
 </code></pre></div><h2 id="configuration">Configuration</h2>
 <p>N/A</p>
 

@@ -6,7 +6,16 @@
     <description>Recent content in Tools on GNU/Linux Toolkit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Jul 2021 11:06:34 -0400</lastBuildDate><atom:link href="http://150.136.68.59/tools/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Jul 2021 18:16:03 -0400</lastBuildDate><atom:link href="http://150.136.68.59/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>make</title>
+      <link>http://150.136.68.59/tools/make/</link>
+      <pubDate>Sun, 25 Jul 2021 18:16:03 -0400</pubDate>
+      
+      <guid>http://150.136.68.59/tools/make/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>templating</title>
       <link>http://150.136.68.59/tools/cmake/templating/</link>

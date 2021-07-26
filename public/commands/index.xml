@@ -6,7 +6,19 @@
     <description>Recent content in Commands on GNU/Linux Toolkit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Jul 2021 07:50:03 -0400</lastBuildDate><atom:link href="http://150.136.68.59/commands/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Jul 2021 08:27:22 -0400</lastBuildDate><atom:link href="http://150.136.68.59/commands/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>sed</title>
+      <link>http://150.136.68.59/commands/sed/</link>
+      <pubDate>Sun, 25 Jul 2021 08:27:22 -0400</pubDate>
+      
+      <guid>http://150.136.68.59/commands/sed/</guid>
+      <description>sed is a tool for editing text. It is a stream editor, meaning it can accomplish the same tasks as a traditional text editor by iterating through streams of text with commands.
+Most Common Usages The &amp;rsquo;s&#39; (substitute) command is the most important sed command. Preview replacement of all matching patterns in a file.
+sed &amp;#39;s/old/new&amp;#39; file.txt Write replacement of all matching patterns in a file.
+sed -i &amp;#39;s/old/new&amp;#39; file.txt Configuration N/A</description>
+    </item>
+    
     <item>
       <title>ln</title>
       <link>http://150.136.68.59/commands/ln/</link>
