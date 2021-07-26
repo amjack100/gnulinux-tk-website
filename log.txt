@@ -1,5 +1,27 @@
-Mon Jul 26 09:59:54 EDT 2021
+Mon Jul 26 10:59:47 EDT 2021
 Start building sites … 
 hugo v0.86.0+extended linux/amd64 BuildDate=2021-07-21T14:03:40Z
-Error: Error building site: failed to render pages: render of "section" failed: "/home/andy/Experiments/html/quickstart/layouts/_default/list.html:14:9": execute of template failed: template: _default/list.html:14:9: executing "_default/list.html" at <.complexity>: can't evaluate field complexity in type interface {}
-Total in 21 ms
+WARN 2021/07/26 10:59:47 Page.URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url
+
+                   | EN  
+-------------------+-----
+  Pages            | 24  
+  Paginator pages  |  0  
+  Non-page files   |  0  
+  Static files     |  6  
+  Processed images |  0  
+  Aliases          |  0  
+  Sitemaps         |  1  
+  Cleaned          |  0  
+
+Total in 33 ms
+404.html
+apple-touch-icon-144-precomposed.png
+categories
+css
+favicon.png
+index.html
+index.xml
+sitemap.xml
+tags
+tools

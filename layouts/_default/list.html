@@ -1,25 +1,53 @@
-<h1>Tools</h1>
-<body>
+{{ define "main" -}}
+  <h1>Tools</h1>
+  <h2>Complex</h2>
 
-  {{ .Content }}
+  <p>
+  Highly complicated tools usually with either hundreds of configuration options
+  or their own language syntax. One should approach these tools with a mindset on par
+  with learning a new programming language. 
+  </p>
 
   {{ range .Pages }}
 
+  {{ if in .Site.Data.complexities.high .Title }} 
 
-  {{ $array := where .Site.Data.complexities "name" "==" .Title }}
-
-  {{ range $key, $value := $array }}
-
-  {{ range $key2, $value2 := $value }}
-  <h1>{{ .complexity }}<h2>
-
-  {{ end }}
+  <a href="{{.URL}}">{{.Title}}</a> <br>
+  {{ end }} 
   {{ end }}
 
 
+  <h2>Mid</h2>
+  <p>
+  Non-trivial tools which require some experience to use effectively. These usually
+  have somewhat  configuration files which utilize multiple data structures.
+
+  </p>
+
+  {{ range .Pages }}
+
+  {{ if in .Site.Data.complexities.mid .Title }} 
 
   <a href="{{.URL}}">{{.Title}}</a> <br>
 
   {{ end }}
+  {{ end }}
 
-</body>
+
+  <h2>Simple</h2>
+
+  {{ range .Pages }}
+
+  {{ if in .Site.Data.complexities.low .Title }} 
+
+  {{ else if in .Site.Data.complexities.high .Title }}
+
+  {{ else }}
+
+<time class="pull-right post-list" datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">
+  <a href="{{.URL}}">{{.Title}}</a> <br>
+
+  {{ end }}
+  {{ end }}
+
+{{- end }}
