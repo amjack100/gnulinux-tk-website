@@ -4,8 +4,8 @@ date: 2021-07-14T08:06:58-04:00
 draft: true
 ---
 
-`man` is used to display the user **man**ual of a command. Manuals are divided into
-these sections:
+`man` is used to display user **man**uals typical stored in /usr/share/man
+. Manuals are divided into these sections:
 
 1. User commands and tools
 2. Linux system calls

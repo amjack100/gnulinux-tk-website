@@ -135,7 +135,7 @@ touch -c existingfile.txt Configuration N/A</description>
       <pubDate>Wed, 14 Jul 2021 08:06:58 -0400</pubDate>
       
       <guid>http://150.136.68.59/tools/man/</guid>
-      <description>man is used to display the user manual of a command. Manuals are divided into these sections:
+      <description>man is used to display user manuals typical stored in /usr/share/man . Manuals are divided into these sections:
  User commands and tools Linux system calls Library functions (system call wrappers) which implement system calls Special files (devices) File formats and corresponding C structures (if any) &amp;ldquo;Games and funny little programs&amp;rdquo; Miscellaneous Administration and privileged commands Kernel routines [Non standard]  Use man &amp;lt;number&amp;gt; intro to read more about each section (except 9).</description>
     </item>
     

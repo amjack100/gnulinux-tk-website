@@ -6,6 +6,7 @@ theme: "hyde"
 sectionPagesMenu: "main"
 publishDir: ".public"
 resourceDir: ".resources"
+themesDir : ".themes"
 
 
 Params:
