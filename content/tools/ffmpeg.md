@@ -5,4 +5,3 @@ draft: true
 ---
 
 `ffmpeg` is a video and image manipulator tool that can do just about anything.
-

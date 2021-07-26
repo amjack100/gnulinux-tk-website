@@ -61,10 +61,32 @@
 be cross platform.</p>
 <p>The root of a CMake entity is always defined by a <code>CMakeLists.txt</code> file.</p>
 <ul>
-<li><a href="http://150.136.68.59/tools/cmake/bare-minimum/">Bare Minimum Example</a></li>
-<li><a href="http://150.136.68.59/tools/cmake/templating/">File Templating</a></li>
+<li><a href="">Bare Minimum Example</a></li>
+<li><a href="">File Templating</a></li>
 </ul>
-
+<h3 id="bare-minimum-example">Bare Minimum Example</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">.
+├── CMakeLists.txt
+└── main.cpp
+</code></pre></div><p><code>CMakeLists.txt</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmake" data-lang="cmake">cmake_minimum_required(<span style="color:#e6db74">VERSION</span> <span style="color:#e6db74">3.10</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>project(<span style="color:#e6db74">Main</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>add_executable(<span style="color:#e6db74">Main</span> <span style="color:#e6db74">main.cpp</span>)<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mkdir build
+cd build <span style="color:#f92672">&amp;&amp;</span> cmake ..
+</code></pre></div><h3 id="file-templating">File Templating</h3>
+<p>CMake can format input files with variables specified in CMakeLists.txt,
+and produce an output in the build folder.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">.
+├── CMakeLists.txt
+└── format-in.txt
+</code></pre></div><p><code>CMakeLists.txt</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmake" data-lang="cmake">configure_file(<span style="color:#e6db74">format-in.txt</span> <span style="color:#e6db74">format-out.txt</span>)<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p><code>format-in.txt</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">The project version is: @Main_VERSION_MAJOR@
+</code></pre></div>
 </div>
 
 

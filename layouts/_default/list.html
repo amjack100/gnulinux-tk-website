@@ -1,0 +1,12 @@
+<h1>test</h1>
+<body>
+
+  {{ .Content }}
+
+  {{ range .Pages }}
+
+  <a href="{{.URL}}">{{.Title}}</a> <br>
+
+  {{ end }}
+
+</body>

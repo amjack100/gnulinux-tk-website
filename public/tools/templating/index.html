@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>make &middot; GNU/Linux Toolkit</title>
+  <title>templating &middot; GNU/Linux Toolkit</title>
   <meta name="description" content="" />
 
   
@@ -50,25 +50,24 @@
 
     <main class="content container">
     <div class="post">
-  <h1>make</h1>
-  <time datetime=2021-07-25T18:16:03-0400 class="post-date">Sun, Jul 25, 2021</time>
+  <h1>templating</h1>
+  <time datetime=2021-07-21T11:06:34-0400 class="post-date">Wed, Jul 21, 2021</time>
 
   
 
   
 
-  <p><code>make</code> is a tool for organizing a build process for any programming language. Most
-programming projects involve some of sequential process of compiling source code
-files using various commands. A hierarchy develops where certain files might depend
-on the existence of others in order to assure a successful compilation, and therefore
-a successful program.
-<br>
-<br>
-At its simplest, <code>make</code> stores a list of these commands under a single name a &ldquo;Makefile&rdquo;.
-With a Makefile, all of these commands can then be run at once, hiding the
-complexities of the build process and preventing the builder from running
-potentially hundreds of commands manually over and over again.</p>
-
+  <h3 id="file-templating">File Templating</h3>
+<p>CMake can format input files with variables specified in CMakeLists.txt,
+and produce an output in the build folder.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">.
+├── CMakeLists.txt
+└── format-in.txt
+</code></pre></div><p><code>CMakeLists.txt</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmake" data-lang="cmake">configure_file(<span style="color:#e6db74">format-in.txt</span> <span style="color:#e6db74">format-out.txt</span>)<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p><code>format-in.txt</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">The project version is: @Main_VERSION_MAJOR@
+</code></pre></div>
 </div>
 
 

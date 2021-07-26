@@ -56,7 +56,11 @@
     <a href="http://150.136.68.59/tools/make/">make</a>
   </h1>
   <time datetime="2021-07-25T18:16:03-0400" class="post-date">Sun, Jul 25, 2021</time>
+  make is a tool for organizing a build process for any programming language. Most programming projects involve some of sequential process of compiling source code files using various commands. A hierarchy develops where certain files might depend on the existence of others in order to assure a successful compilation, and therefore a successful program. At its simplest, make stores a list of these commands under a single name a &ldquo;Makefile&rdquo;. With a Makefile, all of these commands can then be run at once, hiding the complexities of the build process and preventing the builder from running potentially hundreds of commands manually over and over again.
   
+  <div class="read-more-link">
+    <a href="/tools/make/">Read More…</a>
+  </div>
   
 </article><article class="post">
   <h1 class="post-title">
@@ -81,16 +85,6 @@ sed -i &#39;s/old/new&#39; file.txt Configuration N/A
   
 </article><article class="post">
   <h1 class="post-title">
-    <a href="http://150.136.68.59/tools/cmake/templating/">templating</a>
-  </h1>
-  <time datetime="2021-07-21T11:06:34-0400" class="post-date">Wed, Jul 21, 2021</time>
-  File Templating CMake can format input files with variables specified in CMakeLists.txt, and produce an output in the build folder.
-. ├── CMakeLists.txt └── format-in.txt CMakeLists.txt
-configure_file(format-in.txt format-out.txt)format-in.txt
-The project version is: @Main_VERSION_MAJOR@ 
-  
-</article><article class="post">
-  <h1 class="post-title">
     <a href="http://150.136.68.59/tools/ffmpeg/">ffmpeg</a>
   </h1>
   <time datetime="2021-07-20T18:30:37-0400" class="post-date">Tue, Jul 20, 2021</time>
@@ -103,15 +97,12 @@ The project version is: @Main_VERSION_MAJOR@
   <time datetime="2021-07-20T14:32:04-0400" class="post-date">Tue, Jul 20, 2021</time>
   CMake is a tool that creates build setups for source code, allowing that code to be cross platform.
 The root of a CMake entity is always defined by a CMakeLists.txt file.
- Bare Minimum Example File Templating  
+ Bare Minimum Example File Templating  Bare Minimum Example . ├── CMakeLists.txt └── main.cpp CMakeLists.txt
+cmake_minimum_required(VERSION 3.10)project(Main)add_executable(Main main.cpp)mkdir build cd build &amp;&amp; cmake .. File Templating CMake can format input files with variables specified in CMakeLists.txt, and produce an output in the build folder.
   
-</article><article class="post">
-  <h1 class="post-title">
-    <a href="http://150.136.68.59/tools/cmake/bare-minimum/">cmake</a>
-  </h1>
-  <time datetime="2021-07-20T14:32:04-0400" class="post-date">Tue, Jul 20, 2021</time>
-  Bare Minimum Example . ├── CMakeLists.txt └── main.cpp CMakeLists.txt
-cmake_minimum_required(VERSION 3.10)project(Main)add_executable(Main main.cpp)mkdir build cd build &amp;&amp; cmake .. 
+  <div class="read-more-link">
+    <a href="/tools/cmake/">Read More…</a>
+  </div>
   
 </article><article class="post">
   <h1 class="post-title">
