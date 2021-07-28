@@ -31,5 +31,7 @@ ls -l
 The output of `ls` can be configured through the `dircolors` command which
 modifies the `LS_COLORS` environment variable.
 
-
 ## Notes
+
+The first portion of the output from `ls -l` describes file permissions,
+which can be further understood and modified with `chmod`

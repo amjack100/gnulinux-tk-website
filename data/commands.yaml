@@ -1,3 +1,9 @@
+-
+  name : ls
+  usage : command line
+  configuration : dircolors command
+  service : N/A
+  package : GNU Coreutils
 - 
   name : sed
   usage : scripts and command line
