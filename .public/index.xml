@@ -6,7 +6,21 @@
     <description>Recent content on GNU/Linux Toolkit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Jul 2021 12:14:15 -0400</lastBuildDate><atom:link href="http://150.136.68.59/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Jul 2021 17:44:52 -0400</lastBuildDate><atom:link href="http://150.136.68.59/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ls</title>
+      <link>http://150.136.68.59/tools/ls/</link>
+      <pubDate>Wed, 28 Jul 2021 17:44:52 -0400</pubDate>
+      
+      <guid>http://150.136.68.59/tools/ls/</guid>
+      <description>ls is short for list and displays the contents of a directory.
+Most Common Usages Show the contents of the current directory.
+ls Show directory contents, including hidden files.
+ls -a Show directory contents and information about each item.
+ls -l Configuration The output of ls can be configured through the dircolors command which modifies the LS_COLORS environment variable.
+Notes </description>
+    </item>
+    
     <item>
       <title>find</title>
       <link>http://150.136.68.59/tools/find/</link>
