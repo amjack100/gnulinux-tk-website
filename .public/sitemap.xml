@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://150.136.68.59/</loc>
-    <lastmod>2021-07-28T17:44:52-04:00</lastmod>
+    <loc>http://150.136.68.59/tools/apt/</loc>
+    <lastmod>2021-07-29T10:14:18-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/ls/</loc>
-    <lastmod>2021-07-28T17:44:52-04:00</lastmod>
+    <loc>http://150.136.68.59/</loc>
+    <lastmod>2021-07-29T10:14:18-04:00</lastmod>
   </url><url>
     <loc>http://150.136.68.59/tools/</loc>
+    <lastmod>2021-07-29T10:14:18-04:00</lastmod>
+  </url><url>
+    <loc>http://150.136.68.59/tools/ls/</loc>
     <lastmod>2021-07-28T17:44:52-04:00</lastmod>
   </url><url>
     <loc>http://150.136.68.59/tools/find/</loc>

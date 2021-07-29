@@ -6,7 +6,18 @@
     <description>Recent content on GNU/Linux Toolkit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Jul 2021 17:44:52 -0400</lastBuildDate><atom:link href="http://150.136.68.59/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Jul 2021 10:14:18 -0400</lastBuildDate><atom:link href="http://150.136.68.59/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>apt</title>
+      <link>http://150.136.68.59/tools/apt/</link>
+      <pubDate>Thu, 29 Jul 2021 10:14:18 -0400</pubDate>
+      
+      <guid>http://150.136.68.59/tools/apt/</guid>
+      <description>apt stands for Advanced Pacakge Tool and is the main package management system built into many Linux distributions. apt is intended to be the main means of interactively managing packages, but its features are also available in the subdivided, back-end commands apt-get and apt-cache.
+Most Common Usages ... ... Configuration /etc/apt/sources.list stores package sources/locations /etc/apt/apt.conf APT configuration file /etc/apt/preferences stores particular preferences of specific packages (version, source, etc.)
+An example /etc/apt/apt.</description>
+    </item>
+    
     <item>
       <title>ls</title>
       <link>http://150.136.68.59/tools/ls/</link>
