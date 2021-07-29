@@ -65,12 +65,25 @@ also available in the subdivided, back-end commands <code>apt-get</code> and <co
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">...
 </code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">...
 </code></pre></div><h2 id="configuration">Configuration</h2>
-<p><code>/etc/apt/sources.list</code> stores package sources/locations
+<h3 id="package-sources">Package sources</h3>
+<p><code>/etc/apt/sources.list</code> stores package sources/locations</p>
+<p><em>Example sources.list</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">deb http://us.archive.ubuntu.com/ubuntu focal main restricted
+deb-src http://us.archive.ubuntu.com/ubuntu focal main restricted
+
+deb http://security.ubuntu.com/ubuntu focal-security main restricted
+deb-src http://security.ubuntu.com/ubuntu focal-security main restricted
+
+deb http://us.archive.ubuntu.com/ubuntu focal-updates main restricted
+deb-src http://us.archive.ubuntu.com/ubuntu focal-updates main restricted
+</code></pre></div><p>Line format: <em>archive-type repository-url distribution component</em></p>
+<p><em>Archive type</em> can be <code>deb</code> (pre-compiled, binary packages) or <code>deb-src</code>
+(source packages)</p>
 <br>
-<code>/etc/apt/apt.conf</code> APT configuration file
+`/etc/apt/apt.conf` APT configuration file
 <br>
-<code>/etc/apt/preferences</code> stores particular preferences of specific packages (version,
-source, etc.)</p>
+`/etc/apt/preferences` stores particular preferences of specific packages (version,
+source, etc.)
 <p>An example <code>/etc/apt/apt.conf</code></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">
 APT 

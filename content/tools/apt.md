@@ -21,7 +21,28 @@ also available in the subdivided, back-end commands `apt-get` and `apt-cache`.
 
 ## Configuration
 
+### Package sources
+
 `/etc/apt/sources.list` stores package sources/locations
+
+_Example sources.list_
+
+```txt
+deb http://us.archive.ubuntu.com/ubuntu focal main restricted
+deb-src http://us.archive.ubuntu.com/ubuntu focal main restricted
+
+deb http://security.ubuntu.com/ubuntu focal-security main restricted
+deb-src http://security.ubuntu.com/ubuntu focal-security main restricted
+
+deb http://us.archive.ubuntu.com/ubuntu focal-updates main restricted
+deb-src http://us.archive.ubuntu.com/ubuntu focal-updates main restricted
+```
+
+Line format: _archive-type repository-url distribution component_
+
+_Archive type_ can be `deb` (pre-compiled, binary packages) or `deb-src`
+(source packages)
+
 <br>
 `/etc/apt/apt.conf` APT configuration file
 <br>
