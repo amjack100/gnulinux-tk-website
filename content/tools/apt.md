@@ -49,6 +49,8 @@ _Archive type_ can be `deb` (pre-compiled, binary packages) or `deb-src`
 `/etc/apt/preferences` stores particular preferences of specific packages (version,
 source, etc.)
 
+https://wiki.debian.org/SourcesList
+
 An example `/etc/apt/apt.conf`
 
 ```txt
