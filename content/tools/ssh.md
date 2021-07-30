@@ -4,8 +4,8 @@ date: 2021-07-12T07:33:57-04:00
 draft: true
 ---
 
-ssh is a program for logging into a remote computer and executing commands
-on that computer. ssh connects and logs into the specified destination,
+`ssh` is a program for logging into a remote computer and executing commands
+on that computer. `ssh` connects and logs into the specified destination,
 which may be specified as either [user@]hostname or ssh://[user@]hostname[:port]
 
 The user trying to access the remote computer must prove their identity.

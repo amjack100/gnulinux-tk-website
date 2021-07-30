@@ -1,7 +1,7 @@
-Thu Jul 29 12:03:26 EDT 2021
+Fri Jul 30 11:56:48 EDT 2021
 Start building sites … 
 hugo v0.86.0+extended linux/amd64 BuildDate=2021-07-21T14:03:40Z
-WARN 2021/07/29 12:03:26 Page.URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url
+WARN 2021/07/30 11:56:48 Page.URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url
 
                    | EN  
 -------------------+-----
@@ -14,7 +14,7 @@ WARN 2021/07/29 12:03:26 Page.URL is deprecated and will be removed in a future 
   Sitemaps         |  1  
   Cleaned          |  0  
 
-Total in 30 ms
+Total in 39 ms
 404.html
 apple-touch-icon-144-precomposed.png
 categories

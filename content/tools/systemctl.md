@@ -14,46 +14,49 @@ There are 11 different types of units. Here are the first two:
 
 ## Most Common Usages
 
-List all the servies `systemctl list-units` or just `systemctl`
+List all servies
 
-Start a service
+```sh
+systemctl
+```
+
+Start a service _(where sshd is an example service name)_
 
 ```bash
-systemctl start <unit>
 systemctl start sshd
 ```
 
 Stop a service
 
 ```bash
-systemctl stop <unit>
 systemctl stop sshd
 ```
 
 Restart a service
 
 ```bash
-systemctl restart <unit>
 systemctl restart sshd
 ```
 
 Check the status of a service
 
 ```bash
-systemctl status <unit>
 systemctl status sshd
 ```
 
 Make a service start on system boot
 
 ```bash
-systemctl enable <unit/path>
 systemctl enable sshd
 ```
 
 Stop a service from running on system boot
 
 ```bash
-systemctl disable <unit/path>
 systemctl disable sshd
 ```
+
+## Configuration
+-
+-
+

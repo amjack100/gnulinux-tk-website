@@ -211,7 +211,7 @@ ssh -i ~/.ssh/some-private-key.key john@100.</description>
       
       <guid>http://150.136.68.59/tools/systemctl/</guid>
       <description>systemctl is a tool for tapping into systemd, a program which will always be running in the background. systemd calls everything &amp;ldquo;units&amp;rdquo;, which are just files which each maintain a more specialized part of the whole system. There are 11 different types of units. Here are the first two:
- Service units - start and control daemons (programs that run in the background) Socket units - represent &amp;ldquo;sockets&amp;rdquo; which have to do with network connections  Most Common Usages List all the servies systemctl list-units or just systemctl</description>
+ Service units - start and control daemons (programs that run in the background) Socket units - represent &amp;ldquo;sockets&amp;rdquo; which have to do with network connections  Most Common Usages List all servies</description>
     </item>
     
   </channel>
