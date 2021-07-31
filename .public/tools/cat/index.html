@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>ssh &middot; GNU/Linux Toolkit</title>
+  <title>cat / tac &middot; GNU/Linux Toolkit</title>
   <meta name="description" content="" />
 
   
@@ -50,8 +50,8 @@
 
     <main class="content container">
     <div class="post">
-  <h1>ssh</h1>
-  <time datetime=2021-07-12T07:33:57-0400 class="post-date">Mon, Jul 12, 2021</time>
+  <h1>cat / tac</h1>
+  <time datetime=2021-07-31T09:01:26-0400 class="post-date">Sat, Jul 31, 2021</time>
 
   
 
@@ -64,7 +64,7 @@
       <tbody>
         <tr>
       <td style="text-align:left">configuration</td>
-      <td style="text-align:right">~/.ssh/config</td>
+      <td style="text-align:right">N/A</td>
         </tr>
       </tbody>
       
@@ -73,7 +73,7 @@
        
       <thead>
         <tr>
-      <th style="text-align:left">ssh</th>
+      <th style="text-align:left">cat / tac</th>
       <th style="text-align:right"></th>
         </tr>
       </thead>
@@ -84,7 +84,7 @@
       <tbody>
         <tr>
       <td style="text-align:left">package</td>
-      <td style="text-align:right">None (standalone)</td>
+      <td style="text-align:right">GNU Coreutils</td>
         </tr>
       </tbody>
       
@@ -94,7 +94,7 @@
       <tbody>
         <tr>
       <td style="text-align:left">service</td>
-      <td style="text-align:right">sshd.service</td>
+      <td style="text-align:right">N/A</td>
         </tr>
       </tbody>
       
@@ -104,7 +104,7 @@
       <tbody>
         <tr>
       <td style="text-align:left">usage</td>
-      <td style="text-align:right">direct</td>
+      <td style="text-align:right">direct / scripts</td>
         </tr>
       </tbody>
       
@@ -114,35 +114,21 @@
 
 
 
-  <p><code>ssh</code> is a program for logging into a remote computer and executing commands
-on that computer. <code>ssh</code> connects and logs into the specified destination,
-which may be specified as either [user@]hostname or ssh://[user@]hostname[:port]</p>
-<p>The user trying to access the remote computer must prove their identity.</p>
+  <p><code>cat</code> is a tool for con<strong>cat</strong>entaing files, although its most frequent use
+involves simply displaying file content to the terminal. <code>tac</code> does the exact
+same thing, except lines are output in reverse order.</p>
 <h2 id="most-common-usages">Most Common Usages</h2>
-<p>Access a remote machine by providing a private key as input</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ssh -i &lt;private key file&gt; &lt;username&gt;@&lt;hostname&gt; 
-</code></pre></div><p>For example</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ssh -i ~/.ssh/some-private-key.key john@100.100.10.10 
+<p>View the contents of a file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cat file.txt
+</code></pre></div><p>Send the contents of a file to a new file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cat file.txt &gt; newfile.txt
+</code></pre></div><p>Append the contents of a file to the end of an existing file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cat file.txt &gt;&gt; existingfile.txt
+</code></pre></div><p>Prepend the contents of a file to the start of an existing file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cat first.txt second.txt &gt; newfile.txt
 </code></pre></div><h2 id="configuration">Configuration</h2>
-<p>Save a host for easy access</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">~/.ssh/config
+<p>N/A</p>
 
-Host &lt;myserver&gt;
-    Hostname &lt;server-address&gt;
-    IdentityFile &lt;private-key-file&gt;
-    User &lt;user&gt;
-
-Host website
-    Hostname 000.000.00.00
-    IdentityFile ~/.ssh/some-private-key.key
-    User john
-</code></pre></div><p>Then, from the command line</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ssh website
-</code></pre></div><h2 id="notes">Notes</h2>
-<p>In order for graphical terminal programs to function properly, it can be
-necessary to add the &ldquo;-t&rdquo; flag which &ldquo;forces pseudo-terminal allocation&rdquo;</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ssh -t ...
-</code></pre></div>
 </div>
 
 

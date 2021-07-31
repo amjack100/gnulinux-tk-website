@@ -1,4 +1,10 @@
 -
+  name : cat / tac
+  usage : direct / scripts
+  configuration : N/A
+  service : N/A
+  package : GNU Coreutils
+-
   name : ls
   usage : command line
   configuration : dircolors command
