@@ -1,10 +1,14 @@
 ---
-title: "ls"
+title: "ls / dir / vdir"
 date: 2021-07-28T17:44:52-04:00
 draft: true
 ---
 
 `ls` is short for _list_ and displays the contents of a directory.
+<br>
+`dir` is equivalent to `ls -C -b`
+<br>
+`vdir` is equivalent to `ls -l -b`
 
 ## Most Common Usages
 

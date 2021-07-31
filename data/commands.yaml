@@ -5,7 +5,7 @@
   service : N/A
   package : GNU Coreutils
 -
-  name : ls
+  name : ls / dir / vdir
   usage : command line
   configuration : dircolors command
   service : N/A
