@@ -67,6 +67,7 @@ customizing each of the types of unit files.</p>
 <h2 id="most-common-usages">Most Common Usages</h2>
 <p><em><code>systemd</code> is hardly ever invoked directly, but instead called by the system.
 <code>systemctl</code> and<code>journalctl</code> provide entry points.</em></p>
+<h3 id="systemctl">systemctl</h3>
 <p>List all the running units</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">systemctl
 </code></pre></div><p>Start/stop/restart a service <em>(where sshd is an example service name)</em></p>
@@ -78,14 +79,37 @@ systemctl restart sshd
 </code></pre></div><p>Enable/disable a service to start on system boot</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">systemctl enable sshd
 systemctl disable sshd
+</code></pre></div><h3 id="journalctl">journalctl</h3>
+<p>Watch a live feed of systemd logs</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">journalctl -f
+</code></pre></div><p>Get the logs of a single service</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo journalctl -u sshd
 </code></pre></div><h2 id="configuration">Configuration</h2>
 <p>Creating a custom service</p>
-<p>A new .service file should be created in <code>/etc/systemd/system</code>. Symlinked
-files placed elsewhere will not work with the <code>systemctl enable</code> command and
-therefore won&rsquo;t be able to be triggered on system startup.
+<p>A new .service file should be created like so in one of these directories.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">/etc/systemd/system/new_service.service 
+<span style="color:#75715e"># sudo systemctl start new_service</span>
+~/.config/systemd/user/new_service.service 
+<span style="color:#75715e"># systemctl --user start new_service</span>
+</code></pre></div><p><em>Symlinked</em> files placed elsewhere will not work with the <code>systemctl enable</code>
+command and therefore won&rsquo;t be able to be triggered on system startup.
 <br>
-<code>/etc/systemd/system/new_service.service</code>
-<br></p>
+Here&rsquo;s a simple example.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#66d9ef">[Unit]</span>
+<span style="color:#a6e22e">Description</span><span style="color:#f92672">=</span><span style="color:#e6db74">A New Service</span>
+
+<span style="color:#66d9ef">[Service]</span>
+<span style="color:#a6e22e">Type</span><span style="color:#f92672">=</span><span style="color:#e6db74">simple</span>
+<span style="color:#a6e22e">Environment</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ONE=one&#34;</span>
+<span style="color:#a6e22e">ExecStart</span><span style="color:#f92672">=</span><span style="color:#e6db74">/home/user/background-script.sh $ONE</span>
+
+<span style="color:#66d9ef">[Install]</span>
+<span style="color:#a6e22e">WantedBy</span><span style="color:#f92672">=</span><span style="color:#e6db74">mutli-user.target</span>
+</code></pre></div><p>Note: [Install] is required for systemctl enable
+<br>
+Use <code>man systemd.service</code> to see all the types and options.
+There are certain options such as ExecStartPre, ExecStartPost, ExecReload, etc.
+which provide additional command triggers.</p>
 
 </div>
 

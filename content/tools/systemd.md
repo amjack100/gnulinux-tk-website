@@ -17,6 +17,8 @@ customizing each of the types of unit files.
 _`systemd` is hardly ever invoked directly, but instead called by the system.
 `systemctl` and`journalctl` provide entry points._
 
+### systemctl
+
 List all the running units
 
 ```sh
@@ -44,13 +46,54 @@ systemctl enable sshd
 systemctl disable sshd
 ```
 
+### journalctl
+
+Watch a live feed of systemd logs
+
+```sh
+journalctl -f
+```
+
+Get the logs of a single service
+
+```sh
+sudo journalctl -u sshd
+```
+
 ## Configuration
 
 Creating a custom service
 
-A new .service file should be created in `/etc/systemd/system`. Symlinked
-files placed elsewhere will not work with the `systemctl enable` command and
-therefore won't be able to be triggered on system startup.
+A new .service file should be created like so in one of these directories.
+
+```sh
+/etc/systemd/system/new_service.service 
+# sudo systemctl start new_service
+~/.config/systemd/user/new_service.service 
+# systemctl --user start new_service
+```
+
+_Symlinked_ files placed elsewhere will not work with the `systemctl enable`
+command and therefore won't be able to be triggered on system startup.
 <br>
-`/etc/systemd/system/new_service.service`
+Here's a simple example.
+
+```ini
+[Unit]
+Description=A New Service
+
+[Service]
+Type=simple
+Environment="ONE=one"
+ExecStart=/home/user/background-script.sh $ONE
+
+[Install]
+WantedBy=mutli-user.target
+```
+
+Note: [Install] is required for systemctl enable
 <br>
+Use `man systemd.service` to see all the types and options.
+There are certain options such as ExecStartPre, ExecStartPost, ExecReload, etc.
+which provide additional command triggers.
+
