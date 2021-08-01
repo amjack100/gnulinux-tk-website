@@ -41,7 +41,7 @@
     <nav>
       <ul class="sidebar-nav">
         <li><a href="http://150.136.68.59/">Home</a> </li>
-        
+        <li><a href="/tools/"> Tools </a></li>
       </ul>
     </nav>
 
@@ -51,7 +51,246 @@
 
     <main class="content container">
     <div class="posts">
-
+<article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/tools/cat/">cat / tac</a>
+  </h1>
+  <time datetime="2021-07-31T09:01:26-0400" class="post-date">Sat, Jul 31, 2021</time>
+  cat is a tool for concatentaing files, although its most frequent use involves simply displaying file content to the terminal. tac does the exact same thing, except lines are output in reverse order.
+Most Common Usages View the contents of a file.
+cat file.txt Send the contents of a file to a new file.
+cat file.txt &gt; newfile.txt Append the contents of a file to the end of an existing file.
+  
+  <div class="read-more-link">
+    <a href="/tools/cat/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/tools/apt/">apt</a>
+  </h1>
+  <time datetime="2021-07-29T10:14:18-0400" class="post-date">Thu, Jul 29, 2021</time>
+  apt stands for Advanced Pacakge Tool and is the main package management system built into many Linux distributions. apt is intended to be the main means of interactively managing packages, but its features are also available in the subdivided, back-end commands apt-get and apt-cache.
+Most Common Usages ... ... Configuration Package sources /etc/apt/sources.list stores package sources/locations
+Example sources.list
+deb http://us.archive.ubuntu.com/ubuntu focal main restricted deb-src http://us.archive.ubuntu.com/ubuntu focal main restricted deb http://security.ubuntu.com/ubuntu focal-security main restricted deb-src http://security.
+  
+  <div class="read-more-link">
+    <a href="/tools/apt/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/tools/ls/">ls / dir / vdir</a>
+  </h1>
+  <time datetime="2021-07-28T17:44:52-0400" class="post-date">Wed, Jul 28, 2021</time>
+  ls is short for list and displays the contents of a directory. dir is equivalent to ls -C -b vdir is equivalent to ls -l -b
+Most Common Usages Show the contents of the current directory.
+ls Show directory contents, including hidden files.
+ls -a Show directory contents and information about each item.
+ls -l Configuration The output of ls can be configured through the dircolors command which modifies the LS_COLORS environment variable.
+  
+  <div class="read-more-link">
+    <a href="/tools/ls/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/tools/find/">find</a>
+  </h1>
+  <time datetime="2021-07-26T12:14:15-0400" class="post-date">Mon, Jul 26, 2021</time>
+  find is the primary built-in utility for finding files on a GNU/Linux system.
+Most Common Usages The first 2 examples begin searching from the current working directory.
+Find files that match a search pattern
+find -iname &#39;*.txt&#39; -iname means &ldquo;case insensitive&rdquo;, which can in general be more helpful than -name.
+Find files that have been modified within a specific time frame
+find -cmin -20 Where the last modified time is 20 minutes
+  
+  <div class="read-more-link">
+    <a href="/tools/find/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/tools/make/">make</a>
+  </h1>
+  <time datetime="2021-07-25T18:16:03-0400" class="post-date">Sun, Jul 25, 2021</time>
+  make is a tool for organizing a build process for any programming language. Most programming projects involve some of sequential process of compiling source code files using various commands. A hierarchy develops where certain files might depend on the existence of others in order to assure a successful compilation, and therefore a successful program. At its simplest, make stores a list of these commands under a single name a &ldquo;Makefile&rdquo;. With a Makefile, all of these commands can then be run at once, hiding the complexities of the build process and preventing the builder from running potentially hundreds of commands manually over and over again.
+  
+  <div class="read-more-link">
+    <a href="/tools/make/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/tools/sed/">sed</a>
+  </h1>
+  <time datetime="2021-07-25T08:27:22-0400" class="post-date">Sun, Jul 25, 2021</time>
+  sed is a tool for editing text. It is a stream editor, meaning it can accomplish the same tasks as a traditional text editor by iterating through streams of text with commands.
+Most Common Usages The &rsquo;s' (substitute) command is the most important sed command. Preview replacement of all matching patterns in a file.
+sed &#39;s/old/new&#39; file.txt Write replacement of all matching patterns in a file.
+sed -i &#39;s/old/new&#39; file.txt Configuration N/A
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/tools/ln/">ln</a>
+  </h1>
+  <time datetime="2021-07-22T07:50:03-0400" class="post-date">Thu, Jul 22, 2021</time>
+  ln is a tool for creating links between files. It can create the two different types of links: soft/symbolic links and hard links. A soft link is like the equivalent of a Windows shortcut icon. When a program reads a soft link, it is redirected to where the file is. A hard link is basically like giving a file another name. When a program reads a hard link, it reads the exact data block as the original file.
+  
+  <div class="read-more-link">
+    <a href="/tools/ln/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/tools/ffmpeg/">ffmpeg</a>
+  </h1>
+  <time datetime="2021-07-20T18:30:37-0400" class="post-date">Tue, Jul 20, 2021</time>
+  ffmpeg is a video and image manipulator tool that can do just about anything.
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/tools/cmake/">cmake</a>
+  </h1>
+  <time datetime="2021-07-20T14:32:04-0400" class="post-date">Tue, Jul 20, 2021</time>
+  CMake is a tool that creates build setups for source code, allowing that code to be cross platform.
+The root of a CMake entity is always defined by a CMakeLists.txt file.
+Bare Minimum Example . ├── CMakeLists.txt └── main.cpp CMakeLists.txt
+cmake_minimum_required(VERSION 3.10)project(Main)add_executable(Main main.cpp)mkdir build cd build &amp;&amp; cmake .. File Templating CMake can format input files with variables specified in CMakeLists.txt, and produce an output in the build folder.
+. ├── CMakeLists.
+  
+  <div class="read-more-link">
+    <a href="/tools/cmake/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/tools/chown/">chown</a>
+  </h1>
+  <time datetime="2021-07-20T08:28:02-0400" class="post-date">Tue, Jul 20, 2021</time>
+  chown is a tool for changing the owner of a file or directory. To see the owner of file.txt, use the command ls -l file.txt. The output is:
+ -rw-rw-r-- 1 john staff 23 Jul 2 08:45 file.txt  where &ldquo;john&rdquo; is the file&rsquo;s owner. chown is also capable of changing the file group, (in this case &ldquo;staff&rdquo;), doing the exact same thing as chgrp.
+Most Common Usages Change the owner of a file.
+  
+  <div class="read-more-link">
+    <a href="/tools/chown/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/tools/uname/">uname</a>
+  </h1>
+  <time datetime="2021-07-19T08:51:11-0400" class="post-date">Mon, Jul 19, 2021</time>
+  uname, short for unix name, is a simple tool for getting information about the current system.
+Most Common Usages Print system information about the kernel, processor, and operating system.
+uname -a Configuration N/A
+Notes uname offers many flags such as -m and -s (machine and kernel-name) which provide a way for scripts to get specific values.
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/tools/chmod/">chmod</a>
+  </h1>
+  <time datetime="2021-07-18T07:25:34-0400" class="post-date">Sun, Jul 18, 2021</time>
+  chmod is a utility for changing the mode (permissions) of a file or directory. To check the file mode for file.txt, use the command ls -l file.txt. The output is:
+ -rw-rw-r-- 1 user group 23 Jul 2 08:45 file.txt  where -rw-rw-r-- is the file&rsquo;s mode.
+The first dash is the type of file and is not important. The next 9 dashes are mode bits. A letter (r,w,x) means on and a dash means off.
+  
+  <div class="read-more-link">
+    <a href="/tools/chmod/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/tools/du/">du</a>
+  </h1>
+  <time datetime="2021-07-16T08:55:20-0400" class="post-date">Fri, Jul 16, 2021</time>
+  du is a tool for getting information about the disk usage of a file or directory.
+Most Common Usages Get the disk usage of a single file or directory
+du -sh ./directory &hellip; where -sh stands for summarize and human-readable
+Get the size of a single file or directory
+du -bsh ./directory &hellip;where -b is equal to --apparent-size --block-size=1
+Configuration The block size defaults to 1024 bytes but can be modified with the environment variables DU_BLOCK_SIZE, BLOCK_SIZE, or BLOCKSIZE
+  
+  <div class="read-more-link">
+    <a href="/tools/du/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/tools/tput/">tput</a>
+  </h1>
+  <time datetime="2021-07-15T12:09:27-0400" class="post-date">Thu, Jul 15, 2021</time>
+  tput will output a special value from the terminfo database, given a &ldquo;capname&rdquo; as a key. The terminfo database is a set of key value pairs storing information about hundreds of terminals (+ terminal emulators, given that actual terminals hardly exist today). Terminfo database files are held in /etc/terminfo/ but are compressed and require special tools for reading.
+Most Common Usages Write the value of a capname to standard output
+  
+  <div class="read-more-link">
+    <a href="/tools/tput/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/tools/touch/">touch</a>
+  </h1>
+  <time datetime="2021-07-15T11:51:11-0400" class="post-date">Thu, Jul 15, 2021</time>
+  touch is command used to update the access and modification times of a file. It is most commonly used as a quick way of creating a new, empty file.
+Most Common Usages Create an empty file.
+touch file.txt Update the timestamp of a file without creating a new one if it doesn&rsquo;t exist.
+touch -c existingfile.txt Configuration N/A
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/tools/man/">man</a>
+  </h1>
+  <time datetime="2021-07-14T08:06:58-0400" class="post-date">Wed, Jul 14, 2021</time>
+  man is used to display user manuals typical stored in /usr/share/man . Manuals are divided into these sections:
+ User commands and tools Linux system calls Library functions (system call wrappers) which implement system calls Special files (devices) File formats and corresponding C structures (if any) &ldquo;Games and funny little programs&rdquo; Miscellaneous Administration and privileged commands Kernel routines [Non standard]  Use man &lt;number&gt; intro to read more about each section (except 9).
+  
+  <div class="read-more-link">
+    <a href="/tools/man/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/tools/rsync/">rsync</a>
+  </h1>
+  <time datetime="2021-07-13T08:21:30-0400" class="post-date">Tue, Jul 13, 2021</time>
+  rsync is a copying tool that implements a delta-transfer algorithm for extremely fast and efficient transfers. It finds files that have changed in size or last-modified time to determine the necessary updates to the destination.
+If rsync is used over ssh, it requires that both the client and server have the software installed.
+Most Common Usages Copy a directory (recursive) to a remote machine
+rsync -vr ./source-dir server:/destination Copy a directory (recursive) to the host machine
+  
+  <div class="read-more-link">
+    <a href="/tools/rsync/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/tools/ssh/">ssh</a>
+  </h1>
+  <time datetime="2021-07-12T07:33:57-0400" class="post-date">Mon, Jul 12, 2021</time>
+  ssh is a program for logging into a remote computer and executing commands on that computer. ssh connects and logs into the specified destination, which may be specified as either [user@]hostname or ssh://[user@]hostname[:port]
+The user trying to access the remote computer must prove their identity.
+Most Common Usages Access a remote machine by providing a private key as input
+ssh -i &lt;private key file&gt; &lt;username&gt;@&lt;hostname&gt; For example
+ssh -i ~/.ssh/some-private-key.key john@100.
+  
+  <div class="read-more-link">
+    <a href="/tools/ssh/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/tools/systemd/">systemd</a>
+  </h1>
+  <time datetime="2021-07-10T11:53:31-0400" class="post-date">Sat, Jul 10, 2021</time>
+  systemd is the first process run on boot and acts as the manager for all running services (programs which run in the background). The main configuration entities of systemd are simply called &ldquo;units&rdquo;, of which there are 11 different types. The most commonly used unit is the service unit, which are described individually in .service files. There are several commands for tapping into the features of systemd, including systemctl and journalctl, as well as special syntaxes for customizing each of the types of unit files.
+  
+  <div class="read-more-link">
+    <a href="/tools/systemd/">Read More…</a>
+  </div>
+  
+</article>
 </div>
     </main>
 

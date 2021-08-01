@@ -1,5 +1,27 @@
-Sun 01 Aug 2021 11:59:59 AM EDT
+Sun 01 Aug 2021 01:00:00 PM EDT
 Start building sites … 
-hugo v0.86.1+extended linux/amd64 BuildDate=2021-07-30T12:36:07Z
-Error: Error building site: process: readAndProcessContent: walk: Readdir: open /home/andy/.nb/tools: permission denied
-Total in 9 ms
+hugo v0.86.1-F6821B88 linux/amd64 BuildDate=2021-07-30T10:13:35Z VendorInfo=gohugoio
+WARN 2021/08/01 13:00:00 Page.URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url
+
+                   | EN  
+-------------------+-----
+  Pages            | 28  
+  Paginator pages  |  0  
+  Non-page files   |  0  
+  Static files     |  6  
+  Processed images |  0  
+  Aliases          |  0  
+  Sitemaps         |  1  
+  Cleaned          |  0  
+
+Total in 31 ms
+404.html
+apple-touch-icon-144-precomposed.png
+categories
+css
+favicon.png
+index.html
+index.xml
+sitemap.xml
+tags
+tools
