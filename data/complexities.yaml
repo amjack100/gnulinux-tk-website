@@ -6,5 +6,5 @@ high :
 mid : 
  - sed
  - apt
- - systemctl
+ - systemd
 

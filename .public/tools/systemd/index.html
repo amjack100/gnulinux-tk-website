@@ -57,34 +57,35 @@
 
   
 
-  <p><code>systemd</code> is a tool for tapping into systemd, a program which will
-always be running in the background. systemd calls everything &ldquo;units&rdquo;,
-which are just files which each maintain a more specialized part of the whole system.
-There are 11 different types of units. Here are the first two:</p>
-<ol>
-<li>Service units - start and control daemons (programs that run in the background)</li>
-<li>Socket units - represent &ldquo;sockets&rdquo; which have to do with network connections</li>
-</ol>
+  <p><code>systemd</code> is the first process run on boot and acts as the manager for all
+running services (programs which run in the background). The main configuration
+entities of <code>systemd</code> are simply called &ldquo;units&rdquo;, of which there are 11 different
+types. The most commonly used unit is the service unit, which are described
+individually in .service files. There are several commands for tapping into the features
+of systemd, including <code>systemctl</code> and <code>journalctl</code>, as well as special syntaxes for
+customizing each of the types of unit files.</p>
 <h2 id="most-common-usages">Most Common Usages</h2>
-<p>List all servies</p>
+<p><em><code>systemd</code> is hardly ever invoked directly, but instead called by the system.
+<code>systemctl</code> and<code>journalctl</code> provide entry points.</em></p>
+<p>List all the running units</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">systemctl
-</code></pre></div><p>Start a service <em>(where sshd is an example service name)</em></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">systemctl start sshd
-</code></pre></div><p>Stop a service</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">systemctl stop sshd
-</code></pre></div><p>Restart a service</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">systemctl restart sshd
+</code></pre></div><p>Start/stop/restart a service <em>(where sshd is an example service name)</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">systemctl start sshd
+systemctl stop sshd
+systemctl restart sshd
 </code></pre></div><p>Check the status of a service</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">systemctl status sshd
-</code></pre></div><p>Make a service start on system boot</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">systemctl enable sshd
-</code></pre></div><p>Stop a service from running on system boot</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">systemctl disable sshd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">systemctl status sshd
+</code></pre></div><p>Enable/disable a service to start on system boot</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">systemctl enable sshd
+systemctl disable sshd
 </code></pre></div><h2 id="configuration">Configuration</h2>
-<ul>
-<li></li>
-<li></li>
-</ul>
+<p>Creating a custom service</p>
+<p>A new .service file should be created in <code>/etc/systemd/system</code>. Symlinked
+files placed elsewhere will not work with the <code>systemctl enable</code> command and
+therefore won&rsquo;t be able to be triggered on system startup.
+<br>
+<code>/etc/systemd/system/new_service.service</code>
+<br></p>
 
 </div>
 

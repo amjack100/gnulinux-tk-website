@@ -216,13 +216,12 @@ ssh -i ~/.ssh/some-private-key.key john@100.</description>
     </item>
     
     <item>
-      <title>systemctl</title>
-      <link>http://150.136.68.59/tools/systemctl/</link>
+      <title>systemd</title>
+      <link>http://150.136.68.59/tools/systemd/</link>
       <pubDate>Sat, 10 Jul 2021 11:53:31 -0400</pubDate>
       
-      <guid>http://150.136.68.59/tools/systemctl/</guid>
-      <description>systemctl is a tool for tapping into systemd, a program which will always be running in the background. systemd calls everything &amp;ldquo;units&amp;rdquo;, which are just files which each maintain a more specialized part of the whole system. There are 11 different types of units. Here are the first two:
- Service units - start and control daemons (programs that run in the background) Socket units - represent &amp;ldquo;sockets&amp;rdquo; which have to do with network connections  Most Common Usages List all servies</description>
+      <guid>http://150.136.68.59/tools/systemd/</guid>
+      <description>systemd is the first process run on boot and acts as the manager for all running services (programs which run in the background). The main configuration entities of systemd are simply called &amp;ldquo;units&amp;rdquo;, of which there are 11 different types. The most commonly used unit is the service unit, which are described individually in .service files. There are several commands for tapping into the features of systemd, including systemctl and journalctl, as well as special syntaxes for customizing each of the types of unit files.</description>
     </item>
     
   </channel>
