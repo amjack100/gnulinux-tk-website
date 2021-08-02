@@ -8,10 +8,10 @@ publishDir: ".public"
 resourceDir: ".resources"
 themesDir : ".themes"
 
-module:
-  mounts:
-    - source: /home/andy/.nb/tools
-      target: content/tools
+#module:
+  #mounts:
+    #- source: /home/andy/.nb/tools
+      #target: content/tools
 
 Params:
   description: "Consise command line refreshers"
