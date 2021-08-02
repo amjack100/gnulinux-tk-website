@@ -25,10 +25,8 @@ cat file.txt &amp;gt; newfile.txt Append the contents of a file to the end of an
       <pubDate>Thu, 29 Jul 2021 10:14:18 -0400</pubDate>
       
       <guid>http://150.136.68.59/tools/apt/</guid>
-      <description>apt stands for Advanced Pacakge Tool and is the main package management system built into many Linux distributions. apt is intended to be the main means of interactively managing packages, but its features are also available in the subdivided, back-end commands apt-get and apt-cache.
-Most Common Usages ... ... Configuration Package sources /etc/apt/sources.list stores package sources/locations
-Example sources.list
-deb http://us.archive.ubuntu.com/ubuntu focal main restricted deb-src http://us.archive.ubuntu.com/ubuntu focal main restricted deb http://security.ubuntu.com/ubuntu focal-security main restricted deb-src http://security.</description>
+      <description>apt stands for Advanced Pacakge Tool and is the main package management system built into many Linux distributions. apt is intended to be the main means of interactively managing packages, but its features are also available in the back-end commands apt-get and apt-cache. apt is the middle man between a remote repository and dpkg. It will check for dependencies, download packages, and use dpkg to install them.
+Most Common Usages .</description>
     </item>
     
     <item>
