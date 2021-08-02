@@ -1,7 +1,7 @@
-Mon 02 Aug 2021 10:00:00 AM EDT
+Mon 02 Aug 2021 11:00:00 AM EDT
 Start building sites … 
 hugo v0.86.1-F6821B88 linux/amd64 BuildDate=2021-07-30T10:13:35Z VendorInfo=gohugoio
-WARN 2021/08/02 10:00:00 Page.URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url
+WARN 2021/08/02 11:00:01 Page.URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url
 
                    | EN  
 -------------------+-----
