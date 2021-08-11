@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.86.1" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>grep &middot; GNU/Linux Toolkit</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="http://150.136.68.59/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://150.136.68.59/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://150.136.68.59/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://150.136.68.59/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://150.136.68.59/"><h1>GNU/Linux Toolkit</h1></a>
+      <p class="lead">
+       Consise command line refreshers 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://150.136.68.59/">Home</a> </li>
+        <li><a href="/tools/"> Tools </a></li>
+      </ul>
+    </nav>
+
+    <p>&copy; 2021. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>grep</h1>
+  <time datetime=2021-08-06T11:52:52-0400 class="post-date">Fri, Aug 6, 2021</time>
+
+  
+
+  
+
+  <p><code>grep</code> is a very commonly used tool for searching for patterns of text
+within files or an output stream.</p>
+<h2 id="most-common-usages">Most Common Usages</h2>
+<p>Search a single file for a matching pattern.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cat file.txt | grep pattern
+</code></pre></div><p>Search though files across multiple directories for a matching pattern.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">grep nvidia /etc/modprobe.d/* /lib/modprobe.d/*
+</code></pre></div><p>In this case, <code>grep</code> will locate all the files in <code>/etc/modprobe.d</code> and <code>/lib/modprobe.d</code>
+containing the word &ldquo;nvidia&rdquo;, and output the full line of the file where it occurs.</p>
+<h2 id="configuration">Configuration</h2>
+<p>&ndash;</p>
+<h2 id="notes">Notes</h2>
+<p>&ndash;</p>
+
+</div>
+
+
+    </main>
+
+
+    
+      
+    
+  </body>
+</html>

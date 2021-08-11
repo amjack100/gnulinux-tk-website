@@ -2,13 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://150.136.68.59/tools/cat/</loc>
-    <lastmod>2021-07-31T09:01:26-04:00</lastmod>
-  </url><url>
     <loc>http://150.136.68.59/</loc>
-    <lastmod>2021-07-31T09:01:26-04:00</lastmod>
+    <lastmod>2021-08-11T14:26:49-04:00</lastmod>
+  </url><url>
+    <loc>http://150.136.68.59/tools/mkdir/</loc>
+    <lastmod>2021-08-11T14:26:49-04:00</lastmod>
   </url><url>
     <loc>http://150.136.68.59/tools/</loc>
+    <lastmod>2021-08-11T14:26:49-04:00</lastmod>
+  </url><url>
+    <loc>http://150.136.68.59/tools/update-initramfs/</loc>
+    <lastmod>2021-08-06T12:02:39-04:00</lastmod>
+  </url><url>
+    <loc>http://150.136.68.59/tools/grep/</loc>
+    <lastmod>2021-08-06T11:52:52-04:00</lastmod>
+  </url><url>
+    <loc>http://150.136.68.59/tools/lsmod/</loc>
+    <lastmod>2021-08-06T11:32:14-04:00</lastmod>
+  </url><url>
+    <loc>http://150.136.68.59/tools/cat/</loc>
     <lastmod>2021-07-31T09:01:26-04:00</lastmod>
   </url><url>
     <loc>http://150.136.68.59/tools/apt/</loc>

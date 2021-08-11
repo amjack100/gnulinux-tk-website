@@ -53,6 +53,47 @@
     <div class="posts">
 <article class="post">
   <h1 class="post-title">
+    <a href="http://150.136.68.59/tools/mkdir/">mkdir / rmdir</a>
+  </h1>
+  <time datetime="2021-08-11T14:26:49-0400" class="post-date">Wed, Aug 11, 2021</time>
+  mkdir
+Most Common Usages ... ... Configuration N/A
+Notes 
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/tools/update-initramfs/">update initramfs</a>
+  </h1>
+  <time datetime="2021-08-06T12:02:39-0400" class="post-date">Fri, Aug 6, 2021</time>
+  update-initramfs
+Most Common Usages ... ... Configuration N/A
+Notes 
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/tools/grep/">grep</a>
+  </h1>
+  <time datetime="2021-08-06T11:52:52-0400" class="post-date">Fri, Aug 6, 2021</time>
+  grep is a very commonly used tool for searching for patterns of text within files or an output stream.
+Most Common Usages Search a single file for a matching pattern.
+cat file.txt | grep pattern Search though files across multiple directories for a matching pattern.
+grep nvidia /etc/modprobe.d/* /lib/modprobe.d/* In this case, grep will locate all the files in /etc/modprobe.d and /lib/modprobe.d containing the word &ldquo;nvidia&rdquo;, and output the full line of the file where it occurs.
+  
+  <div class="read-more-link">
+    <a href="/tools/grep/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="http://150.136.68.59/tools/lsmod/">lsmod</a>
+  </h1>
+  <time datetime="2021-08-06T11:32:14-0400" class="post-date">Fri, Aug 6, 2021</time>
+  lsmod is a minimal command for listing the modules in the Linux Kernel. It will provide the output in table format, like:
+   Module Size Used by     tcp_diag 16384 0   udp_diag 16384 0   inet_diag 24576 2 tpc_diag,udp_diag    Most Common Usages lsmod Configuration N/A
+Notes 
+  
+</article><article class="post">
+  <h1 class="post-title">
     <a href="http://150.136.68.59/tools/cat/">cat / tac</a>
   </h1>
   <time datetime="2021-07-31T09:01:26-0400" class="post-date">Sat, Jul 31, 2021</time>
@@ -182,8 +223,13 @@ Most Common Usages Change the owner of a file.
   <time datetime="2021-07-19T08:51:11-0400" class="post-date">Mon, Jul 19, 2021</time>
   uname, short for unix name, is a simple tool for getting information about the current system.
 Most Common Usages Print system information about the kernel, processor, and operating system.
-uname -a Configuration N/A
+uname -a Pair with dkms to install a kernel module to the current kernel version.
+sudo dkms install nvidia/460.39 -k $(uname -r) Configuration N/A
 Notes uname offers many flags such as -m and -s (machine and kernel-name) which provide a way for scripts to get specific values.
+  
+  <div class="read-more-link">
+    <a href="/tools/uname/">Read More…</a>
+  </div>
   
 </article><article class="post">
   <h1 class="post-title">

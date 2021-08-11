@@ -6,7 +6,52 @@
     <description>Recent content in Tools on GNU/Linux Toolkit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Jul 2021 09:01:26 -0400</lastBuildDate><atom:link href="http://150.136.68.59/tools/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Aug 2021 14:26:49 -0400</lastBuildDate><atom:link href="http://150.136.68.59/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mkdir / rmdir</title>
+      <link>http://150.136.68.59/tools/mkdir/</link>
+      <pubDate>Wed, 11 Aug 2021 14:26:49 -0400</pubDate>
+      
+      <guid>http://150.136.68.59/tools/mkdir/</guid>
+      <description>mkdir
+Most Common Usages ... ... Configuration N/A
+Notes </description>
+    </item>
+    
+    <item>
+      <title>update initramfs</title>
+      <link>http://150.136.68.59/tools/update-initramfs/</link>
+      <pubDate>Fri, 06 Aug 2021 12:02:39 -0400</pubDate>
+      
+      <guid>http://150.136.68.59/tools/update-initramfs/</guid>
+      <description>update-initramfs
+Most Common Usages ... ... Configuration N/A
+Notes </description>
+    </item>
+    
+    <item>
+      <title>grep</title>
+      <link>http://150.136.68.59/tools/grep/</link>
+      <pubDate>Fri, 06 Aug 2021 11:52:52 -0400</pubDate>
+      
+      <guid>http://150.136.68.59/tools/grep/</guid>
+      <description>grep is a very commonly used tool for searching for patterns of text within files or an output stream.
+Most Common Usages Search a single file for a matching pattern.
+cat file.txt | grep pattern Search though files across multiple directories for a matching pattern.
+grep nvidia /etc/modprobe.d/* /lib/modprobe.d/* In this case, grep will locate all the files in /etc/modprobe.d and /lib/modprobe.d containing the word &amp;ldquo;nvidia&amp;rdquo;, and output the full line of the file where it occurs.</description>
+    </item>
+    
+    <item>
+      <title>lsmod</title>
+      <link>http://150.136.68.59/tools/lsmod/</link>
+      <pubDate>Fri, 06 Aug 2021 11:32:14 -0400</pubDate>
+      
+      <guid>http://150.136.68.59/tools/lsmod/</guid>
+      <description>lsmod is a minimal command for listing the modules in the Linux Kernel. It will provide the output in table format, like:
+   Module Size Used by     tcp_diag 16384 0   udp_diag 16384 0   inet_diag 24576 2 tpc_diag,udp_diag    Most Common Usages lsmod Configuration N/A
+Notes </description>
+    </item>
+    
     <item>
       <title>cat / tac</title>
       <link>http://150.136.68.59/tools/cat/</link>
@@ -127,7 +172,8 @@ Most Common Usages Change the owner of a file.</description>
       <guid>http://150.136.68.59/tools/uname/</guid>
       <description>uname, short for unix name, is a simple tool for getting information about the current system.
 Most Common Usages Print system information about the kernel, processor, and operating system.
-uname -a Configuration N/A
+uname -a Pair with dkms to install a kernel module to the current kernel version.
+sudo dkms install nvidia/460.39 -k $(uname -r) Configuration N/A
 Notes uname offers many flags such as -m and -s (machine and kernel-name) which provide a way for scripts to get specific values.</description>
     </item>
     
