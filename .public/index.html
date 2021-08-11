@@ -56,9 +56,12 @@
     <a href="http://150.136.68.59/tools/mkdir/">mkdir / rmdir</a>
   </h1>
   <time datetime="2021-08-11T14:26:49-0400" class="post-date">Wed, Aug 11, 2021</time>
-  mkdir
-Most Common Usages ... ... Configuration N/A
-Notes 
+  mkdir and rmdir are minimal commands for making and removing directories respectively.
+Most Common Usages Make a new directory
+mkdir directoryname Create multiple directories as a directory tree
+mkdir -p outer/middle/inner Remove an empty directory
+rmdir directoryname Configuration N/A
+Notes rmdir is particularly different than rm -r in that it will only remove empty directories, providing safer use in many cases.
   
 </article><article class="post">
   <h1 class="post-title">

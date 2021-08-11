@@ -57,13 +57,20 @@
 
   
 
-  <p><code>mkdir</code></p>
+  <p><code>mkdir</code> and <code>rmdir</code> are minimal commands for <strong>m</strong>a<strong>k</strong>ing and <strong>r</strong>e<strong>m</strong>oving
+<strong>dir</strong>ectories respectively.</p>
 <h2 id="most-common-usages">Most Common Usages</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">...
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">...
+<p>Make a new directory</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mkdir directoryname
+</code></pre></div><p>Create multiple directories as a directory tree</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mkdir -p outer/middle/inner
+</code></pre></div><p>Remove an empty directory</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">rmdir directoryname
 </code></pre></div><h2 id="configuration">Configuration</h2>
 <p>N/A</p>
 <h2 id="notes">Notes</h2>
+<p><code>rmdir</code> is particularly different than <code>rm -r</code> in that it will only remove
+empty directories, providing safer use in many cases.</p>
 
 </div>
 
