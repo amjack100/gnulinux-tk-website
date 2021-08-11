@@ -1,4 +1,10 @@
 -
+  name : mkdir / rmdir
+  usage : direct / scripts
+  configuration : N/A
+  service : N/A
+  package : GNU Coreutils
+-
   name : cat / tac
   usage : direct / scripts
   configuration : N/A

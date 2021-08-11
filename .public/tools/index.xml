@@ -6,7 +6,20 @@
     <description>Recent content in Tools on GNU/Linux Toolkit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Aug 2021 14:26:49 -0400</lastBuildDate><atom:link href="http://150.136.68.59/tools/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Aug 2021 17:13:25 -0400</lastBuildDate><atom:link href="http://150.136.68.59/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cp</title>
+      <link>http://150.136.68.59/tools/cp/</link>
+      <pubDate>Wed, 11 Aug 2021 17:13:25 -0400</pubDate>
+      
+      <guid>http://150.136.68.59/tools/cp/</guid>
+      <description>cp is the standard copy command packaged into most Linux systems.
+Most Common Usages Copy a single file to a given location
+cp file.txt copy.txt Copy an entire directory tree to another location
+cp -r source-dir destination-dir # where source-dir might be a structure like: #source-dir/ #└── one # └── two Configuration Backup suffixes defined through environment variables
+Notes </description>
+    </item>
+    
     <item>
       <title>mkdir / rmdir</title>
       <link>http://150.136.68.59/tools/mkdir/</link>
@@ -18,11 +31,11 @@ Most Common Usages Make a new directory
 mkdir directoryname Create multiple directories as a directory tree
 mkdir -p outer/middle/inner Remove an empty directory
 rmdir directoryname Configuration N/A
-Notes rmdir is particularly different than rm -r in that it will only remove empty directories, providing safer use in many cases.</description>
+Notes mkdir and rmdir are the direct command line equivalents of the mkdir() and rmdir() Linux system calls. One can view man 2 mkdir or man 2 rmdir for more information.</description>
     </item>
     
     <item>
-      <title>update initramfs</title>
+      <title>update-initramfs</title>
       <link>http://150.136.68.59/tools/update-initramfs/</link>
       <pubDate>Fri, 06 Aug 2021 12:02:39 -0400</pubDate>
       

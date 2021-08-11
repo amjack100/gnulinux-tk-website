@@ -53,6 +53,17 @@
     <div class="posts">
 <article class="post">
   <h1 class="post-title">
+    <a href="http://150.136.68.59/tools/cp/">cp</a>
+  </h1>
+  <time datetime="2021-08-11T17:13:25-0400" class="post-date">Wed, Aug 11, 2021</time>
+  cp is the standard copy command packaged into most Linux systems.
+Most Common Usages Copy a single file to a given location
+cp file.txt copy.txt Copy an entire directory tree to another location
+cp -r source-dir destination-dir # where source-dir might be a structure like: #source-dir/ #└── one # └── two Configuration Backup suffixes defined through environment variables
+Notes 
+  
+</article><article class="post">
+  <h1 class="post-title">
     <a href="http://150.136.68.59/tools/mkdir/">mkdir / rmdir</a>
   </h1>
   <time datetime="2021-08-11T14:26:49-0400" class="post-date">Wed, Aug 11, 2021</time>
@@ -61,11 +72,15 @@ Most Common Usages Make a new directory
 mkdir directoryname Create multiple directories as a directory tree
 mkdir -p outer/middle/inner Remove an empty directory
 rmdir directoryname Configuration N/A
-Notes rmdir is particularly different than rm -r in that it will only remove empty directories, providing safer use in many cases.
+Notes mkdir and rmdir are the direct command line equivalents of the mkdir() and rmdir() Linux system calls. One can view man 2 mkdir or man 2 rmdir for more information.
+  
+  <div class="read-more-link">
+    <a href="/tools/mkdir/">Read More…</a>
+  </div>
   
 </article><article class="post">
   <h1 class="post-title">
-    <a href="http://150.136.68.59/tools/update-initramfs/">update initramfs</a>
+    <a href="http://150.136.68.59/tools/update-initramfs/">update-initramfs</a>
   </h1>
   <time datetime="2021-08-06T12:02:39-0400" class="post-date">Fri, Aug 6, 2021</time>
   update-initramfs
