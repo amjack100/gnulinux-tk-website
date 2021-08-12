@@ -167,7 +167,7 @@ sed -i &amp;#39;s/old/new&amp;#39; file.txt Configuration N/A</description>
       
       <guid>http://150.136.68.59/tools/ffmpeg/</guid>
       <description>ffmpeg is a video and image manipulator tool that can do just about anything.
-Extract frames from a gif or video mkdir output ffmpeg -i animation.gif ./output/%3d.png </description>
+Extract frames from a gif or video mkdir output ffmpeg -i animation.gif ./output/%3d.png # ls output # 001.png 005.png 009.png ... # 002.png 006.png 010.png ...  # 003.png 007.png 011.png ... </description>
     </item>
     
     <item>
