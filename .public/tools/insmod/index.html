@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Tags &middot; GNU/Linux Toolkit</title>
+  <title>insmod / rmmod &middot; GNU/Linux Toolkit</title>
   <meta name="description" content="" />
 
   
@@ -24,7 +24,6 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="http://150.136.68.59/tags/index.xml" rel="alternate" type="application/rss+xml" title="GNU/Linux Toolkit" />
   
 </head>
 
@@ -50,35 +49,34 @@
 </aside>
 
     <main class="content container">
-    <h1>Tools</h1>
-  <h2>Complex</h2>
-
-  <p>
-  Highly complicated tools usually with either hundreds of configuration options
-  or their own language syntax. One should approach these tools with a mindset on par
-  with learning a new programming language. 
-  </p>
+    <div class="post">
+  <h1>insmod / rmmod</h1>
+  <time datetime=2021-08-12T07:28:45-0400 class="post-date">Thu, Aug 12, 2021</time>
 
   
 
-
-  <h2>Non-basic</h2>
-  <p>
-  Tools which require some experience to use effectively. These might
-  have configuration files made up of multiple data structures or take advantage
-  of background services.
-  </p>
-
   
 
+  <p><code>insmod</code> and <code>rmmod</code> are programs for respectively inserting modules into the
+Linux kernel and removing them. The official manual descriptions of both tools
+recommends the use of <code>modprobe</code> as an alternative way of performing these
+operations.</p>
+<blockquote>
+<p>Most users will want to use modprobe(8) instead, which is more clever and can
+handle module dependencies</p>
+<p>&ndash; <cite>Manual page insmod(8)</cite></p>
+</blockquote>
+<h2 id="most-common-usages">Most Common Usages</h2>
+<p>Insert a kernel module</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo insmod module.ko
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">
+</code></pre></div><h2 id="configuration">Configuration</h2>
+<p>N/A</p>
+<h2 id="notes">Notes</h2>
 
-  <h2>Trivial</h2>
-  <p>
-  Tools that take a few options and rarely have a manual longer than a 
-  couple pages. These include most built-in commands and can be picked up after
-  a few dozen uses. 
-  </p>
-  
+</div>
+
+
     </main>
 
 
