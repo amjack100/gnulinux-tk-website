@@ -1,4 +1,10 @@
 -
+  name : insmod / rmmod
+  usage : direct (with caution)
+  configuration : N/A
+  service : N/A
+  package : kmod
+-
   name : mkdir / rmdir
   usage : direct / scripts
   configuration : N/A

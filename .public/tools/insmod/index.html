@@ -56,6 +56,63 @@
   
 
   
+<center>
+  <table>
+  
+  <h1></h2>
+       
+      <tbody>
+        <tr>
+      <td style="text-align:left">configuration</td>
+      <td style="text-align:right">N/A</td>
+        </tr>
+      </tbody>
+      
+
+  <h1></h2>
+       
+      <thead>
+        <tr>
+      <th style="text-align:left">insmod / rmmod</th>
+      <th style="text-align:right"></th>
+        </tr>
+      </thead>
+      
+
+  <h1></h2>
+       
+      <tbody>
+        <tr>
+      <td style="text-align:left">package</td>
+      <td style="text-align:right">kmod</td>
+        </tr>
+      </tbody>
+      
+
+  <h1></h2>
+       
+      <tbody>
+        <tr>
+      <td style="text-align:left">service</td>
+      <td style="text-align:right">N/A</td>
+        </tr>
+      </tbody>
+      
+
+  <h1></h2>
+       
+      <tbody>
+        <tr>
+      <td style="text-align:left">usage</td>
+      <td style="text-align:right">direct (with caution)</td>
+        </tr>
+      </tbody>
+      
+
+  </table>
+</center>
+
+
 
   <p><code>insmod</code> and <code>rmmod</code> are programs for respectively inserting modules into the
 Linux kernel and removing them. The official manual descriptions of both tools
@@ -69,10 +126,12 @@ handle module dependencies</p>
 <h2 id="most-common-usages">Most Common Usages</h2>
 <p>Insert a kernel module</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo insmod module.ko
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">
+</code></pre></div><p>Remove a kernel module</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo rmmod bluetooth
 </code></pre></div><h2 id="configuration">Configuration</h2>
 <p>N/A</p>
 <h2 id="notes">Notes</h2>
+<p>The kmod package was initially called &ldquo;modutils&rdquo; and then &ldquo;module-init-tools&rdquo;.</p>
 
 </div>
 

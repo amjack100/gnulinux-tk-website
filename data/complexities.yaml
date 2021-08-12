@@ -2,9 +2,9 @@
 high : 
   - make
   - cmake
-  - ffmpeg
 mid : 
  - sed
+ - ffmpeg
  - apt
  - systemd
 

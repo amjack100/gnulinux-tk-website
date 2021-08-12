@@ -17,7 +17,7 @@
  Most users will want to use modprobe(8) instead, which is more clever and can handle module dependencies
 &amp;ndash; Manual page insmod(8)
  Most Common Usages Insert a kernel module
-sudo insmod module.ko Configuration N/A</description>
+sudo insmod module.ko Remove a kernel module</description>
     </item>
     
     <item>
@@ -166,7 +166,8 @@ sed -i &amp;#39;s/old/new&amp;#39; file.txt Configuration N/A</description>
       <pubDate>Tue, 20 Jul 2021 18:30:37 -0400</pubDate>
       
       <guid>http://150.136.68.59/tools/ffmpeg/</guid>
-      <description>ffmpeg is a video and image manipulator tool that can do just about anything.</description>
+      <description>ffmpeg is a video and image manipulator tool that can do just about anything.
+Extract frames from a gif or video mkdir output ffmpeg -i animation.gif ./output/%3d.png </description>
     </item>
     
     <item>
