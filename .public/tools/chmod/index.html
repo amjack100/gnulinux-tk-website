@@ -123,16 +123,77 @@ The output is:</p>
 <p>where <code>-rw-rw-r--</code> is the file&rsquo;s mode.</p>
 <p>The first dash is the type of file and is not important.
 The next 9 dashes are mode bits. A letter (r,w,x) means on and a dash means off.
-<br>
-See <a href="https://en.wikipedia.org/wiki/Chmod">octal modes</a> on wikipedia.</p>
+<br></p>
 <h2 id="most-common-usages">Most Common Usages</h2>
 <p>Allow a file to be executed by everyone.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">chmod a+x file.txt <span style="color:#75715e"># or chmod +x file.txt </span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">chmod +x file.txt 
+
+<span style="color:#75715e"># same as chmod a+x file.txt</span>
 </code></pre></div><p>Give specific permissions to specific people.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">chmod u<span style="color:#f92672">=</span>rwx
-</code></pre></div><p>where u (user) could be g (group), o (other), or a (all).</p>
-<h2 id="configuration">Configuration</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">chmod u<span style="color:#f92672">=</span>rwx file.txt
+
+<span style="color:#75715e"># u (user), g (group), o (other), or a (all)</span>
+</code></pre></div><p>Assign permissions to a file using octal values</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">chmod <span style="color:#ae81ff">777</span> file.txt
+
+<span style="color:#75715e"># same as chmod +rwx</span>
+</code></pre></div><h2 id="configuration">Configuration</h2>
 <p>N/A</p>
+<h2 id="notes">Notes</h2>
+<p>Octal value permissions can be translated with the following table:</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Permissions</th>
+<th>Label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>None</td>
+<td>---</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Execute</td>
+<td>--x</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Write</td>
+<td>-w-</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Execute &amp; Write</td>
+<td>-wx</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Read</td>
+<td>r--</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Read &amp; Execute</td>
+<td>r-x</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Read &amp; Write</td>
+<td>rw-</td>
+</tr>
+<tr>
+<td>7</td>
+<td>All</td>
+<td>rwx</td>
+</tr>
+</tbody>
+</table>
+<p>Notice how <em>execute (1)</em> + <em>write (2)</em> = 3, <em>execute (1)</em> + <em>read (4)</em> = 5, etc.
+See <a href="https://en.wikipedia.org/wiki/Chmod">octal modes</a> on wikipedia.</p>
 
 </div>
 
