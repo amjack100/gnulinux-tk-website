@@ -6,7 +6,18 @@
     <description>Recent content in Tools on GNU/Linux Toolkit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Aug 2021 07:28:45 -0400</lastBuildDate><atom:link href="http://150.136.68.59/tools/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Aug 2021 09:09:21 -0400</lastBuildDate><atom:link href="http://150.136.68.59/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tset / reset</title>
+      <link>http://150.136.68.59/tools/tset/</link>
+      <pubDate>Sat, 14 Aug 2021 09:09:21 -0400</pubDate>
+      
+      <guid>http://150.136.68.59/tools/tset/</guid>
+      <description>tset and reset are mostly historical commands used to reset an actual text-based terminal (as opposed to a terminal emulator running on a graphics-oriented system).
+Most Common Usages ... ... Configuration N/A
+Notes </description>
+    </item>
+    
     <item>
       <title>insmod / rmmod</title>
       <link>http://150.136.68.59/tools/insmod/</link>

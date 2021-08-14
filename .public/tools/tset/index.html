@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>uname &middot; GNU/Linux Toolkit</title>
+  <title>tset / reset &middot; GNU/Linux Toolkit</title>
   <meta name="description" content="" />
 
   
@@ -50,8 +50,8 @@
 
     <main class="content container">
     <div class="post">
-  <h1>uname</h1>
-  <time datetime=2021-07-19T08:51:11-0400 class="post-date">Mon, Jul 19, 2021</time>
+  <h1>tset / reset</h1>
+  <time datetime=2021-08-14T09:09:21-0400 class="post-date">Sat, Aug 14, 2021</time>
 
   
 
@@ -61,9 +61,19 @@
   
   <h1></h2>
        
+      <tbody>
+        <tr>
+      <td style="text-align:left">created</td>
+      <td style="text-align:right">1979</td>
+        </tr>
+      </tbody>
+      
+
+  <h1></h2>
+       
       <thead>
         <tr>
-      <th style="text-align:left">uname</th>
+      <th style="text-align:left">tset / reset</th>
       <th style="text-align:right"></th>
         </tr>
       </thead>
@@ -74,7 +84,7 @@
       <tbody>
         <tr>
       <td style="text-align:left">package</td>
-      <td style="text-align:right">GNU Coreutils</td>
+      <td style="text-align:right"><a href="https://invisible-island.net/ncurses/">NCURSES</a></td>
         </tr>
       </tbody>
       
@@ -104,18 +114,15 @@
 
 
 
-  <p><code>uname</code>, short for <strong>u</strong>nix <strong>name</strong>, is a simple tool for getting information about
-the current system.</p>
+  <p><code>tset</code> and <code>reset</code> are mostly historical commands used to reset an actual
+text-based terminal (as opposed to a <em>terminal emulator</em> running on a graphics-oriented
+system).</p>
 <h2 id="most-common-usages">Most Common Usages</h2>
-<p>Print system information about the kernel, processor, and operating system.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">uname -a
-</code></pre></div><p>Pair with <code>dkms</code> to install a kernel module to the current kernel version.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo dkms install nvidia/460.39 -k <span style="color:#66d9ef">$(</span>uname -r<span style="color:#66d9ef">)</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">...
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">...
 </code></pre></div><h2 id="configuration">Configuration</h2>
 <p>N/A</p>
 <h2 id="notes">Notes</h2>
-<p><code>uname</code> offers many flags such as <code>-m</code> and <code>-s</code> (machine and kernel-name) which
-provide a way for scripts to get specific values.</p>
 
 </div>
 
