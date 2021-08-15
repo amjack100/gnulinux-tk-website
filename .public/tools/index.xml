@@ -6,7 +6,18 @@
     <description>Recent content in Tools on GNU/Linux Toolkit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Aug 2021 09:09:21 -0400</lastBuildDate><atom:link href="http://150.136.68.59/tools/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Aug 2021 17:55:53 -0400</lastBuildDate><atom:link href="http://150.136.68.59/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mount / umount</title>
+      <link>http://150.136.68.59/tools/mount/</link>
+      <pubDate>Sun, 15 Aug 2021 17:55:53 -0400</pubDate>
+      
+      <guid>http://150.136.68.59/tools/mount/</guid>
+      <description>mount and umount are commands for mounting and unmounting a
+Most Common Usages ... ... Configuration N/A
+Notes </description>
+    </item>
+    
     <item>
       <title>tset / reset</title>
       <link>http://150.136.68.59/tools/tset/</link>
