@@ -13,9 +13,9 @@
       <pubDate>Sun, 15 Aug 2021 17:55:53 -0400</pubDate>
       
       <guid>http://150.136.68.59/tools/mount/</guid>
-      <description>mount and umount are commands for mounting and unmounting a
-Most Common Usages ... ... Configuration N/A
-Notes </description>
+      <description>mount and umount are commands for mounting and unmounting a filesystem, respectively. A common use for these commands involves accessing files on a USB drive. Filesystems can typically only be mounted by the super user (with sudo).
+Most Common Usages Mount a USB drive
+sudo mkdir -p /media/usb sudo mount /dev/sda1 /media/usb ... Configuration Notes </description>
     </item>
     
     <item>

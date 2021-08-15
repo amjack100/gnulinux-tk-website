@@ -57,12 +57,15 @@
 
   
 
-  <p><code>mount</code> and <code>umount</code> are commands for mounting and unmounting a</p>
+  <p><code>mount</code> and <code>umount</code> are commands for mounting and unmounting a filesystem, respectively.
+A common use for these commands involves accessing files on a USB drive. Filesystems
+can typically only be mounted by the super user (with <code>sudo</code>).</p>
 <h2 id="most-common-usages">Most Common Usages</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">...
+<p>Mount a USB drive</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo mkdir -p /media/usb
+sudo mount /dev/sda1 /media/usb
 </code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">...
 </code></pre></div><h2 id="configuration">Configuration</h2>
-<p>N/A</p>
 <h2 id="notes">Notes</h2>
 
 </div>
