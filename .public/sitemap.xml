@@ -2,95 +2,95 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://150.136.68.59/</loc>
+    <loc>https://www.linux-toolkit.com/</loc>
     <lastmod>2021-08-15T17:55:53-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/mount/</loc>
+    <loc>https://www.linux-toolkit.com/tools/mount/</loc>
     <lastmod>2021-08-15T17:55:53-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/</loc>
+    <loc>https://www.linux-toolkit.com/tools/</loc>
     <lastmod>2021-08-15T17:55:53-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/tset/</loc>
+    <loc>https://www.linux-toolkit.com/tools/tset/</loc>
     <lastmod>2021-08-14T09:09:21-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/insmod/</loc>
+    <loc>https://www.linux-toolkit.com/tools/insmod/</loc>
     <lastmod>2021-08-12T07:28:45-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/cp/</loc>
+    <loc>https://www.linux-toolkit.com/tools/cp/</loc>
     <lastmod>2021-08-11T17:13:25-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/mkdir/</loc>
+    <loc>https://www.linux-toolkit.com/tools/mkdir/</loc>
     <lastmod>2021-08-11T14:26:49-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/update-initramfs/</loc>
+    <loc>https://www.linux-toolkit.com/tools/update-initramfs/</loc>
     <lastmod>2021-08-06T12:02:39-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/grep/</loc>
+    <loc>https://www.linux-toolkit.com/tools/grep/</loc>
     <lastmod>2021-08-06T11:52:52-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/lsmod/</loc>
+    <loc>https://www.linux-toolkit.com/tools/lsmod/</loc>
     <lastmod>2021-08-06T11:32:14-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/cat/</loc>
+    <loc>https://www.linux-toolkit.com/tools/cat/</loc>
     <lastmod>2021-07-31T09:01:26-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/apt/</loc>
+    <loc>https://www.linux-toolkit.com/tools/apt/</loc>
     <lastmod>2021-07-29T10:14:18-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/ls/</loc>
+    <loc>https://www.linux-toolkit.com/tools/ls/</loc>
     <lastmod>2021-07-28T17:44:52-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/find/</loc>
+    <loc>https://www.linux-toolkit.com/tools/find/</loc>
     <lastmod>2021-07-26T12:14:15-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/make/</loc>
+    <loc>https://www.linux-toolkit.com/tools/make/</loc>
     <lastmod>2021-07-25T18:16:03-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/sed/</loc>
+    <loc>https://www.linux-toolkit.com/tools/sed/</loc>
     <lastmod>2021-07-25T08:27:22-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/ln/</loc>
+    <loc>https://www.linux-toolkit.com/tools/ln/</loc>
     <lastmod>2021-07-22T07:50:03-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/ffmpeg/</loc>
+    <loc>https://www.linux-toolkit.com/tools/ffmpeg/</loc>
     <lastmod>2021-07-20T18:30:37-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/cmake/</loc>
+    <loc>https://www.linux-toolkit.com/tools/cmake/</loc>
     <lastmod>2021-07-20T14:32:04-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/chown/</loc>
+    <loc>https://www.linux-toolkit.com/tools/chown/</loc>
     <lastmod>2021-07-20T08:28:02-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/uname/</loc>
+    <loc>https://www.linux-toolkit.com/tools/uname/</loc>
     <lastmod>2021-07-19T08:51:11-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/chmod/</loc>
+    <loc>https://www.linux-toolkit.com/tools/chmod/</loc>
     <lastmod>2021-07-18T07:25:34-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/du/</loc>
+    <loc>https://www.linux-toolkit.com/tools/du/</loc>
     <lastmod>2021-07-16T08:55:20-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/tput/</loc>
+    <loc>https://www.linux-toolkit.com/tools/tput/</loc>
     <lastmod>2021-07-15T12:09:27-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/touch/</loc>
+    <loc>https://www.linux-toolkit.com/tools/touch/</loc>
     <lastmod>2021-07-15T11:51:11-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/man/</loc>
+    <loc>https://www.linux-toolkit.com/tools/man/</loc>
     <lastmod>2021-07-14T08:06:58-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/rsync/</loc>
+    <loc>https://www.linux-toolkit.com/tools/rsync/</loc>
     <lastmod>2021-07-13T08:21:30-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/ssh/</loc>
+    <loc>https://www.linux-toolkit.com/tools/ssh/</loc>
     <lastmod>2021-07-12T07:33:57-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/tools/systemd/</loc>
+    <loc>https://www.linux-toolkit.com/tools/systemd/</loc>
     <lastmod>2021-07-10T11:53:31-04:00</lastmod>
   </url><url>
-    <loc>http://150.136.68.59/categories/</loc>
+    <loc>https://www.linux-toolkit.com/categories/</loc>
   </url><url>
-    <loc>http://150.136.68.59/tags/</loc>
+    <loc>https://www.linux-toolkit.com/tags/</loc>
   </url>
 </urlset>

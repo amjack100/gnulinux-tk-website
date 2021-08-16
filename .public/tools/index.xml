@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tools on GNU/Linux Toolkit</title>
-    <link>http://150.136.68.59/tools/</link>
+    <link>https://www.linux-toolkit.com/tools/</link>
     <description>Recent content in Tools on GNU/Linux Toolkit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Aug 2021 17:55:53 -0400</lastBuildDate><atom:link href="http://150.136.68.59/tools/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Aug 2021 17:55:53 -0400</lastBuildDate><atom:link href="https://www.linux-toolkit.com/tools/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>mount / umount</title>
-      <link>http://150.136.68.59/tools/mount/</link>
+      <link>https://www.linux-toolkit.com/tools/mount/</link>
       <pubDate>Sun, 15 Aug 2021 17:55:53 -0400</pubDate>
       
-      <guid>http://150.136.68.59/tools/mount/</guid>
+      <guid>https://www.linux-toolkit.com/tools/mount/</guid>
       <description>mount and umount are commands for mounting and unmounting a filesystem, respectively. A common use for these commands involves accessing files on a USB drive. Filesystems can typically only be mounted by the super user (with sudo).
 Most Common Usages Mount a USB drive
 sudo mkdir -p /media/usb sudo mount /dev/sda1 /media/usb ... Configuration Notes </description>
@@ -20,10 +20,10 @@ sudo mkdir -p /media/usb sudo mount /dev/sda1 /media/usb ... Configuration Notes
     
     <item>
       <title>tset / reset</title>
-      <link>http://150.136.68.59/tools/tset/</link>
+      <link>https://www.linux-toolkit.com/tools/tset/</link>
       <pubDate>Sat, 14 Aug 2021 09:09:21 -0400</pubDate>
       
-      <guid>http://150.136.68.59/tools/tset/</guid>
+      <guid>https://www.linux-toolkit.com/tools/tset/</guid>
       <description>tset and reset are mostly historical commands used to reset an actual text-based terminal (as opposed to a terminal emulator running on a graphics-oriented system).
 Most Common Usages ... ... Configuration N/A
 Notes </description>
@@ -31,10 +31,10 @@ Notes </description>
     
     <item>
       <title>insmod / rmmod</title>
-      <link>http://150.136.68.59/tools/insmod/</link>
+      <link>https://www.linux-toolkit.com/tools/insmod/</link>
       <pubDate>Thu, 12 Aug 2021 07:28:45 -0400</pubDate>
       
-      <guid>http://150.136.68.59/tools/insmod/</guid>
+      <guid>https://www.linux-toolkit.com/tools/insmod/</guid>
       <description>insmod and rmmod are programs for respectively inserting modules into the Linux kernel and removing them. The official manual descriptions of both tools recommends the use of modprobe as an alternative way of performing these operations.
  Most users will want to use modprobe(8) instead, which is more clever and can handle module dependencies
 &amp;ndash; Manual page insmod(8)
@@ -44,10 +44,10 @@ sudo insmod module.ko Remove a kernel module</description>
     
     <item>
       <title>cp</title>
-      <link>http://150.136.68.59/tools/cp/</link>
+      <link>https://www.linux-toolkit.com/tools/cp/</link>
       <pubDate>Wed, 11 Aug 2021 17:13:25 -0400</pubDate>
       
-      <guid>http://150.136.68.59/tools/cp/</guid>
+      <guid>https://www.linux-toolkit.com/tools/cp/</guid>
       <description>cp is the standard copy command packaged into most Linux systems.
 Most Common Usages Copy a single file to a given location
 cp file.txt copy.txt Copy an entire directory tree to another location
@@ -57,10 +57,10 @@ Notes </description>
     
     <item>
       <title>mkdir / rmdir</title>
-      <link>http://150.136.68.59/tools/mkdir/</link>
+      <link>https://www.linux-toolkit.com/tools/mkdir/</link>
       <pubDate>Wed, 11 Aug 2021 14:26:49 -0400</pubDate>
       
-      <guid>http://150.136.68.59/tools/mkdir/</guid>
+      <guid>https://www.linux-toolkit.com/tools/mkdir/</guid>
       <description>mkdir and rmdir are minimal commands for making and removing directories respectively.
 Most Common Usages Make a new directory
 mkdir directoryname Create multiple directories as a directory tree
@@ -71,10 +71,10 @@ Notes mkdir and rmdir are the direct command line equivalents of the mkdir() and
     
     <item>
       <title>update-initramfs</title>
-      <link>http://150.136.68.59/tools/update-initramfs/</link>
+      <link>https://www.linux-toolkit.com/tools/update-initramfs/</link>
       <pubDate>Fri, 06 Aug 2021 12:02:39 -0400</pubDate>
       
-      <guid>http://150.136.68.59/tools/update-initramfs/</guid>
+      <guid>https://www.linux-toolkit.com/tools/update-initramfs/</guid>
       <description>update-initramfs
 Most Common Usages ... ... Configuration N/A
 Notes </description>
@@ -82,10 +82,10 @@ Notes </description>
     
     <item>
       <title>grep</title>
-      <link>http://150.136.68.59/tools/grep/</link>
+      <link>https://www.linux-toolkit.com/tools/grep/</link>
       <pubDate>Fri, 06 Aug 2021 11:52:52 -0400</pubDate>
       
-      <guid>http://150.136.68.59/tools/grep/</guid>
+      <guid>https://www.linux-toolkit.com/tools/grep/</guid>
       <description>grep is a very commonly used tool for searching for patterns of text within files or an output stream.
 Most Common Usages Search a single file for a matching pattern.
 cat file.txt | grep pattern Search though files across multiple directories for a matching pattern.
@@ -94,10 +94,10 @@ grep nvidia /etc/modprobe.d/* /lib/modprobe.d/* In this case, grep will locate a
     
     <item>
       <title>lsmod</title>
-      <link>http://150.136.68.59/tools/lsmod/</link>
+      <link>https://www.linux-toolkit.com/tools/lsmod/</link>
       <pubDate>Fri, 06 Aug 2021 11:32:14 -0400</pubDate>
       
-      <guid>http://150.136.68.59/tools/lsmod/</guid>
+      <guid>https://www.linux-toolkit.com/tools/lsmod/</guid>
       <description>lsmod is a minimal command for listing the modules in the Linux Kernel. It will provide the output in table format, like:
    Module Size Used by     tcp_diag 16384 0   udp_diag 16384 0   inet_diag 24576 2 tpc_diag,udp_diag    Most Common Usages lsmod Configuration N/A
 Notes </description>
@@ -105,10 +105,10 @@ Notes </description>
     
     <item>
       <title>cat / tac</title>
-      <link>http://150.136.68.59/tools/cat/</link>
+      <link>https://www.linux-toolkit.com/tools/cat/</link>
       <pubDate>Sat, 31 Jul 2021 09:01:26 -0400</pubDate>
       
-      <guid>http://150.136.68.59/tools/cat/</guid>
+      <guid>https://www.linux-toolkit.com/tools/cat/</guid>
       <description>cat is a tool for concatentaing files, although its most frequent use involves simply displaying file content to the terminal. tac does the exact same thing, except lines are output in reverse order.
 Most Common Usages View the contents of a file.
 cat file.txt Send the contents of a file to a new file.
@@ -117,20 +117,20 @@ cat file.txt &amp;gt; newfile.txt Append the contents of a file to the end of an
     
     <item>
       <title>apt</title>
-      <link>http://150.136.68.59/tools/apt/</link>
+      <link>https://www.linux-toolkit.com/tools/apt/</link>
       <pubDate>Thu, 29 Jul 2021 10:14:18 -0400</pubDate>
       
-      <guid>http://150.136.68.59/tools/apt/</guid>
+      <guid>https://www.linux-toolkit.com/tools/apt/</guid>
       <description>apt stands for Advanced Pacakge Tool and is the main package management system built into many Linux distributions. apt is intended to be the main means of interactively managing packages, but its features are also available in the back-end commands apt-get and apt-cache. apt is the middle man between a remote repository and dpkg. It will check for dependencies, download packages, and use dpkg to install them.
 Most Common Usages .</description>
     </item>
     
     <item>
       <title>ls / dir / vdir</title>
-      <link>http://150.136.68.59/tools/ls/</link>
+      <link>https://www.linux-toolkit.com/tools/ls/</link>
       <pubDate>Wed, 28 Jul 2021 17:44:52 -0400</pubDate>
       
-      <guid>http://150.136.68.59/tools/ls/</guid>
+      <guid>https://www.linux-toolkit.com/tools/ls/</guid>
       <description>ls is short for list and displays the contents of a directory. dir is equivalent to ls -C -b vdir is equivalent to ls -l -b
 Most Common Usages Show the contents of the current directory.
 ls Show directory contents, including hidden files.
@@ -140,10 +140,10 @@ ls -l Configuration The output of ls can be configured through the dircolors com
     
     <item>
       <title>find</title>
-      <link>http://150.136.68.59/tools/find/</link>
+      <link>https://www.linux-toolkit.com/tools/find/</link>
       <pubDate>Mon, 26 Jul 2021 12:14:15 -0400</pubDate>
       
-      <guid>http://150.136.68.59/tools/find/</guid>
+      <guid>https://www.linux-toolkit.com/tools/find/</guid>
       <description>find is the primary built-in utility for finding files on a GNU/Linux system.
 Most Common Usages The first 2 examples begin searching from the current working directory.
 Find files that match a search pattern
@@ -154,19 +154,19 @@ find -cmin -20 Where the last modified time is 20 minutes</description>
     
     <item>
       <title>make</title>
-      <link>http://150.136.68.59/tools/make/</link>
+      <link>https://www.linux-toolkit.com/tools/make/</link>
       <pubDate>Sun, 25 Jul 2021 18:16:03 -0400</pubDate>
       
-      <guid>http://150.136.68.59/tools/make/</guid>
+      <guid>https://www.linux-toolkit.com/tools/make/</guid>
       <description>make is a tool for organizing a build process for any programming language. Most programming projects involve some of sequential process of compiling source code files using various commands. A hierarchy develops where certain files might depend on the existence of others in order to assure a successful compilation, and therefore a successful program. At its simplest, make stores a list of these commands under a single name a &amp;ldquo;Makefile&amp;rdquo;. With a Makefile, all of these commands can then be run at once, hiding the complexities of the build process and preventing the builder from running potentially hundreds of commands manually over and over again.</description>
     </item>
     
     <item>
       <title>sed</title>
-      <link>http://150.136.68.59/tools/sed/</link>
+      <link>https://www.linux-toolkit.com/tools/sed/</link>
       <pubDate>Sun, 25 Jul 2021 08:27:22 -0400</pubDate>
       
-      <guid>http://150.136.68.59/tools/sed/</guid>
+      <guid>https://www.linux-toolkit.com/tools/sed/</guid>
       <description>sed is a tool for editing text. It is a stream editor, meaning it can accomplish the same tasks as a traditional text editor by iterating through streams of text with commands.
 Most Common Usages The &amp;rsquo;s&#39; (substitute) command is the most important sed command. Preview replacement of all matching patterns in a file.
 sed &amp;#39;s/old/new&amp;#39; file.txt Write replacement of all matching patterns in a file.
@@ -175,29 +175,29 @@ sed -i &amp;#39;s/old/new&amp;#39; file.txt Configuration N/A</description>
     
     <item>
       <title>ln</title>
-      <link>http://150.136.68.59/tools/ln/</link>
+      <link>https://www.linux-toolkit.com/tools/ln/</link>
       <pubDate>Thu, 22 Jul 2021 07:50:03 -0400</pubDate>
       
-      <guid>http://150.136.68.59/tools/ln/</guid>
+      <guid>https://www.linux-toolkit.com/tools/ln/</guid>
       <description>ln is a tool for creating links between files. It can create the two different types of links: soft/symbolic links and hard links. A soft link is like the equivalent of a Windows shortcut icon. When a program reads a soft link, it is redirected to where the file is. A hard link is basically like giving a file another name. When a program reads a hard link, it reads the exact data block as the original file.</description>
     </item>
     
     <item>
       <title>ffmpeg</title>
-      <link>http://150.136.68.59/tools/ffmpeg/</link>
+      <link>https://www.linux-toolkit.com/tools/ffmpeg/</link>
       <pubDate>Tue, 20 Jul 2021 18:30:37 -0400</pubDate>
       
-      <guid>http://150.136.68.59/tools/ffmpeg/</guid>
+      <guid>https://www.linux-toolkit.com/tools/ffmpeg/</guid>
       <description>ffmpeg is a video and image manipulator tool that can do just about anything.
 Extract frames from a gif or video mkdir output ffmpeg -i animation.gif ./output/%3d.png # ls output # 001.png 005.png 009.png ... # 002.png 006.png 010.png ...  # 003.png 007.png 011.png ... </description>
     </item>
     
     <item>
       <title>cmake</title>
-      <link>http://150.136.68.59/tools/cmake/</link>
+      <link>https://www.linux-toolkit.com/tools/cmake/</link>
       <pubDate>Tue, 20 Jul 2021 14:32:04 -0400</pubDate>
       
-      <guid>http://150.136.68.59/tools/cmake/</guid>
+      <guid>https://www.linux-toolkit.com/tools/cmake/</guid>
       <description>CMake is a tool that creates build setups for source code, allowing that code to be cross platform.
 The root of a CMake entity is always defined by a CMakeLists.txt file.
 Bare Minimum Example . ├── CMakeLists.txt └── main.cpp CMakeLists.txt
@@ -207,10 +207,10 @@ cmake_minimum_required(VERSION 3.10)project(Main)add_executable(Main main.cpp)mk
     
     <item>
       <title>chown</title>
-      <link>http://150.136.68.59/tools/chown/</link>
+      <link>https://www.linux-toolkit.com/tools/chown/</link>
       <pubDate>Tue, 20 Jul 2021 08:28:02 -0400</pubDate>
       
-      <guid>http://150.136.68.59/tools/chown/</guid>
+      <guid>https://www.linux-toolkit.com/tools/chown/</guid>
       <description>chown is a tool for changing the owner of a file or directory. To see the owner of file.txt, use the command ls -l file.txt. The output is:
  -rw-rw-r-- 1 john staff 23 Jul 2 08:45 file.txt  where &amp;ldquo;john&amp;rdquo; is the file&amp;rsquo;s owner. chown is also capable of changing the file group, (in this case &amp;ldquo;staff&amp;rdquo;), doing the exact same thing as chgrp.
 Most Common Usages Change the owner of a file.</description>
@@ -218,10 +218,10 @@ Most Common Usages Change the owner of a file.</description>
     
     <item>
       <title>uname</title>
-      <link>http://150.136.68.59/tools/uname/</link>
+      <link>https://www.linux-toolkit.com/tools/uname/</link>
       <pubDate>Mon, 19 Jul 2021 08:51:11 -0400</pubDate>
       
-      <guid>http://150.136.68.59/tools/uname/</guid>
+      <guid>https://www.linux-toolkit.com/tools/uname/</guid>
       <description>uname, short for unix name, is a simple tool for getting information about the current system.
 Most Common Usages Print system information about the kernel, processor, and operating system.
 uname -a Pair with dkms to install a kernel module to the current kernel version.
@@ -231,10 +231,10 @@ Notes uname offers many flags such as -m and -s (machine and kernel-name) which 
     
     <item>
       <title>chmod</title>
-      <link>http://150.136.68.59/tools/chmod/</link>
+      <link>https://www.linux-toolkit.com/tools/chmod/</link>
       <pubDate>Sun, 18 Jul 2021 07:25:34 -0400</pubDate>
       
-      <guid>http://150.136.68.59/tools/chmod/</guid>
+      <guid>https://www.linux-toolkit.com/tools/chmod/</guid>
       <description>chmod is a utility for changing the mode (permissions) of a file or directory. To check the file mode for file.txt, use the command ls -l file.txt. The output is:
  -rw-rw-r-- 1 user group 23 Jul 2 08:45 file.txt  where -rw-rw-r-- is the file&amp;rsquo;s mode.
 The first dash is the type of file and is not important. The next 9 dashes are mode bits. A letter (r,w,x) means on and a dash means off.</description>
@@ -242,10 +242,10 @@ The first dash is the type of file and is not important. The next 9 dashes are m
     
     <item>
       <title>du</title>
-      <link>http://150.136.68.59/tools/du/</link>
+      <link>https://www.linux-toolkit.com/tools/du/</link>
       <pubDate>Fri, 16 Jul 2021 08:55:20 -0400</pubDate>
       
-      <guid>http://150.136.68.59/tools/du/</guid>
+      <guid>https://www.linux-toolkit.com/tools/du/</guid>
       <description>du is a tool for getting information about the disk usage of a file or directory.
 Most Common Usages Get the disk usage of a single file or directory
 du -sh ./directory &amp;hellip; where -sh stands for summarize and human-readable
@@ -256,20 +256,20 @@ Configuration The block size defaults to 1024 bytes but can be modified with the
     
     <item>
       <title>tput</title>
-      <link>http://150.136.68.59/tools/tput/</link>
+      <link>https://www.linux-toolkit.com/tools/tput/</link>
       <pubDate>Thu, 15 Jul 2021 12:09:27 -0400</pubDate>
       
-      <guid>http://150.136.68.59/tools/tput/</guid>
+      <guid>https://www.linux-toolkit.com/tools/tput/</guid>
       <description>tput will output a special value from the terminfo database, given a &amp;ldquo;capname&amp;rdquo; as a key. The terminfo database is a set of key value pairs storing information about hundreds of terminals (+ terminal emulators, given that actual terminals hardly exist today). Terminfo database files are held in /etc/terminfo/ but are compressed and require special tools for reading.
 Most Common Usages Write the value of a capname to standard output</description>
     </item>
     
     <item>
       <title>touch</title>
-      <link>http://150.136.68.59/tools/touch/</link>
+      <link>https://www.linux-toolkit.com/tools/touch/</link>
       <pubDate>Thu, 15 Jul 2021 11:51:11 -0400</pubDate>
       
-      <guid>http://150.136.68.59/tools/touch/</guid>
+      <guid>https://www.linux-toolkit.com/tools/touch/</guid>
       <description>touch is command used to update the access and modification times of a file. It is most commonly used as a quick way of creating a new, empty file.
 Most Common Usages Create an empty file.
 touch file.txt Update the timestamp of a file without creating a new one if it doesn&amp;rsquo;t exist.
@@ -278,20 +278,20 @@ touch -c existingfile.txt Configuration N/A</description>
     
     <item>
       <title>man</title>
-      <link>http://150.136.68.59/tools/man/</link>
+      <link>https://www.linux-toolkit.com/tools/man/</link>
       <pubDate>Wed, 14 Jul 2021 08:06:58 -0400</pubDate>
       
-      <guid>http://150.136.68.59/tools/man/</guid>
+      <guid>https://www.linux-toolkit.com/tools/man/</guid>
       <description>man is used to display user manuals typical stored in /usr/share/man . Manuals are divided into these sections:
  User commands and tools Linux system calls Library functions (system call wrappers) which implement system calls Special files (devices) File formats and corresponding C structures (if any) &amp;ldquo;Games and funny little programs&amp;rdquo; Miscellaneous Administration and privileged commands Kernel routines [Non standard]  Use man &amp;lt;number&amp;gt; intro to read more about each section (except 9).</description>
     </item>
     
     <item>
       <title>rsync</title>
-      <link>http://150.136.68.59/tools/rsync/</link>
+      <link>https://www.linux-toolkit.com/tools/rsync/</link>
       <pubDate>Tue, 13 Jul 2021 08:21:30 -0400</pubDate>
       
-      <guid>http://150.136.68.59/tools/rsync/</guid>
+      <guid>https://www.linux-toolkit.com/tools/rsync/</guid>
       <description>rsync is a copying tool that implements a delta-transfer algorithm for extremely fast and efficient transfers. It finds files that have changed in size or last-modified time to determine the necessary updates to the destination.
 If rsync is used over ssh, it requires that both the client and server have the software installed.
 Most Common Usages Copy a directory (recursive) to a remote machine
@@ -300,10 +300,10 @@ rsync -vr ./source-dir server:/destination Copy a directory (recursive) to the h
     
     <item>
       <title>ssh</title>
-      <link>http://150.136.68.59/tools/ssh/</link>
+      <link>https://www.linux-toolkit.com/tools/ssh/</link>
       <pubDate>Mon, 12 Jul 2021 07:33:57 -0400</pubDate>
       
-      <guid>http://150.136.68.59/tools/ssh/</guid>
+      <guid>https://www.linux-toolkit.com/tools/ssh/</guid>
       <description>ssh is a program for logging into a remote computer and executing commands on that computer. ssh connects and logs into the specified destination, which may be specified as either [user@]hostname or ssh://[user@]hostname[:port]
 The user trying to access the remote computer must prove their identity.
 Most Common Usages Access a remote machine by providing a private key as input
@@ -313,10 +313,10 @@ ssh -i ~/.ssh/some-private-key.key john@100.</description>
     
     <item>
       <title>systemd</title>
-      <link>http://150.136.68.59/tools/systemd/</link>
+      <link>https://www.linux-toolkit.com/tools/systemd/</link>
       <pubDate>Sat, 10 Jul 2021 11:53:31 -0400</pubDate>
       
-      <guid>http://150.136.68.59/tools/systemd/</guid>
+      <guid>https://www.linux-toolkit.com/tools/systemd/</guid>
       <description>systemd is the first process run on boot and acts as the manager for all running services (programs which run in the background). The main configuration entities of systemd are simply called &amp;ldquo;units&amp;rdquo;, of which there are 11 different types. The most commonly used unit is the service unit, which are described individually in .service files. There are several commands for tapping into the features of systemd, including systemctl and journalctl, as well as special syntaxes for customizing each of the types of unit files.</description>
     </item>
     
