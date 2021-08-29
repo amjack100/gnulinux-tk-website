@@ -2,16 +2,11 @@
 baseURL: "https://www.linux-toolkit.com/"
 languageCode: "en-us"
 title: "GNU/Linux Toolkit"
-theme: "hyde"
+theme: "hello-friend"
 sectionPagesMenu: "main"
 publishDir: ".public"
 resourceDir: ".resources"
 themesDir : ".themes"
-
-#module:
-  #mounts:
-    #- source: /home/andy/.nb/tools
-      #target: content/tools
 
 Params:
   description: "Consise command line refreshers"

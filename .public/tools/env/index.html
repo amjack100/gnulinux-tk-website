@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.86.1" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>env &middot; GNU/
+Linux Toolkit</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://www.linux-toolkit.com/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://www.linux-toolkit.com/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://www.linux-toolkit.com/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://www.linux-toolkit.com/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://www.linux-toolkit.com/"><h1>GNU/
+Linux Toolkit</h1></a>
+      <p class="lead">
+       Consise command line refreshers 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://www.linux-toolkit.com/">Home</a> </li>
+        <li><a href="/tools/"> Tools </a></li>
+      </ul>
+    </nav>
+
+    <p>&copy; 2021. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>env</h1>
+  <time datetime=2021-08-25T13:24:03-0400 class="post-date">Wed, Aug 25, 2021</time>
+
+  
+
+  
+<center>
+  <table>
+  
+  <h1></h2>
+       
+      <tbody>
+        <tr>
+      <td style="text-align:left">History</td>
+      <td style="text-align:right">4.4 BSD</td>
+        </tr>
+      </tbody>
+      
+
+  <h1></h2>
+       
+      <thead>
+        <tr>
+      <th style="text-align:left">env</th>
+      <th style="text-align:right"></th>
+        </tr>
+      </thead>
+      
+
+  <h1></h2>
+       
+      <tbody>
+        <tr>
+      <td style="text-align:left">Package</td>
+      <td style="text-align:right"><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+        </tr>
+      </tbody>
+      
+
+  <h1></h2>
+       
+      <tbody>
+        <tr>
+      <td style="text-align:left">Usage</td>
+      <td style="text-align:right"><em>Environment</em></td>
+        </tr>
+      </tbody>
+      
+
+  </table>
+</center>
+
+
+
+  <p><code>env</code> is the main <strong>env</strong>ironment variable utility and has a variety of functionalities.
+<code>env</code> is unique in that one of its most common uses is as a
+<em>shebang</em> line, a single line at the top of a Linux file which dictates how
+that file is executed.</p>
+<h2 id="usage-examples">Usage Examples</h2>
+<p>Show the environment.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">env
+</code></pre></div><p>Set a variable (or multiple) and then run a program.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">env key<span style="color:#f92672">=</span>value program
+</code></pre></div><h3 id="shebang">Shebang</h3>
+<p>Using the <a href="https://en.wikipedia.org/wiki/Shebang_(Unix)">shebang</a>
+<em>#!/usr/bin/env</em> at the top of a file can set the conditions
+by which the file is executed. In this example case, it allows the file to be
+executed by the python executable specific to a user&rsquo;s virtual environment.
+<br>
+<br>
+Say a user has a special environment activated, <em>special_env</em>, and they go to
+execute a python file with this shebang line:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#!/bin/python3</span>
+
+<span style="color:#f92672">import</span> special_library
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">(</span>special_env<span style="color:#f92672">)</span>$ ./file.py
+
+Traceback <span style="color:#f92672">(</span>most recent call last<span style="color:#f92672">)</span>:
+  File <span style="color:#e6db74">&#34;&lt;stdin&gt;&#34;</span>, line 1, in &lt;module&gt;
+ModuleNotFoundError: No module named <span style="color:#e6db74">&#39;special_library&#39;</span>
+</code></pre></div><p>An error occurs because this shebang line is referencing the <em>system-wide</em> <code>python3</code>
+executable which does not have <code>special_library</code> installed. Using <code>env</code>
+can resolve this issue.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#!/usr/bin/env python3</span>
+
+<span style="color:#f92672">import</span> special_library
+</code></pre></div><h2 id="notes">Notes</h2>
+<ul>
+<li>Most system shells allow the use of <code>key=value program</code> without the <code>env</code> command.</li>
+</ul>
+
+</div>
+
+
+    </main>
+
+
+    
+      
+    
+  </body>
+</html>

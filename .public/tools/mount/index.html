@@ -8,7 +8,8 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>mount / umount &middot; GNU/Linux Toolkit</title>
+  <title>mount | umount &middot; GNU/
+Linux Toolkit</title>
   <meta name="description" content="" />
 
   
@@ -31,7 +32,8 @@
   <aside class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://www.linux-toolkit.com/"><h1>GNU/Linux Toolkit</h1></a>
+      <a href="https://www.linux-toolkit.com/"><h1>GNU/
+Linux Toolkit</h1></a>
       <p class="lead">
        Consise command line refreshers 
       </p>
@@ -50,23 +52,93 @@
 
     <main class="content container">
     <div class="post">
-  <h1>mount / umount</h1>
+  <h1>mount | umount</h1>
   <time datetime=2021-08-15T17:55:53-0400 class="post-date">Sun, Aug 15, 2021</time>
 
   
 
   
+<center>
+  <table>
+  
+  <h1></h2>
+       
+      <tbody>
+        <tr>
+      <td style="text-align:left">History</td>
+      <td style="text-align:right">V5 AT&amp;T UNIX</td>
+        </tr>
+      </tbody>
+      
+
+  <h1></h2>
+       
+      <thead>
+        <tr>
+      <th style="text-align:left">mount | umount</th>
+      <th style="text-align:right"></th>
+        </tr>
+      </thead>
+      
+
+  <h1></h2>
+       
+      <tbody>
+        <tr>
+      <td style="text-align:left">Package</td>
+      <td style="text-align:right">util-linux</td>
+        </tr>
+      </tbody>
+      
+
+  <h1></h2>
+       
+      <tbody>
+        <tr>
+      <td style="text-align:left">Usage</td>
+      <td style="text-align:right"><em>Filesystem</em></td>
+        </tr>
+      </tbody>
+      
+
+  </table>
+</center>
+
+
 
   <p><code>mount</code> and <code>umount</code> are commands for mounting and unmounting a filesystem, respectively.
-A common use for these commands involves accessing files on a USB drive. Filesystems
-can typically only be mounted by the super user (with <code>sudo</code>).</p>
-<h2 id="most-common-usages">Most Common Usages</h2>
+A common use for these commands involves accessing files on a USB drive or some type
+of other removable device. Filesystems can typically only be mounted by the super
+user (with <code>sudo</code>).</p>
+<h2 id="usage-examples">Usage Examples</h2>
 <p>Mount a USB drive</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo mkdir -p /media/usb
 sudo mount /dev/sda1 /media/usb
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">...
+</code></pre></div><p>Unmount a mounted USB drive</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo umount /dev/sda1
 </code></pre></div><h2 id="configuration">Configuration</h2>
+<p>The <em>/etc/fstab</em> file is the main configuration point for the <code>mount</code> command.
+One can use <em>/etc/fstab</em> to store preset locations for particular devices.
+An unconfigured fstab file will contain the following comments providing instructions
+for configuration:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># /etc/fstab: static file system information.</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># Use &#39;blkid&#39; to print the universally unique identifier for a</span>
+<span style="color:#75715e"># device; this may be used with UUID= as a more robust way to name devices</span>
+<span style="color:#75715e"># that works even if disks are added and removed. See fstab(5).</span>
+<span style="color:#75715e">#</span>
+<span style="color:#75715e"># &lt;file system&gt; &lt;mount point&gt;   &lt;type&gt;  &lt;options&gt;       &lt;dump&gt;  &lt;pass&gt;</span>
+</code></pre></div><p>An example of a line configuring a single device might be:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">/dev/sda1     /media/usb      vfat     defaults     0     0
+</code></pre></div><p>From there, usage of the command&hellip;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo mount /dev/sda1 
+</code></pre></div><p>&hellip;would mount the device at sda1 to <em>/media/usb</em>.</p>
 <h2 id="notes">Notes</h2>
+<ul>
+<li><code>sudo mount -a</code> should be used to check the configuration at <em>/etc/fstab</em> for
+formatting/syntax errors after edits are made. A faulty fstab file can cause complications
+at system boot.</li>
+</ul>
 
 </div>
 

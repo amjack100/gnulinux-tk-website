@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="basename and dirname are commands for splitting a directory-file string like /home/user/file.txt into its individual directory and file components. These are useful shortcuts for what might otherwise be overly complex sed expressions.
+Usage Examples Extract the basename (and suffix) of a full filename.
+basename /home/user/filename.txt .txt # output: filename Extract the dirname of a full filename.
+dirname /home/user/filename.txt # output: /home/user Notes  Both commands will work as expected when given multiple filename arguments." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://www.linux-toolkit.com/builtins/basename/" />
+
+
+    <title>
+        
+            basename | dirname :: GNU/Linux Toolkit 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.29c2c8c3fc9cf748254138351f142ac2833b208a68e83aec126edc98b59efef2.css">
+
+
+
+
+
+
+<meta itemprop="name" content="basename | dirname">
+<meta itemprop="description" content="basename and dirname are commands for splitting a directory-file string like /home/user/file.txt into its individual directory and file components. These are useful shortcuts for what might otherwise be overly complex sed expressions.
+Usage Examples Extract the basename (and suffix) of a full filename.
+basename /home/user/filename.txt .txt # output: filename Extract the dirname of a full filename.
+dirname /home/user/filename.txt # output: /home/user Notes  Both commands will work as expected when given multiple filename arguments."><meta itemprop="datePublished" content="2021-08-16T19:59:54-04:00" />
+<meta itemprop="dateModified" content="2021-08-16T19:59:54-04:00" />
+<meta itemprop="wordCount" content="73">
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="basename | dirname"/>
+<meta name="twitter:description" content="basename and dirname are commands for splitting a directory-file string like /home/user/file.txt into its individual directory and file components. These are useful shortcuts for what might otherwise be overly complex sed expressions.
+Usage Examples Extract the basename (and suffix) of a full filename.
+basename /home/user/filename.txt .txt # output: filename Extract the dirname of a full filename.
+dirname /home/user/filename.txt # output: /home/user Notes  Both commands will work as expected when given multiple filename arguments."/>
+
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2021-08-16 19:59:54 -0400 EDT" />
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">hello</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/builtins/">Builtins</a></li><li><a href="/externals/">Externals</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                <div class="post">
+  <h1>basename | dirname</h1>
+  <time datetime=2021-08-16T19:59:54-0400 class="post-date">Mon, Aug 16, 2021</time>
+
+  
+
+  
+
+  <p><code>basename</code> and <code>dirname</code> are commands for splitting a directory-file string
+like <em>/home/user/file.txt</em> into its individual directory and file
+components. These are useful shortcuts for what might otherwise be overly
+complex <code>sed</code> expressions.</p>
+<h2 id="usage-examples">Usage Examples</h2>
+<p>Extract the basename (and suffix) of a full filename.</p>
+<img src="/basename.svg" alt="basename animation"/>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">basename /home/user/filename.txt .txt
+
+<span style="color:#75715e"># output: filename</span>
+</code></pre></div><p>Extract the dirname of a full filename.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">dirname /home/user/filename.txt
+
+<span style="color:#75715e"># output: /home/user</span>
+</code></pre></div><h2 id="notes">Notes</h2>
+<ul>
+<li>Both commands will work as expected when given multiple filename arguments.</li>
+</ul>
+
+</div>
+
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js" integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
+
+
+
+    </body>
+</html>

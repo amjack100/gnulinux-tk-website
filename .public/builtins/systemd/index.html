@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="systemd is the first process run on boot and acts as the manager for all running services (programs which run in the background). The main configuration entities of systemd are simply called &amp;ldquo;units&amp;rdquo;, of which there are 11 different types. The most commonly used unit is the service unit, which are described individually in .service files. There are several commands for tapping into the features of systemd, including systemctl and journalctl, as well as special syntaxes for customizing each of the types of unit files." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://www.linux-toolkit.com/builtins/systemd/" />
+
+
+    <title>
+        
+            systemd :: GNU/Linux Toolkit 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.29c2c8c3fc9cf748254138351f142ac2833b208a68e83aec126edc98b59efef2.css">
+
+
+
+
+
+
+<meta itemprop="name" content="systemd">
+<meta itemprop="description" content="systemd is the first process run on boot and acts as the manager for all running services (programs which run in the background). The main configuration entities of systemd are simply called &ldquo;units&rdquo;, of which there are 11 different types. The most commonly used unit is the service unit, which are described individually in .service files. There are several commands for tapping into the features of systemd, including systemctl and journalctl, as well as special syntaxes for customizing each of the types of unit files."><meta itemprop="datePublished" content="2021-07-10T11:53:31-04:00" />
+<meta itemprop="dateModified" content="2021-07-10T11:53:31-04:00" />
+<meta itemprop="wordCount" content="275">
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="systemd"/>
+<meta name="twitter:description" content="systemd is the first process run on boot and acts as the manager for all running services (programs which run in the background). The main configuration entities of systemd are simply called &ldquo;units&rdquo;, of which there are 11 different types. The most commonly used unit is the service unit, which are described individually in .service files. There are several commands for tapping into the features of systemd, including systemctl and journalctl, as well as special syntaxes for customizing each of the types of unit files."/>
+
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2021-07-10 11:53:31 -0400 EDT" />
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">hello</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/builtins/">Builtins</a></li><li><a href="/externals/">Externals</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                <div class="post">
+  <h1>systemd</h1>
+  <time datetime=2021-07-10T11:53:31-0400 class="post-date">Sat, Jul 10, 2021</time>
+
+  
+
+  
+
+  <p><code>systemd</code> is the first process run on boot and acts as the manager for all
+running services (programs which run in the background). The main configuration
+entities of <code>systemd</code> are simply called &ldquo;units&rdquo;, of which there are 11 different
+types. The most commonly used unit is the service unit, which are described
+individually in .service files. There are several commands for tapping into the features
+of systemd, including <code>systemctl</code> and <code>journalctl</code>, as well as special syntaxes for
+customizing each of the types of unit files.</p>
+<h2 id="usage-examples">Usage Examples</h2>
+<p><em><code>systemd</code> is hardly ever invoked directly, but instead called by the system.
+<code>systemctl</code> and<code>journalctl</code> provide entry points.</em></p>
+<h3 id="systemctl">systemctl</h3>
+<p>List all the running units</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">systemctl
+</code></pre></div><p>Start/stop/restart a service <em>(where sshd is an example service name)</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">systemctl start sshd
+systemctl stop sshd
+systemctl restart sshd
+</code></pre></div><p>Check the status of a service</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">systemctl status sshd
+</code></pre></div><p>Enable/disable a service to start on system boot</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">systemctl enable sshd
+systemctl disable sshd
+</code></pre></div><h3 id="journalctl">journalctl</h3>
+<p>Watch a live feed of systemd logs</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">journalctl -f
+</code></pre></div><p>Get the logs of a single service</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo journalctl -u sshd
+</code></pre></div><h2 id="configuration">Configuration</h2>
+<p>Creating a custom service</p>
+<p>A new .service file should be created like so in one of these directories.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">/etc/systemd/system/new_service.service 
+<span style="color:#75715e"># sudo systemctl start new_service</span>
+~/.config/systemd/user/new_service.service 
+<span style="color:#75715e"># systemctl --user start new_service</span>
+</code></pre></div><p><em>Symlinked</em> files placed elsewhere will not work with the <code>systemctl enable</code>
+command and therefore won&rsquo;t be able to be triggered on system startup.
+<br>
+Here&rsquo;s a simple example.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#66d9ef">[Unit]</span>
+<span style="color:#a6e22e">Description</span><span style="color:#f92672">=</span><span style="color:#e6db74">A New Service</span>
+
+<span style="color:#66d9ef">[Service]</span>
+<span style="color:#a6e22e">Type</span><span style="color:#f92672">=</span><span style="color:#e6db74">simple</span>
+<span style="color:#a6e22e">Environment</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ONE=one&#34;</span>
+<span style="color:#a6e22e">ExecStart</span><span style="color:#f92672">=</span><span style="color:#e6db74">/home/user/background-script.sh $ONE</span>
+
+<span style="color:#66d9ef">[Install]</span>
+<span style="color:#a6e22e">WantedBy</span><span style="color:#f92672">=</span><span style="color:#e6db74">mutli-user.target</span>
+</code></pre></div><p>Note: [Install] is required for systemctl enable
+<br>
+Use <code>man systemd.service</code> to see all the types and options.
+There are certain options such as ExecStartPre, ExecStartPost, ExecReload, etc.
+which provide additional command triggers.</p>
+
+</div>
+
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js" integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
+
+
+
+    </body>
+</html>

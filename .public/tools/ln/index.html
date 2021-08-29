@@ -8,7 +8,8 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>ln &middot; GNU/Linux Toolkit</title>
+  <title>ln &middot; GNU/
+Linux Toolkit</title>
   <meta name="description" content="" />
 
   
@@ -31,7 +32,8 @@
   <aside class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://www.linux-toolkit.com/"><h1>GNU/Linux Toolkit</h1></a>
+      <a href="https://www.linux-toolkit.com/"><h1>GNU/
+Linux Toolkit</h1></a>
       <p class="lead">
        Consise command line refreshers 
       </p>
@@ -61,6 +63,16 @@
   
   <h1></h2>
        
+      <tbody>
+        <tr>
+      <td style="text-align:left">History</td>
+      <td style="text-align:right">Version 1 AT&amp;T UNIX</td>
+        </tr>
+      </tbody>
+      
+
+  <h1></h2>
+       
       <thead>
         <tr>
       <th style="text-align:left">ln</th>
@@ -73,8 +85,8 @@
        
       <tbody>
         <tr>
-      <td style="text-align:left">package</td>
-      <td style="text-align:right">GNU Coreutils</td>
+      <td style="text-align:left">Package</td>
+      <td style="text-align:right"><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
         </tr>
       </tbody>
       
@@ -83,18 +95,8 @@
        
       <tbody>
         <tr>
-      <td style="text-align:left">service</td>
-      <td style="text-align:right">N/A</td>
-        </tr>
-      </tbody>
-      
-
-  <h1></h2>
-       
-      <tbody>
-        <tr>
-      <td style="text-align:left">usage</td>
-      <td style="text-align:right">direct</td>
+      <td style="text-align:left">Usage</td>
+      <td style="text-align:right"><em>Filesystem</em></td>
         </tr>
       </tbody>
       
@@ -110,7 +112,7 @@ equivalent of a Windows shortcut icon. When a program reads a soft link, it
 is redirected to where the file is. A hard link is basically like giving a
 file another name. When a program reads a hard link, it reads the exact data block
 as the original file.</p>
-<h2 id="most-common-usages">Most Common Usages</h2>
+<h2 id="usage-examples">Usage Examples</h2>
 <p>Create a soft link to a file</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ln -s file.txt s-link.txt
 </code></pre></div><p>Create a hard link to a file</p>
@@ -118,11 +120,11 @@ as the original file.</p>
 </code></pre></div><p>(T stands for target)</p>
 <p>Create a soft link to a directory</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ln -sd directory s-link-directory
-</code></pre></div><h2 id="configuration">Configuration</h2>
-<p>N/A</p>
-<h2 id="notes">Notes</h2>
-<p>Creating a hard link for a directory can <a href="https://askubuntu.com/questions/210741/why-are-hard-links-not-allowed-for-directories">break the filesystem</a>
-and is therefore usually made impossible with system restrictions</p>
+</code></pre></div><h2 id="notes">Notes</h2>
+<ul>
+<li>Creating a hard link for a directory can <a href="https://askubuntu.com/questions/210741/why-are-hard-links-not-allowed-for-directories">break the filesystem</a>
+and is therefore usually made impossible with system restrictions</li>
+</ul>
 
 </div>
 

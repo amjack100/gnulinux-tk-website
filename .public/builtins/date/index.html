@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="date is a command for getting and optionally formatting the current date and time. It can be especially useful for tasks such as logging and naming groups of files. The slight complexity of date lies in its various formatting sequences, which are numerous and not particularly intuitive at first glance.
+Usage Examples Get the current date in the default format
+date # Equal to date &#43;%c Log an event with date annotations" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://www.linux-toolkit.com/builtins/date/" />
+
+
+    <title>
+        
+            date :: GNU/Linux Toolkit 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.29c2c8c3fc9cf748254138351f142ac2833b208a68e83aec126edc98b59efef2.css">
+
+
+
+
+
+
+<meta itemprop="name" content="date">
+<meta itemprop="description" content="date is a command for getting and optionally formatting the current date and time. It can be especially useful for tasks such as logging and naming groups of files. The slight complexity of date lies in its various formatting sequences, which are numerous and not particularly intuitive at first glance.
+Usage Examples Get the current date in the default format
+date # Equal to date &#43;%c Log an event with date annotations"><meta itemprop="datePublished" content="2021-08-17T08:29:12-04:00" />
+<meta itemprop="dateModified" content="2021-08-17T08:29:12-04:00" />
+<meta itemprop="wordCount" content="324">
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="date"/>
+<meta name="twitter:description" content="date is a command for getting and optionally formatting the current date and time. It can be especially useful for tasks such as logging and naming groups of files. The slight complexity of date lies in its various formatting sequences, which are numerous and not particularly intuitive at first glance.
+Usage Examples Get the current date in the default format
+date # Equal to date &#43;%c Log an event with date annotations"/>
+
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2021-08-17 08:29:12 -0400 EDT" />
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">hello</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/builtins/">Builtins</a></li><li><a href="/externals/">Externals</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                <div class="post">
+  <h1>date</h1>
+  <time datetime=2021-08-17T08:29:12-0400 class="post-date">Tue, Aug 17, 2021</time>
+
+  
+
+  
+
+  <p><code>date</code> is a command for getting and optionally formatting the current date and time.
+It can be especially useful for tasks such as logging and naming groups of files.
+The slight complexity of <code>date</code> lies in its various formatting sequences, which are
+numerous and not particularly intuitive at first glance.</p>
+<h2 id="usage-examples">Usage Examples</h2>
+<p>Get the current date in the default format</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">date
+<span style="color:#75715e"># Equal to date +%c</span>
+</code></pre></div><p>Log an event with date annotations</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">&#34;[</span><span style="color:#66d9ef">$(</span>date +%F_%T<span style="color:#66d9ef">)</span><span style="color:#e6db74">] Some event occured&#34;</span> &gt;&gt; log.txt
+<span style="color:#75715e"># Output: [2021-08-17_10:35:07] Some event occured</span>
+</code></pre></div><h2 id="configuration">Configuration</h2>
+<p>No configuration, but formats can be predefined with <code>alias</code>.</p>
+<h2 id="notes">Notes</h2>
+<p>The following format sequences describe how the output of <code>date</code> can be
+adjusted to look a specific way. A sequence is a &ldquo;%&rdquo; followed by a single letter.
+The different letters produce output based on whether they are lowercase or uppcase,
+for example <code>%a</code> or <code>%A</code>, where the uppercase member will typically expand into a
+longer/more verbose descriptor.</p>
+<table>
+<thead>
+<tr>
+<th>Character</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>%a %A</td>
+<td></td>
+<td>Tue Tuesday</td>
+</tr>
+<tr>
+<td>%b %B</td>
+<td></td>
+<td>Aug August</td>
+</tr>
+<tr>
+<td>%c</td>
+<td></td>
+<td>Tue 17 Aug 2021 09:16:13 AM EDT</td>
+</tr>
+<tr>
+<td>%C</td>
+<td>Century</td>
+<td>20</td>
+</tr>
+<tr>
+<td>%d</td>
+<td>Day of the month</td>
+<td>17</td>
+</tr>
+<tr>
+<td>%D</td>
+<td>%m/%d/%y</td>
+<td>08/17/21</td>
+</tr>
+<tr>
+<td>%e</td>
+<td>%_d</td>
+<td>17</td>
+</tr>
+<tr>
+<td>%F</td>
+<td>Full date</td>
+<td>2021-08-17</td>
+</tr>
+<tr>
+<td>%g %G</td>
+<td>Year of ISO week#</td>
+<td>2021 21</td>
+</tr>
+<tr>
+<td>%h</td>
+<td>%b</td>
+<td>Aug</td>
+</tr>
+<tr>
+<td>%H</td>
+<td>Hour 0-24</td>
+<td>22</td>
+</tr>
+<tr>
+<td>%I</td>
+<td>Hour 1-12</td>
+<td>10</td>
+</tr>
+<tr>
+<td>%j</td>
+<td>Day of year</td>
+<td>229</td>
+</tr>
+<tr>
+<td>%k</td>
+<td>%_H</td>
+<td>22</td>
+</tr>
+<tr>
+<td>%l</td>
+<td>%_I</td>
+<td>10</td>
+</tr>
+<tr>
+<td>%m</td>
+<td>Month 01-12</td>
+<td>08</td>
+</tr>
+<tr>
+<td>%M</td>
+<td>Minute 00-59</td>
+<td>13</td>
+</tr>
+<tr>
+<td>%n</td>
+<td>A newline</td>
+<td></td>
+</tr>
+<tr>
+<td>%N</td>
+<td>Nanoseconds</td>
+<td>263121241</td>
+</tr>
+<tr>
+<td>%p %P</td>
+<td>AM/PM</td>
+<td>AM am</td>
+</tr>
+<tr>
+<td>%q</td>
+<td>Quarter of year</td>
+<td>3</td>
+</tr>
+<tr>
+<td>%r</td>
+<td>12-hour clock</td>
+<td>10:16:21 AM</td>
+</tr>
+<tr>
+<td>%R</td>
+<td>24-hour clock</td>
+<td>10:16</td>
+</tr>
+<tr>
+<td>%s</td>
+<td>Seconds*</td>
+<td>1629209907</td>
+</tr>
+<tr>
+<td>%S</td>
+<td>Second 00-60</td>
+<td>11</td>
+</tr>
+<tr>
+<td>%t</td>
+<td>A tab</td>
+<td></td>
+</tr>
+<tr>
+<td>%T</td>
+<td>Time</td>
+<td>10:16:21</td>
+</tr>
+<tr>
+<td>%u</td>
+<td>Day of week 1-7</td>
+<td>2</td>
+</tr>
+<tr>
+<td>%U</td>
+<td>Week # of year</td>
+<td>33</td>
+</tr>
+<tr>
+<td>%V</td>
+<td>ISO week # 01-53</td>
+<td>33</td>
+</tr>
+<tr>
+<td>%w</td>
+<td>Day of week 0-6</td>
+<td>2</td>
+</tr>
+<tr>
+<td>%W</td>
+<td>Week # of year</td>
+<td>33</td>
+</tr>
+<tr>
+<td>%x</td>
+<td>Locale date</td>
+<td>08/17/2021</td>
+</tr>
+<tr>
+<td>%X</td>
+<td>Locale time</td>
+<td>10:25:19 AM</td>
+</tr>
+<tr>
+<td>%y</td>
+<td>Year last 2 digits</td>
+<td>21</td>
+</tr>
+<tr>
+<td>%z</td>
+<td>+hhmm time zone</td>
+<td>-0400</td>
+</tr>
+<tr>
+<td>%Z</td>
+<td>Time zone abbr.</td>
+<td>EDT</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js" integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
+
+
+
+    </body>
+</html>

@@ -1,57 +1,33 @@
-{{ define "main" -}}
-  <h1>Tools</h1>
-  <h2>Complex</h2>
-
-  <p>
-  Highly complicated tools usually with either hundreds of configuration options
-  or their own language syntax. One should approach these tools with a mindset on par
-  with learning a new programming language. 
-  </p>
-
-  {{ range .Pages }}
-
-  {{ if in .Site.Data.complexities.high .Title }} 
-
-  <a href="{{.URL}}">{{.Title}}</a> <br>
-  {{ end }} 
-  {{ end }}
+{{ define "main" }}
 
 
-  <h2>Non-basic</h2>
-  <p>
-  Tools which require some experience to use effectively. These might
-  have configuration files made up of multiple data structures or take advantage
-  of background services.
-  </p>
 
-  {{ range .Pages }}
+<h2>{{ .Section | title }}</h2>
+<br>
 
-  {{ if in .Site.Data.complexities.mid .Title }} 
+<table width=100%>
 
-  <a href="{{.URL}}">{{.Title}}</a> <br>
-
-  {{ end }}
-  {{ end }}
+  <tr>
+    <td><b>Name</b></td>
+    <td><b>Usage</b></td>
+    <td><b>Package</b></td>
+    <td><b>History</b></td>
+  </tr>
 
 
-  <h2>Trivial</h2>
-  <p>
-  Tools that take a few options and rarely have a manual longer than a 
-  couple pages. These include most built-in commands and can be picked up after
-  a few dozen uses. 
-  </p>
-  {{ range .Pages }}
+{{ range $i, $val := .Pages }}
 
-  {{ if in .Site.Data.complexities.mid .Title }} 
+  <tr>
 
-  {{ else if in .Site.Data.complexities.high .Title }}
+    <td><a href="{{ .URL }}">{{ .Title }}</a></td>
 
-  {{ else }}
+    {{ $values := index .Site.Data.commands .Title }}
 
-<time class="pull-right post-list" datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">
-  <a href="{{.URL}}">{{.Title}}</a> <br>
+    <td>{{ $values.Usage | markdownify }}</td>
+    <td>{{ $values.Package | markdownify }}</td>
+    <td>{{ $values.History | markdownify }}</td>
 
-  {{ end }}
-  {{ end }}
-
-{{- end }}
+  </tr>
+{{ end }}
+</table>
+{{ end }}

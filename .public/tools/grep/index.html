@@ -8,7 +8,8 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>grep &middot; GNU/Linux Toolkit</title>
+  <title>grep &middot; GNU/
+Linux Toolkit</title>
   <meta name="description" content="" />
 
   
@@ -31,7 +32,8 @@
   <aside class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://www.linux-toolkit.com/"><h1>GNU/Linux Toolkit</h1></a>
+      <a href="https://www.linux-toolkit.com/"><h1>GNU/
+Linux Toolkit</h1></a>
       <p class="lead">
        Consise command line refreshers 
       </p>
@@ -58,18 +60,37 @@
   
 
   <p><code>grep</code> is a very commonly used tool for searching for patterns of text
-within files or an output stream.</p>
-<h2 id="most-common-usages">Most Common Usages</h2>
+within files or an output stream. <code>grep</code> stands for  <strong>g</strong>lobal <strong>r</strong>egular
+<strong>e</strong>xpression <strong>p</strong>rint. This comes from the <code>sed</code>/<code>ed</code> subcommand <em><strong>g/re/p</strong></em>,
+where <em>g</em> and <em>p</em> are the <em>global</em> and <em>print</em> flags, and re is a regular expression.</p>
+<h2 id="basic-functionality">Basic Functionality</h2>
 <p>Search a single file for a matching pattern.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cat file.txt | grep pattern
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cat file.txt | grep <span style="color:#e6db74">&#39;.*pattern&#39;</span>
 </code></pre></div><p>Search though files across multiple directories for a matching pattern.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">grep nvidia /etc/modprobe.d/* /lib/modprobe.d/*
 </code></pre></div><p>In this case, <code>grep</code> will locate all the files in <code>/etc/modprobe.d</code> and <code>/lib/modprobe.d</code>
 containing the word &ldquo;nvidia&rdquo;, and output the full line of the file where it occurs.</p>
-<h2 id="configuration">Configuration</h2>
-<p>&ndash;</p>
-<h2 id="notes">Notes</h2>
-<p>&ndash;</p>
+<p>Search through files &amp; directories recursively for a regex pattern, starting
+at the current working directory.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">grep <span style="color:#e6db74">&#39;pattern.*&#39;</span> -r
+</code></pre></div><h2 id="workflows">Workflows</h2>
+<h3 id="search-for-a-fixed-string">Search for a fixed string</h3>
+<p>Searching for a fixed string means that <code>grep</code> will interpret its pattern matching
+argument as the literal characters it&rsquo;s given, ignoring the concept of regular expressions
+completely.
+<br>
+For example, given a file <em>file.txt</em> with the contents&hellip;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">#file.txt
+apples
+apples oranges
+apples.*
+</code></pre></div><p>&hellip;searching for the fixed string &lsquo;apples.<em>&rsquo; will match literally &ldquo;apples.</em>&rdquo;,
+the third line (and <em>only</em> the third line). The syntax for performing this example
+is&hellip;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">grep -F <span style="color:#e6db74">&#39;apples.*&#39;</span> ./file.txt
+</code></pre></div><p>This is a contrived example, but there are real world use cases where this sort of
+matching can be helpful for files containing an unusual range of characters.
+The command <code>fgrep</code> performs this same functionality, although its usage is outdated.</p>
 
 </div>
 

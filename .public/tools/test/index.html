@@ -8,14 +8,15 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>test &middot; GNU/Linux Toolkit</title>
+  <title>test | [ &middot; GNU/
+Linux Toolkit</title>
   <meta name="description" content="" />
 
   
-  <link type="text/css" rel="stylesheet" href="http://150.136.68.59/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="http://150.136.68.59/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="http://150.136.68.59/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="http://150.136.68.59/css/hyde.css">
+  <link type="text/css" rel="stylesheet" href="https://www.linux-toolkit.com/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://www.linux-toolkit.com/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://www.linux-toolkit.com/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://www.linux-toolkit.com/css/hyde.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
@@ -31,7 +32,8 @@
   <aside class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <a href="http://150.136.68.59/"><h1>GNU/Linux Toolkit</h1></a>
+      <a href="https://www.linux-toolkit.com/"><h1>GNU/
+Linux Toolkit</h1></a>
       <p class="lead">
        Consise command line refreshers 
       </p>
@@ -39,7 +41,7 @@
 
     <nav>
       <ul class="sidebar-nav">
-        <li><a href="http://150.136.68.59/">Home</a> </li>
+        <li><a href="https://www.linux-toolkit.com/">Home</a> </li>
         <li><a href="/tools/"> Tools </a></li>
       </ul>
     </nav>
@@ -50,14 +52,129 @@
 
     <main class="content container">
     <div class="post">
-  <h1>test</h1>
-  <time datetime=2021-07-19T08:51:11-0400 class="post-date">Mon, Jul 19, 2021</time>
+  <h1>test | [</h1>
+  <time datetime=2021-08-21T08:32:40-0400 class="post-date">Sat, Aug 21, 2021</time>
 
   
 
   
+<center>
+  <table>
+  
+  <h1></h2>
+       
+      <tbody>
+        <tr>
+      <td style="text-align:left">History</td>
+      <td style="text-align:right">UNIX System III, 1981</td>
+        </tr>
+      </tbody>
+      
 
-  <p>this is a test!</p>
+  <h1></h2>
+       
+      <thead>
+        <tr>
+      <th style="text-align:left">test | [</th>
+      <th style="text-align:right"></th>
+        </tr>
+      </thead>
+      
+
+  <h1></h2>
+       
+      <tbody>
+        <tr>
+      <td style="text-align:left">Package</td>
+      <td style="text-align:right"><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+        </tr>
+      </tbody>
+      
+
+  <h1></h2>
+       
+      <tbody>
+        <tr>
+      <td style="text-align:left">Usage</td>
+      <td style="text-align:right"><em>Built-in</em></td>
+        </tr>
+      </tbody>
+      
+
+  </table>
+</center>
+
+
+
+  <p><code>test</code> is a useful scripting command for evaluating various expressions.
+It will return 0 (true) or 1 (false) based on the value of the given expression,
+making it the effective counterpart of the <code>if</code> command built into many shells.
+<br>
+<br>
+The literal <code>[</code> character is identical to <code>test</code>, although its usage requires a
+a closing brace at the end of the provided expression.
+<br>
+<br>
+The type of expression that <code>test</code> evaluates is based on the flag it is given
+as a parameter. See the chart below for a quick reference to each flag.</p>
+<h2 id="basic-functionality">Basic Functionality</h2>
+<p>Test for the existence of a file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#66d9ef">if</span> test -f file.txt; <span style="color:#66d9ef">then</span>
+  echo <span style="color:#e6db74">&#34;File exists&#34;</span>
+<span style="color:#66d9ef">fi</span>
+</code></pre></div><p>Test for the existence of an environment variable <em>(alternative syntax)</em>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -n $USER<span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+  echo $USER
+<span style="color:#66d9ef">fi</span>
+</code></pre></div><p>Compare the value of two integers.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">num1<span style="color:#f92672">=</span><span style="color:#ae81ff">32</span>
+num2<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>
+
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $num1 -gt $num2  <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+  echo <span style="color:#e6db74">&#34;</span>$num1<span style="color:#e6db74"> &gt; </span>$num2<span style="color:#e6db74">&#34;</span>
+<span style="color:#66d9ef">fi</span>
+</code></pre></div><h2 id="workflows">Workflows</h2>
+<p>The usefulness of <code>test</code> becomes clear when we begin to combine it with other
+commands and scripting structures like for loops.</p>
+<p>Here is a basic script that uses <code>test</code> to discard empty files. It will iterate
+over all the files in the user&rsquo;s current working directory, using <code>test -s</code> with
+the negate operator <code>!</code> to find files with no content. Then, it uses <code>rm</code> with
+the interactive flag to confirm deletion.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#rmempty.sh</span>
+<span style="color:#66d9ef">for</span> f in *; <span style="color:#66d9ef">do</span>
+  <span style="color:#66d9ef">if</span> test ! -s $f;<span style="color:#66d9ef">then</span>
+    echo <span style="color:#e6db74">&#34;File &#34;</span>$f<span style="color:#e6db74">&#34; is empty&#34;</span>
+    rm --interactive $f
+  <span style="color:#66d9ef">fi</span>
+<span style="color:#66d9ef">done</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ rmempty.sh
+
+File garbage.txt is empty
+rm: remove regular empty file <span style="color:#e6db74">&#39;garbage.txt&#39;</span>?
+</code></pre></div><p>Maybe you&rsquo;d like to create a script that behaves according to the value of a certain
+environment variable. This example tests the LANG environment variable and reacts
+with the appropriate greeting. Respecting possible differences in environment
+conditions is a  great way of making code in general more robust, not just small
+scripts.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#greeting.sh</span>
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $LANG <span style="color:#f92672">=</span> en_US.UTF-8 <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+  echo <span style="color:#e6db74">&#34;Welcome!&#34;</span>
+<span style="color:#66d9ef">elif</span> <span style="color:#f92672">[</span> $LANG <span style="color:#f92672">=</span> de_DE.UTF-8 <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+  echo <span style="color:#e6db74">&#34;Willkommen!&#34;</span>
+<span style="color:#66d9ef">fi</span>
+</code></pre></div><p><code>test</code> reads the value of the environment variable $LANG, which specifies the user&rsquo;s
+language setting.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ LANG<span style="color:#f92672">=</span>en_US.UTF-8 greeting.sh
+
+Welcome!
+
+$ LANG<span style="color:#f92672">=</span>de_DE.UTF-8 greeting.sh
+
+Willkommen!
+</code></pre></div><h2 id="notes">Notes</h2>
+<ul>
+<li>For further information, see the <code>test</code> <a href="https://pubs.opengroup.org/onlinepubs/009695399/utilities/test.html">official documentation</a></li>
+</ul>
 
 </div>
 

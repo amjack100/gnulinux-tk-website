@@ -1,0 +1,19 @@
+#!/usr/bin/bash
+
+dir=$(dirname $0)
+
+export DISPLAY=:0
+
+
+
+echo "$$(date)" > $dir/log.txt
+
+cd $dir
+
+if /usr/local/bin/hugo -D >> $dir/log.txt 2>&1;then
+  rsync -r $dir/.public/ website:/home/opc/www
+  /usr/bin/notify-send "Website uploaded successfully"
+else
+  /usr/bin/notify-send "Website upload failed" "$(cat $dir/log.txt)"
+fi
+

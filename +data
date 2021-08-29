@@ -1,0 +1,36 @@
+#!/usr/bin/python3
+
+import os.path as osp
+import os
+import pathlib
+import json
+from typing import Dict
+
+
+data: Dict
+DATAI=["Usage", "History", "Package"]
+DATAF="./data/commands.json"
+
+p = pathlib.Path(__file__)
+os.chdir(p.parent.absolute())
+
+if osp.exists(DATAF):
+    with open(DATAF,"r") as f:
+        data = json.load(f)
+else:
+    print("Missing data file")
+    exit(1)
+
+name=input("Name:")
+
+data[name]= {key: input(key + ":") for key in DATAI}
+
+print(json.dumps(data,indent=3))
+
+
+with open(DATAF, "w") as f:
+    json.dump(data, indent=3,fp=f)
+
+# print(data)
+
+

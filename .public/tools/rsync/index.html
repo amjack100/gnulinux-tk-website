@@ -8,7 +8,8 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>rsync &middot; GNU/Linux Toolkit</title>
+  <title>rsync &middot; GNU/
+Linux Toolkit</title>
   <meta name="description" content="" />
 
   
@@ -31,7 +32,8 @@
   <aside class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://www.linux-toolkit.com/"><h1>GNU/Linux Toolkit</h1></a>
+      <a href="https://www.linux-toolkit.com/"><h1>GNU/
+Linux Toolkit</h1></a>
       <p class="lead">
        Consise command line refreshers 
       </p>
@@ -73,7 +75,7 @@
        
       <tbody>
         <tr>
-      <td style="text-align:left">package</td>
+      <td style="text-align:left">Package</td>
       <td style="text-align:right">None (standalone)</td>
         </tr>
       </tbody>
@@ -83,18 +85,8 @@
        
       <tbody>
         <tr>
-      <td style="text-align:left">service</td>
-      <td style="text-align:right">rsyncd.service</td>
-        </tr>
-      </tbody>
-      
-
-  <h1></h2>
-       
-      <tbody>
-        <tr>
-      <td style="text-align:left">usage</td>
-      <td style="text-align:right">direct</td>
+      <td style="text-align:left">Usage</td>
+      <td style="text-align:right"><em>Filesystem</em></td>
         </tr>
       </tbody>
       
@@ -110,14 +102,14 @@ in size or last-modified time to determine the necessary updates to
 the destination.</p>
 <p>If rsync is used over ssh, it requires that both the client and server have
 the software installed.</p>
-<h2 id="most-common-usages">Most Common Usages</h2>
+<h2 id="usage-examples">Usage Examples</h2>
 <p>Copy a directory (recursive) to a remote machine</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">rsync -vr ./source-dir server:/destination
 </code></pre></div><p>Copy a directory (recursive) to the host machine</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">rsync -vr server:/source-dir ./destination
 </code></pre></div><p>Where a host named &ldquo;server&rdquo; is predefined in ~/.ssh/config</p>
 <h2 id="configuration">Configuration</h2>
-<p><code>rsync</code> reads <code>ssh</code> configuration.
+<p><code>rsync</code> reads the configuration file associated with <code>ssh</code>.
 See <a href="https://www.linux-toolkit.com/tools/ssh/#configuration">ssh configuration</a></p>
 <h2 id="notes">Notes</h2>
 <ul>

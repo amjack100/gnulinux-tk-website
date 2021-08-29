@@ -8,7 +8,8 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>ffmpeg &middot; GNU/Linux Toolkit</title>
+  <title>ffmpeg &middot; GNU/
+Linux Toolkit</title>
   <meta name="description" content="" />
 
   
@@ -31,7 +32,8 @@
   <aside class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://www.linux-toolkit.com/"><h1>GNU/Linux Toolkit</h1></a>
+      <a href="https://www.linux-toolkit.com/"><h1>GNU/
+Linux Toolkit</h1></a>
       <p class="lead">
        Consise command line refreshers 
       </p>
@@ -57,8 +59,17 @@
 
   
 
-  <p><code>ffmpeg</code> is a video and image manipulator tool that can do just about anything.</p>
-<h2 id="extract-frames-from-a-gif-or-video">Extract frames from a gif or video</h2>
+  <p><em>This page is a work in progress</em></p>
+<p><code>ffmpeg</code> is a video and audio tool that is capable of handling a wide range
+of media types. It can perform video conversion, trimming, frame extraction
+and many other functions very quickly.</p>
+<h2 id="basic-functionality">Basic Functionality</h2>
+<p>Convert an audio file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ffmpeg -i input.ogg output.mp3
+</code></pre></div><p>Convert a video file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ffmpeg -i input.mp4 output.webm
+</code></pre></div><h2 id="workflows">Workflows</h2>
+<h3 id="extracting-frames-from-a-video">Extracting frames from a video</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mkdir output
 ffmpeg -i animation.gif ./output/%3d.png
 
@@ -67,7 +78,21 @@ ffmpeg -i animation.gif ./output/%3d.png
 <span style="color:#75715e"># 001.png  005.png  009.png ...</span>
 <span style="color:#75715e"># 002.png  006.png  010.png ... </span>
 <span style="color:#75715e"># 003.png  007.png  011.png ...</span>
-</code></pre></div>
+</code></pre></div><h3 id="trimming-a-video-based-on-a-start-and-end-time">Trimming a video based on a start and end time</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ffmpeg -ss 00:01:00 -i input.mp4 -to 00:02:00 -c copy output.mp4
+</code></pre></div><blockquote>
+<p>Arguments</p>
+<ul>
+<li>-i input.mp4        Our input file</li>
+<li>-ss 00:01:00        Seek to position at 1 minute</li>
+<li>-to 00:02:00        End at the position at 2 minutes</li>
+<li>-c copy             Trim via stream copy</li>
+<li>output.mp4          Trimmed output file</li>
+</ul>
+</blockquote>
+<p>See the StackOverflow post <a href="https://stackoverflow.com/a/42827058">here</a>
+for more information.</p>
+
 </div>
 
 

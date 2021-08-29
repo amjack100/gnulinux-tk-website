@@ -8,7 +8,8 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>chown &middot; GNU/Linux Toolkit</title>
+  <title>chown &middot; GNU/
+Linux Toolkit</title>
   <meta name="description" content="" />
 
   
@@ -31,7 +32,8 @@
   <aside class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://www.linux-toolkit.com/"><h1>GNU/Linux Toolkit</h1></a>
+      <a href="https://www.linux-toolkit.com/"><h1>GNU/
+Linux Toolkit</h1></a>
       <p class="lead">
        Consise command line refreshers 
       </p>
@@ -61,6 +63,16 @@
   
   <h1></h2>
        
+      <tbody>
+        <tr>
+      <td style="text-align:left">History</td>
+      <td style="text-align:right">Version 1 AT&amp;T UNIX</td>
+        </tr>
+      </tbody>
+      
+
+  <h1></h2>
+       
       <thead>
         <tr>
       <th style="text-align:left">chown</th>
@@ -73,8 +85,8 @@
        
       <tbody>
         <tr>
-      <td style="text-align:left">package</td>
-      <td style="text-align:right">GNU Coreutils</td>
+      <td style="text-align:left">Package</td>
+      <td style="text-align:right"><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
         </tr>
       </tbody>
       
@@ -83,18 +95,8 @@
        
       <tbody>
         <tr>
-      <td style="text-align:left">service</td>
-      <td style="text-align:right">N/A</td>
-        </tr>
-      </tbody>
-      
-
-  <h1></h2>
-       
-      <tbody>
-        <tr>
-      <td style="text-align:left">usage</td>
-      <td style="text-align:right">direct</td>
+      <td style="text-align:left">Usage</td>
+      <td style="text-align:right"><em>Filesystem</em></td>
         </tr>
       </tbody>
       
@@ -105,19 +107,19 @@
 
 
   <p><code>chown</code> is a tool for changing the owner of a file or directory. To
-see the owner of file.txt, use the command <code>ls -l file.txt</code>. The output is:</p>
+reveal the owner of a file <em>file.txt</em>, use the command <code>ls -l file.txt</code>.
+The output is&hellip;</p>
 <pre>
 -rw-rw-r-- 1 <b>john</b> staff 23 Jul 2 08:45 file.txt
 </pre>
-<p>where &ldquo;john&rdquo; is the file&rsquo;s owner.
-<code>chown</code> is also capable of changing the file group, (in this case &ldquo;staff&rdquo;),
-doing the exact same thing as <code>chgrp</code>.</p>
-<h2 id="most-common-usages">Most Common Usages</h2>
-<p>Change the owner of a file.</p>
+<p>&hellip;where <em>john</em> is the file&rsquo;s owner. <code>chown</code> is also capable of changing the file
+group, ( <em>staff</em> ), having the same functionality as <code>chgrp</code>.</p>
+<h2 id="usage-examples">Usage Examples</h2>
+<p>Change a file&rsquo;s owner.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">chown root ./file.txt
-</code></pre></div><p>Change the owner and group of a file.</p>
+</code></pre></div><p>Change a file&rsquo;s owner and group.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">chown root:staff ./file.txt
-</code></pre></div><p>Change the owner (and subfiles) of a directory</p>
+</code></pre></div><p>Change the owner of a directory and its contents recursively.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">chown -hR root directory
 </code></pre></div><h2 id="configuration">Configuration</h2>
 <p>N/A</p>

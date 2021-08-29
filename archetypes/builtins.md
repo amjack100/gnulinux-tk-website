@@ -6,7 +6,7 @@ draft: true
 
 `{{ .Name }}`
 
-## Most Common Usages
+## Usage Examples
 
 ```sh
 ...
@@ -15,9 +15,5 @@ draft: true
 ```sh
 ...
 ```
-
-## Configuration
-
-N/A
 
 ## Notes

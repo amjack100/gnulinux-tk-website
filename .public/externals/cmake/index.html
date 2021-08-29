@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="This page is a work in progress
+CMake is a tool that creates build setups for source code, allowing that code to be cross platform.
+The root of a CMake entity is always defined by a CMakeLists.txt file.
+Bare Minimum Example . ├── CMakeLists.txt └── main.cpp CMakeLists.txt
+cmake_minimum_required(VERSION 3.10)project(Main)add_executable(Main main.cpp)mkdir build cd build &amp;amp;&amp;amp; cmake .. File Templating CMake can format input files with variables specified in CMakeLists.txt, and produce an output in the build folder." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://www.linux-toolkit.com/externals/cmake/" />
+
+
+    <title>
+        
+            cmake :: GNU/Linux Toolkit 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.29c2c8c3fc9cf748254138351f142ac2833b208a68e83aec126edc98b59efef2.css">
+
+
+
+
+
+
+<meta itemprop="name" content="cmake">
+<meta itemprop="description" content="This page is a work in progress
+CMake is a tool that creates build setups for source code, allowing that code to be cross platform.
+The root of a CMake entity is always defined by a CMakeLists.txt file.
+Bare Minimum Example . ├── CMakeLists.txt └── main.cpp CMakeLists.txt
+cmake_minimum_required(VERSION 3.10)project(Main)add_executable(Main main.cpp)mkdir build cd build &amp;&amp; cmake .. File Templating CMake can format input files with variables specified in CMakeLists.txt, and produce an output in the build folder."><meta itemprop="datePublished" content="2021-07-20T14:32:04-04:00" />
+<meta itemprop="dateModified" content="2021-07-20T14:32:04-04:00" />
+<meta itemprop="wordCount" content="89">
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="cmake"/>
+<meta name="twitter:description" content="This page is a work in progress
+CMake is a tool that creates build setups for source code, allowing that code to be cross platform.
+The root of a CMake entity is always defined by a CMakeLists.txt file.
+Bare Minimum Example . ├── CMakeLists.txt └── main.cpp CMakeLists.txt
+cmake_minimum_required(VERSION 3.10)project(Main)add_executable(Main main.cpp)mkdir build cd build &amp;&amp; cmake .. File Templating CMake can format input files with variables specified in CMakeLists.txt, and produce an output in the build folder."/>
+
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2021-07-20 14:32:04 -0400 EDT" />
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">hello</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/builtins/">Builtins</a></li><li><a href="/externals/">Externals</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                <div class="post">
+  <h1>cmake</h1>
+  <time datetime=2021-07-20T14:32:04-0400 class="post-date">Tue, Jul 20, 2021</time>
+
+  
+
+  
+
+  <p><em>This page is a work in progress</em></p>
+<p>CMake is a tool that creates build setups for source code, allowing that code to
+be cross platform.</p>
+<p>The root of a CMake entity is always defined by a <code>CMakeLists.txt</code> file.</p>
+<h3 id="bare-minimum-example">Bare Minimum Example</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">.
+├── CMakeLists.txt
+└── main.cpp
+</code></pre></div><p><code>CMakeLists.txt</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmake" data-lang="cmake">cmake_minimum_required(<span style="color:#e6db74">VERSION</span> <span style="color:#e6db74">3.10</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>project(<span style="color:#e6db74">Main</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>add_executable(<span style="color:#e6db74">Main</span> <span style="color:#e6db74">main.cpp</span>)<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mkdir build
+cd build <span style="color:#f92672">&amp;&amp;</span> cmake ..
+</code></pre></div><h3 id="file-templating">File Templating</h3>
+<p>CMake can format input files with variables specified in CMakeLists.txt,
+and produce an output in the build folder.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">.
+├── CMakeLists.txt
+└── format-in.txt
+</code></pre></div><p><code>CMakeLists.txt</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cmake" data-lang="cmake">configure_file(<span style="color:#e6db74">format-in.txt</span> <span style="color:#e6db74">format-out.txt</span>)<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p><code>format-in.txt</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">The project version is: @Main_VERSION_MAJOR@
+</code></pre></div>
+</div>
+
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js" integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,25 @@
+
+baseURL: "http://localhost:1313/"
+languageCode: "en-us"
+title: "GNU/Linux Toolkit"
+theme: "hello-friend"
+sectionPagesMenu: "main"
+publishDir: ".public"
+resourceDir: ".resources"
+themesDir : ".themes"
+
+Params:
+  description: "Consise command line refreshers"
+
+markup:
+  goldmark:
+    extensions:
+      table: true
+      definitionList: true
+    renderer:
+      unsafe: true
+
+
+
+#Menus:
+  #main:

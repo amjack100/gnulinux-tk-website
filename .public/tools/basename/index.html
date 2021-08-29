@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.86.1" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>basename | dirname &middot; GNU/
+Linux Toolkit</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://www.linux-toolkit.com/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://www.linux-toolkit.com/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://www.linux-toolkit.com/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://www.linux-toolkit.com/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://www.linux-toolkit.com/"><h1>GNU/
+Linux Toolkit</h1></a>
+      <p class="lead">
+       Consise command line refreshers 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://www.linux-toolkit.com/">Home</a> </li>
+        <li><a href="/tools/"> Tools </a></li>
+      </ul>
+    </nav>
+
+    <p>&copy; 2021. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>basename | dirname</h1>
+  <time datetime=2021-08-16T19:59:54-0400 class="post-date">Mon, Aug 16, 2021</time>
+
+  
+
+  
+<center>
+  <table>
+  
+  <h1></h2>
+       
+      <tbody>
+        <tr>
+      <td style="text-align:left">History</td>
+      <td style="text-align:right">V7 AT&amp;T UNIX</td>
+        </tr>
+      </tbody>
+      
+
+  <h1></h2>
+       
+      <thead>
+        <tr>
+      <th style="text-align:left">basename | dirname</th>
+      <th style="text-align:right"></th>
+        </tr>
+      </thead>
+      
+
+  <h1></h2>
+       
+      <tbody>
+        <tr>
+      <td style="text-align:left">Package</td>
+      <td style="text-align:right"><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+        </tr>
+      </tbody>
+      
+
+  <h1></h2>
+       
+      <tbody>
+        <tr>
+      <td style="text-align:left">Usage</td>
+      <td style="text-align:right"><em>Scripting</em></td>
+        </tr>
+      </tbody>
+      
+
+  </table>
+</center>
+
+
+
+  <p align="center">
+<img src="/basename.svg" alt="Basename"/>
+</p>
+<p><code>basename</code> and <code>dirname</code> are commands for splitting a directory-file string
+like <em>/home/user/file.txt</em> into its individual directory and file
+components. These are useful shortcuts for what might otherwise be overly
+complex <code>sed</code> expressions.</p>
+<h2 id="usage-examples">Usage Examples</h2>
+<p>Extract the basename (and suffix) of a full filename.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">basename /home/user/filename.txt .txt
+
+<span style="color:#75715e"># output: filename</span>
+</code></pre></div><p>Extract the dirname of a full filename.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">dirname /home/user/filename.txt
+
+<span style="color:#75715e"># output: /home/user</span>
+</code></pre></div><h2 id="notes">Notes</h2>
+<ul>
+<li>Both commands will work as expected when given multiple filename arguments.</li>
+</ul>
+
+</div>
+
+
+    </main>
+
+
+    
+      
+    
+  </body>
+</html>

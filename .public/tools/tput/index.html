@@ -8,7 +8,8 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>tput &middot; GNU/Linux Toolkit</title>
+  <title>tput &middot; GNU/
+Linux Toolkit</title>
   <meta name="description" content="" />
 
   
@@ -31,7 +32,8 @@
   <aside class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <a href="https://www.linux-toolkit.com/"><h1>GNU/Linux Toolkit</h1></a>
+      <a href="https://www.linux-toolkit.com/"><h1>GNU/
+Linux Toolkit</h1></a>
       <p class="lead">
        Consise command line refreshers 
       </p>
@@ -61,6 +63,16 @@
   
   <h1></h2>
        
+      <tbody>
+        <tr>
+      <td style="text-align:left">History</td>
+      <td style="text-align:right">System V</td>
+        </tr>
+      </tbody>
+      
+
+  <h1></h2>
+       
       <thead>
         <tr>
       <th style="text-align:left">tput</th>
@@ -73,7 +85,7 @@
        
       <tbody>
         <tr>
-      <td style="text-align:left">package</td>
+      <td style="text-align:left">Package</td>
       <td style="text-align:right"><a href="https://invisible-island.net/ncurses/">NCURSES</a></td>
         </tr>
       </tbody>
@@ -83,18 +95,8 @@
        
       <tbody>
         <tr>
-      <td style="text-align:left">service</td>
-      <td style="text-align:right">N/A</td>
-        </tr>
-      </tbody>
-      
-
-  <h1></h2>
-       
-      <tbody>
-        <tr>
-      <td style="text-align:left">usage</td>
-      <td style="text-align:right">rarely (mostly used in scripts)</td>
+      <td style="text-align:left">Usage</td>
+      <td style="text-align:right"><em>Environment</em></td>
         </tr>
       </tbody>
       
@@ -109,7 +111,7 @@
 information about hundreds of terminals (+ terminal emulators, given that
 actual terminals hardly exist today). Terminfo database files are held in /etc/terminfo/
 but are compressed and require special tools for reading.</p>
-<h2 id="most-common-usages">Most Common Usages</h2>
+<h2 id="usage-examples">Usage Examples</h2>
 <p>Write the value of a capname to standard output</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">tput bold
 </code></pre></div><p>Given the argument &ldquo;bold&rdquo;, <code>tput</code> will fetch the value from the terminfo database.</p>
@@ -120,11 +122,11 @@ will now be bolded.</p>
 <p>Embed in a script</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">echo <span style="color:#e6db74">&#34;</span><span style="color:#66d9ef">$(</span>tput bold<span style="color:#66d9ef">)</span><span style="color:#e6db74">Hello</span><span style="color:#66d9ef">$(</span>tput sgr0<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
 </code></pre></div><p>&hellip;which will print a bolded &ldquo;Hello&rdquo; to the user&rsquo;s terminal.</p>
-<h2 id="configuration">Configuration</h2>
-<p>N/A</p>
 <h2 id="notes">Notes</h2>
-<p>The tool <code>infocmp</code> can be used to show contents of the terminfo
-database of the active terminal in a human readable format.</p>
+<ul>
+<li>The command <code>infocmp</code> can be used to show contents of the terminfo
+database of the active terminal in a human readable format.</li>
+</ul>
 
 </div>
 

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.86.1" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>tr &middot; GNU/
+Linux Toolkit</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://www.linux-toolkit.com/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://www.linux-toolkit.com/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://www.linux-toolkit.com/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://www.linux-toolkit.com/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://www.linux-toolkit.com/"><h1>GNU/
+Linux Toolkit</h1></a>
+      <p class="lead">
+       Consise command line refreshers 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://www.linux-toolkit.com/">Home</a> </li>
+        <li><a href="/tools/"> Tools </a></li>
+      </ul>
+    </nav>
+
+    <p>&copy; 2021. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>tr</h1>
+  <time datetime=2021-08-26T18:29:23-0400 class="post-date">Thu, Aug 26, 2021</time>
+
+  
+
+  
+<center>
+  <table>
+  
+  <h1></h2>
+       
+      <tbody>
+        <tr>
+      <td style="text-align:left">History</td>
+      <td style="text-align:right">Version 4 AT&amp;T UNIX</td>
+        </tr>
+      </tbody>
+      
+
+  <h1></h2>
+       
+      <thead>
+        <tr>
+      <th style="text-align:left">tr</th>
+      <th style="text-align:right"></th>
+        </tr>
+      </thead>
+      
+
+  <h1></h2>
+       
+      <tbody>
+        <tr>
+      <td style="text-align:left">Package</td>
+      <td style="text-align:right"><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+        </tr>
+      </tbody>
+      
+
+  <h1></h2>
+       
+      <tbody>
+        <tr>
+      <td style="text-align:left">Usage</td>
+      <td style="text-align:right"><em>Text</em></td>
+        </tr>
+      </tbody>
+      
+
+  </table>
+</center>
+
+
+
+  <p><code>tr</code> is a command for <strong>tr</strong>anslating / <strong>tr</strong>ansliterating text characters. The
+term <em>translate</em> in the context of <code>tr</code> has nothing to do with across-language
+translation, but instead refers to a mapping of certain characters to others.</p>
+<h2 id="usage-examples">Usage Examples</h2>
+<p>Replace all occurances of a character in a file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">tr a b &lt; ./file.txt
+</code></pre></div><p><em>All instances of the character &lsquo;a&rsquo; will be replaced with &lsquo;b&rsquo;.</em></p>
+<p>Translate all the lower-case characters of a file to upper-case.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">tr <span style="color:#e6db74">&#34;[:lower:]&#34;</span> <span style="color:#e6db74">&#34;[:upper:]&#34;</span> &lt; ./file.txt
+</code></pre></div><p>Delete all occurances of a given character set.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">tr -d <span style="color:#e6db74">&#39;abcdefg&#39;</span> &lt; ./file.txt
+</code></pre></div><h2 id="notes">Notes</h2>
+<ul>
+<li>More special sequences like &ldquo;[:lower:]&rdquo; and &ldquo;[:upper:]&rdquo;
+can be viewed in the manual along with their meanings with <code>man tr</code>.</li>
+</ul>
+
+</div>
+
+
+    </main>
+
+
+    
+      
+    
+  </body>
+</html>
