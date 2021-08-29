@@ -297,9 +297,9 @@ ls -l Configuration The output of ls can be configured through the dircolors com
       <description>find is the primary built-in utility for finding files on a GNU/Linux system.
 Usage Examples The first 2 examples begin searching from the current working directory.
 Find files that match a search pattern
-find -iname &amp;#39;*.txt&amp;#39; -iname means &amp;ldquo;case insensitive&amp;rdquo;, which can in general be more helpful than -name.
+$ find -iname &amp;#39;*.txt&amp;#39; -iname means &amp;ldquo;case insensitive&amp;rdquo;, which can in general be more helpful than -name.
 Find files that have been modified within a specific time frame
-find -cmin -20 Where the last modified time is 20 minutes</description>
+$ find -cmin -20 Where the last modified time is 20 minutes</description>
     </item>
     
     <item>
