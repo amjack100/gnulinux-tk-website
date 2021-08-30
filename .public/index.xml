@@ -74,9 +74,9 @@ echo hello Use redirection to quickly create a new file.</description>
       <guid>https://www.linux-toolkit.com/builtins/cal/</guid>
       <description>cal and ncal are commands for printing a basic calendar with the current date highlighted. ncal stands for &amp;ldquo;new calendar&amp;rdquo; and simply presents an alternative, vertical layout.
 Usage Examples Print a calendar.
-cal Print a full year calendar.
-cal -y Print a full year calendar of a particular year.
-cal -y 2014 Notes  According to the manual page CAL(1), not all options are compatible for historical reasons.  </description>
+$ cal Print a full year calendar.
+$ cal -y Print a full year calendar of a particular year.
+$ cal -y 2014 Notes  According to the manual page CAL(1), not all options are compatible for historical reasons.</description>
     </item>
     
     <item>
