@@ -7,8 +7,8 @@
 <meta name="author" content="">
 <meta name="description" content="basename and dirname are commands for splitting a directory-file string like /home/user/file.txt into its individual directory and file components. These are useful shortcuts for what might otherwise be overly complex sed expressions.
 Usage Examples Extract the basename (and suffix) of a full filename.
-basename /home/user/filename.txt .txt # output: filename Extract the dirname of a full filename.
-dirname /home/user/filename.txt # output: /home/user Notes  Both commands will work as expected when given multiple filename arguments." />
+$ basename /home/user/filename.txt .txt filename Extract the dirname of a full filename.
+$ dirname /home/user/filename.txt /home/user Notes  Both commands will work as expected when given multiple filename arguments." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -38,17 +38,17 @@ dirname /home/user/filename.txt # output: /home/user Notes  Both commands will w
 <meta itemprop="name" content="basename | dirname">
 <meta itemprop="description" content="basename and dirname are commands for splitting a directory-file string like /home/user/file.txt into its individual directory and file components. These are useful shortcuts for what might otherwise be overly complex sed expressions.
 Usage Examples Extract the basename (and suffix) of a full filename.
-basename /home/user/filename.txt .txt # output: filename Extract the dirname of a full filename.
-dirname /home/user/filename.txt # output: /home/user Notes  Both commands will work as expected when given multiple filename arguments."><meta itemprop="datePublished" content="2021-08-16T19:59:54-04:00" />
+$ basename /home/user/filename.txt .txt filename Extract the dirname of a full filename.
+$ dirname /home/user/filename.txt /home/user Notes  Both commands will work as expected when given multiple filename arguments."><meta itemprop="datePublished" content="2021-08-16T19:59:54-04:00" />
 <meta itemprop="dateModified" content="2021-08-16T19:59:54-04:00" />
-<meta itemprop="wordCount" content="73">
+<meta itemprop="wordCount" content="71">
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="basename | dirname"/>
 <meta name="twitter:description" content="basename and dirname are commands for splitting a directory-file string like /home/user/file.txt into its individual directory and file components. These are useful shortcuts for what might otherwise be overly complex sed expressions.
 Usage Examples Extract the basename (and suffix) of a full filename.
-basename /home/user/filename.txt .txt # output: filename Extract the dirname of a full filename.
-dirname /home/user/filename.txt # output: /home/user Notes  Both commands will work as expected when given multiple filename arguments."/>
+$ basename /home/user/filename.txt .txt filename Extract the dirname of a full filename.
+$ dirname /home/user/filename.txt /home/user Notes  Both commands will work as expected when given multiple filename arguments."/>
 
 
 
@@ -127,13 +127,11 @@ complex <code>sed</code> expressions.</p>
 <h2 id="usage-examples">Usage Examples</h2>
 <p>Extract the basename (and suffix) of a full filename.</p>
 <img src="/basename.svg" alt="basename animation"/>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">basename /home/user/filename.txt .txt
-
-<span style="color:#75715e"># output: filename</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ basename /home/user/filename.txt .txt
+filename
 </code></pre></div><p>Extract the dirname of a full filename.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">dirname /home/user/filename.txt
-
-<span style="color:#75715e"># output: /home/user</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ dirname /home/user/filename.txt
+/home/user
 </code></pre></div><h2 id="notes">Notes</h2>
 <ul>
 <li>Both commands will work as expected when given multiple filename arguments.</li>
