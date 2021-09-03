@@ -6,14 +6,26 @@
     <description>Recent content on GNU/Linux Toolkit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Sep 2021 19:46:26 -0400</lastBuildDate><atom:link href="https://www.linux-toolkit.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Sep 2021 20:19:02 -0400</lastBuildDate><atom:link href="https://www.linux-toolkit.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>top</title>
+      <link>https://www.linux-toolkit.com/builtins/top/</link>
+      <pubDate>Thu, 02 Sep 2021 20:19:02 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/top/</guid>
+      <description>top is an interactive program for monitoring processes, cpu usage and live feeds of other system metrics. top stands for table of processes. Effectively using this tool requires some practice compared to other commands, as its interactive menu provides many options and the ability to filter specific items.
+Basic Functionality Simply start top.
+$ top Start top, sorting processes by a particular field.
+$ top -o name_of_field Workflows While the interactive table is running within your terminal, many keyboard shortcuts become available which provide additional functionality.</description>
+    </item>
+    
     <item>
       <title>install</title>
       <link>https://www.linux-toolkit.com/builtins/install/</link>
       <pubDate>Thu, 02 Sep 2021 19:46:26 -0400</pubDate>
       
       <guid>https://www.linux-toolkit.com/builtins/install/</guid>
-      <description>install is a command for copying files and optionally setting the permissions of that file simultaneously. It can be thought of as the chmod and cp commands combined into one for the sake of convenience, and is usually used to move a newly compiled program to a destination like /bin or /usr/local/bin
+      <description>install is a command for copying files and optionally setting the permissions of that file simultaneously. It can be thought of as the chmod and cp commands combined into one for the sake of convenience, and is usually used to move a newly compiled program to a destination like /bin or /usr/local/bin.
 Usage Examples Copy files to a destination (same as cp).
 $ install path/to/source path/to/destination Copy files to a destination while also setting the mode.</description>
     </item>
