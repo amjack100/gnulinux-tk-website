@@ -4,6 +4,11 @@
       "History": "Version 4 AT&T UNIX",
       "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
    },
+   "apt": {
+      "Usage": "_Packages_",
+      "History": "---",
+      "Package": "---"
+   },
    "env": {
       "Usage": "_Environment_",
       "History": "4.4 BSD",
@@ -44,7 +49,7 @@
       "History": "V7 AT&T UNIX",
       "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
    },
-   "lsmod ": {
+   "lsmod": {
       "Usage": "_Kernel_",
       "History": "modutils Linux v2.2.x",
       "Package": "[kmod](https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git)"
@@ -69,8 +74,14 @@
       "History": "modutils Linux v2.2.x",
       "Package": "[kmod](https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git)"
    },
+   "make": {
+      "Usage": "---",
+      "History": "---",
+      "Package": "---"
+   },
    "mkdir | rmdir": {
       "Usage": "_Filesystem_",
+      "History": "---",
       "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
    },
    "cat | tac": {
@@ -79,6 +90,7 @@
       "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
    },
    "ls | dir | vdir": {
+      "History": "---",
       "Usage": "_Filesystem_",
       "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
    },
@@ -88,6 +100,7 @@
       "Package": "Standalone (GNU sed)"
    },
    "find": {
+      "History": "---",
       "Usage": "_Searching_",
       "Package": "[GNU Findutils](https://www.gnu.org/software/findutils/)"
    },
@@ -127,12 +140,14 @@
       "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
    },
    "man": {
+      "History": "---",
       "Usage": "_Documentation_",
       "Package": "Standard builtin"
    },
    "rsync": {
       "Usage": "_Filesystem_",
-      "Package": "None (standalone)"
+      "Package": "None (standalone)",
+      "History": "---"
    },
    "ssh": {
       "Usage": "_Networking_",
@@ -140,13 +155,14 @@
       "Package": "None (standalone)"
    },
    "systemctl": {
+      "History": "---",
       "Usage": "_Environment_",
       "Package": "None (standalone)"
    },
    "diff": {
       "Usage": "_Text_",
       "History": "Version 5 AT&T UNIX",
-      "Package": "\"[GNU Coreutils](https://www.gnu.org/software/coreutils/)\""
+      "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
    },
    "id | whoami": {
       "Usage": "_Environment_",
@@ -172,5 +188,15 @@
       "Usage": "_Searching_",
       "History": "Version 4 AT&T UNIX",
       "Package": "Standalone (GNU grep)"
+   },
+   "install": {
+      "Usage": "_Filesystem_",
+      "History": "---",
+      "Package": "GNU Coreutils"
+   },
+   "top": {
+      "Usage": "_Processes_",
+      "History": "---",
+      "Package": "procps-ng"
    }
 }
