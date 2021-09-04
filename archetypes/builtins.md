@@ -8,11 +8,11 @@ draft: true
 
 ## Usage Examples
 
-```sh
+```bash
 ...
 ```
 
-```sh
+```bash
 ...
 ```
 

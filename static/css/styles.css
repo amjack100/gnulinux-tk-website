@@ -1,0 +1,9 @@
+.svgimg {
+  object-fit: none;
+  object-position: left;
+  width: auto;
+  max-width: "none";
+  height: "";
+  border: 0.3em solid #545454;
+  border-radius: 0.5em;
+}
