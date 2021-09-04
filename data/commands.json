@@ -198,5 +198,10 @@
       "Usage": "_Processes_",
       "History": "---",
       "Package": "procps-ng"
+   },
+   "pgrep": {
+      "Usage": "_Processes_",
+      "History": "---",
+      "Package": "procps-ng"
    }
 }
