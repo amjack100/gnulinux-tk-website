@@ -4,8 +4,20 @@ import os.path as osp
 import os
 import pathlib
 import json
-from typing import Dict
+from typing import Dict, List
+import subprocess
 
+# Create new .md file
+
+content_types:List[str] =  os.listdir("./content")
+for i, c in enumerate(content_types):
+    print(i, ":", c)
+content_type = content_types[int(input("hugo page type (int):"))] 
+filename = input("filename (no .md extension):")
+res = subprocess.run(["hugo", "new", content_type + "/" + filename + ".md"], capture_output=True, text=True)
+print(res.stdout)
+
+# Create new data for file
 
 data: Dict
 DATAI=["Usage", "History", "Package"]
@@ -21,16 +33,11 @@ else:
     print("Missing data file")
     exit(1)
 
-name=input("Name:")
+data[filename]= {key: input(key + ":") for key in DATAI}
 
-data[name]= {key: input(key + ":") for key in DATAI}
-
-print(json.dumps(data,indent=3))
-
+print(json.dumps(data[filename],indent=3))
 
 with open(DATAF, "w") as f:
     json.dump(data, indent=3,fp=f)
-
-# print(data)
 
 
