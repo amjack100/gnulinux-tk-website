@@ -4,16 +4,27 @@ date: {{ .Date }}
 draft: true
 ---
 
-`{{ .Name }}`
+`{{ .Name }}` is used for
+The name `{{ .Name }}` comes from
 
 ## Usage Examples
+
+...
+
+{{< showIfExists "static/{{ .Name }}.svg" >}}
+
+...
 
 ```bash
 ...
 ```
+
+...
 
 ```bash
 ...
 ```
 
 ## Notes
+
+-
