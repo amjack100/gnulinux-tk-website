@@ -6,7 +6,17 @@
     <description>Recent content in Builtins on GNU/Linux Toolkit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Sep 2021 21:01:34 -0400</lastBuildDate><atom:link href="https://www.linux-toolkit.com/builtins/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Sep 2021 20:18:34 -0400</lastBuildDate><atom:link href="https://www.linux-toolkit.com/builtins/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mkfifo</title>
+      <link>https://www.linux-toolkit.com/builtins/mkfifo.md/</link>
+      <pubDate>Sat, 04 Sep 2021 20:18:34 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/mkfifo.md/</guid>
+      <description>mkfifo is used for creating named pipes, a special file type. The name mkfifo comes from make First In First Out, where a first-in first-out file operates like a pipe but has an identifier and is entered into the filesystem. Before a FIFO can have input/output performed on it, it must be opened at both &amp;ldquo;ends&amp;rdquo; (opened for reading and opened for writing).
+Usage Examples Make a FIFO at a provided path.</description>
+    </item>
+    
     <item>
       <title>pgrep</title>
       <link>https://www.linux-toolkit.com/builtins/pgrep/</link>

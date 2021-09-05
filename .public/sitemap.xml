@@ -3,10 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.linux-toolkit.com/builtins/</loc>
-    <lastmod>2021-09-03T21:01:34-04:00</lastmod>
+    <lastmod>2021-09-04T20:18:34-04:00</lastmod>
   </url><url>
     <loc>https://www.linux-toolkit.com/</loc>
-    <lastmod>2021-09-03T21:01:34-04:00</lastmod>
+    <lastmod>2021-09-04T20:18:34-04:00</lastmod>
+  </url><url>
+    <loc>https://www.linux-toolkit.com/builtins/mkfifo.md/</loc>
+    <lastmod>2021-09-04T20:18:34-04:00</lastmod>
   </url><url>
     <loc>https://www.linux-toolkit.com/builtins/pgrep/</loc>
     <lastmod>2021-09-03T21:01:34-04:00</lastmod>
