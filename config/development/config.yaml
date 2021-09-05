@@ -21,5 +21,14 @@ markup:
 
 
 
-#Menus:
-  #main:
+Menus:
+  main:
+    - identifier: about
+      name: about
+      url: /about/
+    - identifier: builtins
+      name: built-ins
+      url: /builtins/
+    - identifier: externals
+      name: externals
+      url: /externals/

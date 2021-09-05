@@ -518,5 +518,14 @@ ssh -i ~/.ssh/some-private-key.key john@100.100.10.10 Configuration Save a host 
       <description>systemd is the first process run on boot and acts as the manager for all running services (programs which run in the background). The main configuration entities of systemd are simply called &amp;ldquo;units&amp;rdquo;, of which there are 11 different types. The most commonly used unit is the service unit, which are described individually in .service files. There are several commands for tapping into the features of systemd, including systemctl and journalctl, as well as special syntaxes for customizing each of the types of unit files.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://www.linux-toolkit.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/about/</guid>
+      <description>About linux-toolkit.com is a site dedicated to renewing the outdated Linux program manuals with a modern, concise perspective, aiming to eventually cover a wider range of CS concepts and tools. The site provides examples and workflow strategies for both new users as well as those simply needing a quick reference. Please let me know if you have any suggestions, comments, or if you catch a mistake which needs quick fixing. You can find me on GitHub here.</description>
+    </item>
+    
   </channel>
 </rss>
