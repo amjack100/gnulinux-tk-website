@@ -37,7 +37,7 @@
 <meta itemprop="name" content="test | [">
 <meta itemprop="description" content="test is a useful scripting command for evaluating various expressions. It will return 0 (true) or 1 (false) based on the value of the given expression, making it the effective counterpart of the if command built into many shells. The literal [ character is identical to test, although its usage requires a a closing brace at the end of the provided expression. The type of expression that test evaluates is based on the flag it is given as a parameter."><meta itemprop="datePublished" content="2021-08-21T08:32:40-04:00" />
 <meta itemprop="dateModified" content="2021-08-21T08:32:40-04:00" />
-<meta itemprop="wordCount" content="355">
+<meta itemprop="wordCount" content="356">
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="test | ["/>
@@ -126,18 +126,18 @@ The type of expression that <code>test</code> evaluates is based on the flag it 
 as a parameter. See the chart below for a quick reference to each flag.</p>
 <h2 id="basic-functionality">Basic Functionality</h2>
 <p>Test for the existence of a file.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#66d9ef">if</span> test -f file.txt; <span style="color:#66d9ef">then</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">if</span> test -f file.txt; <span style="color:#66d9ef">then</span>
   echo <span style="color:#e6db74">&#34;File exists&#34;</span>
 <span style="color:#66d9ef">fi</span>
 </code></pre></div><p>Test for the existence of an environment variable <em>(alternative syntax)</em>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -n $USER<span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -n $USER <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
   echo $USER
 <span style="color:#66d9ef">fi</span>
 </code></pre></div><p>Compare the value of two integers.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">num1<span style="color:#f92672">=</span><span style="color:#ae81ff">32</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">num1<span style="color:#f92672">=</span><span style="color:#ae81ff">32</span>
 num2<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>
 
-<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $num1 -gt $num2  <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+<span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $num1 -gt $num2 <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
   echo <span style="color:#e6db74">&#34;</span>$num1<span style="color:#e6db74"> &gt; </span>$num2<span style="color:#e6db74">&#34;</span>
 <span style="color:#66d9ef">fi</span>
 </code></pre></div><h2 id="workflows">Workflows</h2>
@@ -147,23 +147,23 @@ commands and scripting structures like for loops.</p>
 over all the files in the user&rsquo;s current working directory, using <code>test -s</code> with
 the negate operator <code>!</code> to find files with no content. Then, it uses <code>rm</code> with
 the interactive flag to confirm deletion.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#rmempty.sh</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#rmempty.sh</span>
 <span style="color:#66d9ef">for</span> f in *; <span style="color:#66d9ef">do</span>
   <span style="color:#66d9ef">if</span> test ! -s $f;<span style="color:#66d9ef">then</span>
     echo <span style="color:#e6db74">&#34;File &#34;</span>$f<span style="color:#e6db74">&#34; is empty&#34;</span>
     rm --interactive $f
   <span style="color:#66d9ef">fi</span>
 <span style="color:#66d9ef">done</span>
-</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ rmempty.sh
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ rmempty.sh
 
 File garbage.txt is empty
 rm: remove regular empty file <span style="color:#e6db74">&#39;garbage.txt&#39;</span>?
 </code></pre></div><p>Maybe you&rsquo;d like to create a script that behaves according to the value of a certain
 environment variable. This example tests the LANG environment variable and reacts
 with the appropriate greeting. Respecting possible differences in environment
-conditions is a  great way of making code in general more robust, not just small
+conditions is a great way of making code in general more robust, not just small
 scripts.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#greeting.sh</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#greeting.sh</span>
 <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $LANG <span style="color:#f92672">=</span> en_US.UTF-8 <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
   echo <span style="color:#e6db74">&#34;Welcome!&#34;</span>
 <span style="color:#66d9ef">elif</span> <span style="color:#f92672">[</span> $LANG <span style="color:#f92672">=</span> de_DE.UTF-8 <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
@@ -171,7 +171,7 @@ scripts.</p>
 <span style="color:#66d9ef">fi</span>
 </code></pre></div><p><code>test</code> reads the value of the environment variable $LANG, which specifies the user&rsquo;s
 language setting.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ LANG<span style="color:#f92672">=</span>en_US.UTF-8 greeting.sh
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ LANG<span style="color:#f92672">=</span>en_US.UTF-8 greeting.sh
 
 Welcome!
 

@@ -203,5 +203,10 @@
       "Usage": "_Processes_",
       "History": "---",
       "Package": "procps-ng"
+   },
+   "mkfifo": {
+      "Usage": "_Filesystem_",
+      "History": "4.4 BSD",
+      "Package": "GNU Coreutils"
    }
 }
