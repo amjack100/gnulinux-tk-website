@@ -7,7 +7,7 @@
 <meta name="author" content="">
 <meta name="description" content="locate is a tool that finds a file based on a pre-loaded database. updatedb is the command which allows one to interact with that database. These commands act as a single utility for locating files system-wide. Compared to find, locate operates much more quickly. However, it may retrieve unreliable results if updatedb is not at an appropriate frequency.
 Usage Examples Search for a file system-wide by a wholename pattern.
-locate filename Perform the same search but on confirmed existing files." />
+$ locate filename Perform the same search but on confirmed existing files." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -39,15 +39,15 @@ locate filename Perform the same search but on confirmed existing files." />
 <meta itemprop="name" content="locate | updatedb">
 <meta itemprop="description" content="locate is a tool that finds a file based on a pre-loaded database. updatedb is the command which allows one to interact with that database. These commands act as a single utility for locating files system-wide. Compared to find, locate operates much more quickly. However, it may retrieve unreliable results if updatedb is not at an appropriate frequency.
 Usage Examples Search for a file system-wide by a wholename pattern.
-locate filename Perform the same search but on confirmed existing files."><meta itemprop="datePublished" content="2021-08-19T13:54:27-04:00" />
+$ locate filename Perform the same search but on confirmed existing files."><meta itemprop="datePublished" content="2021-08-19T13:54:27-04:00" />
 <meta itemprop="dateModified" content="2021-08-19T13:54:27-04:00" />
-<meta itemprop="wordCount" content="189">
+<meta itemprop="wordCount" content="193">
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="locate | updatedb"/>
 <meta name="twitter:description" content="locate is a tool that finds a file based on a pre-loaded database. updatedb is the command which allows one to interact with that database. These commands act as a single utility for locating files system-wide. Compared to find, locate operates much more quickly. However, it may retrieve unreliable results if updatedb is not at an appropriate frequency.
 Usage Examples Search for a file system-wide by a wholename pattern.
-locate filename Perform the same search but on confirmed existing files."/>
+$ locate filename Perform the same search but on confirmed existing files."/>
 
 
 
@@ -126,13 +126,13 @@ operates much more quickly. However, it may retrieve unreliable results if
 <code>updatedb</code> is not at an appropriate frequency.</p>
 <h2 id="usage-examples">Usage Examples</h2>
 <p>Search for a file system-wide by a wholename pattern.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">locate filename
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ locate filename
 </code></pre></div><p>Perform the same search but on <em>confirmed existing</em> files.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">locate -e filename
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ locate -e filename
 </code></pre></div><p>Perform a similar search but with a regex pattern.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">locate -r <span style="color:#e6db74">&#39;filename.+&#39;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ locate -r <span style="color:#e6db74">&#39;filename.+&#39;</span>
 </code></pre></div><p>Update the locate file database.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo updatedb
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo updatedb
 </code></pre></div><h2 id="configuration">Configuration</h2>
 <p>The <em>LOCATE_PATH</em> environment variable can be configured with a colon-seperated
 list of searchable databases.</p>

@@ -41,7 +41,7 @@ The first dash is the type of file. The next 9 dashes are mode bits." />
  -rw-rw-r-- 1 user group 23 Jul 2 08:45 file.txt  &hellip;where -rw-rw-r-- is the file&rsquo;s mode.
 The first dash is the type of file. The next 9 dashes are mode bits."><meta itemprop="datePublished" content="2021-07-18T07:25:34-04:00" />
 <meta itemprop="dateModified" content="2021-07-18T07:25:34-04:00" />
-<meta itemprop="wordCount" content="204">
+<meta itemprop="wordCount" content="207">
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="chmod"/>
@@ -132,15 +132,15 @@ The next 9 dashes are mode bits. A letter (r,w,x) means on and a dash means off.
 <br></p>
 <h2 id="usage-examples">Usage Examples</h2>
 <p>Allow a file to be executed by everyone.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">chmod +x file.txt 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ chmod +x file.txt 
 
 <span style="color:#75715e"># same as chmod a+x file.txt</span>
 </code></pre></div><p>Give specific permissions to specific people.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">chmod u<span style="color:#f92672">=</span>rwx file.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ chmod u<span style="color:#f92672">=</span>rwx file.txt
 
 <span style="color:#75715e"># u (user), g (group), o (other), or a (all)</span>
 </code></pre></div><p>Assign permissions to a file using octal values</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">chmod <span style="color:#ae81ff">777</span> file.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ chmod <span style="color:#ae81ff">777</span> file.txt
 
 <span style="color:#75715e"># same as chmod +rwx</span>
 </code></pre></div><h2 id="configuration">Configuration</h2>

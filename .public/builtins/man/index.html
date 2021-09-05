@@ -39,7 +39,7 @@
 <meta itemprop="description" content="man is used to display user manuals typical stored in /usr/share/man . Manuals are divided into these sections:
  User commands and tools Linux system calls Library functions (system call wrappers) which implement system calls Special files (devices) File formats and corresponding C structures (if any) &ldquo;Games and funny little programs&rdquo; Miscellaneous Administration and privileged commands Kernel routines [Non standard]  Use man &lt;number&gt; intro to read more about each section (except 9)."><meta itemprop="datePublished" content="2021-07-14T08:06:58-04:00" />
 <meta itemprop="dateModified" content="2021-07-14T08:06:58-04:00" />
-<meta itemprop="wordCount" content="134">
+<meta itemprop="wordCount" content="139">
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="man"/>
@@ -132,15 +132,15 @@
 <p>Use <code>man &lt;number&gt; intro</code> to read more about each section (except 9).</p>
 <h2 id="usage-examples">Usage Examples</h2>
 <p>Open the manual of a program.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">man mkdir 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ man mkdir
 </code></pre></div><p>Open the specific section of a program&rsquo;s manual.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">man <span style="color:#ae81ff">2</span> mkdir
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ man <span style="color:#ae81ff">2</span> mkdir
 </code></pre></div><p>Regex search the names of all manuals.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">man -k mk
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ man -k mk
 </code></pre></div><p>Show the available sections of a program&rsquo;s manual.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">man -f mkdir
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ man -f mkdir
 </code></pre></div><p>Get the actual location of a manual page.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">man -w mkdir
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ man -w mkdir
 </code></pre></div><h2 id="configuration">Configuration</h2>
 <p>See manpath configuration</p>
 <h2 id="notes">Notes</h2>

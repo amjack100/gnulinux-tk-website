@@ -72,7 +72,7 @@ one two four $ diff ~/one.txt ~/two.txt 3c3 &amp;lt; three --- &amp;gt; four </d
       <guid>https://www.linux-toolkit.com/builtins/id/</guid>
       <description>-- id is a command which will display various information specific to a user, including UID (user ID) and GID (group ID). These are unique numbers that are used to determine which resources each user/group may or may not be given access to. whoami is a shortcut command that is identical to id -un.
 Usage Examples Display the user&amp;rsquo;s ID, group ID, and groups to which that user belongs.
-   Diplay the current user ID number.</description>
+    Diplay the current user ID number.</description>
     </item>
     
     <item>
@@ -83,7 +83,7 @@ Usage Examples Display the user&amp;rsquo;s ID, group ID, and groups to which th
       <guid>https://www.linux-toolkit.com/builtins/tr/</guid>
       <description>tr is a command for translating / transliterating text characters. The term translate in the context of tr has nothing to do with across-language translation, but instead refers to a mapping of certain characters to others.
 Usage Examples Replace all occurances of a character in a file.
-tr a b &amp;lt; ./file.txt All instances of the character &amp;lsquo;a&amp;rsquo; will be replaced with &amp;lsquo;b&amp;rsquo;.
+$ tr a b &amp;lt; ./file.txt All instances of the character &amp;lsquo;a&amp;rsquo; will be replaced with &amp;lsquo;b&amp;rsquo;.
 Translate all the lower-case characters of a file to upper-case.</description>
     </item>
     
@@ -95,8 +95,8 @@ Translate all the lower-case characters of a file to upper-case.</description>
       <guid>https://www.linux-toolkit.com/builtins/env/</guid>
       <description>env is the main environment variable utility and has a variety of functionalities. env is unique in that one of its most common uses is as a shebang line, a single line at the top of a Linux file which dictates how that file is executed.
 Usage Examples Show the environment.
-env Set a variable (or multiple) and then run a program.
-env key=value program Shebang Using the shebang #!/usr/bin/env at the top of a file can set the conditions by which the file is executed.</description>
+$ env Set a variable (or multiple) and then run a program.
+$ env key=value program Shebang Using the shebang #!</description>
     </item>
     
     <item>
@@ -142,7 +142,7 @@ $ cal -y 2014 Notes  According to the manual page CAL(1), not all options are co
  a non-zero-length sequence of characters delimited by white space.
 &amp;ndash; Manual page wc(1)
  Usage Examples Print the newline, word, and byte counts of a file (no arguments default).
-wc file.txt # Alternatively, cat file.txt | wc Print only the word count of a text stream.</description>
+$ wc file.txt # Alternatively, cat file.txt | wc Print only the word count of a text stream.</description>
     </item>
     
     <item>
@@ -153,7 +153,7 @@ wc file.txt # Alternatively, cat file.txt | wc Print only the word count of a te
       <guid>https://www.linux-toolkit.com/builtins/locate/</guid>
       <description>locate is a tool that finds a file based on a pre-loaded database. updatedb is the command which allows one to interact with that database. These commands act as a single utility for locating files system-wide. Compared to find, locate operates much more quickly. However, it may retrieve unreliable results if updatedb is not at an appropriate frequency.
 Usage Examples Search for a file system-wide by a wholename pattern.
-locate filename Perform the same search but on confirmed existing files.</description>
+$ locate filename Perform the same search but on confirmed existing files.</description>
     </item>
     
     <item>
@@ -174,8 +174,8 @@ Usage Examples Preview the first 10 lines of a file.</description>
       <guid>https://www.linux-toolkit.com/builtins/kill/</guid>
       <description>kill is a tool for sending a signal to a process. Its name comes from the fact that its default signal is TERM, which effectively &amp;ldquo;kills&amp;rdquo; an actively running process.
 Usage Examples Terminate a running process.
-kill 40831 # 40831 is a PID Send an alternative signal to a process.
-kill -CONT 40831 # The following are identical: # kill -SIGCONT 40831 # kill -18 40831 # kill -s 18 40831 Configuration This command has no configuration options.</description>
+$ kill 40831 # 40831 is a PID Send an alternative signal to a process.
+$ kill -CONT 40831 # The following are identical: # kill -SIGCONT 40831 # kill -18 40831 # kill -s 18 40831 Configuration This command has no configuration options.</description>
     </item>
     
     <item>
@@ -186,7 +186,7 @@ kill -CONT 40831 # The following are identical: # kill -SIGCONT 40831 # kill -18
       <guid>https://www.linux-toolkit.com/builtins/cd/</guid>
       <description>cd allows for changing directories, and is easily one of the most commonly used Linux commands. It has also been implemented in other operating systems as the exact same command such as Microsoft Windows. cd falls in line with the other _ch* (change)_ commands, as it is essentially a shortened version of the system call, chdir().
 Usage Examples Set the current working directory to (go to) a new location.
-cd directory Go to the home directory.</description>
+$ cd directory Go to the home directory.</description>
     </item>
     
     <item>
@@ -197,7 +197,7 @@ cd directory Go to the home directory.</description>
       <guid>https://www.linux-toolkit.com/builtins/date/</guid>
       <description>date is a command for getting and optionally formatting the current date and time. It can be especially useful for tasks such as logging and naming groups of files. The slight complexity of date lies in its various formatting sequences, which are numerous and not particularly intuitive at first glance.
 Usage Examples Get the current date in the default format
-date # Equal to date +%c Log an event with date annotations</description>
+$ date # Equal to date +%c Log an event with date annotations</description>
     </item>
     
     <item>
@@ -220,8 +220,8 @@ $ dirname /home/user/filename.txt /home/user Notes  Both commands will work as e
       <guid>https://www.linux-toolkit.com/builtins/mount/</guid>
       <description>mount and umount are commands for mounting and unmounting a filesystem, respectively. A common use for these commands involves accessing files on a USB drive or some type of other removable device. Filesystems can typically only be mounted by the super user (with sudo).
 Usage Examples Mount a USB drive
-sudo mkdir -p /media/usb sudo mount /dev/sda1 /media/usb Unmount a mounted USB drive
-sudo umount /dev/sda1 Configuration The /etc/fstab file is the main configuration point for the mount command.</description>
+$ sudo mkdir -p /media/usb $ sudo mount /dev/sda1 /media/usb Unmount a mounted USB drive
+$ sudo umount /dev/sda1 Configuration The /etc/fstab file is the main configuration point for the mount command.</description>
     </item>
     
     <item>
@@ -232,8 +232,8 @@ sudo umount /dev/sda1 Configuration The /etc/fstab file is the main configuratio
       <guid>https://www.linux-toolkit.com/builtins/tset/</guid>
       <description>tset and reset are historical commands used to reset an actual text-based terminal (as opposed to a terminal emulator running on a graphics-oriented system).
 Usage Examples Initialize a terminal.
-tset Reinitialize a terminal.
-reset Configuration  The SHELL environment variable provides a syntax specification. The TERM environment variable denotes terminal type. The TERMCAP environment variable denotes the location of the termcap database. See tput for further information.  Notes  tset/reset have under-documented features and were made obsolete by the tput utility.</description>
+$ tset Reinitialize a terminal.
+$ reset Configuration  The SHELL environment variable provides a syntax specification. The TERM environment variable denotes terminal type. The TERMCAP environment variable denotes the location of the termcap database. See tput for further information.  Notes  tset/reset have under-documented features and were made obsolete by the tput utility.</description>
     </item>
     
     <item>
@@ -246,7 +246,7 @@ reset Configuration  The SHELL environment variable provides a syntax specificat
  Most users will want to use modprobe(8) instead, which is more clever and can handle module dependencies
 &amp;ndash; Manual page insmod(8)
  Usage Examples Insert a kernel module
-sudo insmod module.ko Remove a kernel module</description>
+$ sudo insmod module.ko Remove a kernel module</description>
     </item>
     
     <item>
@@ -257,9 +257,9 @@ sudo insmod module.ko Remove a kernel module</description>
       <guid>https://www.linux-toolkit.com/builtins/cp/</guid>
       <description>cp is the standard copy command packaged into Linux systems.
 Usage Examples Copy a single file to another file.
-cp file.txt copy.txt Copy files to a directory.
-cp file.txt directory Copy an entire directory tree to another location.
-cp -r source-dir destination-dir # where source-dir might be a structure like: #source-dir/ #└── one # └── two Notes  Backup suffixes can be defined with the VERSION_CONTROL environment variable.  </description>
+$ cp file.txt copy.txt Copy files to a directory.
+$ cp file.txt directory Copy an entire directory tree to another location.
+$ cp -r source-dir destination-dir # where source-dir might be a structure like: #source-dir/ #└── one # └── two Notes  Backup suffixes can be defined with the VERSION_CONTROL environment variable.</description>
     </item>
     
     <item>
@@ -270,10 +270,9 @@ cp -r source-dir destination-dir # where source-dir might be a structure like: #
       <guid>https://www.linux-toolkit.com/builtins/mkdir/</guid>
       <description>mkdir and rmdir are minimal commands for making and removing directories respectively.
 Usage Examples Make a new directory
-mkdir directoryname Create multiple directories as a directory tree
-mkdir -p outer/middle/inner Remove an empty directory
-rmdir directoryname Notes   mkdir and rmdir are the direct command line equivalents of the mkdir() and rmdir() Linux system calls. One can view man 2 mkdir or man 2 rmdir for more information.
-  rmdir is particularly different than rm -r as it will only remove empty directories, providing safer use in many cases.</description>
+$ mkdir directoryname Create multiple directories as a directory tree
+$ mkdir -p outer/middle/inner Remove an empty directory
+$ rmdir directoryname Notes   mkdir and rmdir are the direct command line equivalents of the mkdir() and rmdir() Linux system calls. One can view man 2 mkdir or man 2 rmdir for more information.</description>
     </item>
     
     <item>
@@ -284,7 +283,7 @@ rmdir directoryname Notes   mkdir and rmdir are the direct command line equivale
       <guid>https://www.linux-toolkit.com/builtins/grep/</guid>
       <description>grep is a very commonly used tool for searching for patterns of text within files or an output stream. grep stands for global regular expression print. This comes from the sed/ed subcommand g/re/p, where g and p are the global and print flags, and re is a regular expression.
 Basic Functionality Search a single file for a matching pattern.
-cat file.txt | grep &amp;#39;.*pattern&amp;#39; Search though files across multiple directories for a matching pattern.</description>
+$ cat file.txt | grep &amp;#39;.*pattern&amp;#39; Search though files across multiple directories for a matching pattern.</description>
     </item>
     
     <item>
@@ -294,7 +293,7 @@ cat file.txt | grep &amp;#39;.*pattern&amp;#39; Search though files across multi
       
       <guid>https://www.linux-toolkit.com/builtins/lsmod/</guid>
       <description>lsmod is a minimal command for listing the modules in the Linux Kernel. It will provide the output in table format, like:
-   Module Size Used by     tcp_diag 16384 0   udp_diag 16384 0   inet_diag 24576 2 tpc_diag,udp_diag    Usage Examples lsmod </description>
+   Module Size Used by     tcp_diag 16384 0   udp_diag 16384 0   inet_diag 24576 2 tpc_diag,udp_diag    Usage Examples $ lsmod </description>
     </item>
     
     <item>
@@ -305,8 +304,8 @@ cat file.txt | grep &amp;#39;.*pattern&amp;#39; Search though files across multi
       <guid>https://www.linux-toolkit.com/builtins/cat/</guid>
       <description>cat is a tool for concatentaing files, although its most frequent use involves simply displaying file content to the terminal. tac does the exact same thing, except lines are output in reverse order.
 Usage Examples View the contents of a file.
-cat file.txt Send the contents of a file to a new file.
-cat file.txt &amp;gt; newfile.txt Append the contents of a file to the end of an existing file.</description>
+$ cat file.txt Send the contents of a file to a new file.
+$ cat file.txt &amp;gt; newfile.txt Append the contents of a file to the end of an existing file.</description>
     </item>
     
     <item>
@@ -327,9 +326,9 @@ Usage Examples Install a package.</description>
       <guid>https://www.linux-toolkit.com/builtins/ls/</guid>
       <description>ls is short for list and displays the contents of a directory. dir is equivalent to ls -C -b vdir is equivalent to ls -l -b
 Usage Examples Show the contents of the current directory.
-ls Show directory contents, including hidden files.
-ls -a Show directory contents and information about each item.
-ls -l Configuration The output of ls can be configured through the dircolors command which modifies the LS_COLORS environment variable.</description>
+$ ls Show directory contents, including hidden files.
+$ ls -a Show directory contents and information about each item.
+$ ls -l Configuration The output of ls can be configured through the dircolors command which modifies the LS_COLORS environment variable.</description>
     </item>
     
     <item>
@@ -364,8 +363,8 @@ make is a tool for organizing a build process for any programming language. Most
       <guid>https://www.linux-toolkit.com/builtins/sed/</guid>
       <description>sed is a tool for editing text. It is a stream editor, meaning it can accomplish the same tasks as a traditional text editor by iterating through streams of text with commands.
 Basic Functionality The &amp;rsquo;s&#39; (substitute) command is the most important sed command. Preview replacement of all matching patterns in a file.
-sed &amp;#39;s/old/new&amp;#39; file.txt Write replacement of all matching patterns in a file.
-sed -i &amp;#39;s/old/new&amp;#39; file.txt Workflows The previous examples demonstrate the basic functionality, but are not enough to expose sed as an agile, real world tool.</description>
+$ sed &amp;#39;s/old/new&amp;#39; file.txt Write replacement of all matching patterns in a file.
+$ sed -i &amp;#39;s/old/new&amp;#39; file.</description>
     </item>
     
     <item>
@@ -422,8 +421,8 @@ Usage Examples Change a file&amp;rsquo;s owner.</description>
       <guid>https://www.linux-toolkit.com/builtins/uname/</guid>
       <description>uname, short for unix name, is a simple tool for getting information about the current system.
 Usage Examples Print system information about the kernel, processor, and operating system.
-uname -a Pair with dkms to install a kernel module to the current kernel version.
-sudo dkms install nvidia/460.39 -k $(uname -r) Notes  uname offers many flags such as -m and -s (machine and kernel-name) which provide a way for scripts to get specific values.</description>
+$ uname -a Pair with dkms to install a kernel module to the current kernel version.
+$ sudo dkms install nvidia/460.39 -k $(uname -r) Notes  uname offers many flags such as -m and -s (machine and kernel-name) which provide a way for scripts to get specific values.</description>
     </item>
     
     <item>
@@ -445,9 +444,9 @@ The first dash is the type of file. The next 9 dashes are mode bits.</descriptio
       <guid>https://www.linux-toolkit.com/builtins/du/</guid>
       <description>du is a tool for getting information about the disk usage of a file or directory.
 Usage Examples Get the disk usage of a single file or directory
-du -sh ./directory &amp;hellip; where -sh stands for summarize and human-readable
+$ du -sh ./directory &amp;hellip; where -sh stands for summarize and human-readable
 Get the size of a single file or directory
-du -bsh ./directory &amp;hellip;where -b is equal to --apparent-size --block-size=1
+$ du -bsh ./directory &amp;hellip;where -b is equal to --apparent-size --block-size=1
 Configuration The block size defaults to 1024 bytes but can be modified with the environment variables DU_BLOCK_SIZE, BLOCK_SIZE, or BLOCKSIZE</description>
     </item>
     
@@ -459,7 +458,7 @@ Configuration The block size defaults to 1024 bytes but can be modified with the
       <guid>https://www.linux-toolkit.com/builtins/tput/</guid>
       <description>tput will output a special value from the terminfo database, given a &amp;ldquo;capname&amp;rdquo; as a key. The terminfo database is a set of key value pairs storing information about hundreds of terminals (+ terminal emulators, given that actual terminals hardly exist today). Terminfo database files are held in /etc/terminfo/ but are compressed and require special tools for reading.
 Usage Examples Write the value of a capname to standard output
-tput bold Given the argument &amp;ldquo;bold&amp;rdquo;, tput will fetch the value from the terminfo database.</description>
+$ tput bold Given the argument &amp;ldquo;bold&amp;rdquo;, tput will fetch the value from the terminfo database.</description>
     </item>
     
     <item>
@@ -470,8 +469,8 @@ tput bold Given the argument &amp;ldquo;bold&amp;rdquo;, tput will fetch the val
       <guid>https://www.linux-toolkit.com/builtins/touch/</guid>
       <description>touch is command used to update the access and modification times of a file. It is most commonly used as a quick way of creating a new, empty file.
 Usage Examples Create an empty file.
-touch file.txt Update the timestamp of a file without creating a new one if it doesn&amp;rsquo;t exist.
-touch -c existingfile.txt </description>
+$ touch file.txt Update the timestamp of a file without creating a new one if it doesn&amp;rsquo;t exist.
+$ touch -c existingfile.txt </description>
     </item>
     
     <item>
@@ -493,7 +492,7 @@ touch -c existingfile.txt </description>
       <description>rsync is a copying tool that implements a delta-transfer algorithm for extremely fast and efficient transfers. It finds files that have changed in size or last-modified time to determine the necessary updates to the destination.
 If rsync is used over ssh, it requires that both the client and server have the software installed.
 Usage Examples Copy a directory (recursive) to a remote machine
-rsync -vr ./source-dir server:/destination Copy a directory (recursive) to the host machine</description>
+$ rsync -vr ./source-dir server:/destination Copy a directory (recursive) to the host machine</description>
     </item>
     
     <item>
@@ -505,8 +504,8 @@ rsync -vr ./source-dir server:/destination Copy a directory (recursive) to the h
       <description>ssh is a program for logging into a remote computer and executing commands on that computer. ssh connects and logs into the specified destination, which may be specified as either [user@]hostname or ssh://[user@]hostname[:port]
 The user trying to access the remote computer must prove their identity.
 Usage Examples Access a remote machine by providing a private key as input
-ssh -i &amp;lt;private key file&amp;gt; &amp;lt;username&amp;gt;@&amp;lt;hostname&amp;gt; For example
-ssh -i ~/.ssh/some-private-key.key john@100.100.10.10 Configuration Save a host for easy access</description>
+$ ssh -i &amp;lt;private key file&amp;gt; &amp;lt;username&amp;gt;@&amp;lt;hostname&amp;gt; For example
+$ ssh -i ~/.</description>
     </item>
     
     <item>

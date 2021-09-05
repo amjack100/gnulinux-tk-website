@@ -7,7 +7,7 @@
 <meta name="author" content="">
 <meta name="description" content="date is a command for getting and optionally formatting the current date and time. It can be especially useful for tasks such as logging and naming groups of files. The slight complexity of date lies in its various formatting sequences, which are numerous and not particularly intuitive at first glance.
 Usage Examples Get the current date in the default format
-date # Equal to date &#43;%c Log an event with date annotations" />
+$ date # Equal to date &#43;%c Log an event with date annotations" />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -39,15 +39,15 @@ date # Equal to date &#43;%c Log an event with date annotations" />
 <meta itemprop="name" content="date">
 <meta itemprop="description" content="date is a command for getting and optionally formatting the current date and time. It can be especially useful for tasks such as logging and naming groups of files. The slight complexity of date lies in its various formatting sequences, which are numerous and not particularly intuitive at first glance.
 Usage Examples Get the current date in the default format
-date # Equal to date &#43;%c Log an event with date annotations"><meta itemprop="datePublished" content="2021-08-17T08:29:12-04:00" />
+$ date # Equal to date &#43;%c Log an event with date annotations"><meta itemprop="datePublished" content="2021-08-17T08:29:12-04:00" />
 <meta itemprop="dateModified" content="2021-08-17T08:29:12-04:00" />
-<meta itemprop="wordCount" content="324">
+<meta itemprop="wordCount" content="326">
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="date"/>
 <meta name="twitter:description" content="date is a command for getting and optionally formatting the current date and time. It can be especially useful for tasks such as logging and naming groups of files. The slight complexity of date lies in its various formatting sequences, which are numerous and not particularly intuitive at first glance.
 Usage Examples Get the current date in the default format
-date # Equal to date &#43;%c Log an event with date annotations"/>
+$ date # Equal to date &#43;%c Log an event with date annotations"/>
 
 
 
@@ -125,10 +125,10 @@ The slight complexity of <code>date</code> lies in its various formatting sequen
 numerous and not particularly intuitive at first glance.</p>
 <h2 id="usage-examples">Usage Examples</h2>
 <p>Get the current date in the default format</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">date
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ date
 <span style="color:#75715e"># Equal to date +%c</span>
 </code></pre></div><p>Log an event with date annotations</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">&#34;[</span><span style="color:#66d9ef">$(</span>date +%F_%T<span style="color:#66d9ef">)</span><span style="color:#e6db74">] Some event occured&#34;</span> &gt;&gt; log.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ echo <span style="color:#e6db74">&#34;[</span><span style="color:#66d9ef">$(</span>date +%F_%T<span style="color:#66d9ef">)</span><span style="color:#e6db74">] Some event occured&#34;</span> &gt;&gt; log.txt
 <span style="color:#75715e"># Output: [2021-08-17_10:35:07] Some event occured</span>
 </code></pre></div><h2 id="configuration">Configuration</h2>
 <p>No configuration, but formats can be predefined with <code>alias</code>.</p>

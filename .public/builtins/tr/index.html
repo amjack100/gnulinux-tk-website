@@ -7,7 +7,7 @@
 <meta name="author" content="">
 <meta name="description" content="tr is a command for translating / transliterating text characters. The term translate in the context of tr has nothing to do with across-language translation, but instead refers to a mapping of certain characters to others.
 Usage Examples Replace all occurances of a character in a file.
-tr a b &amp;lt; ./file.txt All instances of the character &amp;lsquo;a&amp;rsquo; will be replaced with &amp;lsquo;b&amp;rsquo;.
+$ tr a b &amp;lt; ./file.txt All instances of the character &amp;lsquo;a&amp;rsquo; will be replaced with &amp;lsquo;b&amp;rsquo;.
 Translate all the lower-case characters of a file to upper-case." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
@@ -40,16 +40,16 @@ Translate all the lower-case characters of a file to upper-case." />
 <meta itemprop="name" content="tr">
 <meta itemprop="description" content="tr is a command for translating / transliterating text characters. The term translate in the context of tr has nothing to do with across-language translation, but instead refers to a mapping of certain characters to others.
 Usage Examples Replace all occurances of a character in a file.
-tr a b &lt; ./file.txt All instances of the character &lsquo;a&rsquo; will be replaced with &lsquo;b&rsquo;.
+$ tr a b &lt; ./file.txt All instances of the character &lsquo;a&rsquo; will be replaced with &lsquo;b&rsquo;.
 Translate all the lower-case characters of a file to upper-case."><meta itemprop="datePublished" content="2021-08-26T18:29:23-04:00" />
 <meta itemprop="dateModified" content="2021-08-26T18:29:23-04:00" />
-<meta itemprop="wordCount" content="112">
+<meta itemprop="wordCount" content="115">
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="tr"/>
 <meta name="twitter:description" content="tr is a command for translating / transliterating text characters. The term translate in the context of tr has nothing to do with across-language translation, but instead refers to a mapping of certain characters to others.
 Usage Examples Replace all occurances of a character in a file.
-tr a b &lt; ./file.txt All instances of the character &lsquo;a&rsquo; will be replaced with &lsquo;b&rsquo;.
+$ tr a b &lt; ./file.txt All instances of the character &lsquo;a&rsquo; will be replaced with &lsquo;b&rsquo;.
 Translate all the lower-case characters of a file to upper-case."/>
 
 
@@ -127,12 +127,12 @@ term <em>translate</em> in the context of <code>tr</code> has nothing to do with
 translation, but instead refers to a mapping of certain characters to others.</p>
 <h2 id="usage-examples">Usage Examples</h2>
 <p>Replace all occurances of a character in a file.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">tr a b &lt; ./file.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ tr a b &lt; ./file.txt
 </code></pre></div><p><em>All instances of the character &lsquo;a&rsquo; will be replaced with &lsquo;b&rsquo;.</em></p>
 <p>Translate all the lower-case characters of a file to upper-case.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">tr <span style="color:#e6db74">&#34;[:lower:]&#34;</span> <span style="color:#e6db74">&#34;[:upper:]&#34;</span> &lt; ./file.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ tr <span style="color:#e6db74">&#34;[:lower:]&#34;</span> <span style="color:#e6db74">&#34;[:upper:]&#34;</span> &lt; ./file.txt
 </code></pre></div><p>Delete all occurances of a given character set.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">tr -d <span style="color:#e6db74">&#39;abcdefg&#39;</span> &lt; ./file.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ tr -d <span style="color:#e6db74">&#39;abcdefg&#39;</span> &lt; ./file.txt
 </code></pre></div><h2 id="notes">Notes</h2>
 <ul>
 <li>More special sequences like &ldquo;[:lower:]&rdquo; and &ldquo;[:upper:]&rdquo;

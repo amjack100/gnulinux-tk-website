@@ -7,8 +7,8 @@
 <meta name="author" content="">
 <meta name="description" content="mount and umount are commands for mounting and unmounting a filesystem, respectively. A common use for these commands involves accessing files on a USB drive or some type of other removable device. Filesystems can typically only be mounted by the super user (with sudo).
 Usage Examples Mount a USB drive
-sudo mkdir -p /media/usb sudo mount /dev/sda1 /media/usb Unmount a mounted USB drive
-sudo umount /dev/sda1 Configuration The /etc/fstab file is the main configuration point for the mount command." />
+$ sudo mkdir -p /media/usb $ sudo mount /dev/sda1 /media/usb Unmount a mounted USB drive
+$ sudo umount /dev/sda1 Configuration The /etc/fstab file is the main configuration point for the mount command." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -40,17 +40,17 @@ sudo umount /dev/sda1 Configuration The /etc/fstab file is the main configuratio
 <meta itemprop="name" content="mount | umount">
 <meta itemprop="description" content="mount and umount are commands for mounting and unmounting a filesystem, respectively. A common use for these commands involves accessing files on a USB drive or some type of other removable device. Filesystems can typically only be mounted by the super user (with sudo).
 Usage Examples Mount a USB drive
-sudo mkdir -p /media/usb sudo mount /dev/sda1 /media/usb Unmount a mounted USB drive
-sudo umount /dev/sda1 Configuration The /etc/fstab file is the main configuration point for the mount command."><meta itemprop="datePublished" content="2021-08-15T17:55:53-04:00" />
+$ sudo mkdir -p /media/usb $ sudo mount /dev/sda1 /media/usb Unmount a mounted USB drive
+$ sudo umount /dev/sda1 Configuration The /etc/fstab file is the main configuration point for the mount command."><meta itemprop="datePublished" content="2021-08-15T17:55:53-04:00" />
 <meta itemprop="dateModified" content="2021-08-15T17:55:53-04:00" />
-<meta itemprop="wordCount" content="223">
+<meta itemprop="wordCount" content="227">
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="mount | umount"/>
 <meta name="twitter:description" content="mount and umount are commands for mounting and unmounting a filesystem, respectively. A common use for these commands involves accessing files on a USB drive or some type of other removable device. Filesystems can typically only be mounted by the super user (with sudo).
 Usage Examples Mount a USB drive
-sudo mkdir -p /media/usb sudo mount /dev/sda1 /media/usb Unmount a mounted USB drive
-sudo umount /dev/sda1 Configuration The /etc/fstab file is the main configuration point for the mount command."/>
+$ sudo mkdir -p /media/usb $ sudo mount /dev/sda1 /media/usb Unmount a mounted USB drive
+$ sudo umount /dev/sda1 Configuration The /etc/fstab file is the main configuration point for the mount command."/>
 
 
 
@@ -128,16 +128,16 @@ of other removable device. Filesystems can typically only be mounted by the supe
 user (with <code>sudo</code>).</p>
 <h2 id="usage-examples">Usage Examples</h2>
 <p>Mount a USB drive</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo mkdir -p /media/usb
-sudo mount /dev/sda1 /media/usb
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo mkdir -p /media/usb
+$ sudo mount /dev/sda1 /media/usb
 </code></pre></div><p>Unmount a mounted USB drive</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo umount /dev/sda1
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo umount /dev/sda1
 </code></pre></div><h2 id="configuration">Configuration</h2>
 <p>The <em>/etc/fstab</em> file is the main configuration point for the <code>mount</code> command.
 One can use <em>/etc/fstab</em> to store preset locations for particular devices.
 An unconfigured fstab file will contain the following comments providing instructions
 for configuration:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># /etc/fstab: static file system information.</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># /etc/fstab: static file system information.</span>
 <span style="color:#75715e">#</span>
 <span style="color:#75715e"># Use &#39;blkid&#39; to print the universally unique identifier for a</span>
 <span style="color:#75715e"># device; this may be used with UUID= as a more robust way to name devices</span>
@@ -147,7 +147,7 @@ for configuration:</p>
 </code></pre></div><p>An example of a line configuring a single device might be:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">/dev/sda1     /media/usb      vfat     defaults     0     0
 </code></pre></div><p>From there, usage of the command&hellip;</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo mount /dev/sda1 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo mount /dev/sda1
 </code></pre></div><p>&hellip;would mount the device at sda1 to <em>/media/usb</em>.</p>
 <h2 id="notes">Notes</h2>
 <ul>

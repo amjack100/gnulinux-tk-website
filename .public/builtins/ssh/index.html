@@ -8,8 +8,8 @@
 <meta name="description" content="ssh is a program for logging into a remote computer and executing commands on that computer. ssh connects and logs into the specified destination, which may be specified as either [user@]hostname or ssh://[user@]hostname[:port]
 The user trying to access the remote computer must prove their identity.
 Usage Examples Access a remote machine by providing a private key as input
-ssh -i &amp;lt;private key file&amp;gt; &amp;lt;username&amp;gt;@&amp;lt;hostname&amp;gt; For example
-ssh -i ~/.ssh/some-private-key.key john@100.100.10.10 Configuration Save a host for easy access" />
+$ ssh -i &amp;lt;private key file&amp;gt; &amp;lt;username&amp;gt;@&amp;lt;hostname&amp;gt; For example
+$ ssh -i ~/." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -42,18 +42,18 @@ ssh -i ~/.ssh/some-private-key.key john@100.100.10.10 Configuration Save a host 
 <meta itemprop="description" content="ssh is a program for logging into a remote computer and executing commands on that computer. ssh connects and logs into the specified destination, which may be specified as either [user@]hostname or ssh://[user@]hostname[:port]
 The user trying to access the remote computer must prove their identity.
 Usage Examples Access a remote machine by providing a private key as input
-ssh -i &lt;private key file&gt; &lt;username&gt;@&lt;hostname&gt; For example
-ssh -i ~/.ssh/some-private-key.key john@100.100.10.10 Configuration Save a host for easy access"><meta itemprop="datePublished" content="2021-07-12T07:33:57-04:00" />
+$ ssh -i &lt;private key file&gt; &lt;username&gt;@&lt;hostname&gt; For example
+$ ssh -i ~/."><meta itemprop="datePublished" content="2021-07-12T07:33:57-04:00" />
 <meta itemprop="dateModified" content="2021-07-12T07:33:57-04:00" />
-<meta itemprop="wordCount" content="127">
+<meta itemprop="wordCount" content="131">
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="ssh"/>
 <meta name="twitter:description" content="ssh is a program for logging into a remote computer and executing commands on that computer. ssh connects and logs into the specified destination, which may be specified as either [user@]hostname or ssh://[user@]hostname[:port]
 The user trying to access the remote computer must prove their identity.
 Usage Examples Access a remote machine by providing a private key as input
-ssh -i &lt;private key file&gt; &lt;username&gt;@&lt;hostname&gt; For example
-ssh -i ~/.ssh/some-private-key.key john@100.100.10.10 Configuration Save a host for easy access"/>
+$ ssh -i &lt;private key file&gt; &lt;username&gt;@&lt;hostname&gt; For example
+$ ssh -i ~/."/>
 
 
 
@@ -131,9 +131,9 @@ which may be specified as either [user@]hostname or ssh://[user@]hostname[:port]
 <p>The user trying to access the remote computer must prove their identity.</p>
 <h2 id="usage-examples">Usage Examples</h2>
 <p>Access a remote machine by providing a private key as input</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ssh -i &lt;private key file&gt; &lt;username&gt;@&lt;hostname&gt; 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ssh -i &lt;private key file&gt; &lt;username&gt;@&lt;hostname&gt;
 </code></pre></div><p>For example</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ssh -i ~/.ssh/some-private-key.key john@100.100.10.10 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ssh -i ~/.ssh/some-private-key.key john@100.100.10.10
 </code></pre></div><h2 id="configuration">Configuration</h2>
 <p>Save a host for easy access</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">~/.ssh/config
@@ -148,11 +148,11 @@ Host website
     IdentityFile ~/.ssh/some-private-key.key
     User john
 </code></pre></div><p>Then, from the command line</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ssh website
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ssh website
 </code></pre></div><h2 id="notes">Notes</h2>
 <p>In order for graphical terminal programs to function properly, it can be
 necessary to add the &ldquo;-t&rdquo; flag which &ldquo;forces pseudo-terminal allocation&rdquo;</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ssh -t ...
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ssh -t ...
 </code></pre></div>
 </div>
 

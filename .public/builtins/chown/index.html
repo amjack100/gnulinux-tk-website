@@ -41,7 +41,7 @@ Usage Examples Change a file&amp;rsquo;s owner." />
  -rw-rw-r-- 1 john staff 23 Jul 2 08:45 file.txt  &hellip;where john is the file&rsquo;s owner. chown is also capable of changing the file group, ( staff ), having the same functionality as chgrp.
 Usage Examples Change a file&rsquo;s owner."><meta itemprop="datePublished" content="2021-07-20T08:28:02-04:00" />
 <meta itemprop="dateModified" content="2021-07-20T08:28:02-04:00" />
-<meta itemprop="wordCount" content="97">
+<meta itemprop="wordCount" content="100">
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="chown"/>
@@ -129,11 +129,11 @@ The output is&hellip;</p>
 group, ( <em>staff</em> ), having the same functionality as <code>chgrp</code>.</p>
 <h2 id="usage-examples">Usage Examples</h2>
 <p>Change a file&rsquo;s owner.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">chown root ./file.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ chown root ./file.txt
 </code></pre></div><p>Change a file&rsquo;s owner and group.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">chown root:staff ./file.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ chown root:staff ./file.txt
 </code></pre></div><p>Change the owner of a directory and its contents recursively.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">chown -hR root directory
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ chown -hR root directory
 </code></pre></div><h2 id="configuration">Configuration</h2>
 <p>N/A</p>
 

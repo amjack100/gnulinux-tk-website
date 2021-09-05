@@ -8,7 +8,7 @@
 <meta name="description" content="rsync is a copying tool that implements a delta-transfer algorithm for extremely fast and efficient transfers. It finds files that have changed in size or last-modified time to determine the necessary updates to the destination.
 If rsync is used over ssh, it requires that both the client and server have the software installed.
 Usage Examples Copy a directory (recursive) to a remote machine
-rsync -vr ./source-dir server:/destination Copy a directory (recursive) to the host machine" />
+$ rsync -vr ./source-dir server:/destination Copy a directory (recursive) to the host machine" />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -41,16 +41,16 @@ rsync -vr ./source-dir server:/destination Copy a directory (recursive) to the h
 <meta itemprop="description" content="rsync is a copying tool that implements a delta-transfer algorithm for extremely fast and efficient transfers. It finds files that have changed in size or last-modified time to determine the necessary updates to the destination.
 If rsync is used over ssh, it requires that both the client and server have the software installed.
 Usage Examples Copy a directory (recursive) to a remote machine
-rsync -vr ./source-dir server:/destination Copy a directory (recursive) to the host machine"><meta itemprop="datePublished" content="2021-07-13T08:21:30-04:00" />
+$ rsync -vr ./source-dir server:/destination Copy a directory (recursive) to the host machine"><meta itemprop="datePublished" content="2021-07-13T08:21:30-04:00" />
 <meta itemprop="dateModified" content="2021-07-13T08:21:30-04:00" />
-<meta itemprop="wordCount" content="172">
+<meta itemprop="wordCount" content="174">
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="rsync"/>
 <meta name="twitter:description" content="rsync is a copying tool that implements a delta-transfer algorithm for extremely fast and efficient transfers. It finds files that have changed in size or last-modified time to determine the necessary updates to the destination.
 If rsync is used over ssh, it requires that both the client and server have the software installed.
 Usage Examples Copy a directory (recursive) to a remote machine
-rsync -vr ./source-dir server:/destination Copy a directory (recursive) to the host machine"/>
+$ rsync -vr ./source-dir server:/destination Copy a directory (recursive) to the host machine"/>
 
 
 
@@ -130,9 +130,9 @@ the destination.</p>
 the software installed.</p>
 <h2 id="usage-examples">Usage Examples</h2>
 <p>Copy a directory (recursive) to a remote machine</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">rsync -vr ./source-dir server:/destination
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ rsync -vr ./source-dir server:/destination
 </code></pre></div><p>Copy a directory (recursive) to the host machine</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">rsync -vr server:/source-dir ./destination
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ rsync -vr server:/source-dir ./destination
 </code></pre></div><p>Where a host named &ldquo;server&rdquo; is predefined in ~/.ssh/config</p>
 <h2 id="configuration">Configuration</h2>
 <p><code>rsync</code> reads the configuration file associated with <code>ssh</code>.

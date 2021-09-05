@@ -7,8 +7,8 @@
 <meta name="author" content="">
 <meta name="description" content="sed is a tool for editing text. It is a stream editor, meaning it can accomplish the same tasks as a traditional text editor by iterating through streams of text with commands.
 Basic Functionality The &amp;rsquo;s&#39; (substitute) command is the most important sed command. Preview replacement of all matching patterns in a file.
-sed &amp;#39;s/old/new&amp;#39; file.txt Write replacement of all matching patterns in a file.
-sed -i &amp;#39;s/old/new&amp;#39; file.txt Workflows The previous examples demonstrate the basic functionality, but are not enough to expose sed as an agile, real world tool." />
+$ sed &amp;#39;s/old/new&amp;#39; file.txt Write replacement of all matching patterns in a file.
+$ sed -i &amp;#39;s/old/new&amp;#39; file." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -40,17 +40,17 @@ sed -i &amp;#39;s/old/new&amp;#39; file.txt Workflows The previous examples demo
 <meta itemprop="name" content="sed">
 <meta itemprop="description" content="sed is a tool for editing text. It is a stream editor, meaning it can accomplish the same tasks as a traditional text editor by iterating through streams of text with commands.
 Basic Functionality The &rsquo;s&#39; (substitute) command is the most important sed command. Preview replacement of all matching patterns in a file.
-sed &#39;s/old/new&#39; file.txt Write replacement of all matching patterns in a file.
-sed -i &#39;s/old/new&#39; file.txt Workflows The previous examples demonstrate the basic functionality, but are not enough to expose sed as an agile, real world tool."><meta itemprop="datePublished" content="2021-07-25T08:27:22-04:00" />
+$ sed &#39;s/old/new&#39; file.txt Write replacement of all matching patterns in a file.
+$ sed -i &#39;s/old/new&#39; file."><meta itemprop="datePublished" content="2021-07-25T08:27:22-04:00" />
 <meta itemprop="dateModified" content="2021-07-25T08:27:22-04:00" />
-<meta itemprop="wordCount" content="273">
+<meta itemprop="wordCount" content="277">
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="sed"/>
 <meta name="twitter:description" content="sed is a tool for editing text. It is a stream editor, meaning it can accomplish the same tasks as a traditional text editor by iterating through streams of text with commands.
 Basic Functionality The &rsquo;s&#39; (substitute) command is the most important sed command. Preview replacement of all matching patterns in a file.
-sed &#39;s/old/new&#39; file.txt Write replacement of all matching patterns in a file.
-sed -i &#39;s/old/new&#39; file.txt Workflows The previous examples demonstrate the basic functionality, but are not enough to expose sed as an agile, real world tool."/>
+$ sed &#39;s/old/new&#39; file.txt Write replacement of all matching patterns in a file.
+$ sed -i &#39;s/old/new&#39; file."/>
 
 
 
@@ -129,9 +129,9 @@ of text with commands.</p>
 <p>The &rsquo;s' (substitute) command is the most important <code>sed</code> command.
 <br>
 Preview replacement of all matching patterns in a file.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sed <span style="color:#e6db74">&#39;s/old/new&#39;</span> file.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sed <span style="color:#e6db74">&#39;s/old/new&#39;</span> file.txt
 </code></pre></div><p>Write replacement of all matching patterns in a file.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sed -i <span style="color:#e6db74">&#39;s/old/new&#39;</span> file.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sed -i <span style="color:#e6db74">&#39;s/old/new&#39;</span> file.txt
 </code></pre></div><h2 id="workflows">Workflows</h2>
 <p>The previous examples demonstrate the basic functionality, but are not enough to
 expose <code>sed</code> as an agile, real world tool. Typically, one would like to
@@ -149,12 +149,12 @@ or not the desired outcome was achieved.</p>
 in <em>file.txt</em>.</p>
 <h3 id="confirm-the-desired-find-pattern">Confirm the desired find pattern</h3>
 <p>Find all the lines matching the string &ldquo;old&rdquo; (basically as <code>grep</code> would)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sed -n <span style="color:#e6db74">&#39;/old/p&#39;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sed -n <span style="color:#e6db74">&#39;/old/p&#39;</span>
 </code></pre></div><h3 id="confirm-the-replace-pattern">Confirm the replace pattern</h3>
 <p>Using the standard <code>sed 's/old/new'</code> will output the entire file with changes
 in place, requiring the user to navigate to the location of the expected change
 in order to preview it. Instead, one can use&hellip;</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sed -n <span style="color:#e6db74">&#39;s/old/new/gp&#39;</span> file.txt
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sed -n <span style="color:#e6db74">&#39;s/old/new/gp&#39;</span> file.txt
 </code></pre></div><p>&hellip; in order to only reveal the lines in the file which have been changed.</p>
 
 </div>
