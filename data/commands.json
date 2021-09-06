@@ -213,5 +213,10 @@
       "Usage": "_System_",
       "History": "---",
       "Package": "systemd"
+   },
+   "nproc": {
+      "Usage": "_System_",
+      "History": "Released 2009",
+      "Package": "GNU Coreutils"
    }
 }
