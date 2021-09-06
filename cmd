@@ -30,8 +30,7 @@ def push(_):
     res: CompletedProcess = run("git -C %s add ." % dir_)
 
     if res.returncode != 0:
-        print("git add error")
-        print(res.stderr)
+        print(res.stdout)
         exit(1)
 
     print(res.stdout)
@@ -40,7 +39,6 @@ def push(_):
     res = run("git -C %s commit -m %s" % (dir_, date))
 
     if res.returncode != 0:
-        print("git commit error")
         print(res.stdout)
         exit(1)
 
@@ -49,8 +47,7 @@ def push(_):
     res = run("git -C %s push" % dir_)
 
     if res.returncode != 0:
-        print("git push error")
-        print(res.stderr)
+        print(res.stdout)
         exit(1)
 
     print(res.stdout)
