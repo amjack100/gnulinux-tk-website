@@ -41,7 +41,7 @@ def push(_):
 
     if res.returncode != 0:
         print("git commit error")
-        print(res.stderr)
+        print(res.stdout)
         exit(1)
 
     print(res.stdout)
