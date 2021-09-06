@@ -51,6 +51,7 @@ def push(_):
         exit(1)
 
     print(res.stdout)
+    exit(0)
 
 def content(opt):
     """
