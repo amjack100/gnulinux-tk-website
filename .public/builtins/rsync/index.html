@@ -123,11 +123,10 @@ $ rsync -vr ./source-dir server:/destination Copy a directory (recursive) to the
   
 
   <p><code>rsync</code> is a copying tool that implements a delta-transfer algorithm for
-extremely fast and efficient transfers. It finds files that have changed
-in size or last-modified time to determine the necessary updates to
-the destination.</p>
-<p>If rsync is used over ssh, it requires that both the client and server have
-the software installed.</p>
+extremely fast and efficient transfers. It finds files that have changed in size
+or last-modified time to determine the necessary updates to the destination.</p>
+<p>If rsync is used over ssh, it requires that both the client and server have the
+software installed.</p>
 <h2 id="usage-examples">Usage Examples</h2>
 <p>Copy a directory (recursive) to a remote machine</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ rsync -vr ./source-dir server:/destination
@@ -135,20 +134,19 @@ the software installed.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ rsync -vr server:/source-dir ./destination
 </code></pre></div><p>Where a host named &ldquo;server&rdquo; is predefined in ~/.ssh/config</p>
 <h2 id="configuration">Configuration</h2>
-<p><code>rsync</code> reads the configuration file associated with <code>ssh</code>.
-See <a href="https://www.linux-toolkit.com/builtins/ssh/#configuration">ssh configuration</a></p>
+<p><code>rsync</code> reads the configuration file associated with <code>ssh</code>. See <a href="https://www.linux-toolkit.com/builtins/ssh/#configuration">ssh
+configuration</a></p>
 <h2 id="notes">Notes</h2>
 <ul>
 <li>
-<p>A trailing &ldquo;/&rdquo; defines whether the source-dir is included as opposed to
-only the sub-contents. Forgetting this can lead to confusing situations.
-<br></p>
+<p>A trailing &ldquo;/&rdquo; defines whether the source-dir is included as opposed to only
+the sub-contents. Forgetting this can lead to confusing situations. <br></p>
 </li>
 <li>
-<p><code>rsync</code> has an optional daemon component, rsyncd, but the end functionality
-is effectively identical to simply using the executable (unless the file transfer
-involves a significant amount of data). The daemon does not have any file monitoring
-capabilities or anything similar.</p>
+<p><code>rsync</code> has an optional daemon component, rsyncd, but the end functionality is
+effectively identical to simply using the executable (unless the file transfer
+involves a significant amount of data). The daemon does not have any file
+monitoring capabilities or anything similar.</p>
 </li>
 <li>
 <p>See <a href="https://rsync.samba.org/how-rsync-works.html">how rsync works</a> and

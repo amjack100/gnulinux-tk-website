@@ -117,13 +117,11 @@ Usage Examples Install a package."/>
   
 
   <p><code>apt</code> stands for <strong>A</strong>dvanced <strong>P</strong>acakge <strong>T</strong>ool and is the main package
-management system built into many Linux distributions. <code>apt</code> is intended to
-be the main means of interactively managing packages, but its features are
-also available in the back-end commands <code>apt-get</code> and <code>apt-cache</code>.
-<br>
-<br>
-<code>apt</code> is the middle man between a remote repository and <code>dpkg</code>. It will
-check for dependencies, download packages, and use <code>dpkg</code> to install them.</p>
+management system built into many Linux distributions. <code>apt</code> is intended to be
+the main means of interactively managing packages, but its features are also
+available in the back-end commands <code>apt-get</code> and <code>apt-cache</code>. <br> <br> <code>apt</code> is
+the middle man between a remote repository and <code>dpkg</code>. It will check for
+dependencies, download packages, and use <code>dpkg</code> to install them.</p>
 <h2 id="usage-examples">Usage Examples</h2>
 <p>Install a package.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt install package
@@ -142,8 +140,8 @@ deb-src http://security.ubuntu.com/ubuntu focal-security main restricted
 deb http://us.archive.ubuntu.com/ubuntu focal-updates main restricted
 deb-src http://us.archive.ubuntu.com/ubuntu focal-updates main restricted
 </code></pre></div><p>Line format: <em>archive-type repository-url distribution component</em></p>
-<p><em>Archive type</em> can be <code>deb</code> (pre-compiled, binary packages) or <code>deb-src</code>
-(source packages)</p>
+<p><em>Archive type</em> can be <code>deb</code> (pre-compiled, binary packages) or <code>deb-src</code> (source
+packages)</p>
 <br>
 `/etc/apt/apt.conf` APT configuration file
 <br>
@@ -152,14 +150,14 @@ source, etc.)
 <!--https://wiki.debian.org/SourcesList-->
 <p>An example <code>/etc/apt/apt.conf</code></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">
-APT 
+APT
 {
   // Options for apt-get
-  Get 
+  Get
   {
      Download-Only &#34;false&#34;;
   };
-  
+
 };
 
 // Options for the downloading routines
@@ -169,12 +167,12 @@ Acquire
 };
 
 // Things that effect the APT dselect method
-DSelect 
+DSelect
 {
   Clean &#34;auto&#34;;   // always|auto|prompt|never
 };
 
-DPkg 
+DPkg
 {
   // Probably don&#39;t want to use force-downgrade..
   Options {&#34;--force-overwrite&#34;;}

@@ -198,7 +198,7 @@ $ kill -CONT 40831 # The following are identical: # kill -SIGCONT 40831 # kill -
       <pubDate>Tue, 17 Aug 2021 19:39:28 -0400</pubDate>
       
       <guid>https://www.linux-toolkit.com/builtins/cd/</guid>
-      <description>cd allows for changing directories, and is easily one of the most commonly used Linux commands. It has also been implemented in other operating systems as the exact same command such as Microsoft Windows. cd falls in line with the other _ch* (change)_ commands, as it is essentially a shortened version of the system call, chdir().
+      <description>cd allows for changing directories, and is easily one of the most commonly used Linux commands. It has also been implemented in other operating systems as the exact same command such as Microsoft Windows. cd falls in line with the other ch* (change) commands, as it is essentially a shortened version of the system call, chdir().
 Usage Examples Set the current working directory to (go to) a new location.
 $ cd directory Go to the home directory.</description>
     </item>

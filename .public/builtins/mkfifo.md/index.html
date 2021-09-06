@@ -116,11 +116,11 @@ Usage Examples Make a FIFO at a provided path."/>
 
   
 
-  <p><code>mkfifo</code> is used for creating <em>named pipes</em>, a special file type.
-The name <code>mkfifo</code> comes from <strong>m</strong>a<strong>k</strong>e First In First Out, where a first-in
-first-out file operates like a pipe but has an identifier and is entered into the
-filesystem. Before a FIFO can have input/output performed on it, it must be opened
-at both &ldquo;ends&rdquo; (opened for reading and opened for writing).</p>
+  <p><code>mkfifo</code> is used for creating <em>named pipes</em>, a special file type. The name
+<code>mkfifo</code> comes from <strong>m</strong>a<strong>k</strong>e First In First Out, where a first-in first-out
+file operates like a pipe but has an identifier and is entered into the
+filesystem. Before a FIFO can have input/output performed on it, it must be
+opened at both &ldquo;ends&rdquo; (opened for reading and opened for writing).</p>
 <h2 id="usage-examples">Usage Examples</h2>
 
 
@@ -131,11 +131,11 @@ at both &ldquo;ends&rdquo; (opened for reading and opened for writing).</p>
 </code></pre></div><h2 id="notes">Notes</h2>
 <ul>
 <li>The functionality of a FIFO file can be demonstrated in the following way:
-First, make a FIFO using <code>mkfifo myfifo</code> at any location. In the same terminal,
-use <code>tail -f myfifo</code> monitor its contents. Next, open a new terminal, leaving
-the first open, and enter <code>echo &quot;mystring&quot; &gt; myfifo</code>. Your string
-&ldquo;mystring&rdquo; will go through the pipe and be displayed in the output
-of the <code>tail</code> command.</li>
+First, make a FIFO using <code>mkfifo myfifo</code> at any location. In the same
+terminal, use <code>tail -f myfifo</code> monitor its contents. Next, open a new
+terminal, leaving the first open, and enter <code>echo &quot;mystring&quot; &gt; myfifo</code>. Your
+string &ldquo;mystring&rdquo; will go through the pipe and be displayed in the output of
+the <code>tail</code> command.</li>
 </ul>
 
 </div>

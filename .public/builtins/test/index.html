@@ -113,17 +113,13 @@
 
   
 
-  <p><code>test</code> is a useful scripting command for evaluating various expressions.
-It will return 0 (true) or 1 (false) based on the value of the given expression,
-making it the effective counterpart of the <code>if</code> command built into many shells.
-<br>
-<br>
-The literal <code>[</code> character is identical to <code>test</code>, although its usage requires a
-a closing brace at the end of the provided expression.
-<br>
-<br>
-The type of expression that <code>test</code> evaluates is based on the flag it is given
-as a parameter. See the chart below for a quick reference to each flag.</p>
+  <p><code>test</code> is a useful scripting command for evaluating various expressions. It will
+return 0 (true) or 1 (false) based on the value of the given expression, making
+it the effective counterpart of the <code>if</code> command built into many shells. <br>
+<br> The literal <code>[</code> character is identical to <code>test</code>, although its usage
+requires a a closing brace at the end of the provided expression. <br> <br> The
+type of expression that <code>test</code> evaluates is based on the flag it is given as a
+parameter. See the chart below for a quick reference to each flag.</p>
 <h2 id="basic-functionality">Basic Functionality</h2>
 <p>Test for the existence of a file.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#66d9ef">if</span> test -f file.txt; <span style="color:#66d9ef">then</span>
@@ -158,19 +154,19 @@ the interactive flag to confirm deletion.</p>
 
 File garbage.txt is empty
 rm: remove regular empty file <span style="color:#e6db74">&#39;garbage.txt&#39;</span>?
-</code></pre></div><p>Maybe you&rsquo;d like to create a script that behaves according to the value of a certain
-environment variable. This example tests the LANG environment variable and reacts
-with the appropriate greeting. Respecting possible differences in environment
-conditions is a great way of making code in general more robust, not just small
-scripts.</p>
+</code></pre></div><p>Maybe you&rsquo;d like to create a script that behaves according to the value of a
+certain environment variable. This example tests the LANG environment variable
+and reacts with the appropriate greeting. Respecting possible differences in
+environment conditions is a great way of making code in general more robust, not
+just small scripts.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#greeting.sh</span>
 <span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $LANG <span style="color:#f92672">=</span> en_US.UTF-8 <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
   echo <span style="color:#e6db74">&#34;Welcome!&#34;</span>
 <span style="color:#66d9ef">elif</span> <span style="color:#f92672">[</span> $LANG <span style="color:#f92672">=</span> de_DE.UTF-8 <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
   echo <span style="color:#e6db74">&#34;Willkommen!&#34;</span>
 <span style="color:#66d9ef">fi</span>
-</code></pre></div><p><code>test</code> reads the value of the environment variable $LANG, which specifies the user&rsquo;s
-language setting.</p>
+</code></pre></div><p><code>test</code> reads the value of the environment variable $LANG, which specifies the
+user&rsquo;s language setting.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ LANG<span style="color:#f92672">=</span>en_US.UTF-8 greeting.sh
 
 Welcome!
@@ -180,7 +176,8 @@ $ LANG<span style="color:#f92672">=</span>de_DE.UTF-8 greeting.sh
 Willkommen!
 </code></pre></div><h2 id="notes">Notes</h2>
 <ul>
-<li>For further information, see the <code>test</code> <a href="https://pubs.opengroup.org/onlinepubs/009695399/utilities/test.html">official documentation</a></li>
+<li>For further information, see the <code>test</code>
+<a href="https://pubs.opengroup.org/onlinepubs/009695399/utilities/test.html">official documentation</a></li>
 </ul>
 
 </div>

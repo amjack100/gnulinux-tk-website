@@ -119,11 +119,11 @@ $ echo hello Use redirection to quickly create a new file."/>
 
   
 
-  <p><code>echo</code> and <code>printf</code> are simple, commonly used commands for explicitly printing
-a line of output. They demonstrate almost identical functionality when provided
-a single argument (the characters to print), although <code>echo</code> will automatically append
-a newline while <code>printf</code> will not. They can be useful within scripts for logging
-information as well as quick file creation on the command line.</p>
+  <p><code>echo</code> and <code>printf</code> are simple, commonly used commands for explicitly printing a
+line of output. They demonstrate almost identical functionality when provided a
+single argument (the characters to print), although <code>echo</code> will automatically
+append a newline while <code>printf</code> will not. They can be useful within scripts for
+logging information as well as quick file creation on the command line.</p>
 <h2 id="usage-examples">Usage Examples</h2>
 <p>Print a string to standard output.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ echo hello
@@ -137,7 +137,7 @@ keys<span style="color:#f92672">=(</span>first second third fourth fifth<span st
 values<span style="color:#f92672">=(</span>alpha beta gamma delta epsilon<span style="color:#f92672">)</span>
 
 
-<span style="color:#66d9ef">for</span> i in <span style="color:#e6db74">${</span>!keys[@]<span style="color:#e6db74">}</span>; <span style="color:#66d9ef">do</span> 
+<span style="color:#66d9ef">for</span> i in <span style="color:#e6db74">${</span>!keys[@]<span style="color:#e6db74">}</span>; <span style="color:#66d9ef">do</span>
   echo -e <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>keys[$i]<span style="color:#e6db74">}</span><span style="color:#e6db74">\t</span><span style="color:#e6db74">${</span>values[$i]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
 <span style="color:#66d9ef">done</span>
 

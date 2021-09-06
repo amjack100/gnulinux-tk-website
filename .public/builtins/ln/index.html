@@ -113,12 +113,12 @@
 
   
 
-  <p><code>ln</code> is a tool for creating <strong>l</strong>i<strong>n</strong>ks between files. It can create the two different
-types of links: soft/symbolic links and hard links. A soft link is like the
-equivalent of a Windows shortcut icon. When a program reads a soft link, it
-is redirected to where the file is. A hard link is basically like giving a
-file another name. When a program reads a hard link, it reads the exact data block
-as the original file.</p>
+  <p><code>ln</code> is a tool for creating <strong>l</strong>i<strong>n</strong>ks between files. It can create the two
+different types of links: soft/symbolic links and hard links. A soft link is
+like the equivalent of a Windows shortcut icon. When a program reads a soft
+link, it is redirected to where the file is. A hard link is basically like
+giving a file another name. When a program reads a hard link, it reads the exact
+data block as the original file.</p>
 <h2 id="usage-examples">Usage Examples</h2>
 <p>Create a soft link to a file</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ln -s file.txt s-link.txt
@@ -129,7 +129,8 @@ as the original file.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ln -sd directory s-link-directory
 </code></pre></div><h2 id="notes">Notes</h2>
 <ul>
-<li>Creating a hard link for a directory can <a href="https://askubuntu.com/questions/210741/why-are-hard-links-not-allowed-for-directories">break the filesystem</a>
+<li>Creating a hard link for a directory can
+<a href="https://askubuntu.com/questions/210741/why-are-hard-links-not-allowed-for-directories">break the filesystem</a>
 and is therefore usually made impossible with system restrictions</li>
 </ul>
 

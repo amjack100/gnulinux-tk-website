@@ -122,35 +122,36 @@ $ top -o name_of_field Workflows While the interactive table is running within y
 
   
 
-  <p><code>top</code> is an interactive program for monitoring processes, cpu usage and live feeds
-of other system metrics. <code>top</code> stands for <strong>t</strong>able <strong>o</strong>f <strong>p</strong>rocesses. Effectively
-using this tool requires some practice compared to other commands, as its interactive
-menu provides many options and the ability to filter specific items.</p>
+  <p><code>top</code> is an interactive program for monitoring processes, cpu usage and live
+feeds of other system metrics. <code>top</code> stands for <strong>t</strong>able <strong>o</strong>f <strong>p</strong>rocesses.
+Effectively using this tool requires some practice compared to other commands,
+as its interactive menu provides many options and the ability to filter specific
+items.</p>
 <h2 id="basic-functionality">Basic Functionality</h2>
 <p>Simply start <code>top</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ top
 </code></pre></div><p>Start <code>top</code>, sorting processes by a particular field.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ top -o name_of_field
 </code></pre></div><h2 id="workflows">Workflows</h2>
-<p>While the interactive table is running within your terminal, many keyboard shortcuts
-become available which provide additional functionality. You can type <code>?</code> to quickly
-view help for these commands.</p>
+<p>While the interactive table is running within your terminal, many keyboard
+shortcuts become available which provide additional functionality. You can type
+<code>?</code> to quickly view help for these commands.</p>
 <h3 id="filtering-processes">Filtering processes</h3>
-<p>One of the most powerful of these commands is called with the <code>o/O</code> key, which allows
-you to enter a filter for picking out specific processes based on PID, Command Name/Line,
-etc. For example, pressing <code>o</code> will trigger the filter prompt&hellip;</p>
+<p>One of the most powerful of these commands is called with the <code>o/O</code> key, which
+allows you to enter a filter for picking out specific processes based on PID,
+Command Name/Line, etc. For example, pressing <code>o</code> will trigger the filter
+prompt&hellip;</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">add filter #1 (ignoring case) as: [!]FLD?VAL
 </code></pre></div><p>and then typing&hellip;</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">add filter #1 (ignoring case) as: [!]FLD?VAL COMMAND=pythonscript.py
 </code></pre></div><p>&hellip;will allow you to closely monitor a script, say <em>pythonscript.py</em> which you
-may be suspecting of hoarding memory.
-<br></p>
-<p>Press <code>f/F</code> to see a list of all the available filters alongside brief explanations
-of what they do.</p>
+may be suspecting of hoarding memory. <br></p>
+<p>Press <code>f/F</code> to see a list of all the available filters alongside brief
+explanations of what they do.</p>
 <h3 id="increasingdescreaing-update-speed">Increasing/descreaing update speed</h3>
-<p>One can press either <code>d</code> or <code>s</code> to open the &ldquo;update interval prompt&rdquo;. Lower inputs
-will cause <code>top</code> to refresh the process table more quickly, while higher numbers
-will slow the refresh rate.</p>
+<p>One can press either <code>d</code> or <code>s</code> to open the &ldquo;update interval prompt&rdquo;. Lower
+inputs will cause <code>top</code> to refresh the process table more quickly, while higher
+numbers will slow the refresh rate.</p>
 
 </div>
 

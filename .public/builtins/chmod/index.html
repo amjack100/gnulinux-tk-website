@@ -120,19 +120,18 @@ The first dash is the type of file. The next 9 dashes are mode bits."/>
   
 
   <p><code>chmod</code> is a utility for <strong>ch</strong>anging the <strong>mod</strong>e (permissions) of a file or
-directory. A file&rsquo;s mode defines who can read, write, and execute it.
-To check the mode of a file <em>file.txt</em>, use the command <code>ls -l file.txt</code>.
-The output is&hellip;</p>
+directory. A file&rsquo;s mode defines who can read, write, and execute it. To check
+the mode of a file <em>file.txt</em>, use the command <code>ls -l file.txt</code>. The output
+is&hellip;</p>
 <pre>
 <b>-rw-rw-r--</b> 1 user group 23 Jul 2 08:45 file.txt
 </pre>
 <p>&hellip;where <code>-rw-rw-r--</code> is the file&rsquo;s mode.</p>
-<p>The first dash is the type of file.
-The next 9 dashes are mode bits. A letter (r,w,x) means on and a dash means off.
-<br></p>
+<p>The first dash is the type of file. The next 9 dashes are mode bits. A letter
+(r,w,x) means on and a dash means off. <br></p>
 <h2 id="usage-examples">Usage Examples</h2>
 <p>Allow a file to be executed by everyone.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ chmod +x file.txt 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ chmod +x file.txt
 
 <span style="color:#75715e"># same as chmod a+x file.txt</span>
 </code></pre></div><p>Give specific permissions to specific people.</p>

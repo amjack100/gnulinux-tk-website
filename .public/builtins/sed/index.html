@@ -123,12 +123,11 @@ $ sed -i &#39;s/old/new&#39; file."/>
   
 
   <p><code>sed</code> is a tool for editing text. It is a <strong>s</strong>tream <strong>ed</strong>itor, meaning it can
-accomplish the same tasks as a traditional text editor by iterating through streams
-of text with commands.</p>
+accomplish the same tasks as a traditional text editor by iterating through
+streams of text with commands.</p>
 <h2 id="basic-functionality">Basic Functionality</h2>
-<p>The &rsquo;s' (substitute) command is the most important <code>sed</code> command.
-<br>
-Preview replacement of all matching patterns in a file.</p>
+<p>The &rsquo;s' (substitute) command is the most important <code>sed</code> command. <br> Preview
+replacement of all matching patterns in a file.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sed <span style="color:#e6db74">&#39;s/old/new&#39;</span> file.txt
 </code></pre></div><p>Write replacement of all matching patterns in a file.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sed -i <span style="color:#e6db74">&#39;s/old/new&#39;</span> file.txt
@@ -136,8 +135,8 @@ Preview replacement of all matching patterns in a file.</p>
 <p>The previous examples demonstrate the basic functionality, but are not enough to
 expose <code>sed</code> as an agile, real world tool. Typically, one would like to
 continuously preview and adjust their expressions without dumping the entire
-file to the console or modifying the file in place with no confirmation as to whether
-or not the desired outcome was achieved.</p>
+file to the console or modifying the file in place with no confirmation as to
+whether or not the desired outcome was achieved.</p>
 <p>A practical <em>find</em> &amp; <em>replace</em> workflow might look like this:</p>
 <ol>
 <li>Confirm that the <em>find</em> pattern exists within the file as expected.</li>
@@ -145,15 +144,15 @@ or not the desired outcome was achieved.</p>
 <li>Use <code>sed -i</code> to finalize the replacements, optionally with a backup file.</li>
 <li>Confirm that the output file changed as expected.</li>
 </ol>
-<p>In this example, we&rsquo;ll use <code>sed</code> to replace all instances of &ldquo;old&rdquo; with &ldquo;new&rdquo;
-in <em>file.txt</em>.</p>
+<p>In this example, we&rsquo;ll use <code>sed</code> to replace all instances of &ldquo;old&rdquo; with &ldquo;new&rdquo; in
+<em>file.txt</em>.</p>
 <h3 id="confirm-the-desired-find-pattern">Confirm the desired find pattern</h3>
 <p>Find all the lines matching the string &ldquo;old&rdquo; (basically as <code>grep</code> would)</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sed -n <span style="color:#e6db74">&#39;/old/p&#39;</span>
 </code></pre></div><h3 id="confirm-the-replace-pattern">Confirm the replace pattern</h3>
-<p>Using the standard <code>sed 's/old/new'</code> will output the entire file with changes
-in place, requiring the user to navigate to the location of the expected change
-in order to preview it. Instead, one can use&hellip;</p>
+<p>Using the standard <code>sed 's/old/new'</code> will output the entire file with changes in
+place, requiring the user to navigate to the location of the expected change in
+order to preview it. Instead, one can use&hellip;</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sed -n <span style="color:#e6db74">&#39;s/old/new/gp&#39;</span> file.txt
 </code></pre></div><p>&hellip; in order to only reveal the lines in the file which have been changed.</p>
 

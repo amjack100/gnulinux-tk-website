@@ -117,9 +117,9 @@
 running services (programs which run in the background). The main configuration
 entities of <code>systemd</code> are simply called &ldquo;units&rdquo;, of which there are 11 different
 types. The most commonly used unit is the service unit, which are described
-individually in .service files. There are several commands for tapping into the features
-of systemd, including <code>systemctl</code> and <code>journalctl</code>, as well as special syntaxes for
-customizing each of the types of unit files.</p>
+individually in .service files. There are several commands for tapping into the
+features of systemd, including <code>systemctl</code> and <code>journalctl</code>, as well as special
+syntaxes for customizing each of the types of unit files.</p>
 <h2 id="usage-examples">Usage Examples</h2>
 <p><em><code>systemd</code> is hardly ever invoked directly, but instead called by the system.
 <code>systemctl</code> and<code>journalctl</code> provide entry points.</em></p>
@@ -148,8 +148,7 @@ $ systemctl disable sshd
 ~/.config/systemd/user/new_service.service
 <span style="color:#75715e"># systemctl --user start new_service</span>
 </code></pre></div><p><em>Symlinked</em> files placed elsewhere will not work with the <code>systemctl enable</code>
-command and therefore won&rsquo;t be able to be triggered on system startup.
-<br>
+command and therefore won&rsquo;t be able to be triggered on system startup. <br>
 Here&rsquo;s a simple example.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#66d9ef">[Unit]</span>
 <span style="color:#a6e22e">Description</span><span style="color:#f92672">=</span><span style="color:#e6db74">A New Service</span>
@@ -161,11 +160,10 @@ Here&rsquo;s a simple example.</p>
 
 <span style="color:#66d9ef">[Install]</span>
 <span style="color:#a6e22e">WantedBy</span><span style="color:#f92672">=</span><span style="color:#e6db74">mutli-user.target</span>
-</code></pre></div><p>Note: [Install] is required for systemctl enable
-<br>
-Use <code>man systemd.service</code> to see all the types and options.
-There are certain options such as ExecStartPre, ExecStartPost, ExecReload, etc.
-which provide additional command triggers.</p>
+</code></pre></div><p>Note: [Install] is required for systemctl enable <br> Use <code>man systemd.service</code>
+to see all the types and options. There are certain options such as
+ExecStartPre, ExecStartPost, ExecReload, etc. which provide additional command
+triggers.</p>
 
 </div>
 
