@@ -6,14 +6,31 @@ import os
 from typing import List
 from typing import Dict
 import subprocess
+from subprocess import CompletedProcess
 import os.path as osp
 import os
 import pathlib
+from 
+from pathlib import Path
 import json
+
+
+
+def run(cmd:str) -> CompletedProcess:
+
+    return subprocess.run(cmd.split(" "), capture_output=True, text=True)
 
 
 def push(opt):
 
+    dir_ = str(Path(__file__).parent)
+    res: CompletedProcess = run("git -C %s add ." % dir_)
+
+    if res.returncode != 0:
+        print("git add error")
+        exit(1)
+
+    res = run("git -C %s commit -m %s")
 
 
 
