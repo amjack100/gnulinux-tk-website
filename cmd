@@ -10,7 +10,7 @@ from subprocess import CompletedProcess
 import os.path as osp
 import os
 import pathlib
-from 
+from datetime import datetime
 from pathlib import Path
 import json
 
@@ -21,7 +21,10 @@ def run(cmd:str) -> CompletedProcess:
     return subprocess.run(cmd.split(" "), capture_output=True, text=True)
 
 
-def push(opt):
+def push(_):
+    """
+    Push repository to GitHub
+    """
 
     dir_ = str(Path(__file__).parent)
     res: CompletedProcess = run("git -C %s add ." % dir_)
@@ -30,9 +33,24 @@ def push(opt):
         print("git add error")
         exit(1)
 
-    res = run("git -C %s commit -m %s")
+    print(res.stdout)
 
+    date = datetime.strftime(datetime.now(), "%y-%m-%d-%H-%M")
+    res = run("git -C %s commit -m %s" % (dir_, date))
 
+    if res.returncode != 0:
+        print("git commit error")
+        exit(1)
+
+    print(res.stdout)
+
+    res = run("git -C %s push" % dir_)
+
+    if res.returncode != 0:
+        print("git push error")
+        exit(1)
+
+    print(res.stdout)
 
 def content(opt):
     """
@@ -106,7 +124,7 @@ if __name__ == "__main__":
     p_content.set_defaults(func=content)
     
     p_content = p_subs.add_parser("push")
-    p_content.set_defaults(func=content)
+    p_content.set_defaults(func=push)
 
 
     opt = p_a.parse_args()
