@@ -208,5 +208,10 @@
       "Usage": "_Filesystem_",
       "History": "4.4 BSD",
       "Package": "GNU Coreutils"
+   },
+   "shutdown": {
+      "Usage": "_System_",
+      "History": "---",
+      "Package": "systemd"
    }
 }

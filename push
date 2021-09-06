@@ -2,8 +2,6 @@
 
 dir=`dirname $0`
 
-cd $dir
-
-git add .
-git commit -m "$$(date +%F-%T)"
-git push
+git -C $dir add .
+git -C $dir commit -m "$$(date +%F-%T)"
+git -C $dir push

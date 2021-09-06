@@ -12,12 +12,15 @@ import pathlib
 import json
 
 
+def push(opt):
+
+
+
 
 def content(opt):
     """
     Create a new .md file
     """
-
     content_types:List[str] =  os.listdir("./content")
     for i, c in enumerate(content_types):
         print(i, ":", c)
@@ -85,6 +88,8 @@ if __name__ == "__main__":
     p_content.add_argument("filename")
     p_content.set_defaults(func=content)
     
+    p_content = p_subs.add_parser("push")
+    p_content.set_defaults(func=content)
 
 
     opt = p_a.parse_args()
