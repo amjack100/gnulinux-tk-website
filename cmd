@@ -67,11 +67,16 @@ def content(opt):
         exit(1)
 
     try:
-        res = subprocess.run(["hugo", "new", content_type + "/" + opt.filename + ".md"], capture_output=True, text=True)
-    except:
-        print("hugo command failed")
+        res = run("hugo new %s/%s.md" % (content_type, opt.filename))
+    except Exception as e:
+        print(e)
         exit(1)
 
+    if res.returncode != 0:
+        print(res.stdout)
+        print(res.stderr)
+        exit(1)
+    
     if (input("open editor? [y] or n:") != "n"):
         
         if os.getenv("EDITOR") != "":

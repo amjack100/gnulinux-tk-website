@@ -1,7 +1,0 @@
-#!/usr/bin/bash
-
-dir=`dirname $0`
-
-git -C $dir add .
-git -C $dir commit -m "$$(date +%F-%T)"
-git -C $dir push
