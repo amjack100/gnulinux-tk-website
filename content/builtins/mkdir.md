@@ -29,9 +29,9 @@ $ rmdir directoryname
 
 ## Notes
 
-- `mkdir` and `rmdir` are the direct command line equivalents of
-  the `mkdir()` and `rmdir()` Linux system calls. One can view `man 2 mkdir` or
-  `man 2 rmdir` for more information.
+- `mkdir` and `rmdir` are the direct command line equivalents of the `mkdir()`
+  and `rmdir()` Linux system calls. One can view `man 2 mkdir` or `man 2 rmdir`
+  for more information.
 
-- `rmdir` is particularly different than `rm -r` as it will only remove
-  empty directories, providing safer use in many cases.
+- `rmdir` is particularly different than `rm -r` as it will only remove empty
+  directories, providing safer use in many cases.

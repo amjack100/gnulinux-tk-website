@@ -4,9 +4,9 @@ date: 2021-08-20T18:35:39-04:00
 draft: true
 ---
 
-`wc` is a tool for getting the **w**ord **c**ount from a file or files. It also capable
-of getting newline, character, and byte counts. `wc`'s definition
-of a word is
+`wc` is a tool for getting the **w**ord **c**ount from a file or files. It also
+capable of getting newline, character, and byte counts. `wc`'s definition of a
+word is
 
 > a non-zero-length sequence of characters delimited by white space.
 >
@@ -30,5 +30,5 @@ $ echo one two three | wc -w
 
 ## Notes
 
-- Other than words, you can also specify `-c`, `-m`, and `-l` for
-  bytes, chars, and lines respectively.
+- Other than words, you can also specify `-c`, `-m`, and `-l` for bytes, chars,
+  and lines respectively.

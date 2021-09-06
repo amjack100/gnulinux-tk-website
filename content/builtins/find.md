@@ -4,8 +4,7 @@ date: 2021-07-26T12:14:15-04:00
 draft: true
 ---
 
-`find` is the primary built-in utility for finding files on a GNU/Linux
-system.
+`find` is the primary built-in utility for finding files on a GNU/Linux system.
 
 ## Usage Examples
 
@@ -17,7 +16,8 @@ Find files that match a search pattern
 $ find -iname '*.txt'
 ```
 
-`-iname` means "case insensitive", which can in general be more helpful than `-name`.
+`-iname` means "case insensitive", which can in general be more helpful than
+`-name`.
 
 Find files that have been modified within a specific time frame
 
@@ -35,8 +35,8 @@ $ sudo find / -iname 'filename*'
 
 ## Configuration
 
-Minor configuration options can be specified with environment variables. See
-the `find` man page for more specific details.
+Minor configuration options can be specified with environment variables. See the
+`find` man page for more specific details.
 
 ## Notes
 

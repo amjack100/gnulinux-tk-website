@@ -8,9 +8,9 @@ draft: true
 running services (programs which run in the background). The main configuration
 entities of `systemd` are simply called "units", of which there are 11 different
 types. The most commonly used unit is the service unit, which are described
-individually in .service files. There are several commands for tapping into the features
-of systemd, including `systemctl` and `journalctl`, as well as special syntaxes for
-customizing each of the types of unit files.
+individually in .service files. There are several commands for tapping into the
+features of systemd, including `systemctl` and `journalctl`, as well as special
+syntaxes for customizing each of the types of unit files.
 
 ## Usage Examples
 
@@ -74,8 +74,7 @@ A new .service file should be created like so in one of these directories.
 ```
 
 _Symlinked_ files placed elsewhere will not work with the `systemctl enable`
-command and therefore won't be able to be triggered on system startup.
-<br>
+command and therefore won't be able to be triggered on system startup. <br>
 Here's a simple example.
 
 ```ini
@@ -91,8 +90,7 @@ ExecStart=/home/user/background-script.sh $ONE
 WantedBy=mutli-user.target
 ```
 
-Note: [Install] is required for systemctl enable
-<br>
-Use `man systemd.service` to see all the types and options.
-There are certain options such as ExecStartPre, ExecStartPost, ExecReload, etc.
-which provide additional command triggers.
+Note: [Install] is required for systemctl enable <br> Use `man systemd.service`
+to see all the types and options. There are certain options such as
+ExecStartPre, ExecStartPost, ExecReload, etc. which provide additional command
+triggers.

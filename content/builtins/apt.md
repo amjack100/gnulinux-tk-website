@@ -4,15 +4,12 @@ date: 2021-07-29T10:14:18-04:00
 draft: true
 ---
 
-
 `apt` stands for **A**dvanced **P**acakge **T**ool and is the main package
-management system built into many Linux distributions. `apt` is intended to
-be the main means of interactively managing packages, but its features are
-also available in the back-end commands `apt-get` and `apt-cache`.
-<br>
-<br>
-`apt` is the middle man between a remote repository and `dpkg`. It will
-check for dependencies, download packages, and use `dpkg` to install them.
+management system built into many Linux distributions. `apt` is intended to be
+the main means of interactively managing packages, but its features are also
+available in the back-end commands `apt-get` and `apt-cache`. <br> <br> `apt` is
+the middle man between a remote repository and `dpkg`. It will check for
+dependencies, download packages, and use `dpkg` to install them.
 
 ## Usage Examples
 
@@ -49,8 +46,8 @@ deb-src http://us.archive.ubuntu.com/ubuntu focal-updates main restricted
 
 Line format: _archive-type repository-url distribution component_
 
-_Archive type_ can be `deb` (pre-compiled, binary packages) or `deb-src`
-(source packages)
+_Archive type_ can be `deb` (pre-compiled, binary packages) or `deb-src` (source
+packages)
 
 <br>
 `/etc/apt/apt.conf` APT configuration file
@@ -64,14 +61,14 @@ An example `/etc/apt/apt.conf`
 
 ```txt
 
-APT 
+APT
 {
   // Options for apt-get
-  Get 
+  Get
   {
      Download-Only "false";
   };
-  
+
 };
 
 // Options for the downloading routines
@@ -81,12 +78,12 @@ Acquire
 };
 
 // Things that effect the APT dselect method
-DSelect 
+DSelect
 {
   Clean "auto";   // always|auto|prompt|never
 };
 
-DPkg 
+DPkg
 {
   // Probably don't want to use force-downgrade..
   Options {"--force-overwrite";}

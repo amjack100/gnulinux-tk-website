@@ -8,10 +8,9 @@ draft: true
 <!--</p>-->
 
 `id` is a command which will display various information specific to a user,
-including _UID_ (user ID) and _GID_ (group ID). These are unique numbers
-that are used to determine which resources each user/group may or may not
-be given access to. `whoami` is a shortcut command that is identical to
-`id -un`.
+including _UID_ (user ID) and _GID_ (group ID). These are unique numbers that
+are used to determine which resources each user/group may or may not be given
+access to. `whoami` is a shortcut command that is identical to `id -un`.
 
 ## Usage Examples
 
@@ -44,8 +43,8 @@ $ whoami
 
 ## Notes
 
-- The operating system keeps the User ID 0 and Group ID 0 reserved
-  for the _root_ user.
+- The operating system keeps the User ID 0 and Group ID 0 reserved for the
+  _root_ user.
 
 - The same user information can also be found within the _/etc/passwd_ file. You
   can see this with `grep user /etc/passwd`, replacing "user" with the actual

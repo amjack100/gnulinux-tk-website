@@ -4,8 +4,8 @@ date: 2021-08-14T09:09:21-04:00
 draft: true
 ---
 
-`tset` and `reset` are historical commands used to reset an actual
-text-based terminal (as opposed to a _terminal emulator_ running on a graphics-oriented
+`tset` and `reset` are historical commands used to reset an actual text-based
+terminal (as opposed to a _terminal emulator_ running on a graphics-oriented
 system).
 
 ## Usage Examples
@@ -31,6 +31,6 @@ $ reset
 
 ## Notes
 
-- `tset`/`reset` have under-documented features and were made obsolete by
-  the `tput` utility. However, as of 2021, they still exist as callable programs
-  on many systems.
+- `tset`/`reset` have under-documented features and were made obsolete by the
+  `tput` utility. However, as of 2021, they still exist as callable programs on
+  many systems.

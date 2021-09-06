@@ -4,10 +4,10 @@ date: 2021-08-17T08:29:12-04:00
 draft: true
 ---
 
-`date` is a command for getting and optionally formatting the current date and time.
-It can be especially useful for tasks such as logging and naming groups of files.
-The slight complexity of `date` lies in its various formatting sequences, which are
-numerous and not particularly intuitive at first glance.
+`date` is a command for getting and optionally formatting the current date and
+time. It can be especially useful for tasks such as logging and naming groups of
+files. The slight complexity of `date` lies in its various formatting sequences,
+which are numerous and not particularly intuitive at first glance.
 
 ## Usage Examples
 
@@ -31,11 +31,11 @@ No configuration, but formats can be predefined with `alias`.
 
 ## Notes
 
-The following format sequences describe how the output of `date` can be
-adjusted to look a specific way. A sequence is a "%" followed by a single letter.
-The different letters produce output based on whether they are lowercase or uppcase,
-for example `%a` or `%A`, where the uppercase member will typically expand into a
-longer/more verbose descriptor.
+The following format sequences describe how the output of `date` can be adjusted
+to look a specific way. A sequence is a "%" followed by a single letter. The
+different letters produce output based on whether they are lowercase or uppcase,
+for example `%a` or `%A`, where the uppercase member will typically expand into
+a longer/more verbose descriptor.
 
 | Character | Description        | Example                         |
 | --------- | ------------------ | ------------------------------- |

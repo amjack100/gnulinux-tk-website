@@ -32,5 +32,5 @@ $ tr -d 'abcdefg' < ./file.txt
 
 ## Notes
 
-- More special sequences like "[:lower:]" and "[:upper:]"
-  can be viewed in the manual along with their meanings with `man tr`.
+- More special sequences like "[:lower:]" and "[:upper:]" can be viewed in the
+  manual along with their meanings with `man tr`.

@@ -5,14 +5,13 @@ draft: true
 ---
 
 `sed` is a tool for editing text. It is a **s**tream **ed**itor, meaning it can
-accomplish the same tasks as a traditional text editor by iterating through streams
-of text with commands.
+accomplish the same tasks as a traditional text editor by iterating through
+streams of text with commands.
 
 ## Basic Functionality
 
-The 's' (substitute) command is the most important `sed` command.
-<br>
-Preview replacement of all matching patterns in a file.
+The 's' (substitute) command is the most important `sed` command. <br> Preview
+replacement of all matching patterns in a file.
 
 ```bash
 $ sed 's/old/new' file.txt
@@ -29,8 +28,8 @@ $ sed -i 's/old/new' file.txt
 The previous examples demonstrate the basic functionality, but are not enough to
 expose `sed` as an agile, real world tool. Typically, one would like to
 continuously preview and adjust their expressions without dumping the entire
-file to the console or modifying the file in place with no confirmation as to whether
-or not the desired outcome was achieved.
+file to the console or modifying the file in place with no confirmation as to
+whether or not the desired outcome was achieved.
 
 A practical _find_ & _replace_ workflow might look like this:
 
@@ -39,8 +38,8 @@ A practical _find_ & _replace_ workflow might look like this:
 3. Use `sed -i` to finalize the replacements, optionally with a backup file.
 4. Confirm that the output file changed as expected.
 
-In this example, we'll use `sed` to replace all instances of "old" with "new"
-in _file.txt_.
+In this example, we'll use `sed` to replace all instances of "old" with "new" in
+_file.txt_.
 
 ### Confirm the desired find pattern
 
@@ -52,9 +51,9 @@ $ sed -n '/old/p'
 
 ### Confirm the replace pattern
 
-Using the standard `sed 's/old/new'` will output the entire file with changes
-in place, requiring the user to navigate to the location of the expected change
-in order to preview it. Instead, one can use...
+Using the standard `sed 's/old/new'` will output the entire file with changes in
+place, requiring the user to navigate to the location of the expected change in
+order to preview it. Instead, one can use...
 
 ```bash
 $ sed -n 's/old/new/gp' file.txt
