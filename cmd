@@ -31,6 +31,7 @@ def push(_):
 
     if res.returncode != 0:
         print("git add error")
+        print(res.stderr)
         exit(1)
 
     print(res.stdout)
@@ -40,6 +41,7 @@ def push(_):
 
     if res.returncode != 0:
         print("git commit error")
+        print(res.stderr)
         exit(1)
 
     print(res.stdout)
@@ -48,6 +50,7 @@ def push(_):
 
     if res.returncode != 0:
         print("git push error")
+        print(res.stderr)
         exit(1)
 
     print(res.stdout)
