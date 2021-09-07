@@ -6,7 +6,20 @@
     <description>Recent content in Builtins on GNU/Linux Toolkit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Sep 2021 08:02:08 -0400</lastBuildDate><atom:link href="https://www.linux-toolkit.com/builtins/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Sep 2021 18:42:09 -0400</lastBuildDate><atom:link href="https://www.linux-toolkit.com/builtins/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>nproc</title>
+      <link>https://www.linux-toolkit.com/builtins/nproc/</link>
+      <pubDate>Mon, 06 Sep 2021 18:42:09 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/nproc/</guid>
+      <description>nproc is a minimal command used for getting the number of processing units (typically CPUs) available to the current machine.
+Usage Examples Get the number of available processing units.
+Get the number of installed processing units (+ inactive ones)
+$ nproc -all Get the number of processing units minus a provided amount.
+$ nproc --ignore 4 Notes   nproc can be useful in situations where an external program would like to know how many jobs/processes to use when running concurrently.</description>
+    </item>
+    
     <item>
       <title>shutdown</title>
       <link>https://www.linux-toolkit.com/builtins/shutdown/</link>
