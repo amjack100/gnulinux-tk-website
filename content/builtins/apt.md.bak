@@ -77,7 +77,7 @@ Acquire
   Retries "0";
 };
 
-// Things that effect the APT deselect method
+// Things that effect the APT dselect method
 DSelect
 {
   Clean "auto";   // always|auto|prompt|never

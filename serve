@@ -1,3 +1,0 @@
-#!/usr/bin/bash
-
-cd `dirname $0` && /usr/local/bin/hugo server -D
