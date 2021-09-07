@@ -10,7 +10,7 @@ translation, but instead refers to a mapping of certain characters to others.
 
 ## Usage Examples
 
-Replace all occurrences of a character in a file.
+Replace all occurances of a character in a file.
 
 ```bash
 $ tr a b < ./file.txt
@@ -24,7 +24,7 @@ Translate all the lower-case characters of a file to upper-case.
 $ tr "[:lower:]" "[:upper:]" < ./file.txt
 ```
 
-Delete all occurrences of a given character set.
+Delete all occurances of a given character set.
 
 ```bash
 $ tr -d 'abcdefg' < ./file.txt

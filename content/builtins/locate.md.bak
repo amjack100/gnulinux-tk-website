@@ -12,7 +12,7 @@ if `updatedb` is not at an appropriate frequency.
 
 ## Usage Examples
 
-Search for a file system-wide by a whole-name pattern.
+Search for a file system-wide by a wholename pattern.
 
 ```bash
 $ locate filename
@@ -38,7 +38,7 @@ $ sudo updatedb
 
 ## Configuration
 
-The _LOCATE_PATH_ environment variable can be configured with a colon-separated
+The _LOCATE_PATH_ environment variable can be configured with a colon-seperated
 list of searchable databases.
 
 ## Notes
@@ -51,4 +51,4 @@ list of searchable databases.
   an always-on machine).
 
 - The manual page _LOCATEDB(5)_ offers additional information on the usage of
-  these tools in conjunction with one another.
+  these tools in conjuction with one another.

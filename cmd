@@ -3,7 +3,7 @@
 import argparse
 import os.path as osp
 import os
-from typing import List
+from typing import List, NoReturn
 from typing import Dict
 import subprocess
 from subprocess import CompletedProcess
@@ -15,10 +15,29 @@ from pathlib import Path
 import json
 
 
-
 def run(cmd:str) -> CompletedProcess:
-
     return subprocess.run(cmd.split(" "), capture_output=True, text=True)
+
+def input_content() -> str:
+
+    content_types:List[str] =  os.listdir("./content")
+    for i, c in enumerate(content_types):
+        print(i, ":", c)
+    return content_types[int(input("content (int):"))] 
+
+
+def spellchk(opt):
+    """
+    Use aspell to do spellchecking
+    """
+
+    content_t = input_content()
+
+    try:
+        os.execvp("bash" ,["bash","-c", "for f in ./content/" + content_t + "/*.md ;do aspell check $f;done"])
+    except Exception as e:
+        print(e)
+        exit(1)
 
 
 def push(_):
@@ -57,10 +76,8 @@ def content(opt):
     """
     Create a new .md file
     """
-    content_types:List[str] =  os.listdir("./content")
-    for i, c in enumerate(content_types):
-        print(i, ":", c)
-    content_type = content_types[int(input("hugo page type (int):"))] 
+
+    content_type = input_content()
 
     if opt.filename[-3:] == ".md":
         print("no extension")
@@ -131,6 +148,10 @@ if __name__ == "__main__":
     
     p_content = p_subs.add_parser("push")
     p_content.set_defaults(func=push)
+
+    p_content = p_subs.add_parser("spellchk")
+    p_content.add_argument("--filename")
+    p_content.set_defaults(func=spellchk)
 
 
     opt = p_a.parse_args()

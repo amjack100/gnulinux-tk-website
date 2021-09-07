@@ -23,19 +23,19 @@ Display the user's ID, group ID, and groups to which that user belongs.
 <!--id-->
 <!--```-->
 
-Display the current user ID number.
+Diplay the current user ID number.
 
 ```bash
 $ id -u
 ```
 
-Display the current group ID number.
+Diplay the current group ID number.
 
 ```bash
 $ id -g
 ```
 
-Display the name of the current user.
+Diplay the name of the current user.
 
 ```bash
 $ whoami

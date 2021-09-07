@@ -1,0 +1,14 @@
+personal_ws-1.1 en 13 
+DPkg
+DSelect
+acakge
+br
+conf
+dpkg
+dvanced
+ool
+pre
+src
+sudo
+txt
+url

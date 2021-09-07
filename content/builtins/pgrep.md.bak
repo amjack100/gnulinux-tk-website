@@ -29,9 +29,8 @@ $ pgrep --euid root process_name
 
 ## Notes
 
-- `prep` is commonly used embedded in places where a PID can be directly
-  replaced with a name, for example: To give detailed information on all xterm
-  processes:
+- `prep` is commonly used embeded in places where a PID can be directly replaced
+  with a name, for example: To give detailed information on all xterm processes:
 
 ```bash
 $ ps -fp $(pgrep -d, -x xterm)
