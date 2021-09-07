@@ -99,7 +99,7 @@ one two four $ diff ~/one.txt ~/two.txt 3c3 &amp;lt; three --- &amp;gt; four </d
       <guid>https://www.linux-toolkit.com/builtins/id/</guid>
       <description>-- id is a command which will display various information specific to a user, including UID (user ID) and GID (group ID). These are unique numbers that are used to determine which resources each user/group may or may not be given access to. whoami is a shortcut command that is identical to id -un.
 Usage Examples Display the user&amp;rsquo;s ID, group ID, and groups to which that user belongs.
-    Diplay the current user ID number.</description>
+    Display the current user ID number.</description>
     </item>
     
     <item>
@@ -109,7 +109,7 @@ Usage Examples Display the user&amp;rsquo;s ID, group ID, and groups to which th
       
       <guid>https://www.linux-toolkit.com/builtins/tr/</guid>
       <description>tr is a command for translating / transliterating text characters. The term translate in the context of tr has nothing to do with across-language translation, but instead refers to a mapping of certain characters to others.
-Usage Examples Replace all occurances of a character in a file.
+Usage Examples Replace all occurrences of a character in a file.
 $ tr a b &amp;lt; ./file.txt All instances of the character &amp;lsquo;a&amp;rsquo; will be replaced with &amp;lsquo;b&amp;rsquo;.
 Translate all the lower-case characters of a file to upper-case.</description>
     </item>
@@ -179,7 +179,7 @@ $ wc file.txt # Alternatively, cat file.txt | wc Print only the word count of a 
       
       <guid>https://www.linux-toolkit.com/builtins/locate/</guid>
       <description>locate is a tool that finds a file based on a pre-loaded database. updatedb is the command which allows one to interact with that database. These commands act as a single utility for locating files system-wide. Compared to find, locate operates much more quickly. However, it may retrieve unreliable results if updatedb is not at an appropriate frequency.
-Usage Examples Search for a file system-wide by a wholename pattern.
+Usage Examples Search for a file system-wide by a whole-name pattern.
 $ locate filename Perform the same search but on confirmed existing files.</description>
     </item>
     

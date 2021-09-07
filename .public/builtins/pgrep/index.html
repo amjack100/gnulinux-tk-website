@@ -139,8 +139,9 @@ many other commands such as <code>kill</code> take a PID (random integer) as inp
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ pgrep --euid root process_name
 </code></pre></div><h2 id="notes">Notes</h2>
 <ul>
-<li><code>prep</code> is commonly used embeded in places where a PID can be directly replaced
-with a name, for example: To give detailed information on all xterm processes:</li>
+<li><code>prep</code> is commonly used embedded in places where a PID can be directly
+replaced with a name, for example: To give detailed information on all xterm
+processes:</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ps -fp <span style="color:#66d9ef">$(</span>pgrep -d, -x xterm<span style="color:#66d9ef">)</span>
 </code></pre></div>
