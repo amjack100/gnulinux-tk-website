@@ -23,8 +23,15 @@ markup:
       unsafe: true
 
 
+Menus:
+  main:
+    - identifier: about
+      name: about
+      url: /about/
+    - identifier: builtins
+      name: built-ins
+      url: /builtins/
+    - identifier: externals
+      name: externals
+      url: /externals/
 
-#Menus:
-  #main:
-    #identifier = "test"
-    #name = "Test"

@@ -10,6 +10,8 @@ themesDir : ".themes"
 
 Params:
   description: "Consise command line refreshers"
+  homeSubtitle: "Consise command line refreshers"
+  custom_css: "css/styles.css"
 
 markup:
   goldmark:
