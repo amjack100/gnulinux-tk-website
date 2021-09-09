@@ -1,3 +1,17 @@
 7893(date)
 Start building sites … 
 hugo v0.87.0-B0C541E4+extended linux/amd64 BuildDate=2021-08-03T10:57:28Z VendorInfo=gohugoio
+WARN 2021/09/09 10:00:01 Page.URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url
+
+                   | EN  
+-------------------+-----
+  Pages            | 58  
+  Paginator pages  |  0  
+  Non-page files   |  0  
+  Static files     | 19  
+  Processed images |  0  
+  Aliases          |  0  
+  Sitemaps         |  1  
+  Cleaned          |  0  
+
+Total in 260 ms

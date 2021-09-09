@@ -108,589 +108,599 @@
 <h2>Builtins</h2>
 <br>
 
-<table width=100%>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<table class="table table-sm">
+
+  <thead>
   <tr>
-    <td><b>Name</b></td>
-    <td><b>Usage</b></td>
-    <td><b>Package</b></td>
-    <td><b>History</b></td>
+    <th scope="col"><b>Name</b></td>
+    <th scope="col"><b>Usage</b></td>
+    <th scope="col"><b>Package</b></td>
+    <th scope="col"><b>History</b></td>
   </tr>
+  </thead>
 
+  <tbody>
 
 
 
   <tr>
 
-    <td><a href="/builtins/nproc/">nproc</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/nproc/">nproc</a></th>
 
     
 
-    <td><em>System</em></td>
-    <td>GNU Coreutils</td>
-    <td>Released 2009</td>
+    <td class="text-left" ><em>System</em></td>
+    <td class="text-center">GNU Coreutils</td>
+    <td class="text-right">Released 2009</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/shutdown/">shutdown</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/shutdown/">shutdown</a></th>
 
     
 
-    <td><em>System</em></td>
-    <td>systemd</td>
-    <td><hr></td>
+    <td class="text-left" ><em>System</em></td>
+    <td class="text-center">systemd</td>
+    <td class="text-right"><hr></td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/mkfifo.md/">mkfifo</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/mkfifo.md/">mkfifo</a></th>
 
     
 
-    <td><em>Filesystem</em></td>
-    <td>GNU Coreutils</td>
-    <td>4.4 BSD</td>
+    <td class="text-left" ><em>Filesystem</em></td>
+    <td class="text-center">GNU Coreutils</td>
+    <td class="text-right">4.4 BSD</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/pgrep/">pgrep</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/pgrep/">pgrep</a></th>
 
     
 
-    <td><em>Processes</em></td>
-    <td>procps-ng</td>
-    <td><hr></td>
+    <td class="text-left" ><em>Processes</em></td>
+    <td class="text-center">procps-ng</td>
+    <td class="text-right"><hr></td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/top/">top</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/top/">top</a></th>
 
     
 
-    <td><em>Processes</em></td>
-    <td>procps-ng</td>
-    <td><hr></td>
+    <td class="text-left" ><em>Processes</em></td>
+    <td class="text-center">procps-ng</td>
+    <td class="text-right"><hr></td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/install/">install</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/install/">install</a></th>
 
     
 
-    <td><em>Filesystem</em></td>
-    <td>GNU Coreutils</td>
-    <td><hr></td>
+    <td class="text-left" ><em>Filesystem</em></td>
+    <td class="text-center">GNU Coreutils</td>
+    <td class="text-right"><hr></td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/diff/">diff</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/diff/">diff</a></th>
 
     
 
-    <td><em>Text</em></td>
-    <td><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
-    <td>Version 5 AT&amp;T UNIX</td>
+    <td class="text-left" ><em>Text</em></td>
+    <td class="text-center"><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+    <td class="text-right">Version 5 AT&amp;T UNIX</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/id/">id | whoami</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/id/">id | whoami</a></th>
 
     
 
-    <td><em>Environment</em></td>
-    <td>GNU Coreutils</td>
-    <td>System V</td>
+    <td class="text-left" ><em>Environment</em></td>
+    <td class="text-center">GNU Coreutils</td>
+    <td class="text-right">System V</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/tr/">tr</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/tr/">tr</a></th>
 
     
 
-    <td><em>Text</em></td>
-    <td><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
-    <td>Version 4 AT&amp;T UNIX</td>
+    <td class="text-left" ><em>Text</em></td>
+    <td class="text-center"><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+    <td class="text-right">Version 4 AT&amp;T UNIX</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/env/">env</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/env/">env</a></th>
 
     
 
-    <td><em>Environment</em></td>
-    <td><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
-    <td>4.4 BSD</td>
+    <td class="text-left" ><em>Environment</em></td>
+    <td class="text-center"><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+    <td class="text-right">4.4 BSD</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/echo/">echo | printf</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/echo/">echo | printf</a></th>
 
     
 
-    <td><em>Scripting</em></td>
-    <td><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
-    <td>1st edition UNIX</td>
+    <td class="text-left" ><em>Scripting</em></td>
+    <td class="text-center"><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+    <td class="text-right">1st edition UNIX</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/cal/">cal | ncal</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/cal/">cal | ncal</a></th>
 
     
 
-    <td><em>Datetime</em></td>
-    <td>Standard builtin</td>
-    <td>1st edition UNIX</td>
+    <td class="text-left" ><em>Datetime</em></td>
+    <td class="text-center">Standard builtin</td>
+    <td class="text-right">1st edition UNIX</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/test/">test | [</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/test/">test | [</a></th>
 
     
 
-    <td><em>Built-in</em></td>
-    <td><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
-    <td>UNIX System III, 1981</td>
+    <td class="text-left" ><em>Built-in</em></td>
+    <td class="text-center"><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+    <td class="text-right">UNIX System III, 1981</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/wc/">wc</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/wc/">wc</a></th>
 
     
 
-    <td><em>Text</em></td>
-    <td><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
-    <td>1971, V1 AT&amp;T UNIX</td>
+    <td class="text-left" ><em>Text</em></td>
+    <td class="text-center"><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+    <td class="text-right">1971, V1 AT&amp;T UNIX</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/locate/">locate | updatedb</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/locate/">locate | updatedb</a></th>
 
     
 
-    <td><em>Searching</em></td>
-    <td><a href="https://www.gnu.org/software/findutils/">GNU Findutils</a></td>
-    <td>BSD 1983</td>
+    <td class="text-left" ><em>Searching</em></td>
+    <td class="text-center"><a href="https://www.gnu.org/software/findutils/">GNU Findutils</a></td>
+    <td class="text-right">BSD 1983</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/head/">head | tail</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/head/">head | tail</a></th>
 
     
 
-    <td><em>Text</em></td>
-    <td><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
-    <td>PWB/UNIX 1977</td>
+    <td class="text-left" ><em>Text</em></td>
+    <td class="text-center"><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+    <td class="text-right">PWB/UNIX 1977</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/kill/">kill</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/kill/">kill</a></th>
 
     
 
-    <td><em>Processes</em></td>
-    <td>util-linux</td>
-    <td>Version 4 AT&amp;T UNIX</td>
+    <td class="text-left" ><em>Processes</em></td>
+    <td class="text-center">util-linux</td>
+    <td class="text-right">Version 4 AT&amp;T UNIX</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/cd/">cd</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/cd/">cd</a></th>
 
     
 
-    <td><em>Filesystem</em></td>
-    <td>Standard builtin</td>
-    <td>Version 6 AT&amp;T UNIX</td>
+    <td class="text-left" ><em>Filesystem</em></td>
+    <td class="text-center">Standard builtin</td>
+    <td class="text-right">Version 6 AT&amp;T UNIX</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/date/">date</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/date/">date</a></th>
 
     
 
-    <td><em>Datetime</em></td>
-    <td>GNU Coreutils</td>
-    <td>Version 1 AT&amp;T UNIX</td>
+    <td class="text-left" ><em>Datetime</em></td>
+    <td class="text-center">GNU Coreutils</td>
+    <td class="text-right">Version 1 AT&amp;T UNIX</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/basename/">basename | dirname</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/basename/">basename | dirname</a></th>
 
     
 
-    <td><em>Scripting</em></td>
-    <td><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
-    <td>V7 AT&amp;T UNIX</td>
+    <td class="text-left" ><em>Scripting</em></td>
+    <td class="text-center"><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+    <td class="text-right">V7 AT&amp;T UNIX</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/mount/">mount | umount</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/mount/">mount | umount</a></th>
 
     
 
-    <td><em>Filesystem</em></td>
-    <td>util-linux</td>
-    <td>V5 AT&amp;T UNIX</td>
+    <td class="text-left" ><em>Filesystem</em></td>
+    <td class="text-center">util-linux</td>
+    <td class="text-right">V5 AT&amp;T UNIX</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/tset/">tset | reset</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/tset/">tset | reset</a></th>
 
     
 
-    <td><em>Environment</em></td>
-    <td><a href="https://invisible-island.net/ncurses/">NCURSES</a></td>
-    <td>Released 1979</td>
+    <td class="text-left" ><em>Environment</em></td>
+    <td class="text-center"><a href="https://invisible-island.net/ncurses/">NCURSES</a></td>
+    <td class="text-right">Released 1979</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/insmod/">insmod | rmmod</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/insmod/">insmod | rmmod</a></th>
 
     
 
-    <td><em>Kernel</em></td>
-    <td><a href="https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git">kmod</a></td>
-    <td>modutils Linux v2.2.x</td>
+    <td class="text-left" ><em>Kernel</em></td>
+    <td class="text-center"><a href="https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git">kmod</a></td>
+    <td class="text-right">modutils Linux v2.2.x</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/cp/">cp</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/cp/">cp</a></th>
 
     
 
-    <td><em>Filesystem</em></td>
-    <td><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
-    <td>1971, V1 AT&amp;T UNIX</td>
+    <td class="text-left" ><em>Filesystem</em></td>
+    <td class="text-center"><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+    <td class="text-right">1971, V1 AT&amp;T UNIX</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/mkdir/">mkdir | rmdir</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/mkdir/">mkdir | rmdir</a></th>
 
     
 
-    <td><em>Filesystem</em></td>
-    <td><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
-    <td><hr></td>
+    <td class="text-left" ><em>Filesystem</em></td>
+    <td class="text-center"><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+    <td class="text-right"><hr></td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/grep/">grep</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/grep/">grep</a></th>
 
     
 
-    <td><em>Searching</em></td>
-    <td>Standalone (GNU grep)</td>
-    <td>Version 4 AT&amp;T UNIX</td>
+    <td class="text-left" ><em>Searching</em></td>
+    <td class="text-center">Standalone (GNU grep)</td>
+    <td class="text-right">Version 4 AT&amp;T UNIX</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/lsmod/">lsmod</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/lsmod/">lsmod</a></th>
 
     
 
-    <td><em>Kernel</em></td>
-    <td><a href="https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git">kmod</a></td>
-    <td>modutils Linux v2.2.x</td>
+    <td class="text-left" ><em>Kernel</em></td>
+    <td class="text-center"><a href="https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git">kmod</a></td>
+    <td class="text-right">modutils Linux v2.2.x</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/cat/">cat | tac</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/cat/">cat | tac</a></th>
 
     
 
-    <td><em>Text</em></td>
-    <td><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
-    <td>1971, V1 AT&amp;T UNIX</td>
+    <td class="text-left" ><em>Text</em></td>
+    <td class="text-center"><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+    <td class="text-right">1971, V1 AT&amp;T UNIX</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/apt/">apt</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/apt/">apt</a></th>
 
     
 
-    <td><em>Packages</em></td>
-    <td><hr></td>
-    <td><hr></td>
+    <td class="text-left" ><em>Packages</em></td>
+    <td class="text-center"><hr></td>
+    <td class="text-right"><hr></td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/ls/">ls | dir | vdir</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/ls/">ls | dir | vdir</a></th>
 
     
 
-    <td><em>Filesystem</em></td>
-    <td><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
-    <td><hr></td>
+    <td class="text-left" ><em>Filesystem</em></td>
+    <td class="text-center"><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+    <td class="text-right"><hr></td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/find/">find</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/find/">find</a></th>
 
     
 
-    <td><em>Searching</em></td>
-    <td><a href="https://www.gnu.org/software/findutils/">GNU Findutils</a></td>
-    <td><hr></td>
+    <td class="text-left" ><em>Searching</em></td>
+    <td class="text-center"><a href="https://www.gnu.org/software/findutils/">GNU Findutils</a></td>
+    <td class="text-right"><hr></td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/make/">make</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/make/">make</a></th>
 
     
 
-    <td><hr></td>
-    <td><hr></td>
-    <td><hr></td>
+    <td class="text-left" ><hr></td>
+    <td class="text-center"><hr></td>
+    <td class="text-right"><hr></td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/sed/">sed</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/sed/">sed</a></th>
 
     
 
-    <td><em>Text</em></td>
-    <td>Standalone (GNU sed)</td>
-    <td>Version 7 AT&amp;T UNIX</td>
+    <td class="text-left" ><em>Text</em></td>
+    <td class="text-center">Standalone (GNU sed)</td>
+    <td class="text-right">Version 7 AT&amp;T UNIX</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/ln/">ln</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/ln/">ln</a></th>
 
     
 
-    <td><em>Filesystem</em></td>
-    <td><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
-    <td>Version 1 AT&amp;T UNIX</td>
+    <td class="text-left" ><em>Filesystem</em></td>
+    <td class="text-center"><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+    <td class="text-right">Version 1 AT&amp;T UNIX</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/chown/">chown</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/chown/">chown</a></th>
 
     
 
-    <td><em>Filesystem</em></td>
-    <td><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
-    <td>Version 1 AT&amp;T UNIX</td>
+    <td class="text-left" ><em>Filesystem</em></td>
+    <td class="text-center"><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+    <td class="text-right">Version 1 AT&amp;T UNIX</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/uname/">uname</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/uname/">uname</a></th>
 
     
 
-    <td><em>Environment</em></td>
-    <td><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
-    <td>PWB UNIX</td>
+    <td class="text-left" ><em>Environment</em></td>
+    <td class="text-center"><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+    <td class="text-right">PWB UNIX</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/chmod/">chmod</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/chmod/">chmod</a></th>
 
     
 
-    <td><em>Filesystem</em></td>
-    <td><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
-    <td>Version 1 AT&amp;T UNIX</td>
+    <td class="text-left" ><em>Filesystem</em></td>
+    <td class="text-center"><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+    <td class="text-right">Version 1 AT&amp;T UNIX</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/du/">du</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/du/">du</a></th>
 
     
 
-    <td><em>Filesystem</em></td>
-    <td><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
-    <td>Version 1 AT&amp;T UNIX</td>
+    <td class="text-left" ><em>Filesystem</em></td>
+    <td class="text-center"><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+    <td class="text-right">Version 1 AT&amp;T UNIX</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/tput/">tput</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/tput/">tput</a></th>
 
     
 
-    <td><em>Environment</em></td>
-    <td><a href="https://invisible-island.net/ncurses/">NCURSES</a></td>
-    <td>System V</td>
+    <td class="text-left" ><em>Environment</em></td>
+    <td class="text-center"><a href="https://invisible-island.net/ncurses/">NCURSES</a></td>
+    <td class="text-right">System V</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/touch/">touch</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/touch/">touch</a></th>
 
     
 
-    <td><em>Filesystem</em></td>
-    <td><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
-    <td>Version 7 AT&amp;T UNIX</td>
+    <td class="text-left" ><em>Filesystem</em></td>
+    <td class="text-center"><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+    <td class="text-right">Version 7 AT&amp;T UNIX</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/man/">man</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/man/">man</a></th>
 
     
 
-    <td><em>Documentation</em></td>
-    <td>Standard builtin</td>
-    <td><hr></td>
+    <td class="text-left" ><em>Documentation</em></td>
+    <td class="text-center">Standard builtin</td>
+    <td class="text-right"><hr></td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/rsync/">rsync</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/rsync/">rsync</a></th>
 
     
 
-    <td><em>Filesystem</em></td>
-    <td>None (standalone)</td>
-    <td><hr></td>
+    <td class="text-left" ><em>Filesystem</em></td>
+    <td class="text-center">None (standalone)</td>
+    <td class="text-right"><hr></td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/ssh/">ssh</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/ssh/">ssh</a></th>
 
     
 
-    <td><em>Networking</em></td>
-    <td>None (standalone)</td>
-    <td>OpenSSH 1999</td>
+    <td class="text-left" ><em>Networking</em></td>
+    <td class="text-center">None (standalone)</td>
+    <td class="text-right">OpenSSH 1999</td>
 
   </tr>
 
 
   <tr>
 
-    <td><a href="/builtins/systemd/">systemd</a></td>
+    <th class="text-left" scope="row"><a href="/builtins/systemd/">systemd</a></th>
 
     
 
-    <td></td>
-    <td></td>
-    <td></td>
+    <td class="text-left" ></td>
+    <td class="text-center"></td>
+    <td class="text-right"></td>
 
   </tr>
 
+  </tbody>
 </table>
 
             </div>

@@ -22,6 +22,11 @@ markup:
     renderer:
       unsafe: true
 
+languages:
+  en:
+    params:
+      logo:
+        logoText: "home"
 
 Menus:
   main:
