@@ -7,3 +7,6 @@
   border: 0.3em solid #545454;
   border-radius: 0.5em;
 }
+.left {
+  text-align: left !important; 
+}
