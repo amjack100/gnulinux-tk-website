@@ -12,7 +12,7 @@ requires a a closing brace at the end of the provided expression. <br> <br> The
 type of expression that `test` evaluates is based on the flag it is given as a
 parameter. See the chart below for a quick reference to each flag.
 
-## Basic Functionality
+## Overview
 
 Test for the existence of a file.
 

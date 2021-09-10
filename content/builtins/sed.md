@@ -8,7 +8,7 @@ draft: true
 accomplish the same tasks as a traditional text editor by iterating through
 streams of text with commands.
 
-## Basic Functionality
+## Overview
 
 The 's' (substitute) command is the most important `sed` command. <br> Preview
 replacement of all matching patterns in a file.

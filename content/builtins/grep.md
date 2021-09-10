@@ -10,7 +10,7 @@ files or an output stream. `grep` stands for **g**lobal **r**egular
 **_g/re/p_**, where _g_ and _p_ are the _global_ and _print_ flags, and re is a
 regular expression.
 
-## Basic Functionality
+## Overview
 
 Search a single file for a matching pattern.
 

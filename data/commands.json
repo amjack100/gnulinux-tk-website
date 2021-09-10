@@ -1,222 +1,228 @@
 {
-   "tr": {
-      "Usage": "_Text_",
-      "History": "Version 4 AT&T UNIX",
-      "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
-   },
-   "apt": {
-      "Usage": "_Packages_",
-      "History": "---",
-      "Package": "---"
-   },
-   "env": {
-      "Usage": "_Environment_",
-      "History": "4.4 BSD",
-      "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
-   },
-   "echo | printf": {
-      "Usage": "_Scripting_",
-      "History": "1st edition UNIX",
-      "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
-   },
-   "cal | ncal": {
-      "Usage": "_Datetime_",
-      "History": "1st edition UNIX",
-      "Package": "Standard builtin"
-   },
-   "test | [": {
-      "Usage": "_Built-in_",
-      "History": "UNIX System III, 1981",
-      "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
-   },
-   "wc": {
-      "Usage": "_Text_",
-      "History": "1971, V1 AT&T UNIX",
-      "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
-   },
-   "locate | updatedb": {
-      "Usage": "_Searching_",
-      "History": "BSD 1983",
-      "Package": "[GNU Findutils](https://www.gnu.org/software/findutils/)"
-   },
-   "head | tail": {
-      "Usage": "_Text_",
-      "History": "PWB/UNIX 1977",
-      "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
-   },
-   "basename | dirname": {
-      "Usage": "_Scripting_",
-      "History": "V7 AT&T UNIX",
-      "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
-   },
-   "lsmod": {
-      "Usage": "_Kernel_",
-      "History": "modutils Linux v2.2.x",
-      "Package": "[kmod](https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git)"
-   },
-   "mount | umount": {
-      "Usage": "_Filesystem_",
-      "History": "V5 AT&T UNIX",
-      "Package": "util-linux"
-   },
-   "tset | reset": {
-      "Usage": "_Environment_",
-      "History": "Released 1979",
-      "Package": "[NCURSES](https://invisible-island.net/ncurses/)"
-   },
-   "cp": {
-      "Usage": "_Filesystem_",
-      "History": "1971, V1 AT&T UNIX",
-      "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
-   },
-   "insmod | rmmod": {
-      "Usage": "_Kernel_",
-      "History": "modutils Linux v2.2.x",
-      "Package": "[kmod](https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git)"
-   },
-   "make": {
-      "Usage": "---",
-      "History": "---",
-      "Package": "---"
-   },
-   "mkdir | rmdir": {
-      "Usage": "_Filesystem_",
-      "History": "---",
-      "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
-   },
-   "cat | tac": {
-      "Usage": "_Text_",
-      "History": "1971, V1 AT&T UNIX",
-      "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
-   },
-   "ls | dir | vdir": {
-      "History": "---",
-      "Usage": "_Filesystem_",
-      "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
-   },
-   "sed": {
-      "Usage": "_Text_",
-      "History": "Version 7 AT&T UNIX",
-      "Package": "Standalone (GNU sed)"
-   },
-   "find": {
-      "History": "---",
-      "Usage": "_Searching_",
-      "Package": "[GNU Findutils](https://www.gnu.org/software/findutils/)"
-   },
-   "chown": {
-      "Usage": "_Filesystem_",
-      "History": "Version 1 AT&T UNIX",
-      "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
-   },
-   "ln": {
-      "Usage": "_Filesystem_",
-      "History": "Version 1 AT&T UNIX",
-      "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
-   },
-   "uname": {
-      "Usage": "_Environment_",
-      "History": "PWB UNIX",
-      "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
-   },
-   "chmod": {
-      "Usage": "_Filesystem_",
-      "History": "Version 1 AT&T UNIX",
-      "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
-   },
-   "du": {
-      "Usage": "_Filesystem_",
-      "History": "Version 1 AT&T UNIX",
-      "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
-   },
-   "tput": {
-      "Usage": "_Environment_",
-      "History": "System V",
-      "Package": "[NCURSES](https://invisible-island.net/ncurses/)"
-   },
-   "touch": {
-      "Usage": "_Filesystem_",
-      "History": "Version 7 AT&T UNIX",
-      "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
-   },
-   "man": {
-      "History": "---",
-      "Usage": "_Documentation_",
-      "Package": "Standard builtin"
-   },
-   "rsync": {
-      "Usage": "_Filesystem_",
-      "Package": "None (standalone)",
-      "History": "---"
-   },
-   "ssh": {
-      "Usage": "_Networking_",
-      "History": "OpenSSH 1999",
-      "Package": "None (standalone)"
-   },
-   "systemctl": {
-      "History": "---",
-      "Usage": "_Environment_",
-      "Package": "None (standalone)"
-   },
-   "diff": {
-      "Usage": "_Text_",
-      "History": "Version 5 AT&T UNIX",
-      "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
-   },
-   "id | whoami": {
-      "Usage": "_Environment_",
-      "History": "System V",
-      "Package": "GNU Coreutils"
-   },
-   "kill": {
-      "Usage": "_Processes_",
-      "History": "Version 4 AT&T UNIX",
-      "Package": "util-linux"
-   },
-   "cd": {
-      "Usage": "_Filesystem_",
-      "History": "Version 6 AT&T UNIX",
-      "Package": "Standard builtin"
-   },
-   "date": {
-      "Usage": "_Datetime_",
-      "History": "Version 1 AT&T UNIX",
-      "Package": "GNU Coreutils"
-   },
-   "grep": {
-      "Usage": "_Searching_",
-      "History": "Version 4 AT&T UNIX",
-      "Package": "Standalone (GNU grep)"
-   },
-   "install": {
-      "Usage": "_Filesystem_",
-      "History": "---",
-      "Package": "GNU Coreutils"
-   },
-   "top": {
-      "Usage": "_Processes_",
-      "History": "---",
-      "Package": "procps-ng"
-   },
-   "pgrep": {
-      "Usage": "_Processes_",
-      "History": "---",
-      "Package": "procps-ng"
-   },
-   "mkfifo": {
-      "Usage": "_Filesystem_",
-      "History": "4.4 BSD",
-      "Package": "GNU Coreutils"
-   },
-   "shutdown": {
-      "Usage": "_System_",
-      "History": "---",
-      "Package": "systemd"
-   },
-   "nproc": {
-      "Usage": "_System_",
-      "History": "Released 2009",
-      "Package": "GNU Coreutils"
-   }
+  "tr": {
+    "Usage": "_Text_",
+    "History": "Version 4 AT&T UNIX",
+    "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
+  },
+  "apt": {
+    "Usage": "_Packages_",
+    "History": "---",
+    "Package": "---"
+  },
+  "env": {
+    "Usage": "_Environment_",
+    "History": "4.4 BSD",
+    "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
+  },
+  "echo | printf": {
+    "Usage": "_Scripting_",
+    "History": "1st edition UNIX",
+    "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
+  },
+  "cal | ncal": {
+    "Usage": "_Datetime_",
+    "History": "1st edition UNIX",
+    "Package": "Standard builtin"
+  },
+  "test | [": {
+    "Usage": "_Built-in_",
+    "History": "UNIX System III, 1981",
+    "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
+  },
+  "wc": {
+    "Usage": "_Text_",
+    "History": "1971, V1 AT&T UNIX",
+    "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
+  },
+  "locate | updatedb": {
+    "Usage": "_Searching_",
+    "History": "BSD 1983",
+    "Package": "[GNU Findutils](https://www.gnu.org/software/findutils/)"
+  },
+  "head | tail": {
+    "Usage": "_Text_",
+    "History": "PWB/UNIX 1977",
+    "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
+  },
+  "basename | dirname": {
+    "Usage": "_Scripting_",
+    "History": "V7 AT&T UNIX",
+    "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
+  },
+  "lsmod": {
+    "Usage": "_Kernel_",
+    "History": "modutils Linux v2.2.x",
+    "Package": "[kmod](https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git)"
+  },
+  "mount | umount": {
+    "Usage": "_Filesystem_",
+    "History": "V5 AT&T UNIX",
+    "Package": "util-linux"
+  },
+  "tset | reset": {
+    "Usage": "_Environment_",
+    "History": "Released 1979",
+    "Package": "[NCURSES](https://invisible-island.net/ncurses/)"
+  },
+  "cp": {
+    "Usage": "_Filesystem_",
+    "History": "1971, V1 AT&T UNIX",
+    "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
+  },
+  "insmod | rmmod": {
+    "Usage": "_Kernel_",
+    "History": "modutils Linux v2.2.x",
+    "Package": "[kmod](https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git)"
+  },
+  "make": {
+    "Usage": "---",
+    "History": "---",
+    "Package": "---"
+  },
+  "mkdir | rmdir": {
+    "Usage": "_Filesystem_",
+    "History": "---",
+    "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
+  },
+  "cat | tac": {
+    "Usage": "_Text_",
+    "History": "1971, V1 AT&T UNIX",
+    "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
+  },
+  "ls | dir | vdir": {
+    "History": "---",
+    "Usage": "_Filesystem_",
+    "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
+  },
+  "sed": {
+    "Usage": "_Text_",
+    "History": "Version 7 AT&T UNIX",
+    "Package": "Standalone (GNU sed)"
+  },
+  "find": {
+    "History": "---",
+    "Usage": "_Searching_",
+    "Package": "[GNU Findutils](https://www.gnu.org/software/findutils/)"
+  },
+  "chown": {
+    "Usage": "_Filesystem_",
+    "History": "Version 1 AT&T UNIX",
+    "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
+  },
+  "ln": {
+    "Usage": "_Filesystem_",
+    "History": "Version 1 AT&T UNIX",
+    "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
+  },
+  "uname": {
+    "Usage": "_Environment_",
+    "History": "PWB UNIX",
+    "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
+  },
+  "chmod": {
+    "Usage": "_Filesystem_",
+    "History": "Version 1 AT&T UNIX",
+    "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
+  },
+  "du": {
+    "Usage": "_Filesystem_",
+    "History": "Version 1 AT&T UNIX",
+    "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
+  },
+  "tput": {
+    "Usage": "_Environment_",
+    "History": "System V",
+    "Package": "[NCURSES](https://invisible-island.net/ncurses/)"
+  },
+  "touch": {
+    "Usage": "_Filesystem_",
+    "History": "Version 7 AT&T UNIX",
+    "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
+  },
+  "man": {
+    "History": "---",
+    "Usage": "_Documentation_",
+    "Package": "Standard builtin"
+  },
+  "rsync": {
+    "Usage": "_Filesystem_",
+    "Package": "None (standalone)",
+    "History": "---"
+  },
+  "ssh": {
+    "Usage": "_Networking_",
+    "History": "OpenSSH 1999",
+    "Package": "None (standalone)"
+  },
+  "systemctl": {
+    "History": "---",
+    "Usage": "_Environment_",
+    "Package": "None (standalone)"
+  },
+  "diff": {
+    "Usage": "_Text_",
+    "History": "Version 5 AT&T UNIX",
+    "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
+  },
+  "id | whoami": {
+    "Usage": "_Environment_",
+    "History": "System V",
+    "Package": "GNU Coreutils"
+  },
+  "kill": {
+    "Usage": "_Processes_",
+    "History": "Version 4 AT&T UNIX",
+    "Package": "util-linux"
+  },
+  "cd": {
+    "Usage": "_Filesystem_",
+    "History": "Version 6 AT&T UNIX",
+    "Package": "Standard builtin"
+  },
+  "date": {
+    "Usage": "_Datetime_",
+    "History": "Version 1 AT&T UNIX",
+    "Package": "GNU Coreutils"
+  },
+  "grep": {
+    "Usage": "_Searching_",
+    "History": "Version 4 AT&T UNIX",
+    "Package": "Standalone (GNU grep)"
+  },
+  "install": {
+    "Usage": "_Filesystem_",
+    "History": "---",
+    "Package": "GNU Coreutils"
+  },
+  "top": {
+    "Usage": "_Processes_",
+    "History": "---",
+    "Package": "procps-ng"
+  },
+  "pgrep": {
+    "Usage": "_Processes_",
+    "History": "---",
+    "Package": "procps-ng"
+  },
+  "mkfifo": {
+    "Usage": "_Filesystem_",
+    "History": "4.4 BSD",
+    "Package": "GNU Coreutils"
+  },
+  "shutdown": {
+    "Usage": "_System_",
+    "History": "---",
+    "Package": "systemd"
+  },
+  "nproc": {
+    "Usage": "_System_",
+    "History": "Released 2009",
+    "Package": "GNU Coreutils"
+  },
+  "jobs | fg | bg": {
+    "Usage": "_Processes_",
+    "History": "bash released June 8, 1989",
+    "Package": "bash"
+  }
 }
+

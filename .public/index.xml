@@ -6,7 +6,17 @@
     <description>Recent content on GNU/Linux Toolkit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Sep 2021 18:42:09 -0400</lastBuildDate><atom:link href="https://www.linux-toolkit.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Sep 2021 10:10:20 -0400</lastBuildDate><atom:link href="https://www.linux-toolkit.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>jobs | fg | bg</title>
+      <link>https://www.linux-toolkit.com/builtins/jobs/</link>
+      <pubDate>Thu, 09 Sep 2021 10:10:20 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/jobs/</guid>
+      <description>jobs, fg and bg are the three tightly coupled job control/management commands. Using one effectively is difficult without an understanding of the other two. These three are builtins to the popular bash shell, meaning implementations in other shells may not be the same.
+Overview Jobs are simply background tasks. One typically uses a job for a long running command where the output does not need to be monitored in real time.</description>
+    </item>
+    
     <item>
       <title>nproc</title>
       <link>https://www.linux-toolkit.com/builtins/nproc/</link>
@@ -62,7 +72,7 @@ Search for processes including their command-line options.</description>
       
       <guid>https://www.linux-toolkit.com/builtins/top/</guid>
       <description>top is an interactive program for monitoring processes, cpu usage and live feeds of other system metrics. top stands for table of processes. Effectively using this tool requires some practice compared to other commands, as its interactive menu provides many options and the ability to filter specific items.
-Basic Functionality Simply start top.
+Overview Simply start top.
 $ top Start top, sorting processes by a particular field.
 $ top -o name_of_field Workflows While the interactive table is running within your terminal, many keyboard shortcuts become available which provide additional functionality.</description>
     </item>
@@ -309,7 +319,7 @@ $ rmdir directoryname Notes   mkdir and rmdir are the direct command line equiva
       
       <guid>https://www.linux-toolkit.com/builtins/grep/</guid>
       <description>grep is a very commonly used tool for searching for patterns of text within files or an output stream. grep stands for global regular expression print. This comes from the sed/ed subcommand g/re/p, where g and p are the global and print flags, and re is a regular expression.
-Basic Functionality Search a single file for a matching pattern.
+Overview Search a single file for a matching pattern.
 $ cat file.txt | grep &amp;#39;.*pattern&amp;#39; Search though files across multiple directories for a matching pattern.</description>
     </item>
     
@@ -389,9 +399,9 @@ make is a tool for organizing a build process for any programming language. Most
       
       <guid>https://www.linux-toolkit.com/builtins/sed/</guid>
       <description>sed is a tool for editing text. It is a stream editor, meaning it can accomplish the same tasks as a traditional text editor by iterating through streams of text with commands.
-Basic Functionality The &amp;rsquo;s&#39; (substitute) command is the most important sed command. Preview replacement of all matching patterns in a file.
+Overview The &amp;rsquo;s&#39; (substitute) command is the most important sed command. Preview replacement of all matching patterns in a file.
 $ sed &amp;#39;s/old/new&amp;#39; file.txt Write replacement of all matching patterns in a file.
-$ sed -i &amp;#39;s/old/new&amp;#39; file.</description>
+$ sed -i &amp;#39;s/old/new&amp;#39; file.txt Workflows The previous examples demonstrate the basic functionality, but are not enough to expose sed as an agile, real world tool.</description>
     </item>
     
     <item>

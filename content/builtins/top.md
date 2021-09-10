@@ -10,7 +10,7 @@ Effectively using this tool requires some practice compared to other commands,
 as its interactive menu provides many options and the ability to filter specific
 items.
 
-## Basic Functionality
+## Overview
 
 Simply start `top`.
 

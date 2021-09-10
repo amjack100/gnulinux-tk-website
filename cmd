@@ -26,6 +26,15 @@ def input_content() -> str:
     return content_types[int(input("content (int):"))] 
 
 
+
+def publish(opt):
+    """
+    Build and rsync to remote server
+    """
+
+    os.execl("./.uploadremote", "./uploadremote")
+
+
 def spellchk(opt):
     """
     Use aspell to do spellchecking
@@ -148,6 +157,9 @@ if __name__ == "__main__":
     
     p_content = p_subs.add_parser("push")
     p_content.set_defaults(func=push)
+
+    p_content = p_subs.add_parser("publish")
+    p_content.set_defaults(func=publish)
 
     p_content = p_subs.add_parser("spellchk")
     p_content.add_argument("--filename")
