@@ -1,7 +1,7 @@
-12697(date)
+18051(date)
 Start building sites … 
 hugo v0.87.0-B0C541E4+extended linux/amd64 BuildDate=2021-08-03T10:57:28Z VendorInfo=gohugoio
-WARN 2021/09/10 10:56:46 Page.URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url
+WARN 2021/09/12 21:08:54 Page.URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url
 
                    | EN  
 -------------------+-----
@@ -14,4 +14,4 @@ WARN 2021/09/10 10:56:46 Page.URL is deprecated and will be removed in a future 
   Sitemaps         |  1  
   Cleaned          |  0  
 
-Total in 142 ms
+Total in 200 ms
