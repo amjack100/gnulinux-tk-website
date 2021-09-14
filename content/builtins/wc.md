@@ -14,18 +14,20 @@ word is
 
 ## Usage Examples
 
-Print the newline, word, and byte counts of a file _(no arguments default)_.
+Get the newline, word, and byte counts of a text stream.
 
-```bash
-$ wc file.txt
-
-# Alternatively, cat file.txt | wc
-```
+{{< showIfExists "static/wc.svg" >}}
 
 Print only the word count of a text stream.
 
 ```bash
 $ echo one two three | wc -w
+```
+
+Print the newline, word, and byte counts of a file.
+
+```bash
+$ wc file.txt
 ```
 
 ## Notes

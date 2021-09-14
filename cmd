@@ -26,6 +26,18 @@ def input_content() -> str:
     return content_types[int(input("content (int):"))] 
 
 
+def live(opt):
+
+    type_line = input("animated typed line:")
+    print_line = input("output line:")
+
+    type_line = "\\$ " + type_line
+
+    try:
+        os.execvp("bash" ,["bash","-c", "live -t \"%s\" -p \"%s\" > ./static/%s.svg" % (type_line, print_line, opt.filename)])
+    except Exception as e:
+        print(e)
+        exit(1)
 
 def publish(opt):
     """
@@ -147,23 +159,27 @@ if __name__ == "__main__":
     p_a = argparse.ArgumentParser()
     p_subs = p_a.add_subparsers()
 
-    p_data = p_subs.add_parser("data")
+    p_data = p_subs.add_parser("data", description="add data to file <name> (no extension)")
     p_data.add_argument("name")
     p_data.set_defaults(func=data)
 
-    p_content = p_subs.add_parser("content")
+    p_content = p_subs.add_parser("content", description="hugo add new .../<filename> (no extension)")
     p_content.add_argument("filename")
     p_content.set_defaults(func=content)
     
-    p_content = p_subs.add_parser("push")
+    p_content = p_subs.add_parser("push", description="push everything to github repository")
     p_content.set_defaults(func=push)
 
-    p_content = p_subs.add_parser("publish")
+    p_content = p_subs.add_parser("publish", description="build and rsync to remote server")
     p_content.set_defaults(func=publish)
 
-    p_content = p_subs.add_parser("spellchk")
+    p_content = p_subs.add_parser("spellchk", description="run aspell on every markdown file")
     p_content.add_argument("--filename")
     p_content.set_defaults(func=spellchk)
+
+    p_content = p_subs.add_parser("live", description="use live to create animated typing svg for <filename> (no extension)")
+    p_content.add_argument("filename")
+    p_content.set_defaults(func=live)
 
 
     opt = p_a.parse_args()
