@@ -1,7 +1,7 @@
 
 baseURL: "https://www.linux-toolkit.com/"
 languageCode: "en-us"
-title: "GNU/Linux Toolkit"
+title: "Linux Toolkit"
 theme: "hello-friend"
 sectionPagesMenu: "main"
 publishDir: ".public"

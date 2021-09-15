@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>GNU/Linux Toolkit</title>
+    <title>Linux Toolkit</title>
     <link>https://www.linux-toolkit.com/</link>
-    <description>Recent content on GNU/Linux Toolkit</description>
+    <description>Recent content on Linux Toolkit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 Sep 2021 13:25:54 -0400</lastBuildDate><atom:link href="https://www.linux-toolkit.com/index.xml" rel="self" type="application/rss+xml" />
