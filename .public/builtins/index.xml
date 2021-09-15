@@ -6,7 +6,18 @@
     <description>Recent content in Builtins on GNU/Linux Toolkit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Sep 2021 10:10:20 -0400</lastBuildDate><atom:link href="https://www.linux-toolkit.com/builtins/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Sep 2021 13:25:54 -0400</lastBuildDate><atom:link href="https://www.linux-toolkit.com/builtins/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>disown</title>
+      <link>https://www.linux-toolkit.com/builtins/disown/</link>
+      <pubDate>Wed, 15 Sep 2021 13:25:54 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/disown/</guid>
+      <description>disown is a bash/sh builtin command used for detaching a job (a background process) from its parent (typically a shell) which is it running on. The name disown describes the way in which the shell no longer &amp;ldquo;owns&amp;rdquo; the specified job.
+Usage Examples Disown a job by providing the job number.
+$ disown %1 In this case, the we&amp;rsquo;ve detached the job with ID 1 from the current shell. Now, the shell process can be killed and the job will continue to run anyway.</description>
+    </item>
+    
     <item>
       <title>jobs | fg | bg</title>
       <link>https://www.linux-toolkit.com/builtins/jobs/</link>

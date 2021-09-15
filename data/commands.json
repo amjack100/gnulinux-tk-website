@@ -30,9 +30,9 @@
       "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
    },
    "wc": {
-      "usage": "_Text_",
-      "package": "1971, V1 AT&T UNIX",
-      "history": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
+      "Usage": "_Text_",
+      "Package": "1971, V1 AT&T UNIX",
+      "History": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
    },
    "locate | updatedb": {
       "Usage": "_Searching_",
@@ -196,13 +196,13 @@
    },
    "top": {
       "Usage": "_Processes_",
-      "History": "---",
-      "Package": "procps-ng"
+      "Package": "procps-ng",
+      "History": "Released 1991"
    },
    "pgrep": {
       "Usage": "_Processes_",
-      "History": "---",
-      "Package": "procps-ng"
+      "Package": "procps-ng",
+      "History": "Released 1991"
    },
    "mkfifo": {
       "Usage": "_Filesystem_",
@@ -221,7 +221,12 @@
    },
    "jobs | fg | bg": {
       "Usage": "_Processes_",
-      "History": "bash released June 8, 1989",
-      "Package": "bash"
+      "Package": "shells*",
+      "History": "Released 1981 (bash)"
+   },
+   "disown": {
+      "Usage": "_Processes_",
+      "Package": "shells*",
+      "History": "Released 1981 (bash)"
    }
 }
