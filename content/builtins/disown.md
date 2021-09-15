@@ -5,8 +5,8 @@ draft: true
 ---
 
 `disown` is a bash/sh builtin command used for detaching a job (a background
-process) from its parent (typically a shell) which is it running on. The name
-`disown` describes the way in which the shell no longer "owns" the specified
+process) from its parent process (typically a shell like bash). The name
+`disown` describes the way in which the shell no longer _owns_ the specified
 job.
 
 ## Usage Examples
@@ -39,8 +39,9 @@ $ disown -a
 ## Notes
 
 - We can find the _current job_ using the `jobs` command. Using `jobs` with no
-  arguments will print a list of all the shell's jobs, of which the current"
-  job is signified with a "+" by its job number. Here, job 2 is the current job.
+  arguments will print a list of all the shell's jobs, of which the _current
+  job_ is signified with a "+" next to its job number. The example output below
+  tells us that job 2 is the current job.
 
   ```txt
   [1] - Running         mycommand1 &
