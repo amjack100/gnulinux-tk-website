@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse
+import PySimpleGUI as sg
 import os.path as osp
 import os
 from typing import List, NoReturn
@@ -147,11 +148,32 @@ def data(opt):
         print("Missing data file")
         exit(1)
 
-    data[filename]= {key: input(key + ":") for key in DATAI}
+    usage = data[filename]["Usage"] if filename in data else ""
+    package = data[filename]["Package"] if filename in data else ""
+    history = data[filename]["History"] if filename in data else ""
+
+    layout = [[sg.Input(key="Usage", tooltip="usage", default_text=usage)],
+              [sg.Input(key="Package", tooltip="package", default_text=package)],
+              [sg.Input(key="History", tooltip="history", default_text=history)],
+              [sg.Button('Submit'), sg.Button('Cancel')]
+              ]
+
+    window = sg.Window("Data", layout)
+
+    while True:
+        event, values = window.read()
+
+        if event == 'Submit':
+            data[filename]= values
+            break
+
+        if event == sg.WINDOW_CLOSED or event == 'Cancel':
+            break
 
     with open(DATAF, "w") as f:
         json.dump(data, indent=3,fp=f)
 
+    window.close()
     exit(0)
 
 
