@@ -4,10 +4,10 @@ date: 2021-09-06T08:02:08-04:00
 draft: true
 ---
 
-`shutdown` is a command true to its name, allowing one to shutdown their
-computer via the command line. `shutdown` also provides 3 options in particular
-which, when each used individually, perform the same functionality as the
-`poweroff`, `reboot`, and `halt` commands.
+`shutdown` is a command which simply allows one to shutdown their computer via
+the command line. `shutdown` also provides 3 options in particular which, when
+each used individually, perform the same functionality as the `poweroff`,
+`reboot`, and `halt` commands.
 
 ## Usage Examples
 

@@ -6,7 +6,8 @@
   height: "";
   border: 0.3em solid #545454;
   border-radius: 0.5em;
+  background-color: #545454;
 }
 .left {
-  text-align: left !important; 
+  text-align: left !important;
 }
