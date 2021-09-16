@@ -16,6 +16,9 @@ from pathlib import Path
 import json
 
 
+DATAF="./data/commands.json"
+DATAITEMS=["Usage", "History", "Package"]
+
 def run(cmd:str) -> CompletedProcess:
     return subprocess.run(cmd.split(" "), capture_output=True, text=True)
 
@@ -41,18 +44,12 @@ def live(opt):
         exit(1)
 
 def publish(_):
-    """
-    Build and rsync to remote server
-    """
-
+    # Build and rsync to remote server
     os.execl("./.uploadremote", "./uploadremote")
 
 
 def spellchk(_):
-    """
-    Use aspell to do spellchecking
-    """
-
+    # Use aspell to do spellchecking
     content_t = input_content()
 
     try:
@@ -63,9 +60,7 @@ def spellchk(_):
 
 
 def push(_):
-    """
-    Push repository to GitHub
-    """
+    # Push repository to GitHub
 
     dir_ = str(Path(__file__).parent)
     res: CompletedProcess = run("git -C %s add ." % dir_)
@@ -95,18 +90,49 @@ def push(_):
     exit(0)
 
 def content(opt):
-    """
-    Create a new .md file
-    """
+    # Create a new .md file
 
-    content_type = input_content()
+    values: Dict
+    data: Dict
+    txt_size = (10,1)
+    content_type = ""
+    content_type_opts = os.listdir("./content")
 
-    if opt.filename[-3:] == ".md":
-        print("no extension")
+    if osp.exists(DATAF):
+        with open(DATAF,"r") as f:
+            data = json.load(f)
+    else:
+        print("Missing data file")
         exit(1)
 
+    layout = [
+        [sg.Radio(text=dir_, group_id=1, default= dir_=="builtins") for dir_ in content_type_opts],
+    [sg.Text("Name:",txt_size), sg.Input(key="Name")],
+    [sg.Text("Usage:",txt_size), sg.Input(key="Usage")],
+    [sg.Text("Package:",txt_size), sg.Input(key="Package")],
+    [sg.Text("History:",txt_size), sg.Input(key="History")],
+    [sg.Button("Submit"), sg.Button("Cancel")]
+    ]
+
+    window = sg.Window("Data", layout)
+
+    while True:
+        event, values = window.read()
+
+        if event == 'Submit':
+            for k,v in values.items():
+                if v is True:
+                    content_type = content_type_opts[k]
+
+            content_type_opts[k] 
+            data[values["Name"]] = {k:v for k,v in values if k in DATAITEMS}
+            break
+
+        if event == sg.WINDOW_CLOSED or event == 'Cancel':
+            exit(0)
+
     try:
-        res = run("hugo new %s/%s.md" % (content_type, opt.filename))
+        res = run("hugo new %s/%s.md" % (content_type, values["Name"]))
     except Exception as e:
         print(e)
         exit(1)
@@ -115,7 +141,10 @@ def content(opt):
         print(res.stdout)
         print(res.stderr)
         exit(1)
-    
+
+    with open(DATAF, "w") as f:
+        json.dump(data, indent=3,fp=f)
+
     if (input("open editor? [y] or n:") != "n"):
         
         if os.getenv("EDITOR") != "":
@@ -135,8 +164,6 @@ def data(opt):
     filename = opt.name
 
     data: Dict
-    DATAI=["Usage", "History", "Package"]
-    DATAF="./data/commands.json"
 
     p = pathlib.Path(__file__)
     os.chdir(p.parent.absolute())
@@ -186,7 +213,6 @@ if __name__ == "__main__":
     p_data.set_defaults(func=data)
 
     p_content = p_subs.add_parser("content", description="hugo add new .../<filename> (no extension)")
-    p_content.add_argument("filename")
     p_content.set_defaults(func=content)
     
     p_content = p_subs.add_parser("push", description="push everything to github repository")
