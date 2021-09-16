@@ -95,8 +95,6 @@ def content(opt):
     values: Dict
     data: Dict
     txt_size = (10,1)
-    content_type = ""
-    content_type_opts = os.listdir("./content")
 
     if osp.exists(DATAF):
         with open(DATAF,"r") as f:
@@ -106,7 +104,7 @@ def content(opt):
         exit(1)
 
     layout = [
-        [sg.Radio(text=dir_, group_id=1, default= dir_=="builtins") for dir_ in content_type_opts],
+        [sg.Radio(text=dir_, group_id=1, default= dir_=="builtins") for dir_ in os.listdir("./content")],
     [sg.Text("Name:",txt_size), sg.Input(key="Name")],
     [sg.Text("Usage:",txt_size), sg.Input(key="Usage")],
     [sg.Text("Package:",txt_size), sg.Input(key="Package")],
@@ -118,21 +116,16 @@ def content(opt):
 
     while True:
         event, values = window.read()
-
         if event == 'Submit':
-            for k,v in values.items():
-                if v is True:
-                    content_type = content_type_opts[k]
-
-            content_type_opts[k] 
-            data[values["Name"]] = {k:v for k,v in values if k in DATAITEMS}
+            data[values["Name"]] = {k:v for k,v in values.items() if k in DATAITEMS}
             break
-
         if event == sg.WINDOW_CLOSED or event == 'Cancel':
             exit(0)
 
+    window.close()
+
     try:
-        res = run("hugo new %s/%s.md" % (content_type, values["Name"]))
+        res = run("hugo new %s/%s.md" % (os.listdir("./content")[list(filter(lambda x:x[1] is True, values.items()))[0][0]], values["Name"]))
     except Exception as e:
         print(e)
         exit(1)
@@ -145,10 +138,11 @@ def content(opt):
     with open(DATAF, "w") as f:
         json.dump(data, indent=3,fp=f)
 
+
     if (input("open editor? [y] or n:") != "n"):
         
         if os.getenv("EDITOR") != "":
-            res = subprocess.run([str(os.getenv("EDITOR")), "./content/" + content_type + "/" + opt.filename + ".md"])
+            res = subprocess.run([str(os.getenv("EDITOR")), list(filter(lambda w: values["Name"] + ".md" in w[2], os.walk("./content")))[0][0] + "/" + values["Name"] + ".md" ])
         else:
             print("requires $$EDITOR set")
             exit(0)

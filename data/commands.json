@@ -228,5 +228,10 @@
       "Usage": "_Processes_",
       "Package": "shells*",
       "History": "Released 1981 (bash)"
+   },
+   "nohup": {
+      "Usage": "_Processes_",
+      "Package": "shells*",
+      "History": "Released 1981 (bash)"
    }
 }
