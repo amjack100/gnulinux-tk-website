@@ -4,7 +4,7 @@ import argparse
 import PySimpleGUI as sg
 import os.path as osp
 import os
-from typing import List, NoReturn
+from typing import List
 from typing import Dict
 import subprocess
 from subprocess import CompletedProcess
@@ -40,7 +40,7 @@ def live(opt):
         print(e)
         exit(1)
 
-def publish(opt):
+def publish(_):
     """
     Build and rsync to remote server
     """
@@ -48,7 +48,7 @@ def publish(opt):
     os.execl("./.uploadremote", "./uploadremote")
 
 
-def spellchk(opt):
+def spellchk(_):
     """
     Use aspell to do spellchecking
     """
