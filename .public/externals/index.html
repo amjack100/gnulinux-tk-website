@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
     <head>
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,7 +13,9 @@
 <meta name="theme-color" content="" />
 <link rel="canonical" href="https://www.linux-toolkit.com/externals/" />
 
-    <link rel="stylesheet" href="https://www.linux-toolkit.com/css/styles.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
     <title>
@@ -54,6 +58,8 @@
 
 
 
+
+<link rel="stylesheet" href="https://www.linux-toolkit.com/css/styles.css">
 
     </head>
 
@@ -98,32 +104,75 @@
 </header>
 
 
+
             <div class="content">
                 
 
 
+<style>
+.content {
+  display: inline !important;
+}
+h2 {
+  justify-content: center;
+}
+</style>
 
 <h2>Externals</h2>
 <br>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-<table class="table table-sm">
+  <script>
+    function searchTable() {
+      var input, filter, tr, td, i, txtValue;
+      input = document.getElementById("searchInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("itemTable");
+      tr = table.getElementsByTagName("tr");
 
-  <thead>
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("th")[0];
+        
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+
+            console.log(txtValue);
+            tr[i].style.display = "";
+
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+  </script>
+
+<input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Filter" class="mb-3 form-control">
+
+<table class="table table-sm"> 
   <tr>
     <th scope="col"><b>Name</b></td>
     <th scope="col"><b>Usage</b></td>
     <th scope="col"><b>Package</b></td>
     <th scope="col"><b>History</b></td>
   </tr>
-  </thead>
+</table>
 
-  <tbody>
+<table class="table table-sm" >
+
+  
+  
+    
+    
+    
+    
+  
+  
+
+  <tbody id="itemTable">
 
 
 

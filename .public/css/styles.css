@@ -11,3 +11,21 @@
 .left {
   text-align: left !important;
 }
+
+.contentnoflex {
+  display: inline;
+  flex-direction: column;
+  flex: 1 auto;
+  /*align-items: center;*/
+  /*justify-content: start !important;*/
+  /*margin: 0;*/
+}
+
+/*.listitems {*/
+/*display: flex;*/
+/*flex-direction: column;*/
+/*flex: 1 auto;*/
+/*align-items: center;*/
+/*justify-content: start !important;*/
+/*margin: 0;*/
+/*}*/
