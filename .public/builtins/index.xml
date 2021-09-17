@@ -6,16 +6,25 @@
     <description>Recent content in Builtins on Linux Toolkit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Sep 2021 13:25:54 -0400</lastBuildDate><atom:link href="https://www.linux-toolkit.com/builtins/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Sep 2021 09:04:35 -0400</lastBuildDate><atom:link href="https://www.linux-toolkit.com/builtins/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>nohup</title>
+      <link>https://www.linux-toolkit.com/builtins/nohup/</link>
+      <pubDate>Fri, 17 Sep 2021 09:04:35 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/nohup/</guid>
+      <description>nohup is a shell builtin used for running commands whose processes are able to run beyond the lifetime of the parent process/processes (shell or terminal emulator). When a command is run from a shell, a parent-child relationship is formed between the two processes (the shell being the parent and the command process being the child). If a parent process is stopped, its children processes are stopped as well. Running a command with nohup prevents this relationship.</description>
+    </item>
+    
     <item>
       <title>disown</title>
       <link>https://www.linux-toolkit.com/builtins/disown/</link>
       <pubDate>Wed, 15 Sep 2021 13:25:54 -0400</pubDate>
       
       <guid>https://www.linux-toolkit.com/builtins/disown/</guid>
-      <description>disown is a bash/sh builtin command used for detaching a job (a background process) from its parent (typically a shell) which is it running on. The name disown describes the way in which the shell no longer &amp;ldquo;owns&amp;rdquo; the specified job.
+      <description>disown is a bash/sh builtin command used for detaching a job (a background process) from its parent process (typically a shell like bash). The name disown describes the way in which the shell no longer owns the specified job.
 Usage Examples Disown a job by providing the job number.
-$ disown %1 In this case, the we&amp;rsquo;ve detached the job with ID 1 from the current shell. Now, the shell process can be killed and the job will continue to run anyway.</description>
+$ disown %1 In this case, we&amp;rsquo;ve detached the job with ID 1 from the current shell. Now, the shell process can be killed and the job will continue to run anyway.</description>
     </item>
     
     <item>
@@ -47,7 +56,7 @@ $ nproc --ignore 4 Notes   nproc can be useful in situations where an external p
       <pubDate>Mon, 06 Sep 2021 08:02:08 -0400</pubDate>
       
       <guid>https://www.linux-toolkit.com/builtins/shutdown/</guid>
-      <description>shutdown is a command true to its name, allowing one to shutdown their computer via the command line. shutdown also provides 3 options in particular which, when each used individually, perform the same functionality as the poweroff, reboot, and halt commands.
+      <description>shutdown is a command which simply allows one to shutdown their computer via the command line. shutdown also provides 3 options in particular which, when each used individually, perform the same functionality as the poweroff, reboot, and halt commands.
 Usage Examples Shutdown the computer.
 Note: without any options provided, the shutdown is scheduled at +1 minute
 Shutdown immediately.

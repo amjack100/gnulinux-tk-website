@@ -5,9 +5,9 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="disown is a bash/sh builtin command used for detaching a job (a background process) from its parent (typically a shell) which is it running on. The name disown describes the way in which the shell no longer &amp;ldquo;owns&amp;rdquo; the specified job.
+<meta name="description" content="disown is a bash/sh builtin command used for detaching a job (a background process) from its parent process (typically a shell like bash). The name disown describes the way in which the shell no longer owns the specified job.
 Usage Examples Disown a job by providing the job number.
-$ disown %1 In this case, the we&amp;rsquo;ve detached the job with ID 1 from the current shell. Now, the shell process can be killed and the job will continue to run anyway." />
+$ disown %1 In this case, we&amp;rsquo;ve detached the job with ID 1 from the current shell. Now, the shell process can be killed and the job will continue to run anyway." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -35,17 +35,17 @@ $ disown %1 In this case, the we&amp;rsquo;ve detached the job with ID 1 from th
 
 
 <meta itemprop="name" content="disown">
-<meta itemprop="description" content="disown is a bash/sh builtin command used for detaching a job (a background process) from its parent (typically a shell) which is it running on. The name disown describes the way in which the shell no longer &ldquo;owns&rdquo; the specified job.
+<meta itemprop="description" content="disown is a bash/sh builtin command used for detaching a job (a background process) from its parent process (typically a shell like bash). The name disown describes the way in which the shell no longer owns the specified job.
 Usage Examples Disown a job by providing the job number.
-$ disown %1 In this case, the we&rsquo;ve detached the job with ID 1 from the current shell. Now, the shell process can be killed and the job will continue to run anyway."><meta itemprop="datePublished" content="2021-09-15T13:25:54-04:00" />
+$ disown %1 In this case, we&rsquo;ve detached the job with ID 1 from the current shell. Now, the shell process can be killed and the job will continue to run anyway."><meta itemprop="datePublished" content="2021-09-15T13:25:54-04:00" />
 <meta itemprop="dateModified" content="2021-09-15T13:25:54-04:00" />
-<meta itemprop="wordCount" content="172">
+<meta itemprop="wordCount" content="180">
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="disown"/>
-<meta name="twitter:description" content="disown is a bash/sh builtin command used for detaching a job (a background process) from its parent (typically a shell) which is it running on. The name disown describes the way in which the shell no longer &ldquo;owns&rdquo; the specified job.
+<meta name="twitter:description" content="disown is a bash/sh builtin command used for detaching a job (a background process) from its parent process (typically a shell like bash). The name disown describes the way in which the shell no longer owns the specified job.
 Usage Examples Disown a job by providing the job number.
-$ disown %1 In this case, the we&rsquo;ve detached the job with ID 1 from the current shell. Now, the shell process can be killed and the job will continue to run anyway."/>
+$ disown %1 In this case, we&rsquo;ve detached the job with ID 1 from the current shell. Now, the shell process can be killed and the job will continue to run anyway."/>
 
 
 
@@ -118,17 +118,17 @@ $ disown %1 In this case, the we&rsquo;ve detached the job with ID 1 from the cu
   
 
   <p><code>disown</code> is a bash/sh builtin command used for detaching a job (a background
-process) from its parent (typically a shell) which is it running on. The name
-<code>disown</code> describes the way in which the shell no longer &ldquo;owns&rdquo; the specified
+process) from its parent process (typically a shell like bash). The name
+<code>disown</code> describes the way in which the shell no longer <em>owns</em> the specified
 job.</p>
 <h2 id="usage-examples">Usage Examples</h2>
 <p>Disown a job by providing the job number.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ disown %1
-</code></pre></div><p>In this case, the we&rsquo;ve detached the job with ID 1 from the current shell. Now,
-the shell process can be killed and the job will continue to run anyway.
-Normally if a shell process is killed, any jobs will be killed along with it as
-a job is a &ldquo;child&rdquo; of its shell.</p>
-<p>Disown the current job.</p>
+</code></pre></div><p>In this case, we&rsquo;ve detached the job with ID 1 from the current shell. Now, the
+shell process can be killed and the job will continue to run anyway. Normally if
+a shell process is killed, any jobs will be killed along with it as a job is a
+&ldquo;child&rdquo; of its shell.</p>
+<p>Disown the current job.*</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ disown
 </code></pre></div>
 
@@ -139,9 +139,10 @@ a job is a &ldquo;child&rdquo; of its shell.</p>
 </code></pre></div><h2 id="notes">Notes</h2>
 <ul>
 <li>
-<p>The current job can be found using the <code>jobs</code> command. This will output a list
-of all the shell&rsquo;s jobs, of which the &ldquo;current&rdquo; job is signified with a &ldquo;+&rdquo; by
-its job number. Here, job 2 is the current job.</p>
+<p>We can find the <em>current job</em> using the <code>jobs</code> command. Using <code>jobs</code> with no
+arguments will print a list of all the shell&rsquo;s jobs, of which the <em>current
+job</em> is signified with a &ldquo;+&rdquo; next to its job number. The example output below
+tells us that job 2 is the current job.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">[1] - Running         mycommand1 &amp;
 [2] + Running         mycommand2 &amp;
 </code></pre></div></li>
