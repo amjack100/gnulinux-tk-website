@@ -11,3 +11,28 @@
 .left {
   text-align: left !important;
 }
+.content {
+  display: inherit;
+}
+#about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 auto;
+  align-items: center;
+  margin: 0;
+}
+#mainmenu {
+}
+.listitemwrapper {
+  display: inline;
+}
+.listitems {
+  display: flex;
+  flex-direction: column;
+  flex: 1 auto;
+  align-items: center;
+  justify-content: start !important;
+  margin: 0;
+}

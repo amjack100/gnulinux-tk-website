@@ -8,7 +8,6 @@
 <meta name="theme-color" content="{{ .Site.Params.themeColor }}" />
 <link rel="canonical" href="{{ .Permalink }}" />
 
-    <link rel="stylesheet" href="{{ $.Site.Params.custom_css | absURL }}">
 
 {{ block "title" . }}
     <title>
@@ -69,3 +68,5 @@
 {{- if .Site.GoogleAnalytics }}
     {{ template "_internal/google_analytics.html" . }}
 {{- end}}
+
+<link rel="stylesheet" href="{{ $.Site.Params.custom_css | absURL }}">
