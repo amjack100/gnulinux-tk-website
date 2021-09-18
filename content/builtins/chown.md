@@ -1,7 +1,6 @@
 ---
 title: "chown"
 date: 2021-07-20T08:28:02-04:00
-draft: true
 ---
 
 `chown` is a tool for changing the owner of a file or directory. To reveal the

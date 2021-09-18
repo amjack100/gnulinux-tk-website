@@ -1,7 +1,6 @@
 ---
 title: "locate | updatedb"
 date: 2021-08-19T13:54:27-04:00
-draft: true
 ---
 
 `locate` is a tool that finds a file based on a pre-loaded database. `updatedb`

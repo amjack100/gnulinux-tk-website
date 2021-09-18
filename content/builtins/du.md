@@ -1,7 +1,6 @@
 ---
 title: "du"
 date: 2021-07-16T08:55:20-04:00
-draft: true
 ---
 
 `du` is a tool for getting information about the **d**isk **u**sage of a file or

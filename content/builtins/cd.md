@@ -1,7 +1,6 @@
 ---
 title: "cd"
 date: 2021-08-17T19:39:28-04:00
-draft: true
 ---
 
 `cd` allows for **c**hanging **d**irectories, and is easily one of the most

@@ -1,7 +1,6 @@
 ---
 title: "wc"
 date: 2021-08-20T18:35:39-04:00
-draft: true
 ---
 
 `wc` is a tool for getting the **w**ord **c**ount from a file or files. It also

@@ -1,7 +1,6 @@
 ---
 title: "find"
 date: 2021-07-26T12:14:15-04:00
-draft: true
 ---
 
 `find` is the primary built-in utility for finding files on a GNU/Linux system.

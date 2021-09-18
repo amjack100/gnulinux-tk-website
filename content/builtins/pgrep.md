@@ -1,7 +1,6 @@
 ---
 title: "pgrep"
 date: 2021-09-03T21:01:34-04:00
-draft: true
 ---
 
 `pgrep` is a command for getting the PID(s) of a process or multiple processes

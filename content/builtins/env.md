@@ -1,7 +1,6 @@
 ---
 title: "env"
 date: 2021-08-25T13:24:03-04:00
-draft: true
 ---
 
 `env` is the main **env**ironment variable utility and has a variety of

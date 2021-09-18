@@ -1,7 +1,6 @@
 ---
 title: "grep"
 date: 2021-08-06T11:52:52-04:00
-draft: true
 ---
 
 `grep` is a very commonly used tool for searching for patterns of text within

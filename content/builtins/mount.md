@@ -1,7 +1,6 @@
 ---
 title: "mount | umount"
 date: 2021-08-15T17:55:53-04:00
-draft: true
 ---
 
 `mount` and `umount` are commands for mounting and unmounting a filesystem,

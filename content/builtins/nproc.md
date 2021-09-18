@@ -1,7 +1,6 @@
 ---
 title: "nproc"
 date: 2021-09-06T18:42:09-04:00
-draft: true
 ---
 
 `nproc` is a minimal command used for getting the **n**umber of **proc**essing

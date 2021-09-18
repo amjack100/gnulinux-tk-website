@@ -1,7 +1,6 @@
 ---
 title: "jobs | fg | bg"
 date: 2021-09-09T10:10:20-04:00
-draft: true
 ---
 
 `jobs`, `fg` and `bg` are the three tightly coupled job control/management

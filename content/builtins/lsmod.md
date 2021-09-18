@@ -1,7 +1,6 @@
 ---
 title: "lsmod"
 date: 2021-08-06T11:32:14-04:00
-draft: true
 ---
 
 `lsmod` is a minimal command for listing the modules in the Linux Kernel. It

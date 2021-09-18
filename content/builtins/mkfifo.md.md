@@ -1,7 +1,6 @@
 ---
 title: "mkfifo"
 date: 2021-09-04T20:18:34-04:00
-draft: true
 ---
 
 `mkfifo` is used for creating _named pipes_, a special file type. The name

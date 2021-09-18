@@ -1,7 +1,6 @@
 ---
 title: "basename | dirname"
 date: 2021-08-16T19:59:54-04:00
-draft: true
 ---
 
 `basename` and `dirname` are commands for splitting a directory-file string like

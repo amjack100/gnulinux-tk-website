@@ -1,7 +1,6 @@
 ---
 title: "test | ["
 date: 2021-08-21T08:32:40-04:00
-draft: true
 ---
 
 `test` is a useful scripting command for evaluating various expressions. It will

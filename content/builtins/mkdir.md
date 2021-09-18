@@ -1,7 +1,6 @@
 ---
 title: "mkdir | rmdir"
 date: 2021-08-11T14:26:49-04:00
-draft: true
 ---
 
 `mkdir` and `rmdir` are minimal commands for **m**a**k**ing and **r**e**m**oving

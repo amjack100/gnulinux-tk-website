@@ -1,7 +1,6 @@
 ---
 title: "ln"
 date: 2021-07-22T07:50:03-04:00
-draft: true
 ---
 
 `ln` is a tool for creating **l**i**n**ks between files. It can create the two

@@ -1,7 +1,6 @@
 ---
 title: "id | whoami"
 date: 2021-08-27T16:55:01-04:00
-draft: true
 ---
 
 <!--<p align="center">-->

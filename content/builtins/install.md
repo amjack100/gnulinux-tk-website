@@ -1,7 +1,6 @@
 ---
 title: "install"
 date: 2021-09-02T19:46:26-04:00
-draft: true
 ---
 
 `install` is a command for copying files and optionally setting the permissions

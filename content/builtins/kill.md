@@ -1,7 +1,6 @@
 ---
 title: "kill"
 date: 2021-08-18T10:03:22-04:00
-draft: true
 ---
 
 `kill` is a tool for sending a signal to a process. Its name comes from the fact

@@ -1,7 +1,6 @@
 ---
 title: "chmod"
 date: 2021-07-18T07:25:34-04:00
-draft: true
 ---
 
 `chmod` is a utility for **ch**anging the **mod**e (permissions) of a file or

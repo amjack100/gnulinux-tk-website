@@ -1,7 +1,6 @@
 ---
 title: "cat | tac"
 date: 2021-07-31T09:01:26-04:00
-draft: true
 ---
 
 `cat` is a tool for con**cat**entaing files, although its most frequent use

@@ -1,7 +1,6 @@
 ---
 title: "top"
 date: 2021-09-02T20:19:02-04:00
-draft: true
 ---
 
 `top` is an interactive program for monitoring processes, cpu usage and live

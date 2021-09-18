@@ -1,7 +1,6 @@
 ---
 title: "cp"
 date: 2021-08-11T17:13:25-04:00
-draft: true
 ---
 
 `cp` is the standard **c**o**p**y command packaged into Linux systems.

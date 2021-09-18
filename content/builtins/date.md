@@ -1,7 +1,6 @@
 ---
 title: "date"
 date: 2021-08-17T08:29:12-04:00
-draft: true
 ---
 
 `date` is a command for getting and optionally formatting the current date and

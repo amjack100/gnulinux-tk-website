@@ -1,7 +1,6 @@
 ---
 title: "ssh"
 date: 2021-07-12T07:33:57-04:00
-draft: true
 ---
 
 `ssh` is a program for logging into a remote computer and executing commands on

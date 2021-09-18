@@ -1,7 +1,6 @@
 ---
 title: "uname"
 date: 2021-07-19T08:51:11-04:00
-draft: true
 ---
 
 `uname`, short for **u**nix **name**, is a simple tool for getting information

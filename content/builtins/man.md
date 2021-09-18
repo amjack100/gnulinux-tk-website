@@ -1,7 +1,6 @@
 ---
 title: "man"
 date: 2021-07-14T08:06:58-04:00
-draft: true
 ---
 
 `man` is used to display user **man**uals typical stored in /usr/share/man .

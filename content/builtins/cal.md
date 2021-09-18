@@ -1,7 +1,6 @@
 ---
 title: "cal | ncal"
 date: 2021-08-22T15:27:09-04:00
-draft: true
 ---
 
 `cal` and `ncal` are commands for printing a basic calendar with the current

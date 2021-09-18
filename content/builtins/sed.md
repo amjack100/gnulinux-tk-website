@@ -1,7 +1,6 @@
 ---
 title: "sed"
 date: 2021-07-25T08:27:22-04:00
-draft: true
 ---
 
 `sed` is a tool for editing text. It is a **s**tream **ed**itor, meaning it can

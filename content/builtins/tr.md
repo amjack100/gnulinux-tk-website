@@ -1,7 +1,6 @@
 ---
 title: "tr"
 date: 2021-08-26T18:29:23-04:00
-draft: true
 ---
 
 `tr` is a command for **tr**anslating / **tr**ansliterating text characters. The

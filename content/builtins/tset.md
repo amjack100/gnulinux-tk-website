@@ -1,7 +1,6 @@
 ---
 title: "tset | reset"
 date: 2021-08-14T09:09:21-04:00
-draft: true
 ---
 
 `tset` and `reset` are historical commands used to reset an actual text-based

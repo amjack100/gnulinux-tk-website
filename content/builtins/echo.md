@@ -1,7 +1,6 @@
 ---
 title: "echo | printf"
 date: 2021-08-24T11:34:59-04:00
-draft: true
 ---
 
 `echo` and `printf` are simple, commonly used commands for explicitly printing a

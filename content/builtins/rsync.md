@@ -1,7 +1,6 @@
 ---
 title: "rsync"
 date: 2021-07-13T08:21:30-04:00
-draft: true
 ---
 
 `rsync` is a copying tool that implements a delta-transfer algorithm for

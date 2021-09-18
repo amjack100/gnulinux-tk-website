@@ -1,7 +1,6 @@
 ---
 title: "nohup"
 date: 2021-09-17T09:04:35-04:00
-draft: true
 ---
 
 `nohup` is a shell builtin used for running commands whose processes are able to

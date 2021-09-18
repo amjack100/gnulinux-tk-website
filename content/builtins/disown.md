@@ -1,7 +1,6 @@
 ---
 title: "disown"
 date: 2021-09-15T13:25:54-04:00
-draft: true
 ---
 
 `disown` is a bash/sh builtin command used for detaching a job (a background

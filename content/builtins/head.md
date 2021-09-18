@@ -1,7 +1,6 @@
 ---
 title: "head | tail"
 date: 2021-08-19T11:20:41-04:00
-draft: true
 ---
 
 `head` and `tail` are a pair of commands which will allow one to preview a

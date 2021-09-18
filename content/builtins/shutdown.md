@@ -1,7 +1,6 @@
 ---
 title: "shutdown"
 date: 2021-09-06T08:02:08-04:00
-draft: true
 ---
 
 `shutdown` is a command which simply allows one to shutdown their computer via

@@ -1,7 +1,6 @@
 ---
 title: "tput"
 date: 2021-07-15T12:09:27-04:00
-draft: true
 ---
 
 `tput` will output a special value from the terminfo database, given a "capname"

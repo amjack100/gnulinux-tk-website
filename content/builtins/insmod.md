@@ -1,7 +1,6 @@
 ---
 title: "insmod | rmmod"
 date: 2021-08-12T07:28:45-04:00
-draft: true
 ---
 
 `insmod` and `rmmod` are programs for respectively inserting modules into the

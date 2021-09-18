@@ -1,7 +1,6 @@
 ---
 title: "diff"
 date: 2021-08-28T15:27:40-04:00
-draft: true
 ---
 
 `diff` is a command for comparing files line by line. `diff` provides multiple
