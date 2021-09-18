@@ -10,7 +10,7 @@ echo "$$(date)" > $dir/log.txt
 
 cd $dir
 
-if /usr/local/bin/hugo -D >> $dir/log.txt 2>&1;then
+if /usr/local/bin/hugo -D --cleanDestinationDir >> $dir/log.txt 2>&1;then
   rsync -r $dir/.public/ website:/home/opc/www
   /usr/bin/notify-send "Website uploaded successfully"
 else
