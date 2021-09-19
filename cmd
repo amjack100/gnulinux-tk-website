@@ -21,6 +21,19 @@ DATAITEMS = ["Usage", "History", "Package"]
 FRONTMATTERITEMS = ["description"]
 
 
+def insertline(filepath: str, linenum: int, content: str) -> None:
+
+    f = open(filepath, "r+")
+    lines = f.readlines()
+    f.seek(0)
+
+    for i, line in enumerate(lines):
+
+        if i == linenum:
+            f.write(content + "\n")
+        f.write(line)
+
+
 def run(cmd: str) -> CompletedProcess:
     return subprocess.run(cmd.split(" "), capture_output=True, text=True)
 

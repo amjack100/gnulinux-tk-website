@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="man is used to display user manuals typical stored in /usr/share/man . Manuals are divided into these sections:
+ User commands and tools Linux system calls Library functions (system call wrappers) which implement system calls Special files (devices) File formats and corresponding C structures (if any) &amp;ldquo;Games and funny little programs&amp;rdquo; Miscellaneous Administration and privileged commands Kernel routines [Non standard]  Use man &amp;lt;number&amp;gt; intro to read more about each section (except 9)." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://www.linux-toolkit.com/builtins/man/" />
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <title>
+        Linux Toolkit | Command line refreshers
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.29c2c8c3fc9cf748254138351f142ac2833b208a68e83aec126edc98b59efef2.css">
+
+
+
+
+
+
+<meta itemprop="name" content="man">
+<meta itemprop="description" content="man is used to display user manuals typical stored in /usr/share/man . Manuals are divided into these sections:
+ User commands and tools Linux system calls Library functions (system call wrappers) which implement system calls Special files (devices) File formats and corresponding C structures (if any) &ldquo;Games and funny little programs&rdquo; Miscellaneous Administration and privileged commands Kernel routines [Non standard]  Use man &lt;number&gt; intro to read more about each section (except 9)."><meta itemprop="datePublished" content="2021-07-14T08:06:58-04:00" />
+<meta itemprop="dateModified" content="2021-07-14T08:06:58-04:00" />
+<meta itemprop="wordCount" content="139">
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="man"/>
+<meta name="twitter:description" content="man is used to display user manuals typical stored in /usr/share/man . Manuals are divided into these sections:
+ User commands and tools Linux system calls Library functions (system call wrappers) which implement system calls Special files (devices) File formats and corresponding C structures (if any) &ldquo;Games and funny little programs&rdquo; Miscellaneous Administration and privileged commands Kernel routines [Non standard]  Use man &lt;number&gt; intro to read more about each section (except 9)."/>
+
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2021-07-14 08:06:58 -0400 EDT" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://www.linux-toolkit.com/css/styles.css">
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">home</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">about</a></li><li><a href="/builtins/">built-ins</a></li><li><a href="/externals/">externals</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+
+            <div class="content">
+                <div class="post">
+  <h1>man</h1>
+  <time datetime=2021-07-14T08:06:58-0400 class="post-date">Wed, Jul 14, 2021</time>
+
+  
+
+  
+
+  <p><code>man</code> is used to display user <strong>man</strong>uals typical stored in /usr/share/man .
+Manuals are divided into these sections:</p>
+<ol>
+<li>User commands and tools</li>
+<li>Linux system calls</li>
+<li>Library functions (system call wrappers) which implement system calls</li>
+<li>Special files (devices)</li>
+<li>File formats and corresponding C structures (if any)</li>
+<li>&ldquo;Games and funny little programs&rdquo;</li>
+<li>Miscellaneous</li>
+<li>Administration and privileged commands</li>
+<li>Kernel routines [Non standard]</li>
+</ol>
+<p>Use <code>man &lt;number&gt; intro</code> to read more about each section (except 9).</p>
+<h2 id="usage-examples">Usage Examples</h2>
+<p>Open the manual of a program.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ man mkdir
+</code></pre></div><p>Open the specific section of a program&rsquo;s manual.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ man <span style="color:#ae81ff">2</span> mkdir
+</code></pre></div><p>Regex search the names of all manuals.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ man -k mk
+</code></pre></div><p>Show the available sections of a program&rsquo;s manual.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ man -f mkdir
+</code></pre></div><p>Get the actual location of a manual page.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ man -w mkdir
+</code></pre></div><h2 id="configuration">Configuration</h2>
+<p>See manpath configuration</p>
+<h2 id="notes">Notes</h2>
+<ul>
+<li><a href="https://manpages.bsd.lv/history.html">The history of UNIX Manpages</a></li>
+</ul>
+
+</div>
+
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js" integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
+
+
+
+    </body>
+</html>

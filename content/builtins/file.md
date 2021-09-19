@@ -1,7 +1,6 @@
 ---
 title: "file"
 date: 2021-09-19T10:34:13-04:00
-draft: true
 ---
 
 `file` is a "file type guesser", used for getting the file type and metadata of
@@ -29,4 +28,5 @@ $ file -s /dev/null
 
 ## Notes
 
--
+- Read more [here](<https://en.wikipedia.org/wiki/File_(command)#Specification>)
+  about how the `file` command is able to extract file data based on contents.
