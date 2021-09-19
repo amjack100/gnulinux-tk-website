@@ -233,5 +233,10 @@
       "Usage": "_Processes_",
       "Package": "shells*",
       "History": "Released 1981 (bash)"
+   },
+   "testing": {
+      "Usage": "testing",
+      "Package": "testing",
+      "History": "testing"
    }
 }

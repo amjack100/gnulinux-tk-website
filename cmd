@@ -18,6 +18,7 @@ import json
 
 DATAF="./data/commands.json"
 DATAITEMS=["Usage", "History", "Package"]
+FRONTMATTERITEMS=["description"]
 
 def run(cmd:str) -> CompletedProcess:
     return subprocess.run(cmd.split(" "), capture_output=True, text=True)
@@ -89,11 +90,13 @@ def push(_):
     print(res.stdout)
     exit(0)
 
-def content(opt):
+def new(_):
     # Create a new .md file
 
     values: Dict
     data: Dict
+    frontmatter: Dict
+
     txt_size = (10,1)
 
     if osp.exists(DATAF):
@@ -105,10 +108,13 @@ def content(opt):
 
     layout = [
         [sg.Radio(text=dir_, group_id=1, default= dir_=="builtins") for dir_ in os.listdir("./content")],
+
     [sg.Text("Name:",txt_size), sg.Input(key="Name")],
     [sg.Text("Usage:",txt_size), sg.Input(key="Usage")],
     [sg.Text("Package:",txt_size), sg.Input(key="Package")],
     [sg.Text("History:",txt_size), sg.Input(key="History")],
+
+    [sg.Text("description:",txt_size), sg.Input(key="description")],
     [sg.Button("Submit"), sg.Button("Cancel")]
     ]
 
@@ -206,8 +212,8 @@ if __name__ == "__main__":
     p_data.add_argument("name")
     p_data.set_defaults(func=data)
 
-    p_content = p_subs.add_parser("content", description="hugo add new .../<filename> (no extension)")
-    p_content.set_defaults(func=content)
+    p_content = p_subs.add_parser("new", description="hugo add new .../<filename> (no extension)")
+    p_content.set_defaults(func=new)
     
     p_content = p_subs.add_parser("push", description="push everything to github repository")
     p_content.set_defaults(func=push)

@@ -4,8 +4,6 @@ date: 2021-07-20T14:32:04-04:00
 draft: true
 ---
 
-_This page is a work in progress_
-
 CMake is a tool that creates build setups for source code, allowing that code to
 be cross platform.
 
@@ -36,8 +34,8 @@ cd build && cmake ..
 
 ### File Templating
 
-CMake can format input files with variables specified in CMakeLists.txt,
-and produce an output in the build folder.
+CMake can format input files with variables specified in CMakeLists.txt, and
+produce an output in the build folder.
 
 ```sh
 .
