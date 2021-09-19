@@ -4,10 +4,6 @@ dir=$(dirname $0)
 
 export DISPLAY=:0
 
-
-
-echo "$$(date)" > $dir/log.txt
-
 cd $dir
 
 if /usr/local/bin/hugo --cleanDestinationDir && rsync -avz --delete $dir/.public/ website:/home/opc/www/;then

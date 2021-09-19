@@ -238,5 +238,15 @@
       "Usage": "testing",
       "Package": "testing",
       "History": "testing"
+   },
+   "scrot": {
+      "Usage": "_Graphics_",
+      "History": "---",
+      "Package": "[scrot](https://github.com/resurrecting-open-source-projects/scrot)"
+   },
+   "file": {
+      "Usage": "_Filesystem_",
+      "History": "Unix Research V4",
+      "Package": "[standalone](http://darwinsys.com/file/)"
    }
 }

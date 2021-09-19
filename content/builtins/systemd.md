@@ -1,6 +1,7 @@
 ---
 title: "systemd"
 date: 2021-07-10T11:53:31-04:00
+draft: true
 ---
 
 `systemd` is the first process run on boot and acts as the manager for all
