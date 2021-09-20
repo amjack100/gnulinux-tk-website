@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="find is the primary built-in utility for finding files on a GNU/Linux system.
+Usage Examples The first 2 examples begin searching from the current working directory.
+Find files that match a search pattern
+$ find -iname &amp;#39;*.txt&amp;#39; -iname means &amp;ldquo;case insensitive&amp;rdquo;, which can in general be more helpful than -name.
+Find files that have been modified within a specific time frame
+$ find -cmin -20 Where the last modified time is 20 minutes" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://www.linux-toolkit.com/builtins/find/" />
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <title>
+        Linux Toolkit | Command line refreshers
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.29c2c8c3fc9cf748254138351f142ac2833b208a68e83aec126edc98b59efef2.css">
+
+
+
+
+
+
+<meta itemprop="name" content="find">
+<meta itemprop="description" content="find is the primary built-in utility for finding files on a GNU/Linux system.
+Usage Examples The first 2 examples begin searching from the current working directory.
+Find files that match a search pattern
+$ find -iname &#39;*.txt&#39; -iname means &ldquo;case insensitive&rdquo;, which can in general be more helpful than -name.
+Find files that have been modified within a specific time frame
+$ find -cmin -20 Where the last modified time is 20 minutes"><meta itemprop="datePublished" content="2021-07-26T12:14:15-04:00" />
+<meta itemprop="dateModified" content="2021-07-26T12:14:15-04:00" />
+<meta itemprop="wordCount" content="119">
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="find"/>
+<meta name="twitter:description" content="find is the primary built-in utility for finding files on a GNU/Linux system.
+Usage Examples The first 2 examples begin searching from the current working directory.
+Find files that match a search pattern
+$ find -iname &#39;*.txt&#39; -iname means &ldquo;case insensitive&rdquo;, which can in general be more helpful than -name.
+Find files that have been modified within a specific time frame
+$ find -cmin -20 Where the last modified time is 20 minutes"/>
+
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2021-07-26 12:14:15 -0400 EDT" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://www.linux-toolkit.com/css/styles.css">
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">home</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">about</a></li><li><a href="/builtins/">built-ins</a></li><li><a href="/externals/">externals</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+
+            <div class="content">
+                <div class="post">
+  <h1>find</h1>
+  <time datetime=2021-07-26T12:14:15-0400 class="post-date">Mon, Jul 26, 2021</time>
+
+  
+
+  
+
+  <p><code>find</code> is the primary built-in utility for finding files on a GNU/Linux system.</p>
+<h2 id="usage-examples">Usage Examples</h2>
+<p><em>The first 2 examples begin searching from the current working directory.</em></p>
+<p>Find files that match a search pattern</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ find -iname <span style="color:#e6db74">&#39;*.txt&#39;</span>
+</code></pre></div><p><code>-iname</code> means &ldquo;case insensitive&rdquo;, which can in general be more helpful than
+<code>-name</code>.</p>
+<p>Find files that have been modified within a specific time frame</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ find -cmin -20
+</code></pre></div><p>Where the last modified time is 20 minutes</p>
+<p>Find every file on the entire system which matches a search pattern</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo find / -iname <span style="color:#e6db74">&#39;filename*&#39;</span>
+</code></pre></div><h2 id="configuration">Configuration</h2>
+<p>Minor configuration options can be specified with environment variables. See the
+<code>find</code> man page for more specific details.</p>
+<h2 id="notes">Notes</h2>
+<ul>
+<li><code>find</code> is frequently with <code>xargs</code>, especially within scripts.</li>
+</ul>
+
+</div>
+
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js" integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
+
+
+
+    </body>
+</html>

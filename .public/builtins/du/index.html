@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="du is a tool for getting information about the disk usage of a file or directory.
+Usage Examples Get the disk usage of a single file or directory
+$ du -sh ./directory &amp;hellip; where -sh stands for summarize and human-readable
+Get the size of a single file or directory
+$ du -bsh ./directory &amp;hellip;where -b is equal to --apparent-size --block-size=1
+Configuration The block size defaults to 1024 bytes but can be modified with the environment variables DU_BLOCK_SIZE, BLOCK_SIZE, or BLOCKSIZE" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://www.linux-toolkit.com/builtins/du/" />
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <title>
+        Linux Toolkit | Command line refreshers
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.29c2c8c3fc9cf748254138351f142ac2833b208a68e83aec126edc98b59efef2.css">
+
+
+
+
+
+
+<meta itemprop="name" content="du">
+<meta itemprop="description" content="du is a tool for getting information about the disk usage of a file or directory.
+Usage Examples Get the disk usage of a single file or directory
+$ du -sh ./directory &hellip; where -sh stands for summarize and human-readable
+Get the size of a single file or directory
+$ du -bsh ./directory &hellip;where -b is equal to --apparent-size --block-size=1
+Configuration The block size defaults to 1024 bytes but can be modified with the environment variables DU_BLOCK_SIZE, BLOCK_SIZE, or BLOCKSIZE"><meta itemprop="datePublished" content="2021-07-16T08:55:20-04:00" />
+<meta itemprop="dateModified" content="2021-07-16T08:55:20-04:00" />
+<meta itemprop="wordCount" content="124">
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="du"/>
+<meta name="twitter:description" content="du is a tool for getting information about the disk usage of a file or directory.
+Usage Examples Get the disk usage of a single file or directory
+$ du -sh ./directory &hellip; where -sh stands for summarize and human-readable
+Get the size of a single file or directory
+$ du -bsh ./directory &hellip;where -b is equal to --apparent-size --block-size=1
+Configuration The block size defaults to 1024 bytes but can be modified with the environment variables DU_BLOCK_SIZE, BLOCK_SIZE, or BLOCKSIZE"/>
+
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2021-07-16 08:55:20 -0400 EDT" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://www.linux-toolkit.com/css/styles.css">
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">home</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">about</a></li><li><a href="/builtins/">built-ins</a></li><li><a href="/externals/">externals</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+
+            <div class="content">
+                <div class="post">
+  <h1>du</h1>
+  <time datetime=2021-07-16T08:55:20-0400 class="post-date">Fri, Jul 16, 2021</time>
+
+  
+
+  
+
+  <p><code>du</code> is a tool for getting information about the <strong>d</strong>isk <strong>u</strong>sage of a file or
+directory.</p>
+<h2 id="usage-examples">Usage Examples</h2>
+<p>Get the disk usage of a single file or directory</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ du -sh ./directory
+</code></pre></div><p>&hellip; where <code>-sh</code> stands for summarize and human-readable</p>
+<p>Get the size of a single file or directory</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ du -bsh ./directory
+</code></pre></div><p>&hellip;where -b is equal to <code>--apparent-size --block-size=1</code></p>
+<h2 id="configuration">Configuration</h2>
+<p>The block size defaults to 1024 bytes but can be modified with the environment
+variables <code>DU_BLOCK_SIZE</code>, <code>BLOCK_SIZE</code>, or <code>BLOCKSIZE</code></p>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>
+<p>&ldquo;Why so complicated? Just show me the file size&rdquo;. Use <code>-bs</code> or <code>-bsh</code>. This is
+the number that matters for uploads and the one shown in a typical file
+explorer.</p>
+</li>
+<li>
+<p>See
+<a href="https://stackoverflow.com/questions/5694741/why-is-the-output-of-du-often-so-different-from-du-b/5694854#5694854">&ldquo;why is the output of `du` often so different from `du -b`&quot;</a></p>
+</li>
+</ul>
+
+</div>
+
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js" integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
+
+
+
+    </body>
+</html>
