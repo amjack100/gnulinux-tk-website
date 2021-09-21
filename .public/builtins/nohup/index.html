@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="nohup is a shell builtin used for running commands whose processes are able to run beyond the lifetime of the parent process/processes (shell or terminal emulator). When a command is run from a shell, a parent-child relationship is formed between the two processes (the shell being the parent and the command process being the child). If a parent process is stopped, its children processes are stopped as well. Running a command with nohup prevents this relationship." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://www.linux-toolkit.com/builtins/nohup/" />
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <title>
+        Linux Toolkit | Command line refreshers
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.29c2c8c3fc9cf748254138351f142ac2833b208a68e83aec126edc98b59efef2.css">
+
+
+
+
+
+
+<meta itemprop="name" content="nohup">
+<meta itemprop="description" content="nohup is a shell builtin used for running commands whose processes are able to run beyond the lifetime of the parent process/processes (shell or terminal emulator). When a command is run from a shell, a parent-child relationship is formed between the two processes (the shell being the parent and the command process being the child). If a parent process is stopped, its children processes are stopped as well. Running a command with nohup prevents this relationship."><meta itemprop="datePublished" content="2021-09-17T09:04:35-04:00" />
+<meta itemprop="dateModified" content="2021-09-17T09:04:35-04:00" />
+<meta itemprop="wordCount" content="163">
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="nohup"/>
+<meta name="twitter:description" content="nohup is a shell builtin used for running commands whose processes are able to run beyond the lifetime of the parent process/processes (shell or terminal emulator). When a command is run from a shell, a parent-child relationship is formed between the two processes (the shell being the parent and the command process being the child). If a parent process is stopped, its children processes are stopped as well. Running a command with nohup prevents this relationship."/>
+
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2021-09-17 09:04:35 -0400 EDT" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://www.linux-toolkit.com/css/styles.css">
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">home</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">about</a></li><li><a href="/builtins/">built-ins</a></li><li><a href="/externals/">externals</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+
+            <div class="content">
+                <div class="post">
+  <h1>nohup</h1>
+  <time datetime=2021-09-17T09:04:35-0400 class="post-date">Fri, Sep 17, 2021</time>
+
+  
+
+  
+
+  <p><code>nohup</code> is a shell builtin used for running commands whose processes are able to
+run beyond the lifetime of the parent process/processes (shell or terminal
+emulator). <br><br> When a command is run from a shell, a parent-child
+relationship is formed between the two processes (the shell being the parent and
+the command process being the child). If a parent process is stopped, its
+children processes are stopped as well. Running a command with <code>nohup</code> prevents
+this relationship. Therefore, if the shell process which ran the command is
+killed, the command itself continues to run. <br><br> The name <code>nohup</code> comes
+from <strong>no</strong> <strong>h</strong>ang<strong>up</strong>, because it runs commands that are immune to hangup
+signals (one way the operating system tells a processes to quit).</p>
+<h2 id="usage-examples">Usage Examples</h2>
+<p>Run a command independent of its parent process.</p>
+
+
+
+<img class="svgimg" src="/nohup.svg" alt="animation"/>
+
+
+
+
+<h2 id="notes">Notes</h2>
+<ul>
+<li>Using <code>nohup</code> is similar to using <code>disown</code> like so:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sleep <span style="color:#ae81ff">1000</span> &amp; disown
+</code></pre></div><p>except <code>disown</code> will always print output to the terminal, while <code>nohup</code> will
+always write output to a file.</p>
+
+</div>
+
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js" integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
+
+
+
+    </body>
+</html>
