@@ -248,5 +248,10 @@
       "Usage": "_Filesystem_",
       "History": "Unix Research V4",
       "Package": "[standalone](http://darwinsys.com/file/)"
+   },
+   "pwd": {
+      "Usage": "_Filesystem_",
+      "History": "Version 5 AT&T UNIX",
+      "Package": "GNU Coreutils"
    }
 }
