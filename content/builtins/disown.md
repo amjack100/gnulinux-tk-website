@@ -39,10 +39,12 @@ $ disown -a
 
 - We can find the _current job_ using the `jobs` command. Using `jobs` with no
   arguments will print a list of all the shell's jobs, of which the _current
-  job_ is signified with a "+" next to its job number. The example output below
-  tells us that job 2 is the current job.
+  job_ has a "+" next to its job number. The example output below tells us that
+  job 2 is the current job.
 
   ```txt
   [1] - Running         mycommand1 &
   [2] + Running         mycommand2 &
   ```
+
+- See [jobs]({{< ref "builtins/jobs.md" >}}).

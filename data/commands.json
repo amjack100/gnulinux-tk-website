@@ -90,9 +90,9 @@
       "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
    },
    "ls | dir | vdir": {
-      "History": "---",
       "Usage": "_Filesystem_",
-      "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
+      "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)",
+      "History": "--"
    },
    "sed": {
       "Usage": "_Text_",
@@ -100,9 +100,9 @@
       "Package": "Standalone (GNU sed)"
    },
    "find": {
-      "History": "---",
       "Usage": "_Searching_",
-      "Package": "[GNU Findutils](https://www.gnu.org/software/findutils/)"
+      "Package": "[GNU Findutils](https://www.gnu.org/software/findutils/)",
+      "History": "--"
    },
    "chown": {
       "Usage": "_Filesystem_",
@@ -140,14 +140,14 @@
       "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
    },
    "man": {
-      "History": "---",
       "Usage": "_Documentation_",
-      "Package": "Standard builtin"
+      "Package": "Standard builtin",
+      "History": "--"
    },
    "rsync": {
       "Usage": "_Filesystem_",
       "Package": "None (standalone)",
-      "History": "---"
+      "History": "--"
    },
    "ssh": {
       "Usage": "_Networking_",
@@ -191,8 +191,8 @@
    },
    "install": {
       "Usage": "_Filesystem_",
-      "History": "---",
-      "Package": "GNU Coreutils"
+      "Package": "GNU Coreutils",
+      "History": "--"
    },
    "top": {
       "Usage": "_Processes_",
@@ -211,8 +211,8 @@
    },
    "shutdown": {
       "Usage": "_System_",
-      "History": "---",
-      "Package": "systemd"
+      "Package": "systemd",
+      "History": "--"
    },
    "nproc": {
       "Usage": "_System_",
@@ -261,7 +261,7 @@
    },
    "infocmp": {
       "Usage": "_Environment_",
-      "History": "---",
-      "Package": "[NCURSES](https://invisible-island.net/ncurses/)"
+      "Package": "[NCURSES](https://invisible-island.net/ncurses/)",
+      "History": "--"
    }
 }

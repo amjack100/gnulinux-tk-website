@@ -5,8 +5,9 @@ date: 2021-09-03T21:01:34-04:00
 
 `pgrep` is a command for getting the PID(s) of a process or multiple processes
 using a `grep`-like search string. The name of the command comes from the
-combination of "**p**rocess" and grep. `pgrep` is particularly useful because
-many other commands such as `kill` take a PID (random integer) as input.
+combination of "**p**rocess" and [grep]({{< ref "builtins/grep" >}}). `pgrep` is
+particularly useful because many other commands such as `kill` take a PID
+(random integer) as input.
 
 ## Usage Examples
 

@@ -5,17 +5,17 @@ date: 2021-09-09T10:10:20-04:00
 
 `jobs`, `fg` and `bg` are the three tightly coupled job control/management
 commands. Using one effectively is difficult without an understanding of the
-other two. These three are builtins to the popular _bash_ shell, meaning
+other two. These three are builtins to the popular _bash_ shell, so
 implementations in other shells may not be the same.
 
 ## Overview
 
 {{< showIfExists "static/jobs.svg" >}}
 
-Jobs are simply background tasks. One typically uses a job for a long running
-command where the output does not need to be monitored in real time. Jobs are
-also "children" of the current shell, meaning if the shell processes is killed,
-then the job is as well. Using
+Jobs = background processes. One typically uses a job for a long running command
+where the output does not need to be monitored in real time. Jobs are also
+"children" of the current shell, meaning if the shell processes is killed, then
+the job is as well. Using
 
 ```bash
 $ jobs

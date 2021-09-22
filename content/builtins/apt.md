@@ -1,6 +1,7 @@
 ---
 title: "apt"
 date: 2021-07-29T10:14:18-04:00
+draft: true
 ---
 
 `apt` stands for **A**dvanced **P**acakge **T**ool and is the main package
