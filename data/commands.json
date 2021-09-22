@@ -258,5 +258,10 @@
       "Usage": "_Environment_",
       "History": "Released 1979",
       "Package": "[NCURSES](https://invisible-island.net/ncurses/)"
+   },
+   "infocmp": {
+      "Usage": "_Environment_",
+      "History": "---",
+      "Package": "[NCURSES](https://invisible-island.net/ncurses/)"
    }
 }
