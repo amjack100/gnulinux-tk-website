@@ -253,5 +253,10 @@
       "Usage": "_Filesystem_",
       "History": "Version 5 AT&T UNIX",
       "Package": "GNU Coreutils"
+   },
+   "clear": {
+      "Usage": "_Environment_",
+      "History": "Released 1979",
+      "Package": "[NCURSES](https://invisible-island.net/ncurses/)"
    }
 }

@@ -32,7 +32,3 @@ Change the owner of a directory and its contents recursively.
 ```bash
 $ chown -hR root directory
 ```
-
-## Configuration
-
-N/A
