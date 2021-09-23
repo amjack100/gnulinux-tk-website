@@ -4,7 +4,7 @@ date: 2021-07-29T10:14:18-04:00
 draft: true
 ---
 
-`apt` stands for **A**dvanced **P**acakge **T**ool and is the main package
+`apt` stands for **a**dvanced **p**acakge **t**ool and is the main package
 management system built into many Linux distributions. `apt` is intended to be
 the main means of interactively managing packages, but its features are also
 available in the back-end commands `apt-get` and `apt-cache`. <br> <br> `apt` is
