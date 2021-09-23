@@ -143,6 +143,10 @@ def new(_):
             sg.Radio(text=dir_, group_id=1, default=dir_ == "builtins")
             for dir_ in os.listdir("./content")
         ],
+        [
+            sg.Radio(text=atype, group_id=2, default=atype == "builtins.md")
+            for atype in os.listdir("./archetypes")
+        ],
         [sg.Text("Name:", txt_size), sg.Input(key="Name")],
     ]
 
