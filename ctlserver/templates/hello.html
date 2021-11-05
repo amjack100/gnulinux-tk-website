@@ -1,0 +1,130 @@
+
+<!doctype html>
+
+<head>
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+</head>
+
+<body>
+<title>Howdy pertner</title>
+
+    <script>
+        var fullImg = "0";
+        var faceImg = "0";
+
+        function setFull(d){
+            fullImg = d.getAttribute("number");
+            document.getElementById("sourceid").value = d.getAttribute("number");
+
+            var fulls = document.getElementsByClassName("full");
+            for (var i = fulls.length - 1; i >= 0; i--) {
+                fulls[i].setAttribute("style", "border-style:none;");
+                if (fulls[i].getAttribute("number") == fullImg) {
+                fulls[i].setAttribute("style", "border-style:solid;");
+                }
+            }
+        }
+        function setFace(d){
+            faceImg = d.getAttribute("number");
+            document.getElementById("targetid").value = d.getAttribute("number");
+
+            var faces = document.getElementsByClassName("face");
+            for (var i = faces.length - 1; i >= 0; i--) {
+                faces[i].setAttribute("style", "border-style:none;");
+                if (faces[i].getAttribute("number") == faceImg) {
+                faces[i].setAttribute("style", "border-style:solid;");
+                }
+            }
+        }
+        function delFullImg(n){
+
+        }
+    </script>
+{% if name %}
+<h1>Hello {{ name }}!</h1>
+
+{% endif %}
+
+<style>
+
+input {
+    padding: 2px;
+    margin: 5px;
+}
+form {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+#sourceid {
+    grid-column: 1;
+    grid-row: 1;
+}
+#targetid {
+    grid-column: 2;
+    grid-row: 1;
+}
+#submit {
+    grid-column:3;
+        grid-row:1;
+}
+img {
+    border-width: 2px;
+}
+img.full {
+    border-color: blue;
+}
+img.face {
+    border-color: red;
+}
+
+</style>
+
+
+
+
+
+
+    <form action="/upload" method="POST">
+      <input type=file name=file>
+     <input type=text name=url>
+      <input type=submit value=Upload>
+    </form>
+
+
+<form action="/submission" method=post enctype=multipart/form-data>
+    <input  name=sourceid id=sourceid type=text>
+    <input  name=targetid id=targetid type=text>
+    <input id=submit type=submit value=Submit>
+</form>
+
+
+    <hr>
+{% for img in face_imgs %}
+<form action="/delface" method="post">
+<img class="face" onclick="setFace(this);" number={{loop.index0}} src="{{url_for('static', filename=img)}}" width="100">
+<button name="n" value="{{loop.index0}}">Delete</button>
+</form>
+{% endfor %}
+
+    <hr>
+<br>
+<br>
+{% for img in full_imgs %}
+<form action="/delimg" method="post">
+<img  class="full" onclick="setFull(this);" number={{loop.index0}} src="{{url_for('static',
+filename=img)}}" width="300">
+<button name="delimg" value="{{loop.index0}}">Delete</button>
+</form>
+{% endfor %}
+<hr>
+
+<br>
+<br>
+{% for img in done_imgs %}
+<img src="{{url_for('static', filename=img)}}" width="600">
+{% endfor %}
+
+<br>
+<br>
+
+</body>

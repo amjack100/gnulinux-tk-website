@@ -25,9 +25,9 @@
       "Package": "Standard builtin"
    },
    "test | [": {
-      "Usage": "_Built-in_",
-      "History": "UNIX System III, 1981",
-      "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)"
+      "Usage": "_Scripting_",
+      "Package": "[GNU Coreutils](https://www.gnu.org/software/coreutils/)",
+      "History": "UNIX System III, 1981"
    },
    "wc": {
       "Usage": "_Text_",
@@ -155,9 +155,9 @@
       "Package": "None (standalone)"
    },
    "systemctl": {
-      "History": "---",
-      "Usage": "_Environment_",
-      "Package": "None (standalone)"
+      "Usage": "_System_",
+      "History": "",
+      "Package": "systemd"
    },
    "diff": {
       "Usage": "_Text_",
@@ -221,17 +221,17 @@
    },
    "jobs | fg | bg": {
       "Usage": "_Processes_",
-      "Package": "shells*",
+      "Package": "shell builtin",
       "History": "Released 1981 (bash)"
    },
    "disown": {
       "Usage": "_Processes_",
-      "Package": "shells*",
+      "Package": "shell builtin",
       "History": "Released 1981 (bash)"
    },
    "nohup": {
       "Usage": "_Processes_",
-      "Package": "shells*",
+      "Package": "shell builtin",
       "History": "Released 1981 (bash)"
    },
    "testing": {
@@ -240,9 +240,9 @@
       "History": "testing"
    },
    "scrot": {
-      "Usage": "_Graphics_",
-      "History": "---",
-      "Package": "[scrot](https://github.com/resurrecting-open-source-projects/scrot)"
+      "Usage": "Graphics",
+      "Package": "[resurrecting-open-source-projects/scrot](https://github.com/resurrecting-open-source-projects/scrot)",
+      "History": "---"
    },
    "file": {
       "Usage": "_Filesystem_",
@@ -263,5 +263,65 @@
       "Usage": "_Environment_",
       "Package": "[NCURSES](https://invisible-island.net/ncurses/)",
       "History": "--"
+   },
+   "type": {
+      "Usage": "_Filesystem_",
+      "History": "Released 1984",
+      "Package": "shell builtin"
+   },
+   "abc": {
+      "Usage": "test",
+      "History": "test",
+      "Package": "test"
+   },
+   "crontab": {
+      "Usage": "_Processes_",
+      "History": "Released 1975",
+      "Package": "standalone"
+   },
+   "cut": {
+      "Usage": "_Text_",
+      "History": "Released 1985",
+      "Package": "GNU Coreutils"
+   },
+   "tty": {
+      "Usage": "_Misc_",
+      "History": "Version 1 At&T UNIX",
+      "Package": "GNU Coreutils"
+   },
+   "read": {
+      "Usage": "_Scripting_",
+      "History": "Released 1981 (bash)",
+      "Package": "shell builtin"
+   },
+   "true": {
+      "Usage": "_Scripting_",
+      "History": "---",
+      "Package": "GNU Coreutils"
+   },
+   "w | uptime": {
+      "Usage": "_System_",
+      "History": "",
+      "Package": "procps-ng"
+   },
+   "exit": {
+      "Usage": "_Scripting_",
+      "History": "",
+      "Package": "shell builtin"
+   },
+   "groups": {
+      "Usage": "_Environment_",
+      "History": "",
+      "Package": "GNU Coreutils"
+   },
+   "groupadd | groupdel": {
+      "Usage": "_System_",
+      "History": "",
+      "Package": "shadow-utils"
+   },
+   "groupadd": {
+      "Usage": "_System_",
+      "History": "",
+      "Package": "shadow-utils"
    }
 }

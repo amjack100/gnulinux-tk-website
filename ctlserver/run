@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+cd `dirname $0`
+/home/andy/.local/bin/flask run

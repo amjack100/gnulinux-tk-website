@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://www.linux-toolkit.com/builtins/" />
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+    <title>
+    
+        Builtins - Linux Toolkit
+    
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.29c2c8c3fc9cf748254138351f142ac2833b208a68e83aec126edc98b59efef2.css">
+
+
+
+
+
+
+<meta itemprop="name" content="Builtins">
+<meta itemprop="description" content="Consise command line refreshers">
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Builtins"/>
+<meta name="twitter:description" content="Consise command line refreshers"/>
+
+
+
+
+
+
+
+
+
+
+<link rel="alternate" type="application/rss+xml" href="https://www.linux-toolkit.com/builtins/index.xml" title="Linux Toolkit" />
+
+
+
+
+
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J0X8PW9KMM"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-J0X8PW9KMM', { 'anonymize_ip': false });
+}
+</script>
+
+
+<link rel="stylesheet" href="https://www.linux-toolkit.com/css/styles.css">
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">home</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">about</a></li><li><a href="/builtins/">built-ins</a></li><li><a href="/externals/">externals</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+
+            <div class="content">
+                
+
+
+
+<style>
+.content {
+  display: inline !important;
+}
+h2 {
+  justify-content: center;
+}
+</style>
+
+<h1>Builtins</h1>
+<br>
+
+
+  <script>
+    function searchTable() {
+      var input, filter, tr, td, i, txtValue;
+      input = document.getElementById("searchInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("itemTable");
+      tr = table.getElementsByTagName("tr");
+
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByClassName("table-name")[0];
+        
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+
+            console.log(txtValue);
+            tr[i].style.display = "";
+
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+  </script>
+
+<input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Filter" class="mb-3 form-control">
+
+<div class="container table-responsive">
+<table class=" table table-striped table-sm"> 
+  <thead>
+  <tr class="row">
+    <th class="col text-left"><b>Name</b></td>
+    <th class="col"><b>Usage</b></td>
+    <th class="col text-right"><b>Package</b></td>
+  </tr>
+
+  </thead>
+
+  <tbody id="itemTable">
+
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/basename/">basename | dirname</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Scripting</em></td>
+    <td class="col-sm-4 text-right" ><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/cal/">cal | ncal</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Datetime</em></td>
+    <td class="col-sm-4 text-right" >Standard builtin</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/cat/">cat | tac</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Text</em></td>
+    <td class="col-sm-4 text-right" ><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/cd/">cd</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Filesystem</em></td>
+    <td class="col-sm-4 text-right" >Standard builtin</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/chmod/">chmod</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Filesystem</em></td>
+    <td class="col-sm-4 text-right" ><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/chown/">chown</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Filesystem</em></td>
+    <td class="col-sm-4 text-right" ><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/clear/">clear</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Environment</em></td>
+    <td class="col-sm-4 text-right" ><a href="https://invisible-island.net/ncurses/">NCURSES</a></td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/cp/">cp</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Filesystem</em></td>
+    <td class="col-sm-4 text-right" ><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/crontab/">crontab</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Processes</em></td>
+    <td class="col-sm-4 text-right" >standalone</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/cut/">cut</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Text</em></td>
+    <td class="col-sm-4 text-right" >GNU Coreutils</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/date/">date</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Datetime</em></td>
+    <td class="col-sm-4 text-right" >GNU Coreutils</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/diff/">diff</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Text</em></td>
+    <td class="col-sm-4 text-right" ><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/disown/">disown</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Processes</em></td>
+    <td class="col-sm-4 text-right" >shell builtin</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/du/">du</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Filesystem</em></td>
+    <td class="col-sm-4 text-right" ><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/echo/">echo | printf</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Scripting</em></td>
+    <td class="col-sm-4 text-right" ><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/env/">env</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Environment</em></td>
+    <td class="col-sm-4 text-right" ><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/exit/">exit</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Scripting</em></td>
+    <td class="col-sm-4 text-right" >shell builtin</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/file/">file</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Filesystem</em></td>
+    <td class="col-sm-4 text-right" ><a href="http://darwinsys.com/file/">standalone</a></td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/find/">find</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Searching</em></td>
+    <td class="col-sm-4 text-right" ><a href="https://www.gnu.org/software/findutils/">GNU Findutils</a></td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/grep/">grep</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Searching</em></td>
+    <td class="col-sm-4 text-right" >Standalone (GNU grep)</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/groupadd/">groupadd | groupdel</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>System</em></td>
+    <td class="col-sm-4 text-right" >shadow-utils</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/groups/">groups</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Environment</em></td>
+    <td class="col-sm-4 text-right" >GNU Coreutils</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/head/">head | tail</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Text</em></td>
+    <td class="col-sm-4 text-right" ><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/id/">id | whoami</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Environment</em></td>
+    <td class="col-sm-4 text-right" >GNU Coreutils</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/infocmp/">infocmp</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Environment</em></td>
+    <td class="col-sm-4 text-right" ><a href="https://invisible-island.net/ncurses/">NCURSES</a></td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/insmod/">insmod | rmmod</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Kernel</em></td>
+    <td class="col-sm-4 text-right" ><a href="https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git">kmod</a></td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/install/">install</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Filesystem</em></td>
+    <td class="col-sm-4 text-right" >GNU Coreutils</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/jobs/">jobs | fg | bg</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Processes</em></td>
+    <td class="col-sm-4 text-right" >shell builtin</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/kill/">kill</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Processes</em></td>
+    <td class="col-sm-4 text-right" >util-linux</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/ln/">ln</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Filesystem</em></td>
+    <td class="col-sm-4 text-right" ><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/locate/">locate | updatedb</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Searching</em></td>
+    <td class="col-sm-4 text-right" ><a href="https://www.gnu.org/software/findutils/">GNU Findutils</a></td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/ls/">ls | dir | vdir</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Filesystem</em></td>
+    <td class="col-sm-4 text-right" ><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/lsmod/">lsmod</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Kernel</em></td>
+    <td class="col-sm-4 text-right" ><a href="https://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git">kmod</a></td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/man/">man</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Documentation</em></td>
+    <td class="col-sm-4 text-right" >Standard builtin</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/mkdir/">mkdir | rmdir</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Filesystem</em></td>
+    <td class="col-sm-4 text-right" ><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/mkfifo.md/">mkfifo</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Filesystem</em></td>
+    <td class="col-sm-4 text-right" >GNU Coreutils</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/mount/">mount | umount</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Filesystem</em></td>
+    <td class="col-sm-4 text-right" >util-linux</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/nohup/">nohup</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Processes</em></td>
+    <td class="col-sm-4 text-right" >shell builtin</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/nproc/">nproc</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>System</em></td>
+    <td class="col-sm-4 text-right" >GNU Coreutils</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/pgrep/">pgrep</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Processes</em></td>
+    <td class="col-sm-4 text-right" >procps-ng</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/pwd/">pwd</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Filesystem</em></td>
+    <td class="col-sm-4 text-right" >GNU Coreutils</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/read/">read</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Scripting</em></td>
+    <td class="col-sm-4 text-right" >shell builtin</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/rsync/">rsync</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Filesystem</em></td>
+    <td class="col-sm-4 text-right" >None (standalone)</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/sed/">sed</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Text</em></td>
+    <td class="col-sm-4 text-right" >Standalone (GNU sed)</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/shutdown/">shutdown</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>System</em></td>
+    <td class="col-sm-4 text-right" >systemd</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/ssh/">ssh</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Networking</em></td>
+    <td class="col-sm-4 text-right" >None (standalone)</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/test/">test | [</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Scripting</em></td>
+    <td class="col-sm-4 text-right" ><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/top/">top</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Processes</em></td>
+    <td class="col-sm-4 text-right" >procps-ng</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/touch/">touch</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Filesystem</em></td>
+    <td class="col-sm-4 text-right" ><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/tput/">tput</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Environment</em></td>
+    <td class="col-sm-4 text-right" ><a href="https://invisible-island.net/ncurses/">NCURSES</a></td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/tr/">tr</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Text</em></td>
+    <td class="col-sm-4 text-right" ><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/true/">true | false</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ></td>
+    <td class="col-sm-4 text-right" ></td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/tset/">tset | reset</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Environment</em></td>
+    <td class="col-sm-4 text-right" ><a href="https://invisible-island.net/ncurses/">NCURSES</a></td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/tty/">tty</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Misc</em></td>
+    <td class="col-sm-4 text-right" >GNU Coreutils</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/type/">type</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Filesystem</em></td>
+    <td class="col-sm-4 text-right" >shell builtin</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/uname/">uname</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Environment</em></td>
+    <td class="col-sm-4 text-right" ><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/w/">w | uptime</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>System</em></td>
+    <td class="col-sm-4 text-right" >procps-ng</td>
+
+  </tr>
+
+
+
+  
+    <tr class="row">
+    
+
+    <td class="col-sm-4 table-name text-left" scope="row"><a href="/builtins/wc/">wc</a></td>
+
+
+    
+
+    <td class="col-sm-4 text-center" ><em>Text</em></td>
+    <td class="col-sm-4 text-right" ><a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a></td>
+
+  </tr>
+
+  </tbody>
+
+</table>
+
+</div>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js" integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
+
+
+
+    </body>
+</html>

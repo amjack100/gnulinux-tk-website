@@ -21,6 +21,44 @@
   /*margin: 0;*/
 }
 
+body {
+  /*background: #000 !important;*/
+}
+
+.logo__cursor {
+  background: #e3793d;
+}
+code {
+  color: #e3793d;
+}
+
+body {
+  --table-width: 100%; /* Or any value, this will change dinamically */
+}
+tbody {
+  display: block;
+  max-height: 700px;
+  /*overflow-y:auto;*/
+  /*padding: 2%;*/
+}
+thead,
+tbody tr {
+  display: table;
+  /*width: var(--table-width);*/
+  table-layout: fixed;
+}
+thead {
+  width: 100%;
+}
+
+.draft-item {
+  background: #777;
+}
+/*@media (prefers-color-scheme: light) {*/
+
+/*body background-color: #000 !important;*/
+/*}*/
+
 /*.listitems {*/
 /*display: flex;*/
 /*flex-direction: column;*/

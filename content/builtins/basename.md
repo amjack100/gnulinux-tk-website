@@ -10,13 +10,15 @@ expressions.
 
 ## Usage Examples
 
-Extract the basename (and suffix) of a full filename.
+Get the basename of a full filename.
 
-<img src="/basename.svg" alt="basename animation"/>
+{{< showIfExists "static/basename.svg" >}}
+
+Get the basename of a full filename without the extension.
 
 ```bash
-$ basename /home/user/filename.txt .txt
-filename
+$ basename /home/user/file.txt .txt
+file
 ```
 
 Extract the dirname of a full filename.
@@ -28,4 +30,5 @@ $ dirname /home/user/filename.txt
 
 ## Notes
 
-- Both commands will work as expected when given multiple filename arguments.
+- Both `basename` and `dirname` will work as expected when given multiple
+  filename arguments.

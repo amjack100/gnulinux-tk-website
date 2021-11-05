@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Externals on Linux Toolkit</title>
+    <link>https://www.linux-toolkit.com/externals/</link>
+    <description>Recent content in Externals on Linux Toolkit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Sep 2021 08:57:10 -0400</lastBuildDate><atom:link href="https://www.linux-toolkit.com/externals/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>scrot</title>
+      <link>https://www.linux-toolkit.com/externals/scrot/</link>
+      <pubDate>Mon, 27 Sep 2021 08:57:10 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/externals/scrot/</guid>
+      <description>scrot is a program used for taking screenshots. scrot supports a wide many image formats as well as options for interactive screen selection.
+Usage Examples &amp;hellip;
+Take a screenshot and save it to the current working directory. The filename will be the current date.
+$ scrot Take a screenshot and save it as &amp;ldquo;capture.png&amp;rdquo;.
+$ scrot capture.png Take a screenshot interactively.
+$ scrot --select capture.png Take a screenshot of the current window.</description>
+    </item>
+    
+  </channel>
+</rss>

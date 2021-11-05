@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="chmod is a utility for changing the mode (permissions) of a file or directory. A file&amp;rsquo;s mode defines who can read, write, and execute it. To check the mode of a file file.txt, use the command ls -l file.txt. The output is&amp;hellip;
+ -rw-rw-r-- 1 user group 23 Jul 2 08:45 file.txt  &amp;hellip;where -rw-rw-r-- is the file&amp;rsquo;s mode.
+The first dash is the type of file. The next 9 dashes are mode bits." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://www.linux-toolkit.com/builtins/chmod/" />
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+    <title>
+    
+        chmod - Linux Toolkit
+    
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.29c2c8c3fc9cf748254138351f142ac2833b208a68e83aec126edc98b59efef2.css">
+
+
+
+
+
+
+<meta itemprop="name" content="chmod">
+<meta itemprop="description" content="chmod is a utility for changing the mode (permissions) of a file or directory. A file&rsquo;s mode defines who can read, write, and execute it. To check the mode of a file file.txt, use the command ls -l file.txt. The output is&hellip;
+ -rw-rw-r-- 1 user group 23 Jul 2 08:45 file.txt  &hellip;where -rw-rw-r-- is the file&rsquo;s mode.
+The first dash is the type of file. The next 9 dashes are mode bits."><meta itemprop="datePublished" content="2021-07-18T07:25:34-04:00" />
+<meta itemprop="dateModified" content="2021-07-18T07:25:34-04:00" />
+<meta itemprop="wordCount" content="205">
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="chmod"/>
+<meta name="twitter:description" content="chmod is a utility for changing the mode (permissions) of a file or directory. A file&rsquo;s mode defines who can read, write, and execute it. To check the mode of a file file.txt, use the command ls -l file.txt. The output is&hellip;
+ -rw-rw-r-- 1 user group 23 Jul 2 08:45 file.txt  &hellip;where -rw-rw-r-- is the file&rsquo;s mode.
+The first dash is the type of file. The next 9 dashes are mode bits."/>
+
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2021-07-18 07:25:34 -0400 EDT" />
+
+
+
+
+
+
+
+
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J0X8PW9KMM"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-J0X8PW9KMM', { 'anonymize_ip': false });
+}
+</script>
+
+
+<link rel="stylesheet" href="https://www.linux-toolkit.com/css/styles.css">
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">home</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">about</a></li><li><a href="/builtins/">built-ins</a></li><li><a href="/externals/">externals</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+
+            <div class="content">
+                <div class="post">
+  <h1>chmod</h1>
+  <time datetime=2021-07-18T07:25:34-0400 class="post-date">Sun, Jul 18, 2021</time>
+
+  
+<style>
+table {
+width:100%
+}
+</style>
+
+  
+
+  <p><code>chmod</code> is a utility for <strong>ch</strong>anging the <strong>mod</strong>e (permissions) of a file or
+directory. A file&rsquo;s mode defines who can read, write, and execute it. To check
+the mode of a file <em>file.txt</em>, use the command <code>ls -l file.txt</code>. The output
+is&hellip;</p>
+<pre>
+<b>-rw-rw-r--</b> 1 user group 23 Jul 2 08:45 file.txt
+</pre>
+<p>&hellip;where <code>-rw-rw-r--</code> is the file&rsquo;s mode.</p>
+<p>The first dash is the type of file. The next 9 dashes are mode bits. A letter
+(r,w,x) means on and a dash means off. <br></p>
+<h2 id="usage-examples">Usage Examples</h2>
+<p>Allow a file to be executed by everyone.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ chmod +x file.txt
+<span style="color:#75715e"># same as chmod a+x file.txt</span>
+</code></pre></div><p>Give specific permissions to specific people.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ chmod u<span style="color:#f92672">=</span>rwx file.txt
+<span style="color:#75715e"># u (user), g (group), o (other), or a (all)</span>
+</code></pre></div><p>Assign permissions to a file using octal values</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ chmod <span style="color:#ae81ff">777</span> file.txt
+<span style="color:#75715e"># same as chmod +rwx</span>
+</code></pre></div><h2 id="notes">Notes</h2>
+<p>Octal value permissions can be translated with the following table:</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Permissions</th>
+<th>Label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>None</td>
+<td>---</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Execute</td>
+<td>--x</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Write</td>
+<td>-w-</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Execute &amp; Write</td>
+<td>-wx</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Read</td>
+<td>r--</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Read &amp; Execute</td>
+<td>r-x</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Read &amp; Write</td>
+<td>rw-</td>
+</tr>
+<tr>
+<td>7</td>
+<td>All</td>
+<td>rwx</td>
+</tr>
+</tbody>
+</table>
+<p>Notice how <em>execute (1)</em> + <em>write (2)</em> = 3, <em>execute (1)</em> + <em>read (4)</em> = 5, etc.
+See <a href="https://en.wikipedia.org/wiki/Chmod">octal modes</a> on Wikipedia.</p>
+
+</div>
+
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.599099f1f14b78b657d524b28e10e0c5098e7cd46e9c7aed73d577068a276c3ff1bb234cbf29cb313333e83cf411727b43157c91ce5b809e2ffc81664614608e.js" integrity="sha512-WZCZ8fFLeLZX1SSyjhDgxQmOfNRunHrtc9V3BoonbD/xuyNMvynLMTMz6Dz0EXJ7QxV8kc5bgJ4v/IFmRhRgjg=="></script>
+
+
+
+    </body>
+</html>

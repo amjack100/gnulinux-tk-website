@@ -13,9 +13,7 @@ logging information as well as quick file creation on the command line.
 
 Print a string to standard output.
 
-```bash
-$ echo hello
-```
+{{< showIfExists "static/echo.svg" >}}
 
 Use redirection to quickly create a new file.
 

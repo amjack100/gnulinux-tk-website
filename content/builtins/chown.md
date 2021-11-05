@@ -32,3 +32,7 @@ Change the owner of a directory and its contents recursively.
 ```bash
 $ chown -hR root directory
 ```
+
+## Notes
+
+- Also see [chmod]({{< ref "builtins/chmod.md" >}}).

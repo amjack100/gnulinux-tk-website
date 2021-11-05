@@ -32,11 +32,8 @@ Find every file on the entire system which matches a search pattern
 $ sudo find / -iname 'filename*'
 ```
 
-## Configuration
-
-Minor configuration options can be specified with environment variables. See the
-`find` man page for more specific details.
-
 ## Notes
 
+- Minor configuration options can be specified with environment variables. See
+  the `find` man page for more specific details.
 - `find` is frequently with `xargs`, especially within scripts.

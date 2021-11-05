@@ -1,0 +1,42 @@
+
+baseURL: "https://www.linux-toolkit.com/"
+languageCode: "en-us"
+title: "Linux Toolkit"
+theme: "hello-friend"
+sectionPagesMenu: "main"
+publishDir: ".public"
+resourceDir: ".resources"
+themesDir : ".themes"
+
+Params:
+  description: "Consise command line refreshers"
+  homeSubtitle: "Consise command line refreshers"
+  custom_css: "css/styles.css"
+  
+
+markup:
+  goldmark:
+    extensions:
+      table: true
+      definitionList: true
+    renderer:
+      unsafe: true
+
+languages:
+  en:
+    params:
+      logo:
+        logoText: "home"
+
+Menus:
+  main:
+    - identifier: about
+      name: about
+      url: /about/
+    - identifier: builtins
+      name: built-ins
+      url: /builtins/
+    - identifier: externals
+      name: externals
+      url: /externals/
+

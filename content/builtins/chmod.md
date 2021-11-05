@@ -23,7 +23,6 @@ Allow a file to be executed by everyone.
 
 ```bash
 $ chmod +x file.txt
-
 # same as chmod a+x file.txt
 ```
 
@@ -31,7 +30,6 @@ Give specific permissions to specific people.
 
 ```bash
 $ chmod u=rwx file.txt
-
 # u (user), g (group), o (other), or a (all)
 ```
 
@@ -39,13 +37,8 @@ Assign permissions to a file using octal values
 
 ```bash
 $ chmod 777 file.txt
-
 # same as chmod +rwx
 ```
-
-## Configuration
-
-N/A
 
 ## Notes
 

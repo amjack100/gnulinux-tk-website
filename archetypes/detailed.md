@@ -4,10 +4,9 @@ date: {{ .Date }}
 draft: true
 ---
 
-`{{ .Name }}` is used for
-The name `{{ .Name }}` comes from
+`{{ .Name }}` is used for The name `{{ .Name }}` comes from
 
-## Usage Examples
+## Overview
 
 ...
 
@@ -24,6 +23,8 @@ The name `{{ .Name }}` comes from
 ```bash
 ...
 ```
+
+## Workflows
 
 ## Notes
 

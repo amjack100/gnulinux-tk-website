@@ -3,11 +3,8 @@ title: "cd"
 date: 2021-08-17T19:39:28-04:00
 ---
 
-`cd` allows for **c**hanging **d**irectories, and is easily one of the most
-commonly used Linux commands. It has also been implemented in other operating
-systems as the exact same command such as Microsoft Windows. `cd` falls in line
-with the other _ch\* (change)_ commands, as it is essentially a shortened
-version of the system call, `chdir()`.
+`cd` is a command used for setting the current working directory - it is one of
+the most frequently used commands. `cd` stands for **c**hange **d**irectory.
 
 ## Usage Examples
 
@@ -21,8 +18,7 @@ Go to the home directory.
 
 ```bash
 $ cd ~
-
-# Or simply cd
+# or just cd
 ```
 
 Go to the previous directory.
@@ -31,11 +27,17 @@ Go to the previous directory.
 $ cd -
 ```
 
-Go one directory up in the directory tree.
+Go up a directory.
 
 ```bash
 $ cd ..
-
-# Or up multiple
-# cd ../../..
+# or multiple: cd ../../..
 ```
+
+## Notes:
+
+- `cd` also exists in most other operating systems such as Microsoft Windows as
+  the same name.
+- The system call equivalent to `cd` is `chdir()`.
+- Every process that exists has a current working directory. Also, see
+  [pwd]({{< ref "builtins/pwd.md" >}}).

@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Builtins on Linux Toolkit</title>
+    <link>https://www.linux-toolkit.com/builtins/</link>
+    <description>Recent content in Builtins on Linux Toolkit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 08 Oct 2021 16:40:06 -0400</lastBuildDate><atom:link href="https://www.linux-toolkit.com/builtins/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>groupadd | groupdel</title>
+      <link>https://www.linux-toolkit.com/builtins/groupadd/</link>
+      <pubDate>Fri, 08 Oct 2021 16:40:06 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/groupadd/</guid>
+      <description>groupadd and groupdel are commands used for adding and removing groups. A group is a collection of users that can be given special permissions. If a group has permission to write to file named file.txt and a user belongs to said group, then that user is able to edit file.txt.
+Usage Examples Create a group.
+$ sudo groupadd mygroup Create a group with a specific groupid.
+$ sudo groupadd mygroup -g groupid Delete an existing group.</description>
+    </item>
+    
+    <item>
+      <title>groups</title>
+      <link>https://www.linux-toolkit.com/builtins/groups/</link>
+      <pubDate>Sun, 03 Oct 2021 19:04:26 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/groups/</guid>
+      <description>groups displays the groups that the current user is a member of.
+Usage Examples Get the groups the current user belongs to.
+Get the groups of a specific user.
+$ groups someuser Get the groups of multiple users.
+$ groups user1 user2 user3 Notes  Also see the related commands groupadd and groupdel.  </description>
+    </item>
+    
+    <item>
+      <title>exit</title>
+      <link>https://www.linux-toolkit.com/builtins/exit/</link>
+      <pubDate>Thu, 30 Sep 2021 08:20:02 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/exit/</guid>
+      <description>exit is used for quitting an interactive shell, or, if used inside a script, quitting that script.
+Usage Examples Exit the shell.
+$ exit Exit the shell with a &amp;ldquo;success&amp;rdquo; exit status.
+$ exit 0 Exit the shell with a &amp;ldquo;failure&amp;rdquo; exit status.
+$ exit 1 Notes   An exit status is used to communicate how a program/script ended. 0 is success and any positive number 1-255 is failure. This allows different numbers to mean different types of failure, which is more useful than having different types of success.</description>
+    </item>
+    
+    <item>
+      <title>w | uptime</title>
+      <link>https://www.linux-toolkit.com/builtins/w/</link>
+      <pubDate>Wed, 29 Sep 2021 08:55:30 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/w/</guid>
+      <description>w displays who is logged in and what each user is doing. The first line of the output of w is the same as using uptime without any arguments.
+Usage Examples Get some information about users and the processes they are running.
+$ w # 09:03:26 up 1:07, 1 user, load average: 0.48, 0.44, 0.32 # USER TTY FROM LOGIN@ IDLE JCPU PCPU WHAT # user :0 :0 07:56 ?xdm? 10:40 0.</description>
+    </item>
+    
+    <item>
+      <title>true | false</title>
+      <link>https://www.linux-toolkit.com/builtins/true/</link>
+      <pubDate>Tue, 28 Sep 2021 19:31:40 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/true/</guid>
+      <description>true and false are considered commands but do nothing except return an exit status. An exit status indicates whether a command failed or succeeded. true does nothing, successfully. false does nothing, unsuccessfully.
+Usage Examples Repeatedly execute a command in a loop.
+while true do echo hello done Execute a command but force a particular exit code.
+echo hello &amp;amp;&amp;amp; false Notes  true and false are shell builtins, but the GNU Coreutils versions also exist at /bin/true and /bin/false.</description>
+    </item>
+    
+    <item>
+      <title>read</title>
+      <link>https://www.linux-toolkit.com/builtins/read/</link>
+      <pubDate>Tue, 28 Sep 2021 16:31:11 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/read/</guid>
+      <description>read is used for getting data from standard input. In used within a script, read will pause the script, wait for the user to type a string of characters, and then store that text in a variable.
+Usage Examples Read input typed from the keyboard (with a prompt).
+When the user enters their name and presses enter, that data will be stored in the variable name.
+Read input typed from the keyboard (without a prompt).</description>
+    </item>
+    
+    <item>
+      <title>tty</title>
+      <link>https://www.linux-toolkit.com/builtins/tty/</link>
+      <pubDate>Sun, 26 Sep 2021 15:58:55 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/tty/</guid>
+      <description>tty is a minimal command that prints the file name of the terminal (emulator) which is connected to standard input. tty stands for teletypewriter.
+Usage Examples Notes  TTYs (teletypewriters) and video terminals only exist in museums now, but jargon and abbreviations associated with them are still numerous in Linux commands and documentation. See this page for more a more in-depth explanation on TTYs.  </description>
+    </item>
+    
+    <item>
+      <title>cut</title>
+      <link>https://www.linux-toolkit.com/builtins/cut/</link>
+      <pubDate>Sun, 26 Sep 2021 14:23:32 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/cut/</guid>
+      <description>cut is used for extracting sections of input line by line. The user can define what a section is in terms of bytes, characters, or fields. Standard output can be piped to cut but the it is most commonly used with files.
+Usage Examples Consider a file file.txt containing the following lines of text:
+one,two,three,four,five,six,seven a,b,c,d,e,f,g  Cut a range of characters from each line of a file.
+$ cut -c 10-20 file.</description>
+    </item>
+    
+    <item>
+      <title>crontab</title>
+      <link>https://www.linux-toolkit.com/builtins/crontab/</link>
+      <pubDate>Fri, 24 Sep 2021 12:56:42 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/crontab/</guid>
+      <description>crontab is used for running jobs at scheduled time intervals. The name crontab comes from &amp;ldquo;cron&amp;rdquo; and &amp;ldquo;table&amp;rdquo;. A cron table/crontab file is a text file which contains lines of instructions - 1 instruction per line - of what commands to run and when. cron by itself is also a command - an &amp;ldquo;always-on&amp;rdquo; background job which reads the cron table, executing its lines at the appropriate times. cron is typically not used directly.</description>
+    </item>
+    
+    <item>
+      <title>type</title>
+      <link>https://www.linux-toolkit.com/builtins/type/</link>
+      <pubDate>Thu, 23 Sep 2021 20:04:18 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/type/</guid>
+      <description>type is used for descibing a command as a classification of 5 possible command types:
+ shell built-in function alias hashed command keyword  Otherwise if the command provided is an executable file, then its full path will be displayed.
+Usage Examples Display a command&amp;rsquo;s type.
+Display all the locations of an executable.
+$ type -p python Notes  command -V provides similar functionality to type.  </description>
+    </item>
+    
+    <item>
+      <title>infocmp</title>
+      <link>https://www.linux-toolkit.com/builtins/infocmp/</link>
+      <pubDate>Wed, 22 Sep 2021 10:51:45 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/infocmp/</guid>
+      <description>infocmp is a command used for printing out descriptions from the terminfo database, a database which contains terminal descriptions and data. The cmp in infocmp refers to the tool&amp;rsquo;s ability to compare data values across different terminals.
+Note: for brevity, &amp;ldquo;terminal&amp;rdquo; and &amp;ldquo;terminal emulator&amp;rdquo; are interchangeable.
+Usage Examples Get terminfo data values corresponding to the current terminal.
+$ infocmp  Get shared (common) data values between two terminals.
+$ infocmp -c alacritty xterm Get differing data values across two terminals.</description>
+    </item>
+    
+    <item>
+      <title>clear</title>
+      <link>https://www.linux-toolkit.com/builtins/clear/</link>
+      <pubDate>Tue, 21 Sep 2021 19:14:24 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/clear/</guid>
+      <description>clear is a command used for erasing the visible text on the terminal screen. In the bash shell clear is bound to Ctrl-L.
+Usage Examples Clear the terminal.
+$ clear Notes How it works: clear asks the terminfo database for the appropriate escape sequence corresponding to the user&amp;rsquo;s terminal. We can find this escape sequence with&amp;hellip;
+$ infocmp | grep clear clear=\E[H\E[2J, cnorm=\E[?12l\E[?25h, cr=\r, The output will differ across terminal emulators (in this case it is alacritty).</description>
+    </item>
+    
+    <item>
+      <title>pwd</title>
+      <link>https://www.linux-toolkit.com/builtins/pwd/</link>
+      <pubDate>Tue, 21 Sep 2021 08:34:36 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/pwd/</guid>
+      <description>pwd is a command used for printing the current working directory. Every process has a current working directory (CWD) associated with it. If a process makes a file file.txt and its CWD happens to be /some-folder, it will create the file /some-folder/file.txt
+Usage Examples Get the current working directory.
+Notes  The environment variable $PWD contains the current working directory as well. Almost all programming languages provide a simple way for changing the CWD.</description>
+    </item>
+    
+    <item>
+      <title>file</title>
+      <link>https://www.linux-toolkit.com/builtins/file/</link>
+      <pubDate>Sun, 19 Sep 2021 10:34:13 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/file/</guid>
+      <description>file is a &amp;ldquo;file type guesser&amp;rdquo;, used for getting the file type and metadata of a particular file by looking at its contents. file is not part of GNU like many of the built-ins, but is included in most distributions.
+Usage Examples Get some information about a file.
+Get the file types of some files within a zipped archive.
+$ file -z archive.zip Allow file to read special (block/char device) files.</description>
+    </item>
+    
+    <item>
+      <title>nohup</title>
+      <link>https://www.linux-toolkit.com/builtins/nohup/</link>
+      <pubDate>Fri, 17 Sep 2021 09:04:35 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/nohup/</guid>
+      <description>nohup is a shell builtin used for running commands whose processes are able to run beyond the lifetime of the parent process/processes (shell or terminal emulator). When a command is run from a shell, a parent-child relationship is formed between the two processes (the shell being the parent and the command process being the child). If a parent process is stopped, its children processes are stopped as well. Running a command with nohup prevents this relationship.</description>
+    </item>
+    
+    <item>
+      <title>disown</title>
+      <link>https://www.linux-toolkit.com/builtins/disown/</link>
+      <pubDate>Wed, 15 Sep 2021 13:25:54 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/disown/</guid>
+      <description>disown is a bash/sh builtin command used for detaching a job (a background process) from its parent process (typically a shell like bash). The name disown describes the way in which the shell no longer owns the specified job.
+Usage Examples Disown a job by providing the job number.
+$ disown %1 In this case, we&amp;rsquo;ve detached the job with ID 1 from the current shell. Now, the shell process can be killed and the job will continue to run anyway.</description>
+    </item>
+    
+    <item>
+      <title>jobs | fg | bg</title>
+      <link>https://www.linux-toolkit.com/builtins/jobs/</link>
+      <pubDate>Thu, 09 Sep 2021 10:10:20 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/jobs/</guid>
+      <description>jobs, fg and bg are the three tightly coupled job control/management commands. Using one effectively is difficult without an understanding of the other two. These three are builtins to the popular bash shell, so implementations in other shells may not be the same.
+Overview Jobs = background processes. One typically uses a job for a long running command where the output does not need to be monitored in real time. Jobs are also &amp;ldquo;children&amp;rdquo; of the current shell, meaning if the shell processes is killed, then the job is as well.</description>
+    </item>
+    
+    <item>
+      <title>nproc</title>
+      <link>https://www.linux-toolkit.com/builtins/nproc/</link>
+      <pubDate>Mon, 06 Sep 2021 18:42:09 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/nproc/</guid>
+      <description>nproc is a minimal command used for getting the number of processing units (typically CPUs) available to the current machine.
+Usage Examples Get the number of available processing units.
+Get the number of installed processing units (+ inactive ones)
+$ nproc -all Get the number of processing units minus a provided amount.
+$ nproc --ignore 4 Notes   nproc can be useful in situations where an external program would like to know how many jobs/processes to use when running concurrently.</description>
+    </item>
+    
+    <item>
+      <title>shutdown</title>
+      <link>https://www.linux-toolkit.com/builtins/shutdown/</link>
+      <pubDate>Mon, 06 Sep 2021 08:02:08 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/shutdown/</guid>
+      <description>shutdown is a command which simply allows one to shutdown their computer via the command line. shutdown also provides 3 options in particular which, when each used individually, perform the same functionality as the poweroff, reboot, and halt commands.
+Usage Examples Shutdown the computer.
+Note: without any options provided, the shutdown is scheduled at +1 minute
+Shutdown immediately.
+$ shutdown now Reboot the computer in 5 minutes.
+$ shutdown -r +5 &amp;amp; Cancel a pending shutdown.</description>
+    </item>
+    
+    <item>
+      <title>mkfifo</title>
+      <link>https://www.linux-toolkit.com/builtins/mkfifo.md/</link>
+      <pubDate>Sat, 04 Sep 2021 20:18:34 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/mkfifo.md/</guid>
+      <description>mkfifo is used for creating named pipes, a special file type. The name mkfifo comes from make First In First Out, where a first-in first-out file operates like a pipe but has an identifier and is entered into the filesystem. Before a FIFO can have input/output performed on it, it must be opened at both &amp;ldquo;ends&amp;rdquo; (opened for reading and opened for writing).
+Usage Examples Make a FIFO at a provided path.</description>
+    </item>
+    
+    <item>
+      <title>pgrep</title>
+      <link>https://www.linux-toolkit.com/builtins/pgrep/</link>
+      <pubDate>Fri, 03 Sep 2021 21:01:34 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/pgrep/</guid>
+      <description>pgrep is a command for getting the PID(s) of a process or multiple processes using a grep-like search string. The name of the command comes from the combination of &amp;ldquo;process&amp;rdquo; and grep. pgrep is particularly useful because many other commands such as kill take a PID (random integer) as input.
+Usage Examples Return PIDs of any running processes with a matching command string.
+Search for processes including their command-line options.</description>
+    </item>
+    
+    <item>
+      <title>top</title>
+      <link>https://www.linux-toolkit.com/builtins/top/</link>
+      <pubDate>Thu, 02 Sep 2021 20:19:02 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/top/</guid>
+      <description>top is an interactive program for monitoring processes, cpu usage and live feeds of other system metrics. top stands for table of processes. Effectively using this tool requires some practice compared to other commands, as its interactive menu provides many options and the ability to filter specific items.
+Overview Simply start top.
+$ top Start top, sorting processes by a particular field.
+$ top -o name_of_field Workflows While the interactive table is running within your terminal, many keyboard shortcuts become available which provide additional functionality.</description>
+    </item>
+    
+    <item>
+      <title>install</title>
+      <link>https://www.linux-toolkit.com/builtins/install/</link>
+      <pubDate>Thu, 02 Sep 2021 19:46:26 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/install/</guid>
+      <description>install is a command for copying files and optionally setting the permissions of that file simultaneously. It can be thought of as the chmod and cp commands combined into one for the sake of convenience, and is usually used to move a newly compiled program to a destination like /bin or /usr/local/bin.
+Usage Examples Copy files to a destination (same as cp + chmod +x).
+Copy files to a destination while also setting the mode.</description>
+    </item>
+    
+    <item>
+      <title>diff</title>
+      <link>https://www.linux-toolkit.com/builtins/diff/</link>
+      <pubDate>Sat, 28 Aug 2021 15:27:40 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/diff/</guid>
+      <description>diff is a command for comparing files line by line. diff provides multiple output formats, making it useful as a command line tool as well as a scripting tool. The most common use case involves displaying changes of the same file across multiple versions.
+Usage Examples Compare two files.
+~/one.txt
+one two three ~/two.txt
+one two four $ diff ~/one.txt ~/two.txt 3c3 &amp;lt; three --- &amp;gt; four </description>
+    </item>
+    
+    <item>
+      <title>id | whoami</title>
+      <link>https://www.linux-toolkit.com/builtins/id/</link>
+      <pubDate>Fri, 27 Aug 2021 16:55:01 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/id/</guid>
+      <description>-- id is a command which will display various information specific to a user, including UID (user ID) and GID (group ID). These are unique numbers that are used to determine which resources each user/group may or may not be given access to. whoami is a shortcut command that is identical to id -un.
+Usage Examples Display the user&amp;rsquo;s ID, group ID, and groups to which that user belongs.
+    Display the current user ID number.</description>
+    </item>
+    
+    <item>
+      <title>tr</title>
+      <link>https://www.linux-toolkit.com/builtins/tr/</link>
+      <pubDate>Thu, 26 Aug 2021 18:29:23 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/tr/</guid>
+      <description>tr is a command for translating / transliterating text characters. The term translate in the context of tr has nothing to do with across-language translation, but instead refers to a mapping of certain characters to others.
+Usage Examples Replace all occurrences of a character in a file.
+$ tr a b &amp;lt; ./file.txt All instances of the character &amp;lsquo;a&amp;rsquo; will be replaced with &amp;lsquo;b&amp;rsquo;.
+Translate all the lower-case characters of a file to upper-case.</description>
+    </item>
+    
+    <item>
+      <title>env</title>
+      <link>https://www.linux-toolkit.com/builtins/env/</link>
+      <pubDate>Wed, 25 Aug 2021 13:24:03 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/env/</guid>
+      <description>env is the main environment variable utility and has a variety of functionalities. env is unique in that one of its most common uses is as a shebang line, a single line at the top of a Linux file which dictates how that file is executed.
+Usage Examples Show the environment.
+$ env Set a variable (or multiple) and then run a program.
+$ env key=value program Shebang Using the shebang #!</description>
+    </item>
+    
+    <item>
+      <title>echo | printf</title>
+      <link>https://www.linux-toolkit.com/builtins/echo/</link>
+      <pubDate>Tue, 24 Aug 2021 11:34:59 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/echo/</guid>
+      <description>echo and printf are simple, commonly used commands for explicitly printing a line of output. They demonstrate almost identical functionality when provided a single argument (the characters to print), although echo will automatically append a newline while printf will not. They can be useful within scripts for logging information as well as quick file creation on the command line.
+Usage Examples Print a string to standard output.
+Use redirection to quickly create a new file.</description>
+    </item>
+    
+    <item>
+      <title>cal | ncal</title>
+      <link>https://www.linux-toolkit.com/builtins/cal/</link>
+      <pubDate>Sun, 22 Aug 2021 15:27:09 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/cal/</guid>
+      <description>cal and ncal are commands for printing a basic calendar with the current date highlighted. ncal stands for &amp;ldquo;new calendar&amp;rdquo; and simply presents an alternative, vertical layout.
+Usage Examples Print a calendar.
+$ cal Print a full year calendar.
+$ cal -y Print a full year calendar of a particular year.
+$ cal -y 2014 Notes  According to the manual page CAL(1), not all options are compatible for historical reasons.</description>
+    </item>
+    
+    <item>
+      <title>test | [</title>
+      <link>https://www.linux-toolkit.com/builtins/test/</link>
+      <pubDate>Sat, 21 Aug 2021 08:32:40 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/test/</guid>
+      <description>test is a useful scripting command for evaluating various expressions. It will return 0 (true) or 1 (false) based on the value of the given expression, making it the effective counterpart of the if command built into many shells. The literal [ character is identical to test, although its usage requires a a closing brace at the end of the provided expression. The type of expression that test evaluates is based on the flag it is given as a parameter.</description>
+    </item>
+    
+    <item>
+      <title>wc</title>
+      <link>https://www.linux-toolkit.com/builtins/wc/</link>
+      <pubDate>Fri, 20 Aug 2021 18:35:39 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/wc/</guid>
+      <description>wc is a tool for getting the word count from a file or files. It also capable of getting newline, character, and byte counts. wc&amp;rsquo;s definition of a word is
+ a non-zero-length sequence of characters delimited by white space.
+&amp;ndash; Manual page wc(1)
+ Usage Examples Get the newline, word, and byte counts of a text stream.
+Print only the word count of a text stream.
+$ echo one two three | wc -w Print the newline, word, and byte counts of a file.</description>
+    </item>
+    
+    <item>
+      <title>locate | updatedb</title>
+      <link>https://www.linux-toolkit.com/builtins/locate/</link>
+      <pubDate>Thu, 19 Aug 2021 13:54:27 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/locate/</guid>
+      <description>locate is a tool that finds a file based on a pre-loaded database. updatedb is the command which allows one to interact with that database. These commands act as a single utility for locating files system-wide. Compared to find, locate operates much more quickly. However, it may retrieve unreliable results if updatedb is not at an appropriate frequency.
+Usage Examples Search for a file system-wide by a whole-name pattern.
+$ locate filename Perform the same search but on confirmed existing files.</description>
+    </item>
+    
+    <item>
+      <title>head | tail</title>
+      <link>https://www.linux-toolkit.com/builtins/head/</link>
+      <pubDate>Thu, 19 Aug 2021 11:20:41 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/head/</guid>
+      <description>head and tail are a pair of commands which will allow one to preview a several lines of a file (10, by default), starting from the file&amp;rsquo;s beginning or end. Their functionalities are very similar to the cat command. See cat These utilities are very useful for getting a quick reminder of a file&amp;rsquo;s contents, as well as watching a file for real-time updates.
+Usage Examples Preview the first 10 lines of a file.</description>
+    </item>
+    
+    <item>
+      <title>kill</title>
+      <link>https://www.linux-toolkit.com/builtins/kill/</link>
+      <pubDate>Wed, 18 Aug 2021 10:03:22 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/kill/</guid>
+      <description>kill is a tool for sending a signal to a process. Its name comes from the fact that its default signal is TERM, which effectively &amp;ldquo;kills&amp;rdquo; an actively running process.
+Usage Examples Terminate a running process.
+$ kill 40831 Here 40831 is a PID (process ID).
+Send an alternative signal to a process.
+$ kill -CONT 40831 # The following are identical: # kill -SIGCONT 40831 # kill -18 40831 # kill -s 18 40831 Notes  We can also use kill -l to quickly list all the available signals.</description>
+    </item>
+    
+    <item>
+      <title>cd</title>
+      <link>https://www.linux-toolkit.com/builtins/cd/</link>
+      <pubDate>Tue, 17 Aug 2021 19:39:28 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/cd/</guid>
+      <description>cd is a command used for setting the current working directory - it is one of the most frequently used commands. cd stands for change directory.
+Usage Examples Set the current working directory to (go to) a new location.
+$ cd directory Go to the home directory.
+$ cd ~ # or just cd Go to the previous directory.
+$ cd - Go up a directory.
+$ cd .. # or multiple: cd .</description>
+    </item>
+    
+    <item>
+      <title>date</title>
+      <link>https://www.linux-toolkit.com/builtins/date/</link>
+      <pubDate>Tue, 17 Aug 2021 08:29:12 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/date/</guid>
+      <description>date gets the current date and time. date is especially useful for long running tasks like logging. The output of datecan be formatted using combinations of a wide range of formatting sequences.
+Usage Examples Get the current date in the default format
+date with no arguments is equal to date +%c
+Log an event with date annotations
+$ echo &amp;#34;[$(date +%F_%T)] Some event occured&amp;#34; &amp;gt;&amp;gt; log.txt # Output: [2021-08-17_10:35:07] Some event occured Notes The following format sequences describe how the output of date can be adjusted to look a specific way.</description>
+    </item>
+    
+    <item>
+      <title>basename | dirname</title>
+      <link>https://www.linux-toolkit.com/builtins/basename/</link>
+      <pubDate>Mon, 16 Aug 2021 19:59:54 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/basename/</guid>
+      <description>basename and dirname are commands for splitting a directory-file string like /home/user/file.txt into its individual directory and file components. These are useful shortcuts for what might otherwise be overly complex sed expressions.
+Usage Examples Get the basename of a full filename.
+Get the basename of a full filename without the extension.
+$ basename /home/user/file.txt .txt file Extract the dirname of a full filename.
+$ dirname /home/user/filename.txt /home/user Notes  Both basename and dirname will work as expected when given multiple filename arguments.</description>
+    </item>
+    
+    <item>
+      <title>mount | umount</title>
+      <link>https://www.linux-toolkit.com/builtins/mount/</link>
+      <pubDate>Sun, 15 Aug 2021 17:55:53 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/mount/</guid>
+      <description>mount and umount are commands for mounting and unmounting a filesystem, respectively. A common use for these commands involves accessing files on a USB drive or some type of other removable device. Filesystems can typically only be mounted by the super user (with sudo).
+Usage Examples Mount a USB drive
+$ sudo mkdir -p /media/usb $ sudo mount /dev/sda1 /media/usb Unmount a mounted USB drive
+$ sudo umount /dev/sda1 Configuration The /etc/fstab file is the main configuration point for the mount command.</description>
+    </item>
+    
+    <item>
+      <title>tset | reset</title>
+      <link>https://www.linux-toolkit.com/builtins/tset/</link>
+      <pubDate>Sat, 14 Aug 2021 09:09:21 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/tset/</guid>
+      <description>tset and reset are historical commands used to reset an actual text-based terminal (as opposed to a terminal emulator running on a graphics-oriented system).
+Usage Examples Initialize a terminal.
+$ tset Reinitialize a terminal.
+$ reset Configuration  The SHELL environment variable provides a syntax specification. The TERM environment variable denotes terminal type. The TERMCAP environment variable denotes the location of the termcap database. See tput for further information.  Notes  tset/reset have under-documented features and were made obsolete by the tput utility.</description>
+    </item>
+    
+    <item>
+      <title>insmod | rmmod</title>
+      <link>https://www.linux-toolkit.com/builtins/insmod/</link>
+      <pubDate>Thu, 12 Aug 2021 07:28:45 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/insmod/</guid>
+      <description>insmod and rmmod are programs for respectively inserting modules into the Linux kernel and removing them. The official manual descriptions of both tools recommends the use of modprobe as an alternative way of performing these operations.
+ Most users will want to use modprobe(8) instead, which is more clever and can handle module dependencies
+&amp;ndash; Manual page insmod(8)
+ Usage Examples Insert a kernel module
+$ sudo insmod module.ko Remove a kernel module</description>
+    </item>
+    
+    <item>
+      <title>cp</title>
+      <link>https://www.linux-toolkit.com/builtins/cp/</link>
+      <pubDate>Wed, 11 Aug 2021 17:13:25 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/cp/</guid>
+      <description>cp is the standard copy command packaged into Linux systems.
+Usage Examples Copy a single file to another file.
+$ cp file.txt copy.txt Copy files to a directory.
+$ cp file.txt directory Copy an entire directory tree to another location.
+$ cp -r source-dir destination-dir # where source-dir might be a structure like: #source-dir/ #└── one # └── two Notes  Backup suffixes can be defined with the VERSION_CONTROL environment variable.</description>
+    </item>
+    
+    <item>
+      <title>mkdir | rmdir</title>
+      <link>https://www.linux-toolkit.com/builtins/mkdir/</link>
+      <pubDate>Wed, 11 Aug 2021 14:26:49 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/mkdir/</guid>
+      <description>mkdir and rmdir are minimal commands for making and removing directories respectively.
+Usage Examples Make a new directory
+$ mkdir directoryname Create multiple directories as a directory tree
+$ mkdir -p outer/middle/inner Remove an empty directory
+$ rmdir directoryname Notes   mkdir and rmdir are the direct command line equivalents of the mkdir() and rmdir() Linux system calls. One can view man 2 mkdir or man 2 rmdir for more information.</description>
+    </item>
+    
+    <item>
+      <title>grep</title>
+      <link>https://www.linux-toolkit.com/builtins/grep/</link>
+      <pubDate>Fri, 06 Aug 2021 11:52:52 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/grep/</guid>
+      <description>grep is a very commonly used tool for searching for patterns of text within files or an output stream. grep stands for global regular expression print. This comes from the sed/ed subcommand g/re/p, where g and p are the global and print flags, and re is a regular expression.
+Overview Search a single file for a matching pattern.
+$ cat file.txt | grep &amp;#39;.*pattern&amp;#39; Search though files across multiple directories for a matching pattern.</description>
+    </item>
+    
+    <item>
+      <title>lsmod</title>
+      <link>https://www.linux-toolkit.com/builtins/lsmod/</link>
+      <pubDate>Fri, 06 Aug 2021 11:32:14 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/lsmod/</guid>
+      <description>lsmod is a minimal command for listing the modules in the Linux Kernel. It will provide the output in table format, like:
+   Module Size Used by     tcp_diag 16384 0   udp_diag 16384 0   inet_diag 24576 2 tpc_diag,udp_diag    Usage Examples $ lsmod </description>
+    </item>
+    
+    <item>
+      <title>cat | tac</title>
+      <link>https://www.linux-toolkit.com/builtins/cat/</link>
+      <pubDate>Sat, 31 Jul 2021 09:01:26 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/cat/</guid>
+      <description>cat is a tool for concatentaing files, although its most frequent use involves simply displaying file content to the terminal. tac does the exact same thing, except lines are output in reverse order.
+Usage Examples View the contents of a file.
+$ cat file.txt Send the contents of a file to a new file.
+$ cat file.txt &amp;gt; newfile.txt Append the contents of a file to the end of an existing file.</description>
+    </item>
+    
+    <item>
+      <title>ls | dir | vdir</title>
+      <link>https://www.linux-toolkit.com/builtins/ls/</link>
+      <pubDate>Wed, 28 Jul 2021 17:44:52 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/ls/</guid>
+      <description>ls is short for list and displays the contents of a directory. dir is equivalent to ls -C -b vdir is equivalent to ls -l -b
+Usage Examples Show the contents of the current directory.
+$ ls Show directory contents, including hidden files.
+$ ls -a Show directory contents and information about each item.
+$ ls -l Configuration The output of ls can be configured through the dircolors command which modifies the LS_COLORS environment variable.</description>
+    </item>
+    
+    <item>
+      <title>find</title>
+      <link>https://www.linux-toolkit.com/builtins/find/</link>
+      <pubDate>Mon, 26 Jul 2021 12:14:15 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/find/</guid>
+      <description>find is the primary built-in utility for finding files on a GNU/Linux system.
+Usage Examples The first 2 examples begin searching from the current working directory.
+Find files that match a search pattern
+$ find -iname &amp;#39;*.txt&amp;#39; -iname means &amp;ldquo;case insensitive&amp;rdquo;, which can in general be more helpful than -name.
+Find files that have been modified within a specific time frame
+$ find -cmin -20 Where the last modified time is 20 minutes</description>
+    </item>
+    
+    <item>
+      <title>sed</title>
+      <link>https://www.linux-toolkit.com/builtins/sed/</link>
+      <pubDate>Sun, 25 Jul 2021 08:27:22 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/sed/</guid>
+      <description>sed is a tool for editing text. It is a stream editor, meaning it can accomplish the same tasks as a traditional text editor by iterating through streams of text with commands.
+Overview The &amp;rsquo;s&#39; (substitute) command is the most important sed command. Preview replacement of all matching patterns in a file.
+$ sed &amp;#39;s/old/new&amp;#39; file.txt Write replacement of all matching patterns in a file.
+$ sed -i &amp;#39;s/old/new&amp;#39; file.txt Workflows The previous examples demonstrate the basic functionality, but are not enough to expose sed as an agile, real world tool.</description>
+    </item>
+    
+    <item>
+      <title>ln</title>
+      <link>https://www.linux-toolkit.com/builtins/ln/</link>
+      <pubDate>Thu, 22 Jul 2021 07:50:03 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/ln/</guid>
+      <description>ln is a tool for creating links between files. It can create the two different types of links: soft/symbolic links and hard links. A soft link is like the equivalent of a Windows shortcut icon. When a program reads a soft link, it is redirected to where the file is. A hard link is basically like giving a file another name. When a program reads a hard link, it reads the exact data block as the original file.</description>
+    </item>
+    
+    <item>
+      <title>chown</title>
+      <link>https://www.linux-toolkit.com/builtins/chown/</link>
+      <pubDate>Tue, 20 Jul 2021 08:28:02 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/chown/</guid>
+      <description>chown is a tool for changing the owner of a file or directory. To reveal the owner of a file file.txt, use the command ls -l file.txt. The output is&amp;hellip;
+ -rw-rw-r-- 1 john staff 23 Jul 2 08:45 file.txt  &amp;hellip;where john is the file&amp;rsquo;s owner. chown is also capable of changing the file group, ( staff ), having the same functionality as chgrp.
+Usage Examples Change a file&amp;rsquo;s owner.</description>
+    </item>
+    
+    <item>
+      <title>uname</title>
+      <link>https://www.linux-toolkit.com/builtins/uname/</link>
+      <pubDate>Mon, 19 Jul 2021 08:51:11 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/uname/</guid>
+      <description>uname, short for unix name, is a simple tool for getting information about the current system.
+Usage Examples Print system information about the kernel, processor, and operating system.
+$ uname -a Pair with dkms to install a kernel module to the current kernel version.
+$ sudo dkms install nvidia/460.39 -k $(uname -r) Notes  uname offers many flags such as -m and -s (machine and kernel-name) which provide a way for scripts to get specific values.</description>
+    </item>
+    
+    <item>
+      <title>chmod</title>
+      <link>https://www.linux-toolkit.com/builtins/chmod/</link>
+      <pubDate>Sun, 18 Jul 2021 07:25:34 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/chmod/</guid>
+      <description>chmod is a utility for changing the mode (permissions) of a file or directory. A file&amp;rsquo;s mode defines who can read, write, and execute it. To check the mode of a file file.txt, use the command ls -l file.txt. The output is&amp;hellip;
+ -rw-rw-r-- 1 user group 23 Jul 2 08:45 file.txt  &amp;hellip;where -rw-rw-r-- is the file&amp;rsquo;s mode.
+The first dash is the type of file. The next 9 dashes are mode bits.</description>
+    </item>
+    
+    <item>
+      <title>du</title>
+      <link>https://www.linux-toolkit.com/builtins/du/</link>
+      <pubDate>Fri, 16 Jul 2021 08:55:20 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/du/</guid>
+      <description>du is a tool for getting information about the disk usage of a file or directory.
+Usage Examples Get the disk usage of a single file or directory
+$ du -sh ./directory &amp;hellip; where -sh stands for summarize and human-readable
+Get the size of a single file or directory
+$ du -bsh ./directory &amp;hellip;where -b is equal to --apparent-size --block-size=1
+Notes   The block size defaults to 1024 bytes but can be modified with the environment variables DU_BLOCK_SIZE, BLOCK_SIZE, or BLOCKSIZE</description>
+    </item>
+    
+    <item>
+      <title>tput</title>
+      <link>https://www.linux-toolkit.com/builtins/tput/</link>
+      <pubDate>Thu, 15 Jul 2021 12:09:27 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/tput/</guid>
+      <description>tput will output a special value from the terminfo database, given a &amp;ldquo;capname&amp;rdquo; as a key. The terminfo database is a set of key value pairs storing information about hundreds of terminals (+ terminal emulators, given that actual terminals hardly exist today). Terminfo database files are held in /etc/terminfo/ but are compressed and require special tools for reading.
+Usage Examples Write the value of a capname to standard output
+$ tput bold Given the argument &amp;ldquo;bold&amp;rdquo;, tput will fetch the value from the terminfo database.</description>
+    </item>
+    
+    <item>
+      <title>touch</title>
+      <link>https://www.linux-toolkit.com/builtins/touch/</link>
+      <pubDate>Thu, 15 Jul 2021 11:51:11 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/touch/</guid>
+      <description>touch is command used to update the access and modification times of a file. It is most commonly used as a quick way of creating a new, empty file.
+Usage Examples Create an empty file.
+$ touch file.txt Update the timestamp of a file without creating a new one if it doesn&amp;rsquo;t exist.
+$ touch -c existingfile.txt </description>
+    </item>
+    
+    <item>
+      <title>man</title>
+      <link>https://www.linux-toolkit.com/builtins/man/</link>
+      <pubDate>Wed, 14 Jul 2021 08:06:58 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/man/</guid>
+      <description>man is used to display user manuals typical stored in /usr/share/man . Manuals are divided into these sections:
+ User commands and tools Linux system calls Library functions (system call wrappers) which implement system calls Special files (devices) File formats and corresponding C structures (if any) &amp;ldquo;Games and funny little programs&amp;rdquo; Miscellaneous Administration and privileged commands Kernel routines [Non standard]  Use man &amp;lt;number&amp;gt; intro to read more about each section (except 9).</description>
+    </item>
+    
+    <item>
+      <title>rsync</title>
+      <link>https://www.linux-toolkit.com/builtins/rsync/</link>
+      <pubDate>Tue, 13 Jul 2021 08:21:30 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/rsync/</guid>
+      <description>rsync is a copying tool that implements a delta-transfer algorithm for extremely fast and efficient transfers. It finds files that have changed in size or last-modified time to determine the necessary updates to the destination.
+If rsync is used over ssh, it requires that both the client and server have the software installed.
+Usage Examples Copy a directory (recursive) to a remote machine
+$ rsync -vr ./source-dir server:/destination Copy a directory (recursive) to the host machine</description>
+    </item>
+    
+    <item>
+      <title>ssh</title>
+      <link>https://www.linux-toolkit.com/builtins/ssh/</link>
+      <pubDate>Mon, 12 Jul 2021 07:33:57 -0400</pubDate>
+      
+      <guid>https://www.linux-toolkit.com/builtins/ssh/</guid>
+      <description>ssh is a program for logging into a remote computer and executing commands on that computer. ssh connects and logs into the specified destination, which may be specified as either [user@]hostname or ssh://[user@]hostname[:port]
+The user trying to access the remote computer must prove their identity.
+Usage Examples Access a remote machine by providing a private key as input
+$ ssh -i &amp;lt;private key file&amp;gt; &amp;lt;username&amp;gt;@&amp;lt;hostname&amp;gt; For example
+$ ssh -i ~/.</description>
+    </item>
+    
+  </channel>
+</rss>
